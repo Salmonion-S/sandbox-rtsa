@@ -1,0 +1,983 @@
+{
+ "name": "restart",
+ "sandbox": "/tmp/rtsa_cmd_4d4j3sox",
+ "started": 1791205528.9736001,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u2705 Restart nginx: OK",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4632.4981,
+     "argv": [
+      "/usr/bin/systemctl",
+      "restart",
+      "nginx"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4632.4983,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.RESTART_SERVICE: 'RESTART_SERVICE'>, 'target': 'nginx', 'reason': 'Manual Discord command', 'requested_by': 'admin-user', 'action_id': '0a887dbdc273491aae53511bc370a9bf', '...(+106)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 1,
+    "DB_WRITE": 1
+   },
+   "mutations": [
+    "/usr/bin/systemctl restart nginx"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u2705 Restart nginx: OK",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4632.5126,
+     "argv": [
+      "/usr/bin/systemctl",
+      "restart",
+      "nginx"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4632.5128,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.RESTART_SERVICE: 'RESTART_SERVICE'>, 'target': 'nginx', 'reason': 'Manual Discord command', 'requested_by': 'critical-user', 'action_id': '35195a0bcb8e47e5bb7d0e8339dcefbc'...(+108)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 1,
+    "DB_WRITE": 1
+   },
+   "mutations": [
+    "/usr/bin/systemctl restart nginx"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Restart nginx: \ud83d\udec8 Detection Only mode is active \u2014 restarting service `nginx` was NOT executed. RTSA is deployed for detection and notification only; set `response_engine.detection_only: false` in config to allow RTSA-driven mitigation, or take this action manually.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4632.5288,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.RESTART_SERVICE: 'RESTART_SERVICE'>, 'target': 'nginx', 'reason': 'response_engine.detection_only=true', 'requested_by': 'critical-user', 'action_id': '4a0eeba72ebd488a8923...(+122)"
+     ],
+     "kwargs": "{'result': 'Blocked by Detection Only'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": true
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u2705 Restart nginx: OK",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4632.5406,
+     "argv": [
+      "/usr/bin/systemctl",
+      "restart",
+      "nginx"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4632.5408,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.RESTART_SERVICE: 'RESTART_SERVICE'>, 'target': 'nginx', 'reason': 'Manual Discord command', 'requested_by': 'critical-user', 'action_id': 'ce92923759ac41e0a701f14c8072dc13'...(+109)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 1,
+    "DB_WRITE": 1
+   },
+   "mutations": [
+    "/usr/bin/systemctl restart nginx"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u2705 Restart nginx: OK",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "\u2705 Restart nginx: OK",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4632.5896,
+     "argv": [
+      "/usr/bin/systemctl",
+      "restart",
+      "nginx"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4632.5898,
+     "argv": [
+      "/usr/bin/systemctl",
+      "restart",
+      "nginx"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4632.5899,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.RESTART_SERVICE: 'RESTART_SERVICE'>, 'target': 'nginx', 'reason': 'Manual Discord command', 'requested_by': 'critical-user', 'action_id': '531a2463166a4156bcd1f383197bb556'...(+109)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4632.59,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.RESTART_SERVICE: 'RESTART_SERVICE'>, 'target': 'nginx', 'reason': 'Manual Discord command', 'requested_by': 'critical-user', 'action_id': '531a52bac31f40489d5dd9fe4eb1145d'...(+109)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 4,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 2,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/bin/systemctl restart nginx"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:service:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "service",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "Service 'x;touch /tmp/rtsazq' tidak bisa dikelola.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:service:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "service",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "Service '$(touch /tmp/rtsazq)' tidak bisa dikelola.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:service:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "service",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "Service '`touch /tmp/rtsazq`' tidak bisa dikelola.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:service:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "service",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "Service 'x|touch /tmp/rtsazq' tidak bisa dikelola.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:service:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "service",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "Service '../../../../etc/rtsazq' tidak bisa dikelola.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:service:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "service",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "Service '/etc/rtsazq' tidak bisa dikelola.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:service:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "service",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "Service '--rtsazq=1' tidak bisa dikelola.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:service:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "service",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "Service 'ok\nrtsazq' tidak bisa dikelola.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:service:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "service",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "Service 'ok\r\nrtsazq: 1' tidak bisa dikelola.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:service:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "service",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "Service 'ok\u0000rtsazq' tidak bisa dikelola.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:service:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "service",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "Service 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:service:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "service",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "Service '\u0430pp\u202ertsazq.lab.test' tidak bisa dikelola.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:service:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "service",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "Service '*rtsazq*' tidak bisa dikelola.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:service:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "service",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "Service 'ok rtsazq' tidak bisa dikelola.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:service:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "service",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "Service '' tidak bisa dikelola.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:service:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "service",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "Service '%s%n{0.__class__}rtsazq' tidak bisa dikelola.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:service:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "service",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "Service '@everyone rtsazq' tidak bisa dikelola.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [
+    "EVERYONE_MENTION_ECHOED"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:service:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "service",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "Service '<@&111> rtsazq' tidak bisa dikelola.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [
+    "ROLE_MENTION_ECHOED"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205529.6889436
+}

@@ -1,0 +1,3688 @@
+{
+ "name": "genloadbalance",
+ "sandbox": "/tmp/rtsa_cmd_2w2n0cn8",
+ "started": 1791205488.7559044,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.004,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: cbb169b9ca4a4503\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ORIGIN_LIST: at least one origin address is required\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.2982,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.2984,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-f3dd635348993211"
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.2996,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-f3dd635348993211",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.3001,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.3002,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-8dd6a80516b35ab2"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.3003,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.3011,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-8dd6a80516b35ab2",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.3015,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=cbb169b9ca4a4503 status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+204)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    }
+   ],
+   "event_count": 8,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_RENAME_SANDBOX": 2,
+    "FS_CHMOD_SANDBOX": 1,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.004,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: 2bf257c42f884a43\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ORIGIN_LIST: at least one origin address is required\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.3125,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.3128,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-eb49140793c0cfa3"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.3131,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.3138,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-eb49140793c0cfa3",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.3144,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.3145,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-833c3d231723b9cb"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.3146,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.3152,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-833c3d231723b9cb",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.3155,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=2bf257c42f884a43 status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+204)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    }
+   ],
+   "event_count": 9,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_CHMOD_SANDBOX": 2,
+    "FS_RENAME_SANDBOX": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.003,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: 98daf25a72a2436b\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ORIGIN_LIST: at least one origin address is required\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.3263,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.3264,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-d866018e83937e6f"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.3265,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.327,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-d866018e83937e6f",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.3275,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.3276,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-79b6d2fcf2a1889a"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.3277,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.3282,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-79b6d2fcf2a1889a",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.3284,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=98daf25a72a2436b status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+204)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    }
+   ],
+   "event_count": 9,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_CHMOD_SANDBOX": 2,
+    "FS_RENAME_SANDBOX": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.005,
+   "first_ack_s": 0.003,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: 91d6c1548d63454c\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ORIGIN_LIST: at least one origin address is required\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: d88a731603b046de\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ORIGIN_LIST: at least one origin address is required\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.338,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.3381,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-62c586632024737e"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.3382,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.3387,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-62c586632024737e",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.3394,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.3395,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-a2a0e9659bb49915"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.3396,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.3402,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-a2a0e9659bb49915",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.3405,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=91d6c1548d63454c status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+204)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.3409,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.341,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-b1201add0162a3e2"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.3411,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.3416,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-b1201add0162a3e2",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.3421,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.3422,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-cc6b07790cda0669"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.3423,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.3427,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-cc6b07790cda0669",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.3429,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=d88a731603b046de status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+203)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    }
+   ],
+   "event_count": 18,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 4,
+    "FS_WRITE_SANDBOX": 4,
+    "FS_CHMOD_SANDBOX": 4,
+    "FS_RENAME_SANDBOX": 4,
+    "DB_WRITE": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE ABORTED\nDomain: x\nStatus: ABORTED\nOperation: 4c97e192ae8f4447\nResult: invalid domain\nBlocked: INVALID_DOMAIN: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nProduction: unchanged - the existing production path is preserved\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE ABORTED\nDomain: $(touch\nStatus: ABORTED\nOperation: f76418b3f8b34bd7\nResult: invalid domain\nBlocked: INVALID_DOMAIN: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nProduction: unchanged - the existing production path is preserved\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE ABORTED\nDomain: `touch\nStatus: ABORTED\nOperation: 5b58c97d0cff45a4\nResult: invalid domain\nBlocked: INVALID_DOMAIN: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nProduction: unchanged - the existing production path is preserved\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE ABORTED\nDomain: x|touch\nStatus: ABORTED\nOperation: 520139d6aa79402c\nResult: invalid domain\nBlocked: INVALID_DOMAIN: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nProduction: unchanged - the existing production path is preserved\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE ABORTED\nDomain: ../../../../etc/rtsaZQ\nStatus: ABORTED\nOperation: a51c537309eb4685\nResult: invalid domain\nBlocked: INVALID_DOMAIN: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nProduction: unchanged - the existing production path is preserved\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE ABORTED\nDomain: /etc/rtsaZQ\nStatus: ABORTED\nOperation: a9dadb491e7d4c88\nResult: invalid domain\nBlocked: INVALID_DOMAIN: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nProduction: unchanged - the existing production path is preserved\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN\nArgumen tidak valid: unknown flag --rtsaZQ=1 (supported: --dry-run, --apply, --prune)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE ABORTED\nDomain: ok\nStatus: ABORTED\nOperation: 39d4c190d2b64ff7\nResult: invalid domain\nBlocked: INVALID_DOMAIN: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nProduction: unchanged - the existing production path is preserved\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE ABORTED\nDomain: ok\nStatus: ABORTED\nOperation: 2e0b7bb6a93144d5\nResult: invalid domain\nBlocked: INVALID_DOMAIN: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nProduction: unchanged - the existing production path is preserved\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE ABORTED\nDomain: ok\u0000rtsaZQ\nStatus: ABORTED\nOperation: d416a7e0bd9d4ddd\nResult: invalid domain\nBlocked: INVALID_DOMAIN: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nProduction: unchanged - the existing production path is preserved\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN\nArgumen tidak valid: arguments are too long",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE ABORTED\nDomain: \u0430pp\u202ertsaZQ.lab.test\nStatus: ABORTED\nOperation: d44dd21cfa554bf6\nResult: invalid domain\nBlocked: INVALID_DOMAIN: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nProduction: unchanged - the existing production path is preserved\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE ABORTED\nDomain: *rtsaZQ*\nStatus: ABORTED\nOperation: 5616a5f1acae42ae\nResult: invalid domain\nBlocked: INVALID_DOMAIN: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nProduction: unchanged - the existing production path is preserved\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE ABORTED\nDomain: ok\nStatus: ABORTED\nOperation: fd841ae45ea64f8b\nResult: invalid domain\nBlocked: INVALID_DOMAIN: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nProduction: unchanged - the existing production path is preserved\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN\nArgumen tidak valid: a domain is required",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE ABORTED\nDomain: %s%n{0.__class__}rtsaZQ\nStatus: ABORTED\nOperation: 023342f7a8e5467f\nResult: invalid domain\nBlocked: INVALID_DOMAIN: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nProduction: unchanged - the existing production path is preserved\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE ABORTED\nDomain: @everyone\nStatus: ABORTED\nOperation: 86499f14d13a47ef\nResult: invalid domain\nBlocked: INVALID_DOMAIN: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nProduction: unchanged - the existing production path is preserved\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [
+    "EVERYONE_MENTION_ECHOED"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE ABORTED\nDomain: <@&111>\nStatus: ABORTED\nOperation: 0d3530a503bf48b8\nResult: invalid domain\nBlocked: INVALID_DOMAIN: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nProduction: unchanged - the existing production path is preserved\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [
+    "ROLE_MENTION_ECHOED"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:origins:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "origins",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.004,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: ce78a4be5b424eb6\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ADDRESS: x: not a valid hostname\nINVALID_ADDRESS: touch: not a valid hostname\nINVALID_ADDRESS: /tmp/rtsaZQ: address must be",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.5763,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.5764,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-78b5d313db26a6bb"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.5766,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.5774,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-78b5d313db26a6bb",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.578,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.5781,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-a00a08a1ea242440"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.5782,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.5789,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-a00a08a1ea242440",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.5793,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=ce78a4be5b424eb6 status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+203)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    }
+   ],
+   "event_count": 9,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_CHMOD_SANDBOX": 2,
+    "FS_RENAME_SANDBOX": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:origins:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "origins",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.003,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: f6ac2f6155b8492a\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ADDRESS: $(touch: not a valid hostname\nINVALID_ADDRESS: /tmp/rtsaZQ): address must be a bare IP or hostname (no URL, path, ",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.5917,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.5918,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-933f00851380f007"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.5919,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.5928,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-933f00851380f007",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.5933,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.5934,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-aedf79d0e7701d02"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.5935,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.594,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-aedf79d0e7701d02",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.5942,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=f6ac2f6155b8492a status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+204)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    }
+   ],
+   "event_count": 9,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_CHMOD_SANDBOX": 2,
+    "FS_RENAME_SANDBOX": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:origins:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "origins",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.003,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: 587f7c978f704e9e\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ADDRESS: `touch: not a valid hostname\nINVALID_ADDRESS: /tmp/rtsaZQ`: address must be a bare IP or hostname (no URL, path, c",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.6043,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.6044,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-81bf9ce89e80421c"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.6045,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.6053,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-81bf9ce89e80421c",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.6059,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.606,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-9ec31e1e1e08b1d9"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.6061,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.6067,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-9ec31e1e1e08b1d9",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.6071,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=587f7c978f704e9e status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+204)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    }
+   ],
+   "event_count": 9,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_CHMOD_SANDBOX": 2,
+    "FS_RENAME_SANDBOX": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:origins:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "origins",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.003,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: af334ef9599c4d52\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ADDRESS: x|touch: not a valid hostname\nINVALID_ADDRESS: /tmp/rtsaZQ: address must be a bare IP or hostname (no URL, path, c",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.6164,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.6165,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-4f26cb518997161d"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.6166,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.6171,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-4f26cb518997161d",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.6176,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.6177,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-a0120caaca453d96"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.6178,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.6183,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-a0120caaca453d96",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.6186,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=af334ef9599c4d52 status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+204)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    }
+   ],
+   "event_count": 9,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_CHMOD_SANDBOX": 2,
+    "FS_RENAME_SANDBOX": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:origins:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "origins",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.003,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: 70ef8e5d0d8d400c\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ADDRESS: ../../../../etc/rtsaZQ: address must be a bare IP or hostname (no URL, path, credentials or port)\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.6282,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.6283,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-2b3489ebc0d12bc0"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.6284,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.629,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-2b3489ebc0d12bc0",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.6294,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.6295,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-316bf0ef9bf822e8"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.6295,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.63,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-316bf0ef9bf822e8",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.6303,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=70ef8e5d0d8d400c status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+204)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    }
+   ],
+   "event_count": 9,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_CHMOD_SANDBOX": 2,
+    "FS_RENAME_SANDBOX": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:origins:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "origins",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: c6b0755907bb4769\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ADDRESS: /etc/rtsaZQ: address must be a bare IP or hostname (no URL, path, credentials or port)\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.6387,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.6388,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-45d16c289a895c40"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.6389,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.6395,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-45d16c289a895c40",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.6399,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.64,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-483473e9ed4ac5de"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.6401,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.6406,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-483473e9ed4ac5de",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.6408,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=c6b0755907bb4769 status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+204)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    }
+   ],
+   "event_count": 9,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_CHMOD_SANDBOX": 2,
+    "FS_RENAME_SANDBOX": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:origins:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "origins",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN\nArgumen tidak valid: unknown flag --rtsaZQ=1 (supported: --dry-run, --apply, --prune)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:origins:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "origins",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.003,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: 7ea55e45ba764c36\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ADDRESS: ok: not a valid hostname\nINVALID_ADDRESS: rtsaZQ: not a valid hostname\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.6615,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.6616,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-76683a634b0195d2"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.6617,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.6631,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-76683a634b0195d2",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.6636,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.6636,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-d18f4237eaa6bc97"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.6637,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.6642,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-d18f4237eaa6bc97",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.6644,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=7ea55e45ba764c36 status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+204)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    }
+   ],
+   "event_count": 9,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_CHMOD_SANDBOX": 2,
+    "FS_RENAME_SANDBOX": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:origins:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "origins",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: 25ba989ccec945ab\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ADDRESS: ok: not a valid hostname\nINVALID_ADDRESS: rtsaZQ:: address must not contain a port; ports come from discovery or c",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.6726,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.6727,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-9ffbe76a218a2fa6"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.6727,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.6732,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-9ffbe76a218a2fa6",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.6737,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.6737,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-848ceebd029e4ba6"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.6738,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.6742,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-848ceebd029e4ba6",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.6745,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=25ba989ccec945ab status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+204)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    }
+   ],
+   "event_count": 9,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_CHMOD_SANDBOX": 2,
+    "FS_RENAME_SANDBOX": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:origins:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "origins",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.003,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: 33a454d493934d32\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ADDRESS: ok\u0000rtsaZQ: address must be a bare IP or hostname (no URL, path, credentials or port)\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.6836,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.6837,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-ffdeed1e9356bd14"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.6838,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.6844,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-ffdeed1e9356bd14",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.6849,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.6849,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-826c8373270a1541"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.685,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.6855,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-826c8373270a1541",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.6861,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=33a454d493934d32 status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+204)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    }
+   ],
+   "event_count": 9,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_CHMOD_SANDBOX": 2,
+    "FS_RENAME_SANDBOX": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:origins:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "origins",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN\nArgumen tidak valid: arguments are too long",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:origins:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "origins",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.003,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: 5c179513a0d6471a\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ADDRESS: \u0430pp\u202ertsaZQ.lab.test: not a valid hostname\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.7076,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.7077,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-fdf301e0c926c88e"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.7078,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.7086,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-fdf301e0c926c88e",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.7094,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.7095,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-2590aa6e6f6793f5"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.7096,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.71,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-2590aa6e6f6793f5",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.7103,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=5c179513a0d6471a status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+203)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    }
+   ],
+   "event_count": 9,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_CHMOD_SANDBOX": 2,
+    "FS_RENAME_SANDBOX": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:origins:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "origins",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.003,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: b132022288414af5\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ADDRESS: *rtsaZQ*: not a valid hostname\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.7219,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.722,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-4cdeadd01ed4fa4c"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.7221,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.7228,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-4cdeadd01ed4fa4c",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.7236,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.7238,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-c9a23af9f18dc82b"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.7238,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.7243,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-c9a23af9f18dc82b",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.7246,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=b132022288414af5 status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+204)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    }
+   ],
+   "event_count": 9,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_CHMOD_SANDBOX": 2,
+    "FS_RENAME_SANDBOX": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:origins:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "origins",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.003,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: 07f37d6c4e9b4cd1\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ADDRESS: ok: not a valid hostname\nINVALID_ADDRESS: rtsaZQ: not a valid hostname\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.7366,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.7367,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-8adc64369b6ced98"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.7367,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.7374,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-8adc64369b6ced98",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.7379,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.738,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-9f7b3837ffc4f2c6"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.738,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.7386,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-9f7b3837ffc4f2c6",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.7389,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=07f37d6c4e9b4cd1 status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+204)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    }
+   ],
+   "event_count": 9,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_CHMOD_SANDBOX": 2,
+    "FS_RENAME_SANDBOX": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:origins:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "origins",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.006,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: 09b617b7cba44829\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ORIGIN_LIST: at least one origin address is required\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.757,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.7571,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-e346dcdc7dd39880"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.7572,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.7579,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-e346dcdc7dd39880",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.7585,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.761,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-5c907a372124b369"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.7611,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.7618,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-5c907a372124b369",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.7622,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=09b617b7cba44829 status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+204)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    }
+   ],
+   "event_count": 9,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_CHMOD_SANDBOX": 2,
+    "FS_RENAME_SANDBOX": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:origins:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "origins",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.003,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: 3b2c3ccc9f6346d7\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ADDRESS: %s%n{0.__class__}rtsaZQ: not a valid hostname\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.7717,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.7718,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-9305d09456f6b1cc"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.7719,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.7725,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-9305d09456f6b1cc",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.7731,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.7732,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-6e8b674ecf280332"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.7733,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.7738,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-6e8b674ecf280332",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.7742,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=3b2c3ccc9f6346d7 status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+204)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    }
+   ],
+   "event_count": 9,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_CHMOD_SANDBOX": 2,
+    "FS_RENAME_SANDBOX": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:origins:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "origins",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: 1a316f9b543b4faa\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ADDRESS: @\u200beveryone: address must be a bare IP or hostname (no URL, path, credentials or port)\nINVALID_ADDRESS: rtsaZQ: not",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.7828,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.7829,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-32015410304ec825"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.7829,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.7835,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-32015410304ec825",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.784,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.7841,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-4ae15b83f1458bc0"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.7842,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.7846,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-4ae15b83f1458bc0",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.7848,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=1a316f9b543b4faa status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+204)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    }
+   ],
+   "event_count": 9,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_CHMOD_SANDBOX": 2,
+    "FS_RENAME_SANDBOX": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:origins:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "origins",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.003,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: 5695c620118e448b\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ADDRESS: <\u200b@\u200b&111>: address must be a bare IP or hostname (no URL, path, credentials or port)\nINVALID_ADDRESS: rtsaZQ: not ",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.7946,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.7947,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-adbfa6ed6dd86d24"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.7948,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.7954,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-adbfa6ed6dd86d24",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.7959,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.7959,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-3de9a41343ce4508"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.796,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.7966,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-3de9a41343ce4508",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.7969,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=5695c620118e448b status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+203)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    }
+   ],
+   "event_count": 9,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_CHMOD_SANDBOX": 2,
+    "FS_RENAME_SANDBOX": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "flag:dry_run:True",
+   "caller": "critical",
+   "input_class": "valid_flag",
+   "param": "dry_run",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.003,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: 31af3409a2554975\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ORIGIN_LIST: at least one origin address is required\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.8058,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.8058,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-a1fc3a10f2f4678d"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.8059,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.8066,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-a1fc3a10f2f4678d",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.8074,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.8075,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-bca219e6ff0a325e"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.8076,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.8081,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-bca219e6ff0a325e",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.8084,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=31af3409a2554975 status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+204)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    }
+   ],
+   "event_count": 9,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_CHMOD_SANDBOX": 2,
+    "FS_RENAME_SANDBOX": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "flag:dry_run:False",
+   "caller": "critical",
+   "input_class": "valid_flag",
+   "param": "dry_run",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: 3c4d549e27754462\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ORIGIN_LIST: at least one origin address is required\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.8174,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.8174,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-33ce0684d4d6e9d8"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.8175,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.8181,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-33ce0684d4d6e9d8",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.8185,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.8186,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-afb45296ec933d76"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.8187,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.8192,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-afb45296ec933d76",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.8195,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=3c4d549e27754462 status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+204)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    }
+   ],
+   "event_count": 9,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_CHMOD_SANDBOX": 2,
+    "FS_RENAME_SANDBOX": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "flag:apply:True",
+   "caller": "critical",
+   "input_class": "valid_flag",
+   "param": "apply",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.003,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE ABORTED\nDomain: 001.lab.test\nStatus: ABORTED\nOperation: 8f244e22ae1644d0\nResult: preflight blocked: no change was made\nBlocked: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ORIGIN_LIST: at least one origin address is required\nProduction: unchanged - the existing production path is preserve",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.8292,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.8293,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-c6f0734d89d80687"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.8293,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.8298,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-c6f0734d89d80687",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.8305,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.8305,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-13fd25db1c8ec6d1"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.8306,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.8312,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-13fd25db1c8ec6d1",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.8316,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=8f244e22ae1644d0 status=ABORTED rollback=NOT APPLICABLE', 'requested_by': '...(+203)"
+     ],
+     "kwargs": "{'result': 'FAILED:ABORTED'}"
+    }
+   ],
+   "event_count": 9,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_CHMOD_SANDBOX": 2,
+    "FS_RENAME_SANDBOX": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "flag:apply:False",
+   "caller": "critical",
+   "input_class": "valid_flag",
+   "param": "apply",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.003,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: da5ab14dcba44b1a\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ORIGIN_LIST: at least one origin address is required\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.84,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.8401,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-a8ed732a91353d20"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.8402,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.8409,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-a8ed732a91353d20",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.8413,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.8414,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-fced1f4cfa70ac24"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.8414,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.842,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-fced1f4cfa70ac24",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.8422,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=da5ab14dcba44b1a status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+204)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    }
+   ],
+   "event_count": 9,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_CHMOD_SANDBOX": 2,
+    "FS_RENAME_SANDBOX": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "flag:prune:True",
+   "caller": "critical",
+   "input_class": "valid_flag",
+   "param": "prune",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: 0f431ebbade44a22\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ORIGIN_LIST: at least one origin address is required\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.8504,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.8505,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-05e22ada7667e6b8"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.8505,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.8512,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-05e22ada7667e6b8",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.8516,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.8516,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-0613f2a87d0b10d3"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.8517,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.8522,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-0613f2a87d0b10d3",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.8524,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=0f431ebbade44a22 status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+204)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    }
+   ],
+   "event_count": 9,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_CHMOD_SANDBOX": 2,
+    "FS_RENAME_SANDBOX": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "flag:prune:False",
+   "caller": "critical",
+   "input_class": "valid_flag",
+   "param": "prune",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.003,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: cb599f921c0340a9\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false in this server's configuration\nNOT_ORCHESTRATOR: this server (unidentified) is not load_balancing.orchestrator_server_id (unset); origin servers only run /addloadbalance\nINVALID_ORIGIN_LIST: at least one origin address is required\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.8622,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.8623,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-6ed4fd82cd7db6c3"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.8623,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.8629,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-6ed4fd82cd7db6c3",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4592.8634,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4592.8635,
+     "path": "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-f827506928c6e862"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4592.8635,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4592.864,
+     "paths": [
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json.tmp-12834-f827506928c6e862",
+      "/tmp/rtsa_cmd_2w2n0cn8/opt/security/rtsa/data/load_balancer_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4592.8643,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GENLOADBALANCE: 'GENLOADBALANCE'>, 'target': '001.lab.test', 'reason': 'genloadbalance operation=cb599f921c0340a9 status=DRY_RUN rollback=NOT APPLICABLE', 'requested_by': '...(+204)"
+     ],
+     "kwargs": "{'result': 'DRY_RUN'}"
+    }
+   ],
+   "event_count": 9,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_CHMOD_SANDBOX": 2,
+    "FS_RENAME_SANDBOX": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205489.5197635
+}

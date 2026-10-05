@@ -1,0 +1,906 @@
+{
+ "name": "awsimg",
+ "sandbox": "/tmp/rtsa_cmd_7c7dad82",
+ "started": 1791205397.1992884,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 1.095,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "AWS IMAGE CHECK\nTidak ada URL AWS/S3 yang ditemukan di access log.\nScope: semua domain \u2022 128 access log discan",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 1.025,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "AWS IMAGE CHECK\nTidak ada URL AWS/S3 yang ditemukan di access log.\nScope: semua domain \u2022 128 access log discan",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 1.057,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "AWS IMAGE CHECK\nTidak ada URL AWS/S3 yang ditemukan di access log.\nScope: semua domain \u2022 128 access log discan",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 1.094,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "AWS IMAGE CHECK\nTidak ada URL AWS/S3 yang ditemukan di access log.\nScope: semua domain \u2022 128 access log discan",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 2.218,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "AWS IMAGE CHECK\nTidak ada URL AWS/S3 yang ditemukan di access log.\nScope: semua domain \u2022 128 access log discan",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "AWS IMAGE CHECK\nTidak ada URL AWS/S3 yang ditemukan di access log.\nScope: semua domain \u2022 128 access log discan",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.019,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "AWS IMAGE CHECK\nTidak ada URL AWS/S3 yang ditemukan di access log.\nScope: domain x;touch  \u2022 0 access log discan",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.02,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "AWS IMAGE CHECK\nTidak ada URL AWS/S3 yang ditemukan di access log.\nScope: domain $(touch  \u2022 0 access log discan",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.021,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "AWS IMAGE CHECK\nTidak ada URL AWS/S3 yang ditemukan di access log.\nScope: domain `touch  \u2022 0 access log discan",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.023,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "AWS IMAGE CHECK\nTidak ada URL AWS/S3 yang ditemukan di access log.\nScope: domain x|touch  \u2022 0 access log discan",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.018,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "AWS IMAGE CHECK\nTidak ada URL AWS/S3 yang ditemukan di access log.\nScope: domain .. \u2022 0 access log discan",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.018,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "AWS IMAGE CHECK\nTidak ada URL AWS/S3 yang ditemukan di access log.\nScope: domain etc \u2022 0 access log discan",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.017,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "AWS IMAGE CHECK\nTidak ada URL AWS/S3 yang ditemukan di access log.\nScope: domain --rtsazq=1 \u2022 0 access log discan",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.02,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "AWS IMAGE CHECK\nTidak ada URL AWS/S3 yang ditemukan di access log.\nScope: domain okrtsazq \u2022 0 access log discan",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.017,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "AWS IMAGE CHECK\nTidak ada URL AWS/S3 yang ditemukan di access log.\nScope: domain okrtsazq \u2022 0 access log discan",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.024,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "AWS IMAGE CHECK\nTidak ada URL AWS/S3 yang ditemukan di access log.\nScope: domain ok\u0000rtsazq \u2022 0 access log discan",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.041,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "AWS IMAGE CHECK\nTidak ada URL AWS/S3 yang ditemukan di access log.\nScope: domain aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "LOGGED_ERROR",
+     "blocked": false,
+     "t": 4507.6043,
+     "logger": "asyncio",
+     "detail": "Unclosed client session\nclient_session: <aiohttp.client.ClientSession object at 0x7f84a7d1e250>"
+    },
+    {
+     "kind": "LOGGED_ERROR",
+     "blocked": false,
+     "t": 4507.6044,
+     "logger": "asyncio",
+     "detail": "Unclosed client session\nclient_session: <aiohttp.client.ClientSession object at 0x7f84a6c62e10>"
+    },
+    {
+     "kind": "LOGGED_ERROR",
+     "blocked": false,
+     "t": 4507.6044,
+     "logger": "asyncio",
+     "detail": "Unclosed client session\nclient_session: <aiohttp.client.ClientSession object at 0x7f84a63cdd50>"
+    },
+    {
+     "kind": "LOGGED_ERROR",
+     "blocked": false,
+     "t": 4507.6044,
+     "logger": "asyncio",
+     "detail": "Unclosed client session\nclient_session: <aiohttp.client.ClientSession object at 0x7f84a634cbd0>"
+    },
+    {
+     "kind": "LOGGED_ERROR",
+     "blocked": false,
+     "t": 4507.6045,
+     "logger": "asyncio",
+     "detail": "Unclosed client session\nclient_session: <aiohttp.client.ClientSession object at 0x7f84a531bc10>"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [
+    "Unclosed client session\nclient_session: <aiohttp.client.ClientSession object at 0x7f84a7d1e250>",
+    "Unclosed client session\nclient_session: <aiohttp.client.ClientSession object at 0x7f84a6c62e10>",
+    "Unclosed client session\nclient_session: <aiohttp.client.ClientSession object at 0x7f84a63cdd50>",
+    "Unclosed client session\nclient_session: <aiohttp.client.ClientSession object at 0x7f84a634cbd0>",
+    "Unclosed client session\nclient_session: <aiohttp.client.ClientSession object at 0x7f84a531bc10>"
+   ],
+   "side_effects": {
+    "LOGGED_ERROR": 5
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.024,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "AWS IMAGE CHECK\nTidak ada URL AWS/S3 yang ditemukan di access log.\nScope: domain \u0430pp\u202ertsazq.lab.test \u2022 0 access log discan",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.018,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "AWS IMAGE CHECK\nTidak ada URL AWS/S3 yang ditemukan di access log.\nScope: domain *rtsazq* \u2022 0 access log discan",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.02,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "AWS IMAGE CHECK\nTidak ada URL AWS/S3 yang ditemukan di access log.\nScope: domain ok rtsazq \u2022 0 access log discan",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "LOGGED_ERROR",
+     "blocked": false,
+     "t": 4507.6863,
+     "logger": "asyncio",
+     "detail": "Unclosed client session\nclient_session: <aiohttp.client.ClientSession object at 0x7f84a53a4e10>"
+    },
+    {
+     "kind": "LOGGED_ERROR",
+     "blocked": false,
+     "t": 4507.6864,
+     "logger": "asyncio",
+     "detail": "Unclosed client session\nclient_session: <aiohttp.client.ClientSession object at 0x7f84a5342850>"
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [
+    "Unclosed client session\nclient_session: <aiohttp.client.ClientSession object at 0x7f84a53a4e10>",
+    "Unclosed client session\nclient_session: <aiohttp.client.ClientSession object at 0x7f84a5342850>"
+   ],
+   "side_effects": {
+    "LOGGED_ERROR": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.968,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "AWS IMAGE CHECK\nTidak ada URL AWS/S3 yang ditemukan di access log.\nScope: semua domain \u2022 128 access log discan",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.018,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "AWS IMAGE CHECK\nTidak ada URL AWS/S3 yang ditemukan di access log.\nScope: domain %s%n{0.__class__}rtsazq \u2022 0 access log discan",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.021,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "AWS IMAGE CHECK\nTidak ada URL AWS/S3 yang ditemukan di access log.\nScope: domain everyone rtsazq \u2022 0 access log discan",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "LOGGED_ERROR",
+     "blocked": false,
+     "t": 4508.7187,
+     "logger": "asyncio",
+     "detail": "Unclosed client session\nclient_session: <aiohttp.client.ClientSession object at 0x7f84a6344dd0>"
+    },
+    {
+     "kind": "LOGGED_ERROR",
+     "blocked": false,
+     "t": 4508.7187,
+     "logger": "asyncio",
+     "detail": "Unclosed client session\nclient_session: <aiohttp.client.ClientSession object at 0x7f84a6308d90>"
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [
+    "Unclosed client session\nclient_session: <aiohttp.client.ClientSession object at 0x7f84a6344dd0>",
+    "Unclosed client session\nclient_session: <aiohttp.client.ClientSession object at 0x7f84a6308d90>"
+   ],
+   "side_effects": {
+    "LOGGED_ERROR": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.02,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "AWS IMAGE CHECK\nTidak ada URL AWS/S3 yang ditemukan di access log.\nScope: domain &111> rtsazq \u2022 0 access log discan",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205406.3021293
+}

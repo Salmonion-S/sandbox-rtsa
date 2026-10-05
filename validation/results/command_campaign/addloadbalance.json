@@ -1,0 +1,888 @@
+{
+ "name": "addloadbalance",
+ "sandbox": "/tmp/rtsa_cmd_rck6_3qs",
+ "started": 1791205392.457365,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 ADD LOAD BALANCE\nDomain: 001.lab.test\nStatus: ABORTED\nOperation: 8b66a140ec3148ac\nResult: load_balancing.enabled is false in this server's configuration\nLocal origin: server: unidentified\nstate: NOT READY\nproject: not found (user -)\nnginx vhost: -\nruntime: UNKNOWN app port -\npublic endpoint: -:-\nhealth: - -> n/a\nTLS ok: None\napp version: unknown\nschema (code head): unknown\nDesired vs actual: desired origins: not declared\nassignment: -\nactual: NOT READY\nBlockers: LOAD_BALANCING_DISABLED: l",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 ADD LOAD BALANCE\nDomain: 001.lab.test\nStatus: ABORTED\nOperation: 4d9faae20ec84e02\nResult: load_balancing.enabled is false in this server's configuration\nLocal origin: server: unidentified\nstate: NOT READY\nproject: not found (user -)\nnginx vhost: -\nruntime: UNKNOWN app port -\npublic endpoint: -:-\nhealth: - -> n/a\nTLS ok: None\napp version: unknown\nschema (code head): unknown\nDesired vs actual: desired origins: not declared\nassignment: -\nactual: NOT READY\nBlockers: LOAD_BALANCING_DISABLED: l",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 ADD LOAD BALANCE\nDomain: 001.lab.test\nStatus: ABORTED\nOperation: 314a47bd7fb140ca\nResult: load_balancing.enabled is false in this server's configuration\nLocal origin: server: unidentified\nstate: NOT READY\nproject: not found (user -)\nnginx vhost: -\nruntime: UNKNOWN app port -\npublic endpoint: -:-\nhealth: - -> n/a\nTLS ok: None\napp version: unknown\nschema (code head): unknown\nDesired vs actual: desired origins: not declared\nassignment: -\nactual: NOT READY\nBlockers: LOAD_BALANCING_DISABLED: l",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 ADD LOAD BALANCE\nDomain: 001.lab.test\nStatus: ABORTED\nOperation: acd557a5943d4f9b\nResult: load_balancing.enabled is false in this server's configuration\nLocal origin: server: unidentified\nstate: NOT READY\nproject: not found (user -)\nnginx vhost: -\nruntime: UNKNOWN app port -\npublic endpoint: -:-\nhealth: - -> n/a\nTLS ok: None\napp version: unknown\nschema (code head): unknown\nDesired vs actual: desired origins: not declared\nassignment: -\nactual: NOT READY\nBlockers: LOAD_BALANCING_DISABLED: l",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 ADD LOAD BALANCE\nDomain: 001.lab.test\nStatus: ABORTED\nOperation: f90060516caa43a8\nResult: load_balancing.enabled is false in this server's configuration\nLocal origin: server: unidentified\nstate: NOT READY\nproject: not found (user -)\nnginx vhost: -\nruntime: UNKNOWN app port -\npublic endpoint: -:-\nhealth: - -> n/a\nTLS ok: None\napp version: unknown\nschema (code head): unknown\nDesired vs actual: desired origins: not declared\nassignment: -\nactual: NOT READY\nBlockers: LOAD_BALANCING_DISABLED: l",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 ADD LOAD BALANCE\nDomain: x\nStatus: ABORTED\nOperation: 3157e3805d5e4a04\nResult: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nLocal origin: server: unidentified\nstate: NOT READY\nproject: not found (user -)\nnginx vhost: -\nruntime: UNKNOWN app port -\npublic endpoint: -:-\nhealth: - -> n/a\nTLS ok: None\napp version: unknown\nschema (code head): unknown\nDesired vs actual: desired origins: not declared\nassignment: -\nactual: NOT READY\nBlockers: INVAL",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 ADD LOAD BALANCE\nDomain: $(touch\nStatus: ABORTED\nOperation: b985e72aca6f4408\nResult: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nLocal origin: server: unidentified\nstate: NOT READY\nproject: not found (user -)\nnginx vhost: -\nruntime: UNKNOWN app port -\npublic endpoint: -:-\nhealth: - -> n/a\nTLS ok: None\napp version: unknown\nschema (code head): unknown\nDesired vs actual: desired origins: not declared\nassignment: -\nactual: NOT READY\nBlockers:",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 ADD LOAD BALANCE\nDomain: `touch\nStatus: ABORTED\nOperation: e9086c53ef6446b0\nResult: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nLocal origin: server: unidentified\nstate: NOT READY\nproject: not found (user -)\nnginx vhost: -\nruntime: UNKNOWN app port -\npublic endpoint: -:-\nhealth: - -> n/a\nTLS ok: None\napp version: unknown\nschema (code head): unknown\nDesired vs actual: desired origins: not declared\nassignment: -\nactual: NOT READY\nBlockers: ",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 ADD LOAD BALANCE\nDomain: x|touch\nStatus: ABORTED\nOperation: 2dea03cd3b984677\nResult: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nLocal origin: server: unidentified\nstate: NOT READY\nproject: not found (user -)\nnginx vhost: -\nruntime: UNKNOWN app port -\npublic endpoint: -:-\nhealth: - -> n/a\nTLS ok: None\napp version: unknown\nschema (code head): unknown\nDesired vs actual: desired origins: not declared\nassignment: -\nactual: NOT READY\nBlockers:",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 ADD LOAD BALANCE\nDomain: ../../../../etc/rtsaZQ\nStatus: ABORTED\nOperation: 65555447f27f4ff2\nResult: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nLocal origin: server: unidentified\nstate: NOT READY\nproject: not found (user -)\nnginx vhost: -\nruntime: UNKNOWN app port -\npublic endpoint: -:-\nhealth: - -> n/a\nTLS ok: None\napp version: unknown\nschema (code head): unknown\nDesired vs actual: desired origins: not declared\nassignment: -\nactual: NOT ",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 ADD LOAD BALANCE\nDomain: /etc/rtsaZQ\nStatus: ABORTED\nOperation: 997e562a94f84ac3\nResult: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nLocal origin: server: unidentified\nstate: NOT READY\nproject: not found (user -)\nnginx vhost: -\nruntime: UNKNOWN app port -\npublic endpoint: -:-\nhealth: - -> n/a\nTLS ok: None\napp version: unknown\nschema (code head): unknown\nDesired vs actual: desired origins: not declared\nassignment: -\nactual: NOT READY\nBlock",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 ADD LOAD BALANCE\nArgumen tidak valid: unknown flag --rtsaZQ=1 (supported: --dry-run, --apply, --prune)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 ADD LOAD BALANCE\nDomain: ok\nStatus: ABORTED\nOperation: eaa5eda983d242cf\nResult: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nLocal origin: server: unidentified\nstate: NOT READY\nproject: not found (user -)\nnginx vhost: -\nruntime: UNKNOWN app port -\npublic endpoint: -:-\nhealth: - -> n/a\nTLS ok: None\napp version: unknown\nschema (code head): unknown\nDesired vs actual: desired origins: not declared\nassignment: -\nactual: NOT READY\nBlockers: INVA",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 ADD LOAD BALANCE\nDomain: ok\nStatus: ABORTED\nOperation: c0aa4e7a890440cc\nResult: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nLocal origin: server: unidentified\nstate: NOT READY\nproject: not found (user -)\nnginx vhost: -\nruntime: UNKNOWN app port -\npublic endpoint: -:-\nhealth: - -> n/a\nTLS ok: None\napp version: unknown\nschema (code head): unknown\nDesired vs actual: desired origins: not declared\nassignment: -\nactual: NOT READY\nBlockers: INVA",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 ADD LOAD BALANCE\nDomain: ok\u0000rtsaZQ\nStatus: ABORTED\nOperation: 64be23727de745e4\nResult: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nLocal origin: server: unidentified\nstate: NOT READY\nproject: not found (user -)\nnginx vhost: -\nruntime: UNKNOWN app port -\npublic endpoint: -:-\nhealth: - -> n/a\nTLS ok: None\napp version: unknown\nschema (code head): unknown\nDesired vs actual: desired origins: not declared\nassignment: -\nactual: NOT READY\nBlocker",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 ADD LOAD BALANCE\nArgumen tidak valid: arguments are too long",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 ADD LOAD BALANCE\nDomain: \u0430pp\u202ertsaZQ.lab.test\nStatus: ABORTED\nOperation: 3a881c61738c4976\nResult: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nLocal origin: server: unidentified\nstate: NOT READY\nproject: not found (user -)\nnginx vhost: -\nruntime: UNKNOWN app port -\npublic endpoint: -:-\nhealth: - -> n/a\nTLS ok: None\napp version: unknown\nschema (code head): unknown\nDesired vs actual: desired origins: not declared\nassignment: -\nactual: NOT REA",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 ADD LOAD BALANCE\nDomain: *rtsaZQ*\nStatus: ABORTED\nOperation: 1ece58f1239545df\nResult: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nLocal origin: server: unidentified\nstate: NOT READY\nproject: not found (user -)\nnginx vhost: -\nruntime: UNKNOWN app port -\npublic endpoint: -:-\nhealth: - -> n/a\nTLS ok: None\napp version: unknown\nschema (code head): unknown\nDesired vs actual: desired origins: not declared\nassignment: -\nactual: NOT READY\nBlockers",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 ADD LOAD BALANCE\nDomain: ok\nStatus: ABORTED\nOperation: 5ce0e6b05c2f4d65\nResult: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nLocal origin: server: unidentified\nstate: NOT READY\nproject: not found (user -)\nnginx vhost: -\nruntime: UNKNOWN app port -\npublic endpoint: -:-\nhealth: - -> n/a\nTLS ok: None\napp version: unknown\nschema (code head): unknown\nDesired vs actual: desired origins: not declared\nassignment: -\nactual: NOT READY\nBlockers: INVA",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 ADD LOAD BALANCE\nArgumen tidak valid: a domain is required",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 ADD LOAD BALANCE\nDomain: %s%n{0.__class__}rtsaZQ\nStatus: ABORTED\nOperation: 57c63b45e4ff4de3\nResult: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nLocal origin: server: unidentified\nstate: NOT READY\nproject: not found (user -)\nnginx vhost: -\nruntime: UNKNOWN app port -\npublic endpoint: -:-\nhealth: - -> n/a\nTLS ok: None\napp version: unknown\nschema (code head): unknown\nDesired vs actual: desired origins: not declared\nassignment: -\nactual: NOT",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 ADD LOAD BALANCE\nDomain: @everyone\nStatus: ABORTED\nOperation: 1468b960e6a54da5\nResult: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nLocal origin: server: unidentified\nstate: NOT READY\nproject: not found (user -)\nnginx vhost: -\nruntime: UNKNOWN app port -\npublic endpoint: -:-\nhealth: - -> n/a\nTLS ok: None\napp version: unknown\nschema (code head): unknown\nDesired vs actual: desired origins: not declared\nassignment: -\nactual: NOT READY\nBlocker",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [
+    "EVERYONE_MENTION_ECHOED"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 ADD LOAD BALANCE\nDomain: <@&111>\nStatus: ABORTED\nOperation: 2200be4f8d1a422a\nResult: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nLocal origin: server: unidentified\nstate: NOT READY\nproject: not found (user -)\nnginx vhost: -\nruntime: UNKNOWN app port -\npublic endpoint: -:-\nhealth: - -> n/a\nTLS ok: None\napp version: unknown\nschema (code head): unknown\nDesired vs actual: desired origins: not declared\nassignment: -\nactual: NOT READY\nBlockers:",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [
+    "ROLE_MENTION_ECHOED"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "flag:apply:True",
+   "caller": "critical",
+   "input_class": "valid_flag",
+   "param": "apply",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 ADD LOAD BALANCE\nDomain: 001.lab.test\nStatus: ABORTED\nOperation: 24b21cb9986d4f50\nResult: load_balancing.enabled is false in this server's configuration\nLocal origin: server: unidentified\nstate: NOT READY\nproject: not found (user -)\nnginx vhost: -\nruntime: UNKNOWN app port -\npublic endpoint: -:-\nhealth: - -> n/a\nTLS ok: None\napp version: unknown\nschema (code head): unknown\nDesired vs actual: desired origins: not declared\nassignment: -\nactual: NOT READY\nBlockers: LOAD_BALANCING_DISABLED: l",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "flag:apply:False",
+   "caller": "critical",
+   "input_class": "valid_flag",
+   "param": "apply",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 ADD LOAD BALANCE\nDomain: 001.lab.test\nStatus: ABORTED\nOperation: e05e2cbde7804d28\nResult: load_balancing.enabled is false in this server's configuration\nLocal origin: server: unidentified\nstate: NOT READY\nproject: not found (user -)\nnginx vhost: -\nruntime: UNKNOWN app port -\npublic endpoint: -:-\nhealth: - -> n/a\nTLS ok: None\napp version: unknown\nschema (code head): unknown\nDesired vs actual: desired origins: not declared\nassignment: -\nactual: NOT READY\nBlockers: LOAD_BALANCING_DISABLED: l",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205393.2083035
+}

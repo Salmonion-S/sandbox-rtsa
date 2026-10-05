@@ -1,0 +1,1130 @@
+{
+ "name": "tes",
+ "sandbox": "/tmp/rtsa_cmd_hohbts10",
+ "started": 1791205569.7267094,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.008,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal cek `http://001.lab.test`: DNS resolution gagal\n```\nCannot connect to host 001.lab.test:80 ssl:default [Name or service not known]\n```",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4673.2528,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4673.2562,
+     "host": "001.lab.test"
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS_LAB": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.008,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal cek `http://001.lab.test`: DNS resolution gagal\n```\nCannot connect to host 001.lab.test:80 ssl:default [Name or service not known]\n```",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4673.278,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4673.2829,
+     "host": "001.lab.test"
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS_LAB": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.006,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal cek `http://001.lab.test`: DNS resolution gagal\n```\nCannot connect to host 001.lab.test:80 ssl:default [Name or service not known]\n```",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4673.3009,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4673.3034,
+     "host": "001.lab.test"
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS_LAB": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.006,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal cek `http://001.lab.test`: DNS resolution gagal\n```\nCannot connect to host 001.lab.test:80 ssl:default [Name or service not known]\n```",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4673.3237,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4673.3268,
+     "host": "001.lab.test"
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS_LAB": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.006,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal cek `http://001.lab.test`: DNS resolution gagal\n```\nCannot connect to host 001.lab.test:80 ssl:default [Name or service not known]\n```",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal cek `http://001.lab.test`: DNS resolution gagal\n```\nCannot connect to host 001.lab.test:80 ssl:default [Name or service not known]\n```",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4673.35,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4673.3502,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4673.3528,
+     "host": "001.lab.test"
+    }
+   ],
+   "event_count": 3,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS_LAB": 3
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal cek `http://x;touch /tmp/rtsaZQ`: DNS resolution gagal\n```\nCannot connect to host x;touch :80 ssl:default [campaign sandbox: DNS lookup for x;touch  blocked]\n```",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.3703,
+     "host": "x;touch ",
+     "port": null
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.3709,
+     "host": "x;touch ",
+     "port": 80
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal cek `http://$(touch /tmp/rtsaZQ)`: DNS resolution gagal\n```\nCannot connect to host $(touch :80 ssl:default [campaign sandbox: DNS lookup for $(touch  blocked]\n```",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.3987,
+     "host": "$(touch ",
+     "port": null
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.3994,
+     "host": "$(touch ",
+     "port": 80
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal cek `http://`touch /tmp/rtsaZQ``: DNS resolution gagal\n```\nCannot connect to host `touch :80 ssl:default [campaign sandbox: DNS lookup for `touch  blocked]\n```",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.4258,
+     "host": "`touch ",
+     "port": null
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.4263,
+     "host": "`touch ",
+     "port": 80
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal cek `http://x|touch /tmp/rtsaZQ`: DNS resolution gagal\n```\nCannot connect to host x|touch :80 ssl:default [campaign sandbox: DNS lookup for x|touch  blocked]\n```",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.4529,
+     "host": "x|touch ",
+     "port": null
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.4535,
+     "host": "x|touch ",
+     "port": 80
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal cek `http://../../../../etc/rtsaZQ`: DNS resolution gagal\n```\ninvalid hostname: encoding with 'idna' codec failed (UnicodeError: label empty or too long)\n```",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal cek `http:///etc/rtsaZQ`: URL tidak valid\n```\nURL tidak valid: http:///etc/rtsaZQ\n```",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal cek `http://--rtsaZQ=1`: DNS resolution gagal\n```\nCannot connect to host --rtsazq=1:80 ssl:default [campaign sandbox: DNS lookup for --rtsazq=1 blocked]\n```",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.522,
+     "host": "--rtsazq=1",
+     "port": null
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.5227,
+     "host": "--rtsazq=1",
+     "port": 80
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal cek `http://ok\nrtsaZQ`: DNS resolution gagal\n```\nCannot connect to host okrtsazq:80 ssl:default [campaign sandbox: DNS lookup for okrtsazq blocked]\n```",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.5454,
+     "host": "okrtsazq",
+     "port": null
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.5459,
+     "host": "okrtsazq",
+     "port": 80
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal cek `http://ok\r\nrtsaZQ: 1`: DNS resolution gagal\n```\nCannot connect to host okrtsazq:1 ssl:default [campaign sandbox: DNS lookup for okrtsazq blocked]\n```",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.5726,
+     "host": "okrtsazq",
+     "port": null
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.5731,
+     "host": "okrtsazq",
+     "port": 1
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal cek `http://ok\u0000rtsaZQ`: DNS resolution gagal\n```\nCannot connect to host ok\u0000rtsazq:80 ssl:default [campaign sandbox: DNS lookup for ok\u0000rtsazq blocked]\n```",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.5958,
+     "host": "ok\u0000rtsazq",
+     "port": null
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.5965,
+     "host": "ok\u0000rtsazq",
+     "port": 80
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal cek `http://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal cek `http://\u0430pp\u202ertsaZQ.lab.test`: error tidak diketahui\n```\nhttp://\u0430pp\u202ertsaZQ.lab.test\n```",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal cek `http://*rtsaZQ*`: DNS resolution gagal\n```\nCannot connect to host *rtsazq*:80 ssl:default [campaign sandbox: DNS lookup for *rtsazq* blocked]\n```",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.704,
+     "host": "*rtsazq*",
+     "port": null
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.7045,
+     "host": "*rtsazq*",
+     "port": 80
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal cek `http://ok rtsaZQ`: DNS resolution gagal\n```\nCannot connect to host ok rtsazq:80 ssl:default [campaign sandbox: DNS lookup for ok rtsazq blocked]\n```",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.7307,
+     "host": "ok rtsazq",
+     "port": null
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.7314,
+     "host": "ok rtsazq",
+     "port": 80
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal cek `http://`: URL tidak valid\n```\nURL tidak valid: http://\n```",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal cek `http://%s%n{0.__class__}rtsaZQ`: DNS resolution gagal\n```\nCannot connect to host %s%n{0.__class__}rtsazq:80 ssl:default [campaign sandbox: DNS lookup for %s%n{0.__class__}rtsazq blocked]\n```",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.779,
+     "host": "%s%n{0.__class__}rtsaZQ",
+     "port": null
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.7795,
+     "host": "%s%n{0.__class__}rtsazq",
+     "port": 80
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [
+    "NETWORK_FROM_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal cek `http://@everyone rtsaZQ`: DNS resolution gagal\n```\nCannot connect to host everyone rtsazq:80 ssl:default [campaign sandbox: DNS lookup for everyone rtsazq blocked]\n```",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.7999,
+     "host": "everyone rtsazq",
+     "port": null
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.8005,
+     "host": "everyone rtsazq",
+     "port": 80
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [
+    "EVERYONE_MENTION_ECHOED"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal cek `http://<@&111> rtsaZQ`: DNS resolution gagal\n```\nCannot connect to host &111> rtsazq:80 ssl:default [campaign sandbox: DNS lookup for &111> rtsazq blocked]\n```",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.8236,
+     "host": "&111> rtsazq",
+     "port": null
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4673.8243,
+     "host": "&111> rtsazq",
+     "port": 80
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [
+    "ROLE_MENTION_ECHOED"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205570.490925
+}

@@ -1,0 +1,350 @@
+{
+ "name": "profile",
+ "sandbox": "/tmp/rtsa_cmd_7_ttxtom",
+ "started": 1791205524.6050954,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.003,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA Operational Profile\nRTSA Runtime: Hostname: vm\nRTSA Version: v2.5\nUptime: 2s\nPython Version: 3.11.15\nRunning Modules: 0/0\nOverall Resource Usage: RTSA Process CPU: 0.0%\nRTSA Process Memory: 67.5 MB\nThreads: 3\nOpen File Descriptors: 10\nEvent Queue: 0\nSQLite Queue: 0\nTop CPU Modules: (none)\nTop Slow Operations: (none)\nTop Subprocess Consumers: (none)\nEvent Statistics: Published: 0\nDropped: 0\nQueued: 0\nProcessed: 0\nSQLite Statistics: Pending Writes: 0\nAvg Flush: 0.0 ms\nMax Flush: 0.0 ms\nDead L",
+     "view": "_ProfileView",
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [
+    "_ProfileView"
+   ],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA Operational Profile\nRTSA Runtime: Hostname: vm\nRTSA Version: v2.5\nUptime: 2s\nPython Version: 3.11.15\nRunning Modules: 0/0\nOverall Resource Usage: RTSA Process CPU: 0.0%\nRTSA Process Memory: 67.5 MB\nThreads: 3\nOpen File Descriptors: 10\nEvent Queue: 0\nSQLite Queue: 0\nTop CPU Modules: (none)\nTop Slow Operations: (none)\nTop Subprocess Consumers: (none)\nEvent Statistics: Published: 0\nDropped: 0\nQueued: 0\nProcessed: 0\nSQLite Statistics: Pending Writes: 0\nAvg Flush: 0.0 ms\nMax Flush: 0.0 ms\nDead L",
+     "view": "_ProfileView",
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [
+    "_ProfileView"
+   ],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA Operational Profile\nRTSA Runtime: Hostname: vm\nRTSA Version: v2.5\nUptime: 2s\nPython Version: 3.11.15\nRunning Modules: 0/0\nOverall Resource Usage: RTSA Process CPU: 0.0%\nRTSA Process Memory: 67.5 MB\nThreads: 3\nOpen File Descriptors: 10\nEvent Queue: 0\nSQLite Queue: 0\nTop CPU Modules: (none)\nTop Slow Operations: (none)\nTop Subprocess Consumers: (none)\nEvent Statistics: Published: 0\nDropped: 0\nQueued: 0\nProcessed: 0\nSQLite Statistics: Pending Writes: 0\nAvg Flush: 0.0 ms\nMax Flush: 0.0 ms\nDead L",
+     "view": "_ProfileView",
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [
+    "_ProfileView"
+   ],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA Operational Profile\nRTSA Runtime: Hostname: vm\nRTSA Version: v2.5\nUptime: 2s\nPython Version: 3.11.15\nRunning Modules: 0/0\nOverall Resource Usage: RTSA Process CPU: 0.0%\nRTSA Process Memory: 67.7 MB\nThreads: 3\nOpen File Descriptors: 10\nEvent Queue: 0\nSQLite Queue: 0\nTop CPU Modules: (none)\nTop Slow Operations: (none)\nTop Subprocess Consumers: (none)\nEvent Statistics: Published: 0\nDropped: 0\nQueued: 0\nProcessed: 0\nSQLite Statistics: Pending Writes: 0\nAvg Flush: 0.0 ms\nMax Flush: 0.0 ms\nDead L",
+     "view": "_ProfileView",
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [
+    "_ProfileView"
+   ],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA Operational Profile\nRTSA Runtime: Hostname: vm\nRTSA Version: v2.5\nUptime: 2s\nPython Version: 3.11.15\nRunning Modules: 0/0\nOverall Resource Usage: RTSA Process CPU: 0.0%\nRTSA Process Memory: 67.7 MB\nThreads: 4\nOpen File Descriptors: 10\nEvent Queue: 0\nSQLite Queue: 0\nTop CPU Modules: (none)\nTop Slow Operations: (none)\nTop Subprocess Consumers: (none)\nEvent Statistics: Published: 0\nDropped: 0\nQueued: 0\nProcessed: 0\nSQLite Statistics: Pending Writes: 0\nAvg Flush: 0.0 ms\nMax Flush: 0.0 ms\nDead L",
+     "view": "_ProfileView",
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "RTSA Operational Profile\nRTSA Runtime: Hostname: vm\nRTSA Version: v2.5\nUptime: 2s\nPython Version: 3.11.15\nRunning Modules: 0/0\nOverall Resource Usage: RTSA Process CPU: 0.0%\nRTSA Process Memory: 67.7 MB\nThreads: 4\nOpen File Descriptors: 10\nEvent Queue: 0\nSQLite Queue: 0\nTop CPU Modules: (none)\nTop Slow Operations: (none)\nTop Subprocess Consumers: (none)\nEvent Statistics: Published: 0\nDropped: 0\nQueued: 0\nProcessed: 0\nSQLite Statistics: Pending Writes: 0\nAvg Flush: 0.0 ms\nMax Flush: 0.0 ms\nDead L",
+     "view": "_ProfileView",
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [
+    "_ProfileView"
+   ],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [
+  {
+   "view": "_ProfileView",
+   "button": "Refresh",
+   "clicker": "other_guild_member",
+   "interaction_check": false,
+   "error": null,
+   "replies": [
+    "\ud83d\udeab Administrator role required."
+   ],
+   "side_effects": {},
+   "mutations": []
+  },
+  {
+   "view": "_ProfileView",
+   "button": "Refresh",
+   "clicker": "requester",
+   "interaction_check": true,
+   "error": null,
+   "replies": [
+    "RTSA Operational Profile\nRTSA Runtime: Hostname: vm\nRTSA Version: v2.5\nUptime: 2s\nPython Version: 3.11.15\nRunning Modules: 0/0\nOverall Resource Usage: RTSA Process CPU: 0.0%\nRTSA Process Memory: 67.9 MB\nThreads: 4\nOpen File Descriptors: 10\nEvent Queue: 0\nSQLite Queue: 0\nTop CPU Modules: (none)\nTop S"
+   ],
+   "side_effects": {},
+   "mutations": []
+  },
+  {
+   "view": "_ProfileView",
+   "button": "Module Details",
+   "clicker": "other_guild_member",
+   "interaction_check": false,
+   "error": null,
+   "replies": [
+    "\ud83d\udeab Administrator role required."
+   ],
+   "side_effects": {},
+   "mutations": []
+  },
+  {
+   "view": "_ProfileView",
+   "button": "Module Details",
+   "clicker": "requester",
+   "interaction_check": true,
+   "error": null,
+   "replies": [
+    "No modules registered."
+   ],
+   "side_effects": {},
+   "mutations": []
+  },
+  {
+   "view": "_ProfileView",
+   "button": "Export Diagnostics",
+   "clicker": "other_guild_member",
+   "interaction_check": false,
+   "error": null,
+   "replies": [
+    "\ud83d\udeab Administrator role required."
+   ],
+   "side_effects": {},
+   "mutations": []
+  },
+  {
+   "view": "_ProfileView",
+   "button": "Export Diagnostics",
+   "clicker": "requester",
+   "interaction_check": true,
+   "error": null,
+   "replies": [
+    ""
+   ],
+   "side_effects": {
+    "FS_WRITE_SANDBOX": 1,
+    "SUBPROCESS_SYNC": 1
+   },
+   "mutations": []
+  }
+ ],
+ "finished": 1791205525.2709224
+}

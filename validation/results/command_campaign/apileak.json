@@ -1,0 +1,3392 @@
+{
+ "name": "apileak",
+ "sandbox": "/tmp/rtsa_cmd_8ju0sdxy",
+ "started": 1791205392.4285972,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin (perlu role Administrator).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin (perlu role Administrator).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin (perlu role Administrator).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 4.786,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udd0d Scanning 127 domain \u00d7 9 path sensitif (HEAD request only, gak download isi file)...",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "message.edit",
+     "text": "**API Leak Scan Selesai** (4.8s)\n127 domain di-scan, **0 path ke-expose** total.\n\n\ud83d\udfe2 `001.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `002.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `003.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `004.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `005.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `006.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `007.lab.test` \u2014 aman, tidak ada",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4495.9604,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4495.9637,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4495.9677,
+     "host": "002.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4495.9708,
+     "host": "002.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4495.9758,
+     "host": "003.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4495.9794,
+     "host": "003.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4495.9842,
+     "host": "004.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4495.9872,
+     "host": "004.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4495.9901,
+     "host": "005.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4495.9934,
+     "host": "005.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4495.9988,
+     "host": "006.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0016,
+     "host": "006.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0055,
+     "host": "007.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0085,
+     "host": "007.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0111,
+     "host": "008.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0135,
+     "host": "008.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0165,
+     "host": "009.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.019,
+     "host": "009.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0218,
+     "host": "010.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0247,
+     "host": "010.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0271,
+     "host": "011.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0292,
+     "host": "011.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0322,
+     "host": "012.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0357,
+     "host": "012.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0384,
+     "host": "013.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0412,
+     "host": "013.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.045,
+     "host": "014.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0478,
+     "host": "014.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0511,
+     "host": "015.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0538,
+     "host": "015.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0567,
+     "host": "016.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0591,
+     "host": "016.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0627,
+     "host": "017.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0654,
+     "host": "017.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0726,
+     "host": "018.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0756,
+     "host": "018.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0785,
+     "host": "019.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0815,
+     "host": "019.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0848,
+     "host": "020.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0884,
+     "host": "020.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0912,
+     "host": "021.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0944,
+     "host": "021.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0968,
+     "host": "022.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.0994,
+     "host": "022.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.1022,
+     "host": "023.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.1057,
+     "host": "023.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.1086,
+     "host": "024.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.111,
+     "host": "024.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.1145,
+     "host": "025.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.117,
+     "host": "025.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.1201,
+     "host": "026.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.1228,
+     "host": "026.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.1263,
+     "host": "027.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.1304,
+     "host": "027.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.1329,
+     "host": "028.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.1351,
+     "host": "028.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.1378,
+     "host": "029.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.1406,
+     "host": "029.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.1437,
+     "host": "030.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4496.146,
+     "host": "030.lab.test"
+    }
+   ],
+   "event_count": 254,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS_LAB": 254
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 4.781,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udd0d Scanning 127 domain \u00d7 9 path sensitif (HEAD request only, gak download isi file)...",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "message.edit",
+     "text": "**API Leak Scan Selesai** (4.8s)\n127 domain di-scan, **0 path ke-expose** total.\n\n\ud83d\udfe2 `001.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `002.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `003.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `004.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `005.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `006.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `007.lab.test` \u2014 aman, tidak ada",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.7557,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.7583,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.761,
+     "host": "002.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.7641,
+     "host": "002.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.7666,
+     "host": "003.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.769,
+     "host": "003.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.7718,
+     "host": "004.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.7744,
+     "host": "004.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.7772,
+     "host": "005.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.7798,
+     "host": "005.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.7827,
+     "host": "006.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.7887,
+     "host": "006.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.7916,
+     "host": "007.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.7943,
+     "host": "007.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.7972,
+     "host": "008.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8001,
+     "host": "008.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8034,
+     "host": "009.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.806,
+     "host": "009.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8088,
+     "host": "010.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8114,
+     "host": "010.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8138,
+     "host": "011.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8159,
+     "host": "011.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8187,
+     "host": "012.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.823,
+     "host": "012.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8258,
+     "host": "013.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8287,
+     "host": "013.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8318,
+     "host": "014.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8348,
+     "host": "014.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8372,
+     "host": "015.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8396,
+     "host": "015.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8425,
+     "host": "016.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8459,
+     "host": "016.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8527,
+     "host": "017.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8551,
+     "host": "017.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8579,
+     "host": "018.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8604,
+     "host": "018.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8635,
+     "host": "019.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8667,
+     "host": "019.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8698,
+     "host": "020.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8723,
+     "host": "020.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8749,
+     "host": "021.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8774,
+     "host": "021.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8801,
+     "host": "022.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8824,
+     "host": "022.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.886,
+     "host": "023.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8886,
+     "host": "023.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8917,
+     "host": "024.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8943,
+     "host": "024.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.8981,
+     "host": "025.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.902,
+     "host": "025.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.9052,
+     "host": "026.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.9072,
+     "host": "026.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.9095,
+     "host": "027.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.912,
+     "host": "027.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.9147,
+     "host": "028.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.9252,
+     "host": "028.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.928,
+     "host": "029.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.9307,
+     "host": "029.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.9345,
+     "host": "030.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4500.9369,
+     "host": "030.lab.test"
+    }
+   ],
+   "event_count": 254,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS_LAB": 254
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 4.75,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udd0d Scanning 127 domain \u00d7 9 path sensitif (HEAD request only, gak download isi file)...",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "message.edit",
+     "text": "**API Leak Scan Selesai** (4.7s)\n127 domain di-scan, **0 path ke-expose** total.\n\n\ud83d\udfe2 `001.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `002.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `003.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `004.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `005.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `006.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `007.lab.test` \u2014 aman, tidak ada",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.5504,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.5527,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.5553,
+     "host": "002.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.5585,
+     "host": "002.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.5614,
+     "host": "003.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.5656,
+     "host": "003.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.5687,
+     "host": "004.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.5714,
+     "host": "004.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.5758,
+     "host": "005.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.5789,
+     "host": "005.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.5838,
+     "host": "006.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.5866,
+     "host": "006.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.5897,
+     "host": "007.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.5922,
+     "host": "007.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.5946,
+     "host": "008.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.5983,
+     "host": "008.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6004,
+     "host": "009.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6027,
+     "host": "009.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6054,
+     "host": "010.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6079,
+     "host": "010.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6106,
+     "host": "011.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6133,
+     "host": "011.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6159,
+     "host": "012.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6188,
+     "host": "012.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6216,
+     "host": "013.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6242,
+     "host": "013.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6267,
+     "host": "014.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6287,
+     "host": "014.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6312,
+     "host": "015.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6336,
+     "host": "015.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6359,
+     "host": "016.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6385,
+     "host": "016.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6416,
+     "host": "017.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6445,
+     "host": "017.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6473,
+     "host": "018.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6495,
+     "host": "018.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6529,
+     "host": "019.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6552,
+     "host": "019.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6579,
+     "host": "020.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6599,
+     "host": "020.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6627,
+     "host": "021.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6654,
+     "host": "021.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6676,
+     "host": "022.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6703,
+     "host": "022.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6734,
+     "host": "023.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6756,
+     "host": "023.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6783,
+     "host": "024.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.681,
+     "host": "024.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6841,
+     "host": "025.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6866,
+     "host": "025.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6889,
+     "host": "026.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6916,
+     "host": "026.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6943,
+     "host": "027.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6975,
+     "host": "027.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.6997,
+     "host": "028.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.7018,
+     "host": "028.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.7039,
+     "host": "029.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.706,
+     "host": "029.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.7087,
+     "host": "030.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4505.7112,
+     "host": "030.lab.test"
+    }
+   ],
+   "event_count": 254,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS_LAB": 254
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 6.782,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udd0d Scanning 127 domain \u00d7 9 path sensitif (HEAD request only, gak download isi file)...",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "message.edit",
+     "text": "**API Leak Scan Selesai** (6.8s)\n127 domain di-scan, **0 path ke-expose** total.\n\n\ud83d\udfe2 `001.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `002.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `003.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `004.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `005.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `006.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `007.lab.test` \u2014 aman, tidak ada",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3081,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3134,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3154,
+     "host": "002.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3176,
+     "host": "002.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3235,
+     "host": "003.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3256,
+     "host": "003.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3285,
+     "host": "004.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3313,
+     "host": "004.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3342,
+     "host": "005.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.337,
+     "host": "005.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.34,
+     "host": "006.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3446,
+     "host": "006.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3475,
+     "host": "007.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.35,
+     "host": "007.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3522,
+     "host": "008.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3547,
+     "host": "008.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3573,
+     "host": "009.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3597,
+     "host": "009.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3628,
+     "host": "010.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3657,
+     "host": "010.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3683,
+     "host": "011.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3708,
+     "host": "011.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3735,
+     "host": "012.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3764,
+     "host": "012.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3792,
+     "host": "013.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3821,
+     "host": "013.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3845,
+     "host": "014.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3865,
+     "host": "014.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.389,
+     "host": "015.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3915,
+     "host": "015.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3951,
+     "host": "016.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.3976,
+     "host": "016.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.4005,
+     "host": "017.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.4028,
+     "host": "017.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.4055,
+     "host": "018.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.4082,
+     "host": "018.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.4111,
+     "host": "019.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.4136,
+     "host": "019.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.4164,
+     "host": "020.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.4187,
+     "host": "020.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.4217,
+     "host": "021.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.4246,
+     "host": "021.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.4274,
+     "host": "022.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.4304,
+     "host": "022.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.4336,
+     "host": "023.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.4362,
+     "host": "023.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.4407,
+     "host": "024.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.4434,
+     "host": "024.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.4459,
+     "host": "025.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.4485,
+     "host": "025.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.4514,
+     "host": "026.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.454,
+     "host": "026.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.457,
+     "host": "027.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4510.4595,
+     "host": "027.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4512.4638,
+     "host": "028.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4512.4682,
+     "host": "028.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4512.4731,
+     "host": "029.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4512.4766,
+     "host": "029.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4512.4808,
+     "host": "030.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4512.4866,
+     "host": "030.lab.test"
+    }
+   ],
+   "event_count": 254,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS_LAB": 254
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "TIMEOUT",
+   "error": null,
+   "elapsed_s": 15.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udd0d Scanning 127 domain \u00d7 9 path sensitif (HEAD request only, gak download isi file)...",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udd0d Scanning 127 domain \u00d7 9 path sensitif (HEAD request only, gak download isi file)...",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1269,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1307,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1328,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.134,
+     "host": "002.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1356,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1363,
+     "host": "002.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1378,
+     "host": "002.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1386,
+     "host": "003.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1406,
+     "host": "002.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1412,
+     "host": "003.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1429,
+     "host": "003.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1439,
+     "host": "004.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1458,
+     "host": "003.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1464,
+     "host": "004.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1488,
+     "host": "004.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1495,
+     "host": "005.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1517,
+     "host": "005.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1523,
+     "host": "004.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.155,
+     "host": "006.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1558,
+     "host": "005.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1574,
+     "host": "006.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1586,
+     "host": "005.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1613,
+     "host": "007.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1621,
+     "host": "006.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1642,
+     "host": "007.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1647,
+     "host": "006.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1669,
+     "host": "008.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1678,
+     "host": "007.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1695,
+     "host": "008.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1706,
+     "host": "007.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1721,
+     "host": "009.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1738,
+     "host": "008.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1746,
+     "host": "009.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1764,
+     "host": "008.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.178,
+     "host": "010.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1795,
+     "host": "009.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1806,
+     "host": "010.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1818,
+     "host": "009.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1838,
+     "host": "011.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1847,
+     "host": "010.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1864,
+     "host": "011.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1883,
+     "host": "010.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1893,
+     "host": "012.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1915,
+     "host": "011.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1923,
+     "host": "012.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.194,
+     "host": "011.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1959,
+     "host": "013.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1967,
+     "host": "012.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1993,
+     "host": "012.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.1998,
+     "host": "013.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.2019,
+     "host": "013.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.2026,
+     "host": "014.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.2042,
+     "host": "013.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.2048,
+     "host": "014.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.2067,
+     "host": "014.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.2075,
+     "host": "015.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.209,
+     "host": "014.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.2095,
+     "host": "015.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.2118,
+     "host": "015.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4517.2129,
+     "host": "016.lab.test"
+    }
+   ],
+   "event_count": 119,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS_LAB": 119
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udd0d Scanning 1 domain \u00d7 9 path sensitif (HEAD request only, gak download isi file)...",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "message.edit",
+     "text": "**API Leak Scan Selesai** (0.0s)\n1 domain di-scan, **0 path ke-expose** total.\n\n\ud83d\udfe2 `x;touch ` \u2014 aman, tidak ada path sensitif yang ke-expose",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4532.1055,
+     "host": "x;touch ",
+     "port": 443
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4532.1062,
+     "host": "x;touch ",
+     "port": 443
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udd0d Scanning 1 domain \u00d7 9 path sensitif (HEAD request only, gak download isi file)...",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "message.edit",
+     "text": "**API Leak Scan Selesai** (0.0s)\n1 domain di-scan, **0 path ke-expose** total.\n\n\ud83d\udfe2 `$(touch ` \u2014 aman, tidak ada path sensitif yang ke-expose",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4532.117,
+     "host": "$(touch ",
+     "port": 443
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4532.1177,
+     "host": "$(touch ",
+     "port": 443
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udd0d Scanning 1 domain \u00d7 9 path sensitif (HEAD request only, gak download isi file)...",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "message.edit",
+     "text": "**API Leak Scan Selesai** (0.0s)\n1 domain di-scan, **0 path ke-expose** total.\n\n\ud83d\udfe2 ``touch ` \u2014 aman, tidak ada path sensitif yang ke-expose",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4532.1278,
+     "host": "`touch ",
+     "port": 443
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4532.1286,
+     "host": "`touch ",
+     "port": 443
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udd0d Scanning 1 domain \u00d7 9 path sensitif (HEAD request only, gak download isi file)...",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "message.edit",
+     "text": "**API Leak Scan Selesai** (0.0s)\n1 domain di-scan, **0 path ke-expose** total.\n\n\ud83d\udfe2 `x|touch ` \u2014 aman, tidak ada path sensitif yang ke-expose",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4532.1437,
+     "host": "x|touch ",
+     "port": 443
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4532.1444,
+     "host": "x|touch ",
+     "port": 443
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udd0d Scanning 1 domain \u00d7 9 path sensitif (HEAD request only, gak download isi file)...",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "message.edit",
+     "text": "**API Leak Scan Selesai** (0.0s)\n1 domain di-scan, **0 path ke-expose** total.\n\n\ud83d\udfe2 `..` \u2014 aman, tidak ada path sensitif yang ke-expose",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udd0d Scanning 1 domain \u00d7 9 path sensitif (HEAD request only, gak download isi file)...",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "message.edit",
+     "text": "**API Leak Scan Selesai** (0.0s)\n1 domain di-scan, **0 path ke-expose** total.\n\n\ud83d\udfe2 `etc` \u2014 aman, tidak ada path sensitif yang ke-expose",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4532.1718,
+     "host": "etc",
+     "port": 443
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4532.1728,
+     "host": "etc",
+     "port": 443
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udd0d Scanning 1 domain \u00d7 9 path sensitif (HEAD request only, gak download isi file)...",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "message.edit",
+     "text": "**API Leak Scan Selesai** (0.0s)\n1 domain di-scan, **0 path ke-expose** total.\n\n\ud83d\udfe2 `--rtsazq=1` \u2014 aman, tidak ada path sensitif yang ke-expose",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4532.1855,
+     "host": "--rtsazq=1",
+     "port": 443
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4532.1863,
+     "host": "--rtsazq=1",
+     "port": 443
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udd0d Scanning 1 domain \u00d7 9 path sensitif (HEAD request only, gak download isi file)...",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "message.edit",
+     "text": "**API Leak Scan Selesai** (0.0s)\n1 domain di-scan, **0 path ke-expose** total.\n\n\ud83d\udfe2 `okrtsazq` \u2014 aman, tidak ada path sensitif yang ke-expose",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4532.2018,
+     "host": "okrtsazq",
+     "port": 443
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4532.2025,
+     "host": "okrtsazq",
+     "port": 443
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udd0d Scanning 1 domain \u00d7 9 path sensitif (HEAD request only, gak download isi file)...",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "message.edit",
+     "text": "**API Leak Scan Selesai** (0.0s)\n1 domain di-scan, **0 path ke-expose** total.\n\n\ud83d\udfe2 `okrtsazq` \u2014 aman, tidak ada path sensitif yang ke-expose",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4532.2166,
+     "host": "okrtsazq",
+     "port": 443
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4532.2174,
+     "host": "okrtsazq",
+     "port": 443
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udd0d Scanning 1 domain \u00d7 9 path sensitif (HEAD request only, gak download isi file)...",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "message.edit",
+     "text": "**API Leak Scan Selesai** (0.0s)\n1 domain di-scan, **0 path ke-expose** total.\n\n\ud83d\udfe2 `ok\u0000rtsazq` \u2014 aman, tidak ada path sensitif yang ke-expose",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4532.23,
+     "host": "ok\u0000rtsazq",
+     "port": 443
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4532.2306,
+     "host": "ok\u0000rtsazq",
+     "port": 443
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udd0d Scanning 1 domain \u00d7 9 path sensitif (HEAD request only, gak download isi file)...",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "message.edit",
+     "text": "**API Leak Scan Selesai** (0.0s)\n1 domain di-scan, **0 path ke-expose** total.\n\n\ud83d\udfe2 `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udd0d Scanning 1 domain \u00d7 9 path sensitif (HEAD request only, gak download isi file)...",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "message.edit",
+     "text": "**API Leak Scan Selesai** (0.0s)\n1 domain di-scan, **0 path ke-expose** total.\n\n\ud83d\udfe2 `\u0430pp\u202ertsazq.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.003,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udd0d Scanning 1 domain \u00d7 9 path sensitif (HEAD request only, gak download isi file)...",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "message.edit",
+     "text": "**API Leak Scan Selesai** (0.0s)\n1 domain di-scan, **0 path ke-expose** total.\n\n\ud83d\udfe2 `*rtsazq*` \u2014 aman, tidak ada path sensitif yang ke-expose",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4532.261,
+     "host": "*rtsazq*",
+     "port": 443
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4532.2618,
+     "host": "*rtsazq*",
+     "port": 443
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udd0d Scanning 1 domain \u00d7 9 path sensitif (HEAD request only, gak download isi file)...",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "message.edit",
+     "text": "**API Leak Scan Selesai** (0.0s)\n1 domain di-scan, **0 path ke-expose** total.\n\n\ud83d\udfe2 `ok rtsazq` \u2014 aman, tidak ada path sensitif yang ke-expose",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4532.2787,
+     "host": "ok rtsazq",
+     "port": 443
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4532.2795,
+     "host": "ok rtsazq",
+     "port": 443
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 6.772,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udd0d Scanning 127 domain \u00d7 9 path sensitif (HEAD request only, gak download isi file)...",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "message.edit",
+     "text": "**API Leak Scan Selesai** (6.8s)\n127 domain di-scan, **0 path ke-expose** total.\n\n\ud83d\udfe2 `001.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `002.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `003.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `004.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `005.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `006.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `007.lab.test` \u2014 aman, tidak ada",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3003,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3036,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3067,
+     "host": "002.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3095,
+     "host": "002.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3133,
+     "host": "003.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3164,
+     "host": "003.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3199,
+     "host": "004.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3226,
+     "host": "004.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3263,
+     "host": "005.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.329,
+     "host": "005.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3322,
+     "host": "006.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3351,
+     "host": "006.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3389,
+     "host": "007.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3418,
+     "host": "007.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3458,
+     "host": "008.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3493,
+     "host": "008.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3526,
+     "host": "009.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3559,
+     "host": "009.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3588,
+     "host": "010.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.362,
+     "host": "010.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3654,
+     "host": "011.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3684,
+     "host": "011.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3719,
+     "host": "012.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3762,
+     "host": "012.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3792,
+     "host": "013.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3818,
+     "host": "013.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3847,
+     "host": "014.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3873,
+     "host": "014.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3912,
+     "host": "015.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3945,
+     "host": "015.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.3972,
+     "host": "016.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.4002,
+     "host": "016.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.4032,
+     "host": "017.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.4063,
+     "host": "017.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.4095,
+     "host": "018.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.4122,
+     "host": "018.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.4171,
+     "host": "019.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.4204,
+     "host": "019.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.4235,
+     "host": "020.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.4272,
+     "host": "020.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.4301,
+     "host": "021.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.4328,
+     "host": "021.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.4358,
+     "host": "022.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.439,
+     "host": "022.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.4461,
+     "host": "023.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.449,
+     "host": "023.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.4518,
+     "host": "024.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.4559,
+     "host": "024.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.4583,
+     "host": "025.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.4608,
+     "host": "025.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.4638,
+     "host": "026.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.4663,
+     "host": "026.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.4694,
+     "host": "027.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.4728,
+     "host": "027.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.4755,
+     "host": "028.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.4778,
+     "host": "028.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.4809,
+     "host": "029.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4532.4834,
+     "host": "029.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4534.488,
+     "host": "030.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4534.4909,
+     "host": "030.lab.test"
+    }
+   ],
+   "event_count": 254,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS_LAB": 254
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udd0d Scanning 1 domain \u00d7 9 path sensitif (HEAD request only, gak download isi file)...",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "message.edit",
+     "text": "**API Leak Scan Selesai** (0.0s)\n1 domain di-scan, **0 path ke-expose** total.\n\n\ud83d\udfe2 `%s%n{0.__class__}rtsazq` \u2014 aman, tidak ada path sensitif yang ke-expose",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4539.0739,
+     "host": "%s%n{0.__class__}rtsazq",
+     "port": 443
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4539.0748,
+     "host": "%s%n{0.__class__}rtsazq",
+     "port": 443
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udd0d Scanning 1 domain \u00d7 9 path sensitif (HEAD request only, gak download isi file)...",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "message.edit",
+     "text": "**API Leak Scan Selesai** (0.0s)\n1 domain di-scan, **0 path ke-expose** total.\n\n\ud83d\udfe2 `everyone rtsazq` \u2014 aman, tidak ada path sensitif yang ke-expose",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4539.085,
+     "host": "everyone rtsazq",
+     "port": 443
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4539.0856,
+     "host": "everyone rtsazq",
+     "port": 443
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.029,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udd0d Scanning 1 domain \u00d7 9 path sensitif (HEAD request only, gak download isi file)...",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "message.edit",
+     "text": "**API Leak Scan Selesai** (0.0s)\n1 domain di-scan, **0 path ke-expose** total.\n\n\ud83d\udfe2 `&111> rtsazq` \u2014 aman, tidak ada path sensitif yang ke-expose",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4539.1295,
+     "host": "&111> rtsazq",
+     "port": 443
+    },
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4539.1303,
+     "host": "&111> rtsazq",
+     "port": 443
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205455.7744071
+}

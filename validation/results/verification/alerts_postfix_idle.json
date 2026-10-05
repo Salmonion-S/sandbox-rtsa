@@ -1,0 +1,23 @@
+{
+ "sends": 9,
+ "edits": 0,
+ "span_s": 304.7,
+ "peak_sends_per_minute": 4,
+ "exact_duplicate_sends": 0,
+ "by_channel": {
+  "alert_channel_id(default)": 4,
+  "CORRELATED_THREAT": 4,
+  "RTSA_STARTUP_HEALTH": 1
+ },
+ "by_title": {
+  "RTSA Alert — CORRELATED_THREAT": 4,
+  "RTSA Alert — PROCESS_ANOMALY (bagian #/#)": 2,
+  "RTSA STARTUP — HEALTHY (bagian #/#)": 1,
+  "RTSA Alert — SSH_CONFIG_WEAK": 1,
+  "RTSA Alert — PROCESS_BURST_RECOVERED": 1
+ },
+ "buttons": {
+  "ignore": 4,
+  "timeline": 4
+ }
+}

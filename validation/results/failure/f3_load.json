@@ -1,0 +1,82 @@
+{
+ "users": 800,
+ "targets": 121,
+ "timeline": [
+  {
+   "phase": "ramp",
+   "start": 1791202101.1056635,
+   "seconds": 10.0,
+   "users": "0->800",
+   "think_s": 2.0,
+   "end": 1791202111.2690072
+  },
+  {
+   "phase": "sustained",
+   "start": 1791202111.269009,
+   "seconds": 70.0,
+   "users": 800,
+   "think_s": 2.0,
+   "end": 1791202181.4709651
+  },
+  {
+   "phase": "burst",
+   "start": 1791202181.4709682,
+   "seconds": 0.0,
+   "users": 800,
+   "think_s": 0.0,
+   "end": 1791202181.4709694
+  },
+  {
+   "phase": "recovery",
+   "start": 1791202181.47097,
+   "seconds": 0.0,
+   "users": 80,
+   "think_s": 2.0,
+   "end": 1791202181.4709706
+  }
+ ],
+ "phases": {
+  "ramp": {
+   "requests": 2300,
+   "duration_s": 9.7,
+   "rps": 237.8,
+   "ok": 2007,
+   "http_5xx": 13,
+   "http_4xx": 280,
+   "transport_errors": 0,
+   "error_kinds": {},
+   "statuses": {
+    "200": 2006,
+    "404": 102,
+    "401": 178,
+    "500": 13,
+    "201": 1
+   },
+   "p50_ms": 2.9,
+   "p95_ms": 19.0,
+   "p99_ms": 24.6,
+   "max_ms": 121.6
+  },
+  "sustained": {
+   "requests": 27974,
+   "duration_s": 70.8,
+   "rps": 395.0,
+   "ok": 22280,
+   "http_5xx": 662,
+   "http_4xx": 5032,
+   "transport_errors": 0,
+   "error_kinds": {},
+   "statuses": {
+    "200": 22147,
+    "404": 1136,
+    "401": 3896,
+    "500": 662,
+    "201": 133
+   },
+   "p50_ms": 2.1,
+   "p95_ms": 11.8,
+   "p99_ms": 121.9,
+   "max_ms": 903.5
+  }
+ }
+}

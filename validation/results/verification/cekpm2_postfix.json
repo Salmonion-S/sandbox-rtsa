@@ -1,0 +1,15 @@
+{
+ "label": "post-fix",
+ "install": "/home/user/rtsa-2.5",
+ "users_reported": 112,
+ "statuses": {
+  "online": 66,
+  "empty": 46
+ },
+ "elapsed_s": 58.8,
+ "daemons_before": 112,
+ "daemons_after": 112,
+ "daemons_spawned_by_cekpm2": 0,
+ "rss_mb_spawned": 0.0,
+ "cleaned_up": 0
+}

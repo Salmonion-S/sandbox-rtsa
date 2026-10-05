@@ -1,0 +1,18 @@
+{
+ "outage_s": 242.0,
+ "sites": 121,
+ "alerts_during_outage": {
+  "RTSA Alert \u2014 CORRELATED_THREAT": 10,
+  "RTSA Alert \u2014 APPLICATION_ERROR_DIGEST": 1,
+  "RTSA Alert \u2014 PROCESS_BURST_RECOVERED": 1
+ },
+ "alert_count_during_outage": 12,
+ "alerts_after_recovery": {
+  "RTSA Alert \u2014 CORRELATED_THREAT": 7,
+  "RTSA Alert \u2014 PROCESS_ANOMALY (bagian 1/2)": 1
+ },
+ "alert_count_after_recovery": 8,
+ "errors": [],
+ "verdict": "PASS",
+ "duration_s": 482.1
+}

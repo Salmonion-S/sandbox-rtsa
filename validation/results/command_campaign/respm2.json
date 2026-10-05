@@ -1,0 +1,1184 @@
+{
+ "name": "respm2",
+ "sandbox": "/tmp/rtsa_cmd_s3v84m_2",
+ "started": 1791205527.7855752,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.045,
+   "first_ack_s": 0.032,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u26a0\ufe0f Ini akan restart ecosystem PM2 untuk project CloudPanel milik `lab-001` (`pm2 restart ecosystem.config.js`), yang mungkin bikin aplikasi yang lagi jalan terganggu sebentar. Confirm dalam 30 detik atau otomatis dibatalkan.",
+     "view": "_ConfirmCancelView",
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "edit_original_response",
+     "text": "\ud83d\udd04 Menjalankan /respm2...",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "**PM2 Restart Selesai**\n\n**Linux User**\n`lab-001`\n\n**Project**\n`/home/lab-001/htdocs/001.lab.test`\n\n**Action**\n`pm2 restart ecosystem.config.js`\n\n**Result**\n\u2705 Berhasil\n\n**Processes**\n\u2705 `ecosystem.config.js` \u2014 ONLINE\n\n**Restart Time**\n0s",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [
+    "_ConfirmCancelView"
+   ],
+   "clicks": [
+    {
+     "click": "requester_confirm",
+     "view": "_ConfirmCancelView",
+     "button": "\u2705 Confirm",
+     "interaction_check": true,
+     "replies": []
+    }
+   ],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4631.3741,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 restart ecosystem.config.js"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "MUTATE"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4631.3743,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4631.3745,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.RESPM2: 'RESPM2'>, 'target': 'lab-001:/home/lab-001/htdocs/001.lab.test', 'reason': 'Command manual via Discord', 'requested_by': 'critical-user', 'action_id': '0f7365c389e...(+131)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 3,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [
+    "/bin/bash -l -c pm2 restart ecosystem.config.js"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.013,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u26a0\ufe0f Ini akan restart ecosystem PM2 untuk project CloudPanel milik `lab-001` (`pm2 restart ecosystem.config.js`), yang mungkin bikin aplikasi yang lagi jalan terganggu sebentar. Confirm dalam 30 detik atau otomatis dibatalkan.",
+     "view": "_ConfirmCancelView",
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "edit_original_response",
+     "text": "\ud83d\udd04 Menjalankan /respm2...",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udec8 Detection Only mode is active \u2014 restart PM2 ecosystem untuk `lab-001` was NOT executed. RTSA is deployed for detection and notification only; set `response_engine.detection_only: false` in config to allow RTSA-driven mitigation, or take this action manually.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [
+    "_ConfirmCancelView"
+   ],
+   "clicks": [
+    {
+     "click": "requester_confirm",
+     "view": "_ConfirmCancelView",
+     "button": "\u2705 Confirm",
+     "interaction_check": true,
+     "replies": []
+    }
+   ],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4631.3963,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.RESPM2: 'RESPM2'>, 'target': 'lab-001', 'reason': 'response_engine.detection_only=true', 'requested_by': 'critical-user', 'action_id': '4bc38bdc5ab349cf8ff5cd2b47f0d2fe', '...(+105)"
+     ],
+     "kwargs": "{'result': 'Blocked by Detection Only'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": true
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.023,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u26a0\ufe0f Ini akan restart ecosystem PM2 untuk project CloudPanel milik `lab-001` (`pm2 restart ecosystem.config.js`), yang mungkin bikin aplikasi yang lagi jalan terganggu sebentar. Confirm dalam 30 detik atau otomatis dibatalkan.",
+     "view": "_ConfirmCancelView",
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "edit_original_response",
+     "text": "\u274c Dibatalkan.",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [
+    "_ConfirmCancelView"
+   ],
+   "clicks": [
+    {
+     "click": "other_user_confirm",
+     "view": "_ConfirmCancelView",
+     "button": "\u2705 Confirm",
+     "interaction_check": false,
+     "replies": [
+      "\ud83d\udeab Cuma yang menjalankan command ini yang bisa confirm/cancel."
+     ]
+    },
+    {
+     "click": "requester_cancel",
+     "view": "_ConfirmCancelView",
+     "button": "\u274c Cancel",
+     "interaction_check": true,
+     "replies": []
+    }
+   ],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.014,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u26a0\ufe0f Ini akan restart ecosystem PM2 untuk project CloudPanel milik `lab-001` (`pm2 restart ecosystem.config.js`), yang mungkin bikin aplikasi yang lagi jalan terganggu sebentar. Confirm dalam 30 detik atau otomatis dibatalkan.",
+     "view": "_ConfirmCancelView",
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "edit_original_response",
+     "text": "\ud83d\udd04 Menjalankan /respm2...",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "**PM2 Restart Selesai**\n\n**Linux User**\n`lab-001`\n\n**Project**\n`/home/lab-001/htdocs/001.lab.test`\n\n**Action**\n`pm2 restart ecosystem.config.js`\n\n**Result**\n\u2705 Berhasil\n\n**Processes**\n\u2705 `ecosystem.config.js` \u2014 ONLINE\n\n**Restart Time**\n0s",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "response.send_message",
+     "text": "\u26a0\ufe0f Ini akan restart ecosystem PM2 untuk project CloudPanel milik `lab-001` (`pm2 restart ecosystem.config.js`), yang mungkin bikin aplikasi yang lagi jalan terganggu sebentar. Confirm dalam 30 detik atau otomatis dibatalkan.",
+     "view": "_ConfirmCancelView",
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "edit_original_response",
+     "text": "\ud83d\udd04 Menjalankan /respm2...",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "**PM2 Restart Selesai**\n\n**Linux User**\n`lab-001`\n\n**Project**\n`/home/lab-001/htdocs/001.lab.test`\n\n**Action**\n`pm2 restart ecosystem.config.js`\n\n**Result**\n\u2705 Berhasil\n\n**Processes**\n\u2705 `ecosystem.config.js` \u2014 ONLINE\n\n**Restart Time**\n0s",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [
+    "_ConfirmCancelView"
+   ],
+   "clicks": [
+    {
+     "click": "requester_confirm",
+     "view": "_ConfirmCancelView",
+     "button": "\u2705 Confirm",
+     "interaction_check": true,
+     "replies": []
+    },
+    {
+     "click": "requester_confirm",
+     "view": "_ConfirmCancelView",
+     "button": "\u2705 Confirm",
+     "interaction_check": true,
+     "replies": []
+    }
+   ],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4631.5287,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 restart ecosystem.config.js"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "MUTATE"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4631.5288,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 restart ecosystem.config.js"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "MUTATE"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4631.529,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4631.5292,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4631.5295,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.RESPM2: 'RESPM2'>, 'target': 'lab-001:/home/lab-001/htdocs/001.lab.test', 'reason': 'Command manual via Discord', 'requested_by': 'critical-user', 'action_id': 'a573ce0a1d9...(+131)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4631.5296,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.RESPM2: 'RESPM2'>, 'target': 'lab-001:/home/lab-001/htdocs/001.lab.test', 'reason': 'Command manual via Discord', 'requested_by': 'critical-user', 'action_id': '9fc553f575e...(+131)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 6,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 4,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/bin/bash -l -c pm2 restart ecosystem.config.js"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `x;touch `.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `$(touch `.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain ``touch `.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `x|touch `.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `..`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `etc`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `--rtsazq=1`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `okrtsazq`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `okrtsazq`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `ok\u0000rtsazq`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `\u0430pp\u202ertsazq.lab.test`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `*rtsazq*`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `ok rtsazq`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Domain is required.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `%s%n{0.__class__}rtsazq`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `everyone rtsazq`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `&111> rtsazq`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [
+  {
+   "view": "_ConfirmCancelView",
+   "button": "\u2705 Confirm",
+   "clicker": "other_guild_member",
+   "interaction_check": false,
+   "error": null,
+   "replies": [
+    "\ud83d\udeab Cuma yang menjalankan command ini yang bisa confirm/cancel."
+   ],
+   "side_effects": {},
+   "mutations": []
+  },
+  {
+   "view": "_ConfirmCancelView",
+   "button": "\u2705 Confirm",
+   "clicker": "requester",
+   "interaction_check": true,
+   "error": null,
+   "replies": [],
+   "side_effects": {
+    "SUBPROCESS": 2,
+    "DB_WRITE": 1
+   },
+   "mutations": [
+    "/bin/bash -l -c pm2 restart ecosystem.config.js"
+   ]
+  },
+  {
+   "view": "_ConfirmCancelView",
+   "button": "\u274c Cancel",
+   "clicker": "other_guild_member",
+   "interaction_check": false,
+   "error": null,
+   "replies": [
+    "\ud83d\udeab Cuma yang menjalankan command ini yang bisa confirm/cancel."
+   ],
+   "side_effects": {},
+   "mutations": []
+  },
+  {
+   "view": "_ConfirmCancelView",
+   "button": "\u274c Cancel",
+   "clicker": "requester",
+   "interaction_check": true,
+   "error": null,
+   "replies": [],
+   "side_effects": {},
+   "mutations": []
+  }
+ ],
+ "finished": 1791205529.1153705
+}

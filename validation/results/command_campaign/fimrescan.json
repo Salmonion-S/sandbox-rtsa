@@ -1,0 +1,1183 @@
+{
+ "name": "fimrescan",
+ "sandbox": "/tmp/rtsa_cmd_r66371cq",
+ "started": 1791205467.882407,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin (perlu role Administrator).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin (perlu role Administrator).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin (perlu role Administrator).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 2.604,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u2705 Baseline berhasil dibangun ulang: **4955 file** terindeks (4955 di-hash ulang, 0 dipertahankan dari baseline lama karena tidak berubah). Monitoring lanjut dari state ini \u2014 perubahan yang ada SEKARANG dianggap normal, cuma perubahan SETELAH ini yang bakal di-alert.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4573.7499,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4573.75,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_baseline.json.tmp-12719-0bedfaf0badad893"
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4573.7514,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_baseline.json.tmp-12719-0bedfaf0badad893",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_baseline.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4573.7719,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4573.7724,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_configs_baseline.json.tmp-12719-d0ee492b04275058"
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4573.7734,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_configs_baseline.json.tmp-12719-d0ee492b04275058",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_configs_baseline.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4573.7769,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4573.777,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_php_source_baseline.json.tmp-12719-0217b4fb23f45491"
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4573.7779,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_php_source_baseline.json.tmp-12719-0217b4fb23f45491",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_php_source_baseline.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4573.9629,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4573.963,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_uploads_baseline.json.tmp-12719-a257545ed70445bd"
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4573.9665,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_uploads_baseline.json.tmp-12719-a257545ed70445bd",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_uploads_baseline.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4574.0089,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4574.009,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_project_files_baseline.json.tmp-12719-8b028fbfe930ed37"
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4574.0107,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_project_files_baseline.json.tmp-12719-8b028fbfe930ed37",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_project_files_baseline.json"
+     ]
+    }
+   ],
+   "event_count": 15,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 5,
+    "FS_WRITE_SANDBOX": 5,
+    "FS_RENAME_SANDBOX": 5
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.976,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u2705 Baseline berhasil dibangun ulang: **4955 file** terindeks (0 di-hash ulang, 4955 dipertahankan dari baseline lama karena tidak berubah). Monitoring lanjut dari state ini \u2014 perubahan yang ada SEKARANG dianggap normal, cuma perubahan SETELAH ini yang bakal di-alert.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4574.7999,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4574.8001,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_baseline.json.tmp-12719-e3f93a1e2d884932"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4574.8003,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4574.8012,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_baseline.json.tmp-12719-e3f93a1e2d884932",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_baseline.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4574.8119,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4574.8121,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_configs_baseline.json.tmp-12719-6be34e472f3f8779"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4574.8123,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4574.8132,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_configs_baseline.json.tmp-12719-6be34e472f3f8779",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_configs_baseline.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4574.8155,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4574.8156,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_php_source_baseline.json.tmp-12719-1d25ee2dc4c4e460"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4574.8157,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4574.8164,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_php_source_baseline.json.tmp-12719-1d25ee2dc4c4e460",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_php_source_baseline.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4574.9495,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4574.9497,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_uploads_baseline.json.tmp-12719-e13ca021ab3f46fe"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4574.9504,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4574.9535,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_uploads_baseline.json.tmp-12719-e13ca021ab3f46fe",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_uploads_baseline.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4575.003,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4575.0033,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_project_files_baseline.json.tmp-12719-980efe735bcecdb7"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4575.0035,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4575.0051,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_project_files_baseline.json.tmp-12719-980efe735bcecdb7",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_project_files_baseline.json"
+     ]
+    }
+   ],
+   "event_count": 20,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 5,
+    "FS_WRITE_SANDBOX": 5,
+    "FS_CHMOD_SANDBOX": 5,
+    "FS_RENAME_SANDBOX": 5
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.994,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u2705 Baseline berhasil dibangun ulang: **4955 file** terindeks (0 di-hash ulang, 4955 dipertahankan dari baseline lama karena tidak berubah). Monitoring lanjut dari state ini \u2014 perubahan yang ada SEKARANG dianggap normal, cuma perubahan SETELAH ini yang bakal di-alert.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4575.8335,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4575.8337,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_baseline.json.tmp-12719-4c7dc1f876849e0c"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4575.8338,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4575.8346,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_baseline.json.tmp-12719-4c7dc1f876849e0c",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_baseline.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4575.8459,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4575.846,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_configs_baseline.json.tmp-12719-5789bf2e321e19d0"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4575.8461,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4575.8468,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_configs_baseline.json.tmp-12719-5789bf2e321e19d0",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_configs_baseline.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4575.8491,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4575.8492,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_php_source_baseline.json.tmp-12719-08ce37493afaf59f"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4575.8493,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4575.8497,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_php_source_baseline.json.tmp-12719-08ce37493afaf59f",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_php_source_baseline.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4575.9716,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4575.9717,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_uploads_baseline.json.tmp-12719-9fc0e0b31b0c692d"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4575.9723,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4575.9749,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_uploads_baseline.json.tmp-12719-9fc0e0b31b0c692d",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_uploads_baseline.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4576.0191,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4576.0192,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_project_files_baseline.json.tmp-12719-2fc23e0cda8f06a6"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4576.0194,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4576.0206,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_project_files_baseline.json.tmp-12719-2fc23e0cda8f06a6",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_project_files_baseline.json"
+     ]
+    }
+   ],
+   "event_count": 20,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 5,
+    "FS_WRITE_SANDBOX": 5,
+    "FS_CHMOD_SANDBOX": 5,
+    "FS_RENAME_SANDBOX": 5
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 1.002,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u2705 Baseline berhasil dibangun ulang: **4955 file** terindeks (0 di-hash ulang, 4955 dipertahankan dari baseline lama karena tidak berubah). Monitoring lanjut dari state ini \u2014 perubahan yang ada SEKARANG dianggap normal, cuma perubahan SETELAH ini yang bakal di-alert.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4576.7834,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4576.7835,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_baseline.json.tmp-12719-c5a354712592e4c6"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4576.7837,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4576.7848,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_baseline.json.tmp-12719-c5a354712592e4c6",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_baseline.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4576.8026,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4576.8028,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_configs_baseline.json.tmp-12719-3cbd03a1954f40bd"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4576.8029,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4576.8042,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_configs_baseline.json.tmp-12719-3cbd03a1954f40bd",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_configs_baseline.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4576.8085,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4576.8087,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_php_source_baseline.json.tmp-12719-d03e230ba575b6d9"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4576.8088,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4576.81,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_php_source_baseline.json.tmp-12719-d03e230ba575b6d9",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_php_source_baseline.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4576.9916,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4576.9917,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_uploads_baseline.json.tmp-12719-d2125dfcfc4dbfd7"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4576.9922,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4576.9947,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_uploads_baseline.json.tmp-12719-d2125dfcfc4dbfd7",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_uploads_baseline.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4577.039,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4577.0391,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_project_files_baseline.json.tmp-12719-2e04d99019baa15a"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4577.0393,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4577.0406,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_project_files_baseline.json.tmp-12719-2e04d99019baa15a",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_project_files_baseline.json"
+     ]
+    }
+   ],
+   "event_count": 20,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 5,
+    "FS_WRITE_SANDBOX": 5,
+    "FS_CHMOD_SANDBOX": 5,
+    "FS_RENAME_SANDBOX": 5
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 2.812,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u2705 Baseline berhasil dibangun ulang: **4955 file** terindeks (0 di-hash ulang, 4955 dipertahankan dari baseline lama karena tidak berubah). Monitoring lanjut dari state ini \u2014 perubahan yang ada SEKARANG dianggap normal, cuma perubahan SETELAH ini yang bakal di-alert.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "\u2705 Baseline berhasil dibangun ulang: **4955 file** terindeks (0 di-hash ulang, 4955 dipertahankan dari baseline lama karena tidak berubah). Monitoring lanjut dari state ini \u2014 perubahan yang ada SEKARANG dianggap normal, cuma perubahan SETELAH ini yang bakal di-alert.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4578.85,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4578.8505,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_baseline.json.tmp-12719-af9eb7da74d7526e"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4578.8507,
+     "paths": [
+      "11"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4578.8538,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_baseline.json.tmp-12719-af9eb7da74d7526e",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_baseline.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4578.8678,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4578.868,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_configs_baseline.json.tmp-12719-83ef616a8a6ac6db"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4578.8681,
+     "paths": [
+      "11"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4578.8696,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_configs_baseline.json.tmp-12719-83ef616a8a6ac6db",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_configs_baseline.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4578.8725,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4578.8728,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_php_source_baseline.json.tmp-12719-96d4be459a2727a7"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4578.8734,
+     "paths": [
+      "11"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4578.8742,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_php_source_baseline.json.tmp-12719-96d4be459a2727a7",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_php_source_baseline.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4579.247,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4579.2564,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_uploads_baseline.json.tmp-12719-361883fafa61994f"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4579.2592,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4579.2811,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_uploads_baseline.json.tmp-12719-361883fafa61994f",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_uploads_baseline.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4579.3779,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4579.3871,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_project_files_baseline.json.tmp-12719-3e91abcd8adf18f4"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4579.3895,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4579.4052,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_project_files_baseline.json.tmp-12719-3e91abcd8adf18f4",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_project_files_baseline.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4579.6746,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4579.6747,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_baseline.json.tmp-12719-b51cdf3afabe0ca5"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4579.6749,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4579.6759,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_baseline.json.tmp-12719-b51cdf3afabe0ca5",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_baseline.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4579.6888,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4579.6892,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_configs_baseline.json.tmp-12719-345eccbb7b44d448"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4579.6893,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4579.69,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_configs_baseline.json.tmp-12719-345eccbb7b44d448",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_configs_baseline.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4579.6926,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4579.693,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_php_source_baseline.json.tmp-12719-7c22322d222d7a81"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4579.6931,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4579.6937,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_php_source_baseline.json.tmp-12719-7c22322d222d7a81",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_php_source_baseline.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4579.8243,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4579.8245,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_uploads_baseline.json.tmp-12719-6db12b1c0438303d"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4579.825,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4579.8274,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_uploads_baseline.json.tmp-12719-6db12b1c0438303d",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_uploads_baseline.json"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4579.8704,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4579.8708,
+     "path": "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_project_files_baseline.json.tmp-12719-59ef3c6be51779a7"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4579.871,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4579.8724,
+     "paths": [
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_project_files_baseline.json.tmp-12719-59ef3c6be51779a7",
+      "/tmp/rtsa_cmd_r66371cq/opt/security/rtsa/data/fim_project_files_baseline.json"
+     ]
+    }
+   ],
+   "event_count": 40,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 10,
+    "FS_WRITE_SANDBOX": 10,
+    "FS_CHMOD_SANDBOX": 10,
+    "FS_RENAME_SANDBOX": 10
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205477.5481355
+}

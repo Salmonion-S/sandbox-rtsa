@@ -1,0 +1,1098 @@
+{
+ "name": "deluser",
+ "sandbox": "/tmp/rtsa_cmd_00xnq9ch",
+ "started": 1791205452.2585814,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.409,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u26a0\ufe0f DELETE LINUX USER\nUser: `lab-116`\nUID: 1123\nHome: /home/lab-116 (10 file, 478.5 KB)\nShell: /bin/bash\nActive processes: 0\nSystemd dependencies (non-aktif): 0\nCron entries: 0\nSudo privileges: Tidak ada\nSSH keys: 0\nOwned files (di luar home): 0\nRisk: MEDIUM\nReason: terasosiasi dengan project CloudPanel: 116.lab.test; home directory masih berisi 10 file\nKonfirmasi diperlukan sebelum eksekusi -- klik salah satu tombol di bawah.",
+     "view": "_DeluserConfirmView",
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "edit_original_response",
+     "text": "**\u274c DELUSER FAILED**\n\nUser: `lab-116`\nReason: userdel selesai tanpa error tapi verifikasi mengonfirmasi akun masih ada\n\nVerification:\nLinux account: STILL EXISTS\nUID: 1123\nActive processes: 0\nActive sessions: 0\nHome directory: EXISTS",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [
+    "_DeluserConfirmView"
+   ],
+   "clicks": [
+    {
+     "click": "requester_confirm",
+     "view": "_DeluserConfirmView",
+     "button": "\ud83d\uddd1\ufe0f Hapus User",
+     "interaction_check": true,
+     "replies": []
+    }
+   ],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4556.16,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.DELETE_LINUX_USER: 'DELETE_LINUX_USER'>, 'target': 'lab-116', 'reason': \"/deluser validation summary: uid=1123 sudo=False ssh_keys=0 cron=0 owned_outside_home=0 active_proc...(+255)"
+     ],
+     "kwargs": "{'result': 'validated_pending_confirm'}"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4556.1861,
+     "argv": [
+      "/usr/sbin/userdel",
+      "lab-116"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4556.1863,
+     "argv": [
+      "/usr/bin/getent",
+      "passwd",
+      "lab-116"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4556.1864,
+     "argv": [
+      "/usr/bin/id",
+      "lab-116"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4556.2109,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.DELETE_LINUX_USER: 'DELETE_LINUX_USER'>, 'target': 'lab-116', 'reason': \"/deluser command (uid=1123 sudo=False ssh_keys=0 cron=0 owned_outside_home=0 active_processes=0 sys...(+254)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 2,
+    "SUBPROCESS": 3
+   },
+   "mutations": [
+    "/usr/sbin/userdel lab-116"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.245,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u26a0\ufe0f DELETE LINUX USER\nUser: `lab-116`\nUID: 1123\nHome: /home/lab-116 (10 file, 478.5 KB)\nShell: /bin/bash\nActive processes: 0\nSystemd dependencies (non-aktif): 0\nCron entries: 0\nSudo privileges: Tidak ada\nSSH keys: 0\nOwned files (di luar home): 0\nRisk: MEDIUM\nReason: terasosiasi dengan project CloudPanel: 116.lab.test; home directory masih berisi 10 file\nKonfirmasi diperlukan sebelum eksekusi -- klik salah satu tombol di bawah.",
+     "view": "_DeluserConfirmView",
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "edit_original_response",
+     "text": "\ud83d\udec8 Detection Only mode is active \u2014 menghapus user Linux `lab-116` was NOT executed. RTSA is deployed for detection and notification only; set `response_engine.detection_only: false` in config to allow RTSA-driven mitigation, or take this action manually.",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [
+    "_DeluserConfirmView"
+   ],
+   "clicks": [
+    {
+     "click": "requester_confirm",
+     "view": "_DeluserConfirmView",
+     "button": "\ud83d\uddd1\ufe0f Hapus User",
+     "interaction_check": true,
+     "replies": []
+    }
+   ],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4556.4669,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.DELETE_LINUX_USER: 'DELETE_LINUX_USER'>, 'target': 'lab-116', 'reason': \"/deluser validation summary: uid=1123 sudo=False ssh_keys=0 cron=0 owned_outside_home=0 active_proc...(+255)"
+     ],
+     "kwargs": "{'result': 'validated_pending_confirm'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": true
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.144,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u26a0\ufe0f DELETE LINUX USER\nUser: `lab-116`\nUID: 1123\nHome: /home/lab-116 (10 file, 478.5 KB)\nShell: /bin/bash\nActive processes: 0\nSystemd dependencies (non-aktif): 0\nCron entries: 0\nSudo privileges: Tidak ada\nSSH keys: 0\nOwned files (di luar home): 0\nRisk: MEDIUM\nReason: terasosiasi dengan project CloudPanel: 116.lab.test; home directory masih berisi 10 file\nKonfirmasi diperlukan sebelum eksekusi -- klik salah satu tombol di bawah.",
+     "view": "_DeluserConfirmView",
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "edit_original_response",
+     "text": "\u274c Dibatalkan.",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [
+    "_DeluserConfirmView"
+   ],
+   "clicks": [
+    {
+     "click": "other_user_confirm",
+     "view": "_DeluserConfirmView",
+     "button": "\ud83d\uddd1\ufe0f Hapus User",
+     "interaction_check": false,
+     "replies": [
+      "\ud83d\udeab Cuma yang menjalankan command ini yang bisa confirm/cancel."
+     ]
+    },
+    {
+     "click": "requester_cancel",
+     "view": "_DeluserConfirmView",
+     "button": "\u274c Batalkan",
+     "interaction_check": true,
+     "replies": []
+    }
+   ],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.3,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u26a0\ufe0f DELETE LINUX USER\nUser: `lab-116`\nUID: 1123\nHome: /home/lab-116 (10 file, 478.5 KB)\nShell: /bin/bash\nActive processes: 0\nSystemd dependencies (non-aktif): 0\nCron entries: 0\nSudo privileges: Tidak ada\nSSH keys: 0\nOwned files (di luar home): 0\nRisk: MEDIUM\nReason: terasosiasi dengan project CloudPanel: 116.lab.test; home directory masih berisi 10 file\nKonfirmasi diperlukan sebelum eksekusi -- klik salah satu tombol di bawah.",
+     "view": "_DeluserConfirmView",
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "edit_original_response",
+     "text": "**\u274c DELUSER FAILED**\n\nUser: `lab-116`\nReason: userdel selesai tanpa error tapi verifikasi mengonfirmasi akun masih ada\n\nVerification:\nLinux account: STILL EXISTS\nUID: 1123\nActive processes: 0\nActive sessions: 0\nHome directory: EXISTS",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    },
+    {
+     "channel": "response.send_message",
+     "text": "\u26a0\ufe0f User `lab-116` sedang diproses oleh operasi /deluser lain -- coba lagi setelah operasi tersebut selesai.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [
+    "_DeluserConfirmView"
+   ],
+   "clicks": [
+    {
+     "click": "requester_confirm",
+     "view": "_DeluserConfirmView",
+     "button": "\ud83d\uddd1\ufe0f Hapus User",
+     "interaction_check": true,
+     "replies": []
+    }
+   ],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4556.8896,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.DELETE_LINUX_USER: 'DELETE_LINUX_USER'>, 'target': 'lab-116', 'reason': \"/deluser validation summary: uid=1123 sudo=False ssh_keys=0 cron=0 owned_outside_home=0 active_proc...(+255)"
+     ],
+     "kwargs": "{'result': 'validated_pending_confirm'}"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4556.9135,
+     "argv": [
+      "/usr/sbin/userdel",
+      "lab-116"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4556.9137,
+     "argv": [
+      "/usr/bin/getent",
+      "passwd",
+      "lab-116"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4556.9137,
+     "argv": [
+      "/usr/bin/id",
+      "lab-116"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4556.9358,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.DELETE_LINUX_USER: 'DELETE_LINUX_USER'>, 'target': 'lab-116', 'reason': \"/deluser command (uid=1123 sudo=False ssh_keys=0 cron=0 owned_outside_home=0 active_processes=0 sys...(+254)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 2,
+    "SUBPROCESS": 3
+   },
+   "mutations": [
+    "/usr/sbin/userdel lab-116"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:username:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "username",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `x;touch /tmp/rtsaZQ`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:username:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "username",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `$(touch /tmp/rtsaZQ)`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:username:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "username",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: ``touch /tmp/rtsaZQ``.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:username:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "username",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `x|touch /tmp/rtsaZQ`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:username:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "username",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `../../../../etc/rtsaZQ`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:username:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "username",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `/etc/rtsaZQ`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:username:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "username",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `--rtsaZQ=1`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:username:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "username",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `ok\nrtsaZQ`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:username:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "username",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `ok\r\nrtsaZQ: 1`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:username:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "username",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `ok\u0000rtsaZQ`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:username:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "username",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:username:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "username",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `\u0430pp\u202ertsaZQ.lab.test`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:username:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "username",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `*rtsaZQ*`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:username:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "username",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `ok rtsaZQ`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:username:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "username",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: ``.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:username:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "username",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `%s%n{0.__class__}rtsaZQ`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:username:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "username",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `@everyone rtsaZQ`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [
+    "EVERYONE_MENTION_ECHOED"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:username:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "username",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `<@&111> rtsaZQ`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [
+    "ROLE_MENTION_ECHOED"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [
+  {
+   "view": "_DeluserConfirmView",
+   "button": "\ud83d\uddd1\ufe0f Hapus User",
+   "clicker": "other_guild_member",
+   "interaction_check": false,
+   "error": null,
+   "replies": [
+    "\ud83d\udeab Cuma yang menjalankan command ini yang bisa confirm/cancel."
+   ],
+   "side_effects": {},
+   "mutations": []
+  },
+  {
+   "view": "_DeluserConfirmView",
+   "button": "\ud83d\uddd1\ufe0f Hapus User",
+   "clicker": "requester",
+   "interaction_check": true,
+   "error": null,
+   "replies": [],
+   "side_effects": {},
+   "mutations": []
+  },
+  {
+   "view": "_DeluserConfirmView",
+   "button": "\u274c Batalkan",
+   "clicker": "other_guild_member",
+   "interaction_check": false,
+   "error": null,
+   "replies": [
+    "\ud83d\udeab Cuma yang menjalankan command ini yang bisa confirm/cancel."
+   ],
+   "side_effects": {},
+   "mutations": []
+  },
+  {
+   "view": "_DeluserConfirmView",
+   "button": "\u274c Batalkan",
+   "clicker": "requester",
+   "interaction_check": true,
+   "error": null,
+   "replies": [],
+   "side_effects": {
+    "DB_WRITE": 2,
+    "SUBPROCESS": 3
+   },
+   "mutations": [
+    "/usr/sbin/userdel lab-116"
+   ]
+  }
+ ],
+ "finished": 1791205454.6949437
+}

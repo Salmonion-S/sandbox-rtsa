@@ -1,0 +1,20 @@
+{
+ "rotated": "/home/lab-001/logs/nginx/access.log",
+ "requests_statuses": [
+  404,
+  404,
+  404,
+  200,
+  200,
+  200
+ ],
+ "new_log_lines": 6,
+ "alerts": {
+  "RTSA Alert \u2014 CORRELATED_THREAT": 4,
+  "RTSA Alert \u2014 SSH_CONFIG_WEAK": 1
+ },
+ "web_attack_alerts": [],
+ "errors": [],
+ "verdict": "FAIL",
+ "duration_s": 47.0
+}

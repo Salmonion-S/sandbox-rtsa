@@ -1,0 +1,491 @@
+{
+ "name": "autossl",
+ "sandbox": "/tmp/rtsa_cmd_igp8dzo8",
+ "started": 1791205394.985125,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Auto SSL Status\nStatus: DISABLED\nMode: ACTIVE\nMax attempts / incident: 1\nCooldown / domain: 3600s\nRepair methods: CloudPanel, Certbot\nVerify after repair: YES\nSource: config (`auto_ssl.enabled`)\nConfig enabled: false\nDetection only: NO",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Auto SSL Status\nStatus: DISABLED\nMode: ACTIVE\nMax attempts / incident: 1\nCooldown / domain: 3600s\nRepair methods: CloudPanel, Certbot\nVerify after repair: YES\nSource: config (`auto_ssl.enabled`)\nConfig enabled: false\nDetection only: NO",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Auto SSL Status\nStatus: DISABLED\nMode: ACTIVE\nMax attempts / incident: 1\nCooldown / domain: 3600s\nRepair methods: CloudPanel, Certbot\nVerify after repair: YES\nSource: config (`auto_ssl.enabled`)\nConfig enabled: false\nDetection only: YES (repair blocked)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Auto SSL Status\nStatus: DISABLED\nMode: ACTIVE\nMax attempts / incident: 1\nCooldown / domain: 3600s\nRepair methods: CloudPanel, Certbot\nVerify after repair: YES\nSource: config (`auto_ssl.enabled`)\nConfig enabled: false\nDetection only: NO",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Auto SSL Status\nStatus: DISABLED\nMode: ACTIVE\nMax attempts / incident: 1\nCooldown / domain: 3600s\nRepair methods: CloudPanel, Certbot\nVerify after repair: YES\nSource: config (`auto_ssl.enabled`)\nConfig enabled: false\nDetection only: NO",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "Auto SSL Status\nStatus: DISABLED\nMode: ACTIVE\nMax attempts / incident: 1\nCooldown / domain: 3600s\nRepair methods: CloudPanel, Certbot\nVerify after repair: YES\nSource: config (`auto_ssl.enabled`)\nConfig enabled: false\nDetection only: NO",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "choice:action:on",
+   "caller": "critical",
+   "input_class": "valid_choice",
+   "param": "action",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.004,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Auto SSL ENABLED\nRTSA will now attempt certificate recovery ONLY for confirmed SSL-specific failures (never for plain 502/503, backend, nginx or DNS failures).\nStatus: ENABLED\nMode: ACTIVE\nMax attempts / incident: 1\nCooldown / domain: 3600s\nRepair methods: CloudPanel, Certbot\nVerify after repair: YES\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4498.6105,
+     "paths": [
+      "/tmp/rtsa_cmd_igp8dzo8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4498.6106,
+     "paths": [
+      "/tmp/rtsa_cmd_igp8dzo8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4498.6118,
+     "path": "/tmp/rtsa_cmd_igp8dzo8/opt/security/rtsa/data/auto_ssl_state.json.tmp-12383-ed56156986e511b1"
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4498.6128,
+     "paths": [
+      "/tmp/rtsa_cmd_igp8dzo8/opt/security/rtsa/data/auto_ssl_state.json.tmp-12383-ed56156986e511b1",
+      "/tmp/rtsa_cmd_igp8dzo8/opt/security/rtsa/data/auto_ssl_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4498.6133,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.AUTO_SSL_TOGGLE: 'AUTO_SSL_TOGGLE'>, 'target': 'auto_ssl', 'reason': '/autossl on', 'requested_by': 'critical-user', 'action_id': '1a8872aa862345ab914fdb12238dfe47', 'times...(+112)"
+     ],
+     "kwargs": "{'result': 'enabled'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 1,
+    "FS_RENAME_SANDBOX": 1,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "choice:action:off",
+   "caller": "critical",
+   "input_class": "valid_choice",
+   "param": "action",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.004,
+   "first_ack_s": 0.002,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Auto SSL DISABLED\nNo new automatic SSL repair will start.\nStatus: DISABLED\nMode: ACTIVE\nMax attempts / incident: 1\nCooldown / domain: 3600s\nRepair methods: CloudPanel, Certbot\nVerify after repair: YES\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4498.6251,
+     "paths": [
+      "/tmp/rtsa_cmd_igp8dzo8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4498.6253,
+     "paths": [
+      "/tmp/rtsa_cmd_igp8dzo8/opt/security/rtsa/data"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4498.6255,
+     "path": "/tmp/rtsa_cmd_igp8dzo8/opt/security/rtsa/data/auto_ssl_state.json.tmp-12383-77ab36c22f9c6277"
+    },
+    {
+     "kind": "FS_CHMOD_SANDBOX",
+     "blocked": false,
+     "t": 4498.6256,
+     "paths": [
+      "10"
+     ]
+    },
+    {
+     "kind": "FS_RENAME_SANDBOX",
+     "blocked": false,
+     "t": 4498.6264,
+     "paths": [
+      "/tmp/rtsa_cmd_igp8dzo8/opt/security/rtsa/data/auto_ssl_state.json.tmp-12383-77ab36c22f9c6277",
+      "/tmp/rtsa_cmd_igp8dzo8/opt/security/rtsa/data/auto_ssl_state.json"
+     ]
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4498.6269,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.AUTO_SSL_TOGGLE: 'AUTO_SSL_TOGGLE'>, 'target': 'auto_ssl', 'reason': '/autossl off', 'requested_by': 'critical-user', 'action_id': 'f519bbba8f2c4532b5fff0829871475d', 'time...(+114)"
+     ],
+     "kwargs": "{'result': 'disabled'}"
+    }
+   ],
+   "event_count": 6,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 1,
+    "FS_CHMOD_SANDBOX": 1,
+    "FS_RENAME_SANDBOX": 1,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "choice:action:status",
+   "caller": "critical",
+   "input_class": "valid_choice",
+   "param": "action",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Auto SSL Status\nStatus: DISABLED\nMode: ACTIVE\nMax attempts / incident: 1\nCooldown / domain: 3600s\nRepair methods: CloudPanel, Certbot\nVerify after repair: YES\nSource: config (`auto_ssl.enabled`)\nConfig enabled: false\nDetection only: NO",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:action:out_of_choices",
+   "caller": "critical",
+   "input_class": "out_of_choices",
+   "param": "action",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "Gunakan `/autossl on`, `/autossl off`, atau `/autossl` untuk status.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205395.3599865
+}

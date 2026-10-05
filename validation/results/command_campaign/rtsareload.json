@@ -1,0 +1,428 @@
+{
+ "name": "rtsareload",
+ "sandbox": "/tmp/rtsa_cmd_b_bfm8e8",
+ "started": 1791205529.8526511,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.011,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u26a0\ufe0f Ini akan reload konfigurasi RTSA dari `config.yaml` langsung di tempat (tanpa restart, tanpa gangguan service). Setiap module yang mendukung hot reload bakal langsung pakai setting baru; module yang tidak mendukung akan tetap jalan seperti biasa.\n\n\ud83d\udec8 **Ini cuma reload konfigurasi.** Ini TIDAK reload source code Python RTSA -- kalau file `.py` berubah, kamu tetap perlu `systemctl restart rtsa` supaya kode itu berlaku.\n\nConfirm dalam 30 detik atau otomatis dibatalkan.",
+     "view": "_ConfirmCancelView",
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "edit_original_response",
+     "text": "\ud83d\udd04 Me-reload konfigurasi...",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "Configuration Reload Unavailable\nThis running RTSA process was not wired up with a live reload callback (older build). Restart RTSA to pick up `config.yaml` changes.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [
+    "_ConfirmCancelView"
+   ],
+   "clicks": [
+    {
+     "click": "requester_confirm",
+     "view": "_ConfirmCancelView",
+     "button": "\u2705 Confirm",
+     "interaction_check": true,
+     "replies": []
+    }
+   ],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.011,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u26a0\ufe0f Ini akan reload konfigurasi RTSA dari `config.yaml` langsung di tempat (tanpa restart, tanpa gangguan service). Setiap module yang mendukung hot reload bakal langsung pakai setting baru; module yang tidak mendukung akan tetap jalan seperti biasa.\n\n\ud83d\udec8 **Ini cuma reload konfigurasi.** Ini TIDAK reload source code Python RTSA -- kalau file `.py` berubah, kamu tetap perlu `systemctl restart rtsa` supaya kode itu berlaku.\n\nConfirm dalam 30 detik atau otomatis dibatalkan.",
+     "view": "_ConfirmCancelView",
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "edit_original_response",
+     "text": "\ud83d\udd04 Me-reload konfigurasi...",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "Configuration Reload Unavailable\nThis running RTSA process was not wired up with a live reload callback (older build). Restart RTSA to pick up `config.yaml` changes.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [
+    "_ConfirmCancelView"
+   ],
+   "clicks": [
+    {
+     "click": "requester_confirm",
+     "view": "_ConfirmCancelView",
+     "button": "\u2705 Confirm",
+     "interaction_check": true,
+     "replies": []
+    }
+   ],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.023,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u26a0\ufe0f Ini akan reload konfigurasi RTSA dari `config.yaml` langsung di tempat (tanpa restart, tanpa gangguan service). Setiap module yang mendukung hot reload bakal langsung pakai setting baru; module yang tidak mendukung akan tetap jalan seperti biasa.\n\n\ud83d\udec8 **Ini cuma reload konfigurasi.** Ini TIDAK reload source code Python RTSA -- kalau file `.py` berubah, kamu tetap perlu `systemctl restart rtsa` supaya kode itu berlaku.\n\nConfirm dalam 30 detik atau otomatis dibatalkan.",
+     "view": "_ConfirmCancelView",
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "edit_original_response",
+     "text": "\u274c Dibatalkan.",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [
+    "_ConfirmCancelView"
+   ],
+   "clicks": [
+    {
+     "click": "other_user_confirm",
+     "view": "_ConfirmCancelView",
+     "button": "\u2705 Confirm",
+     "interaction_check": false,
+     "replies": [
+      "\ud83d\udeab Cuma yang menjalankan command ini yang bisa confirm/cancel."
+     ]
+    },
+    {
+     "click": "requester_cancel",
+     "view": "_ConfirmCancelView",
+     "button": "\u274c Cancel",
+     "interaction_check": true,
+     "replies": []
+    }
+   ],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.012,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u26a0\ufe0f Ini akan reload konfigurasi RTSA dari `config.yaml` langsung di tempat (tanpa restart, tanpa gangguan service). Setiap module yang mendukung hot reload bakal langsung pakai setting baru; module yang tidak mendukung akan tetap jalan seperti biasa.\n\n\ud83d\udec8 **Ini cuma reload konfigurasi.** Ini TIDAK reload source code Python RTSA -- kalau file `.py` berubah, kamu tetap perlu `systemctl restart rtsa` supaya kode itu berlaku.\n\nConfirm dalam 30 detik atau otomatis dibatalkan.",
+     "view": "_ConfirmCancelView",
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "edit_original_response",
+     "text": "\ud83d\udd04 Me-reload konfigurasi...",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "Configuration Reload Unavailable\nThis running RTSA process was not wired up with a live reload callback (older build). Restart RTSA to pick up `config.yaml` changes.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "response.send_message",
+     "text": "\u26a0\ufe0f Ini akan reload konfigurasi RTSA dari `config.yaml` langsung di tempat (tanpa restart, tanpa gangguan service). Setiap module yang mendukung hot reload bakal langsung pakai setting baru; module yang tidak mendukung akan tetap jalan seperti biasa.\n\n\ud83d\udec8 **Ini cuma reload konfigurasi.** Ini TIDAK reload source code Python RTSA -- kalau file `.py` berubah, kamu tetap perlu `systemctl restart rtsa` supaya kode itu berlaku.\n\nConfirm dalam 30 detik atau otomatis dibatalkan.",
+     "view": "_ConfirmCancelView",
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "edit_original_response",
+     "text": "\ud83d\udd04 Me-reload konfigurasi...",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "Configuration Reload Unavailable\nThis running RTSA process was not wired up with a live reload callback (older build). Restart RTSA to pick up `config.yaml` changes.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [
+    "_ConfirmCancelView"
+   ],
+   "clicks": [
+    {
+     "click": "requester_confirm",
+     "view": "_ConfirmCancelView",
+     "button": "\u2705 Confirm",
+     "interaction_check": true,
+     "replies": []
+    },
+    {
+     "click": "requester_confirm",
+     "view": "_ConfirmCancelView",
+     "button": "\u2705 Confirm",
+     "interaction_check": true,
+     "replies": []
+    }
+   ],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [
+  {
+   "view": "_ConfirmCancelView",
+   "button": "\u2705 Confirm",
+   "clicker": "other_guild_member",
+   "interaction_check": false,
+   "error": null,
+   "replies": [
+    "\ud83d\udeab Cuma yang menjalankan command ini yang bisa confirm/cancel."
+   ],
+   "side_effects": {},
+   "mutations": []
+  },
+  {
+   "view": "_ConfirmCancelView",
+   "button": "\u2705 Confirm",
+   "clicker": "requester",
+   "interaction_check": true,
+   "error": null,
+   "replies": [],
+   "side_effects": {},
+   "mutations": []
+  },
+  {
+   "view": "_ConfirmCancelView",
+   "button": "\u274c Cancel",
+   "clicker": "other_guild_member",
+   "interaction_check": false,
+   "error": null,
+   "replies": [
+    "\ud83d\udeab Cuma yang menjalankan command ini yang bisa confirm/cancel."
+   ],
+   "side_effects": {},
+   "mutations": []
+  },
+  {
+   "view": "_ConfirmCancelView",
+   "button": "\u274c Cancel",
+   "clicker": "requester",
+   "interaction_check": true,
+   "error": null,
+   "replies": [],
+   "side_effects": {},
+   "mutations": []
+  }
+ ],
+ "finished": 1791205530.7513778
+}

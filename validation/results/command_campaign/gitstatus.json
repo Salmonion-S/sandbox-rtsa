@@ -1,0 +1,1616 @@
+{
+ "name": "gitstatus",
+ "sandbox": "/tmp/rtsa_cmd_bh4i7j8a",
+ "started": 1791205494.0935285,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.026,
+   "first_ack_s": 0.024,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Git Status \u2014 lab-001\n`/home/lab-001/htdocs/001.lab.test`\nCurrent Branch: `main`\nRemote: git@github.com:lab/app.git\nChanged Files: 0: Clean (no uncommitted changes)\nAhead/Behind: 0 ahead, 2 behind\nLatest Commit: `abc1234 initial`",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.6322,
+     "argv": [
+      "/usr/bin/git",
+      "branch",
+      "--show-current"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.6324,
+     "argv": [
+      "/usr/bin/git",
+      "remote",
+      "get-url",
+      "origin"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.6325,
+     "argv": [
+      "/usr/bin/git",
+      "status",
+      "--porcelain"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.6326,
+     "argv": [
+      "/usr/bin/git",
+      "log",
+      "-1",
+      "--format=%H %s"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.6327,
+     "argv": [
+      "/usr/bin/git",
+      "rev-list",
+      "--left-right",
+      "--count",
+      "HEAD...@{upstream}"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4597.6329,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GITSTATUS: 'GITSTATUS'>, 'target': 'lab-001:/home/lab-001/htdocs/001.lab.test', 'reason': 'git status', 'requested_by': 'admin-user', 'action_id': '84b60365f5f94d65ac15ad13...(+134)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 6,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 5,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Git Status \u2014 lab-001\n`/home/lab-001/htdocs/001.lab.test`\nCurrent Branch: `main`\nRemote: git@github.com:lab/app.git\nChanged Files: 0: Clean (no uncommitted changes)\nAhead/Behind: 0 ahead, 2 behind\nLatest Commit: `abc1234 initial`",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.6452,
+     "argv": [
+      "/usr/bin/git",
+      "branch",
+      "--show-current"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.6454,
+     "argv": [
+      "/usr/bin/git",
+      "remote",
+      "get-url",
+      "origin"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.6455,
+     "argv": [
+      "/usr/bin/git",
+      "status",
+      "--porcelain"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.6456,
+     "argv": [
+      "/usr/bin/git",
+      "log",
+      "-1",
+      "--format=%H %s"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.6459,
+     "argv": [
+      "/usr/bin/git",
+      "rev-list",
+      "--left-right",
+      "--count",
+      "HEAD...@{upstream}"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4597.6461,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GITSTATUS: 'GITSTATUS'>, 'target': 'lab-001:/home/lab-001/htdocs/001.lab.test', 'reason': 'git status', 'requested_by': 'critical-user', 'action_id': '335f0184e1d645e2a6cfd...(+137)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 6,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 5,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Git Status \u2014 lab-001\n`/home/lab-001/htdocs/001.lab.test`\nCurrent Branch: `main`\nRemote: git@github.com:lab/app.git\nChanged Files: 0: Clean (no uncommitted changes)\nAhead/Behind: 0 ahead, 2 behind\nLatest Commit: `abc1234 initial`",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.7072,
+     "argv": [
+      "/usr/bin/git",
+      "branch",
+      "--show-current"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.7073,
+     "argv": [
+      "/usr/bin/git",
+      "remote",
+      "get-url",
+      "origin"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.7074,
+     "argv": [
+      "/usr/bin/git",
+      "status",
+      "--porcelain"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.7075,
+     "argv": [
+      "/usr/bin/git",
+      "log",
+      "-1",
+      "--format=%H %s"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.7076,
+     "argv": [
+      "/usr/bin/git",
+      "rev-list",
+      "--left-right",
+      "--count",
+      "HEAD...@{upstream}"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4597.7077,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GITSTATUS: 'GITSTATUS'>, 'target': 'lab-001:/home/lab-001/htdocs/001.lab.test', 'reason': 'git status', 'requested_by': 'critical-user', 'action_id': 'f26c67fb445a44988d583...(+138)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 6,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 5,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Git Status \u2014 lab-001\n`/home/lab-001/htdocs/001.lab.test`\nCurrent Branch: `main`\nRemote: git@github.com:lab/app.git\nChanged Files: 0: Clean (no uncommitted changes)\nAhead/Behind: 0 ahead, 2 behind\nLatest Commit: `abc1234 initial`",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.77,
+     "argv": [
+      "/usr/bin/git",
+      "branch",
+      "--show-current"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.7702,
+     "argv": [
+      "/usr/bin/git",
+      "remote",
+      "get-url",
+      "origin"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.7703,
+     "argv": [
+      "/usr/bin/git",
+      "status",
+      "--porcelain"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.7703,
+     "argv": [
+      "/usr/bin/git",
+      "log",
+      "-1",
+      "--format=%H %s"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.7704,
+     "argv": [
+      "/usr/bin/git",
+      "rev-list",
+      "--left-right",
+      "--count",
+      "HEAD...@{upstream}"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4597.7706,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GITSTATUS: 'GITSTATUS'>, 'target': 'lab-001:/home/lab-001/htdocs/001.lab.test', 'reason': 'git status', 'requested_by': 'critical-user', 'action_id': 'a8b36752bf4e4060818bd...(+138)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 6,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 5,
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.003,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Git Status \u2014 lab-001\n`/home/lab-001/htdocs/001.lab.test`\nCurrent Branch: `main`\nRemote: git@github.com:lab/app.git\nChanged Files: 0: Clean (no uncommitted changes)\nAhead/Behind: 0 ahead, 2 behind\nLatest Commit: `abc1234 initial`",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "Git Status \u2014 lab-001\n`/home/lab-001/htdocs/001.lab.test`\nCurrent Branch: `main`\nRemote: git@github.com:lab/app.git\nChanged Files: 0: Clean (no uncommitted changes)\nAhead/Behind: 0 ahead, 2 behind\nLatest Commit: `abc1234 initial`",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.8304,
+     "argv": [
+      "/usr/bin/git",
+      "branch",
+      "--show-current"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.8305,
+     "argv": [
+      "/usr/bin/git",
+      "branch",
+      "--show-current"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.8306,
+     "argv": [
+      "/usr/bin/git",
+      "remote",
+      "get-url",
+      "origin"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.8307,
+     "argv": [
+      "/usr/bin/git",
+      "remote",
+      "get-url",
+      "origin"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.8308,
+     "argv": [
+      "/usr/bin/git",
+      "status",
+      "--porcelain"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.8309,
+     "argv": [
+      "/usr/bin/git",
+      "status",
+      "--porcelain"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.831,
+     "argv": [
+      "/usr/bin/git",
+      "log",
+      "-1",
+      "--format=%H %s"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.8311,
+     "argv": [
+      "/usr/bin/git",
+      "log",
+      "-1",
+      "--format=%H %s"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.8312,
+     "argv": [
+      "/usr/bin/git",
+      "rev-list",
+      "--left-right",
+      "--count",
+      "HEAD...@{upstream}"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4597.8313,
+     "argv": [
+      "/usr/bin/git",
+      "rev-list",
+      "--left-right",
+      "--count",
+      "HEAD...@{upstream}"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001/htdocs/001.lab.test",
+     "env_keys": [
+      "GIT_SSH_COMMAND",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4597.8314,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GITSTATUS: 'GITSTATUS'>, 'target': 'lab-001:/home/lab-001/htdocs/001.lab.test', 'reason': 'git status', 'requested_by': 'critical-user', 'action_id': '893199feb1954ad0b6ab2...(+137)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4597.8315,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.GITSTATUS: 'GITSTATUS'>, 'target': 'lab-001:/home/lab-001/htdocs/001.lab.test', 'reason': 'git status', 'requested_by': 'critical-user', 'action_id': '7e3f348771c74dfc966d7...(+137)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 12,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 10,
+    "DB_WRITE": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `x;touch `.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `$(touch `.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain ``touch `.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `x|touch `.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `..`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `etc`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `--rtsazq=1`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `okrtsazq`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `okrtsazq`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `ok\u0000rtsazq`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `\u0430pp\u202ertsazq.lab.test`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `*rtsazq*`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `ok rtsazq`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Domain is required.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `%s%n{0.__class__}rtsazq`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `everyone rtsazq`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c No CloudPanel project found for domain `&111> rtsazq`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205494.6559584
+}

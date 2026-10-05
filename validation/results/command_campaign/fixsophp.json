@@ -1,0 +1,995 @@
+{
+ "name": "fixsophp",
+ "sandbox": "/tmp/rtsa_cmd__hk0pghn",
+ "started": 1791205484.3277693,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal menerapkan hardening untuk `001.lab.test`: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/001.lab.test.conf blocked\n\nDomain: 001.lab.test\nConfig: /etc/nginx/sites-enabled/001.lab.test.conf\nRules added: -\nRules already existed: -\nnginx -t: -\nReload: -\nBackup: /tmp/rtsa_cmd__hk0pghn/opt/security/rtsa/backups/sofix/001.lab.test.conf.rtsa-backup-20261005T130444469827",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4587.8739,
+     "paths": [
+      "/tmp/rtsa_cmd__hk0pghn/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4587.8739,
+     "paths": [
+      "/tmp/rtsa_cmd__hk0pghn/opt/security/rtsa/backups"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4587.874,
+     "paths": [
+      "/tmp/rtsa_cmd__hk0pghn/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4587.8742,
+     "path": "/tmp/rtsa_cmd__hk0pghn/opt/security/rtsa/backups/sofix/001.lab.test.conf.rtsa-backup-20261005T130444469827"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4587.8743,
+     "path": "/etc/nginx/sites-enabled/001.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4587.8744,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.FIXSOPHP: 'FIXSOPHP'>, 'target': '001.lab.test', 'reason': '/fixsophp', 'requested_by': 'critical-user', 'action_id': '43f258029a0a4f41ae2feca1171864a0', 'timestamp': 17912...(+88)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 6,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 3,
+    "FS_WRITE_SANDBOX": 1,
+    "FS_WRITE": 1,
+    "DB_WRITE": 1
+   },
+   "mutations": [
+    "FS_WRITE /etc/nginx/sites-enabled/001.lab.test.conf"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udec8 Detection Only mode is active \u2014 menerapkan hardening nginx untuk `001.lab.test` was NOT executed. RTSA is deployed for detection and notification only; set `response_engine.detection_only: false` in config to allow RTSA-driven mitigation, or take this action manually.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4587.8848,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.FIXSOPHP: 'FIXSOPHP'>, 'target': '001.lab.test', 'reason': 'response_engine.detection_only=true', 'requested_by': 'critical-user', 'action_id': '4ba1a4d20abc4854890c5984a79...(+115)"
+     ],
+     "kwargs": "{'result': 'Blocked by Detection Only'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": true
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal menerapkan hardening untuk `001.lab.test`: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/001.lab.test.conf blocked\n\nDomain: 001.lab.test\nConfig: /etc/nginx/sites-enabled/001.lab.test.conf\nRules added: -\nRules already existed: -\nnginx -t: -\nReload: -\nBackup: /tmp/rtsa_cmd__hk0pghn/opt/security/rtsa/backups/sofix/001.lab.test.conf.rtsa-backup-20261005T130444493568",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4587.8978,
+     "paths": [
+      "/tmp/rtsa_cmd__hk0pghn/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4587.8979,
+     "path": "/tmp/rtsa_cmd__hk0pghn/opt/security/rtsa/backups/sofix/001.lab.test.conf.rtsa-backup-20261005T130444493568"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4587.8981,
+     "path": "/etc/nginx/sites-enabled/001.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4587.8983,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.FIXSOPHP: 'FIXSOPHP'>, 'target': '001.lab.test', 'reason': '/fixsophp', 'requested_by': 'critical-user', 'action_id': '857e090f90c4416ea3876286ea190299', 'timestamp': 17912...(+89)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 4,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 1,
+    "FS_WRITE_SANDBOX": 1,
+    "FS_WRITE": 1,
+    "DB_WRITE": 1
+   },
+   "mutations": [
+    "FS_WRITE /etc/nginx/sites-enabled/001.lab.test.conf"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal menerapkan hardening untuk `001.lab.test`: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/001.lab.test.conf blocked\n\nDomain: 001.lab.test\nConfig: /etc/nginx/sites-enabled/001.lab.test.conf\nRules added: -\nRules already existed: -\nnginx -t: -\nReload: -\nBackup: /tmp/rtsa_cmd__hk0pghn/opt/security/rtsa/backups/sofix/001.lab.test.conf.rtsa-backup-20261005T130444504414",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "\u274c Gagal menerapkan hardening untuk `001.lab.test`: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/001.lab.test.conf blocked\n\nDomain: 001.lab.test\nConfig: /etc/nginx/sites-enabled/001.lab.test.conf\nRules added: -\nRules already existed: -\nnginx -t: -\nReload: -\nBackup: /tmp/rtsa_cmd__hk0pghn/opt/security/rtsa/backups/sofix/001.lab.test.conf.rtsa-backup-20261005T130444505112",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4587.9086,
+     "paths": [
+      "/tmp/rtsa_cmd__hk0pghn/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4587.9087,
+     "path": "/tmp/rtsa_cmd__hk0pghn/opt/security/rtsa/backups/sofix/001.lab.test.conf.rtsa-backup-20261005T130444504414"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4587.9088,
+     "path": "/etc/nginx/sites-enabled/001.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4587.9089,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.FIXSOPHP: 'FIXSOPHP'>, 'target': '001.lab.test', 'reason': '/fixsophp', 'requested_by': 'critical-user', 'action_id': 'b7da2af90fcf44abb2a467bd898000e2', 'timestamp': 17912...(+88)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4587.9093,
+     "paths": [
+      "/tmp/rtsa_cmd__hk0pghn/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4587.9094,
+     "path": "/tmp/rtsa_cmd__hk0pghn/opt/security/rtsa/backups/sofix/001.lab.test.conf.rtsa-backup-20261005T130444505112"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4587.9094,
+     "path": "/etc/nginx/sites-enabled/001.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4587.9095,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.FIXSOPHP: 'FIXSOPHP'>, 'target': '001.lab.test', 'reason': '/fixsophp', 'requested_by': 'critical-user', 'action_id': 'c027d8239d5047b596ef2c989dcb4ba5', 'timestamp': 17912...(+89)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 8,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 2,
+    "FS_WRITE_SANDBOX": 2,
+    "FS_WRITE": 2,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "FS_WRITE /etc/nginx/sites-enabled/001.lab.test.conf"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `x;touch ` bukan nama domain/vhost yang valid \u2014 tidak ada file yang disentuh.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `$(touch ` bukan nama domain/vhost yang valid \u2014 tidak ada file yang disentuh.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab ``touch ` bukan nama domain/vhost yang valid \u2014 tidak ada file yang disentuh.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `x|touch ` bukan nama domain/vhost yang valid \u2014 tidak ada file yang disentuh.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `..` bukan nama domain/vhost yang valid \u2014 tidak ada file yang disentuh.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Config domain `etc` tidak ditemukan di `/etc/nginx/sites-enabled/etc.conf`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `--rtsazq=1` bukan nama domain/vhost yang valid \u2014 tidak ada file yang disentuh.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Config domain `okrtsazq` tidak ditemukan di `/etc/nginx/sites-enabled/okrtsazq.conf`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Config domain `okrtsazq` tidak ditemukan di `/etc/nginx/sites-enabled/okrtsazq.conf`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `ok\u0000rtsazq` bukan nama domain/vhost yang valid \u2014 tidak ada file yang disentuh.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `\u0430pp\u202ertsazq.lab.test` bukan nama domain/vhost yang valid \u2014 tidak ada file yang disentuh.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `*rtsazq*` bukan nama domain/vhost yang valid \u2014 tidak ada file yang disentuh.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `ok rtsazq` bukan nama domain/vhost yang valid \u2014 tidak ada file yang disentuh.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `` bukan nama domain/vhost yang valid \u2014 tidak ada file yang disentuh.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `%s%n{0.__class__}rtsazq` bukan nama domain/vhost yang valid \u2014 tidak ada file yang disentuh.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `everyone rtsazq` bukan nama domain/vhost yang valid \u2014 tidak ada file yang disentuh.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `&111> rtsazq` bukan nama domain/vhost yang valid \u2014 tidak ada file yang disentuh.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205484.7653608
+}

@@ -1,0 +1,12 @@
+{
+ "lock_held_s": 30.0,
+ "rtsa_alive": true,
+ "errors_logged": [],
+ "error_count": 0,
+ "db_after": {
+  "integrity": "ok",
+  "events": 896
+ },
+ "verdict": "PASS",
+ "duration_s": 60.0
+}

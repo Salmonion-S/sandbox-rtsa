@@ -1,0 +1,43 @@
+{
+ "killed_pid": 27062,
+ "after_kill": {
+  "db": {
+   "integrity": "ok",
+   "events": 720
+  },
+  "state": {
+   "json_files": 10,
+   "invalid": [],
+   "leftover_temp_files": []
+  }
+ },
+ "restart": {
+  "pid": 24949,
+  "seconds_to_first_scan_cycle": 16.01,
+  "t0": 1791202127.9849436
+ },
+ "alerts_before_kill_120s": {
+  "RTSA Alert \u2014 CORRELATED_THREAT": 5,
+  "RTSA Alert \u2014 PROCESS_ANOMALY (bagian 1/2)": 2,
+  "RTSA STARTUP \u2014 HEALTHY (bagian 1/2)": 1,
+  "RTSA Alert \u2014 CROSS_PROJECT_PROCESS": 1,
+  "RTSA Alert \u2014 APPLICATION_ERROR_DIGEST": 1
+ },
+ "alerts_after_restart": {
+  "RTSA Alert \u2014 CORRELATED_THREAT": 9,
+  "RTSA Alert \u2014 PROCESS_ANOMALY (bagian 1/2)": 2,
+  "RTSA STARTUP \u2014 HEALTHY (bagian 1/2)": 1
+ },
+ "titles_repeated_after_restart": {
+  "RTSA Alert \u2014 CORRELATED_THREAT": 9,
+  "RTSA Alert \u2014 PROCESS_ANOMALY (bagian 1/2)": 2,
+  "RTSA STARTUP \u2014 HEALTHY (bagian 1/2)": 1
+ },
+ "errors_after_restart": [
+  "2026-10-05 12:08:48 | INFO     | rtsa.core.event_bus | Subscriber terdaftar: analyzer (categories=[<EventCategory.WEB_ATTACK_XSS: 'WEB_ATTACK_XSS'>, <EventCategory.WEB_ATTACK_RCE: 'WEB_ATTACK_RCE'>, <EventCategory.NGINX_ERROR_SPIKE: 'NGINX_",
+  "2026-10-05 12:08:49 | INFO     | rtsa.core.event_bus | Subscriber terdaftar: application_error_tracker (categories=[<EventCategory.FILE_INTEGRITY_CHANGE: 'FILE_INTEGRITY_CHANGE'>, <EventCategory.SERVICE_DOWN: 'SERVICE_DOWN'>, <EventCategory",
+  "2026-10-05 12:08:49 | ERROR    | rtsa.modules.audit_monitor | Binary ausearch tidak ditemukan \u2014 audit monitor tidak bisa jalan. Install auditd (misalnya 'apt install auditd') untuk mengaktifkan module ini, atau set modules.audit_monitor.ena"
+ ],
+ "verdict": "PASS",
+ "duration_s": 113.6
+}

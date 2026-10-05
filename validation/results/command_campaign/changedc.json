@@ -1,0 +1,1393 @@
+{
+ "name": "changedc",
+ "sandbox": "/tmp/rtsa_cmd_lv8g001b",
+ "started": 1791205427.8211486,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak diotorisasi (butuh role Administrator).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak diotorisasi (butuh role Administrator).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak diotorisasi (butuh role Administrator).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.038,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (https://discord.com/api/webhooks/1/******) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.05,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (https://discord.com/api/webhooks/1/******) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udec8 Detection Only mode is active \u2014 rotasi Discord Webhook di semua file .env was NOT executed. RTSA is deployed for detection and notification only; set `response_engine.detection_only: false` in config to allow RTSA-driven mitigation, or take this action manually.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4531.4678,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'Discord Webhook', 'reason': 'response_engine.detection_only=true', 'requested_by': 'critical-user', 'action_id': 'a0...(+140)"
+     ],
+     "kwargs": "{'result': 'Blocked by Detection Only'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": true
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.035,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (https://discord.com/api/webhooks/1/******) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.213,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (https://discord.com/api/webhooks/1/******) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (https://discord.com/api/webhooks/1/******) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_webhook:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "old_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.035,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (************) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_webhook:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "old_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.039,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (************) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_webhook:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "old_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.034,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (************) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_webhook:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "old_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.034,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (************) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_webhook:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "old_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.034,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (************) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_webhook:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "old_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.035,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (***********) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_webhook:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "old_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.048,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (**********) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_webhook:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "old_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.033,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (*********) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_webhook:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "old_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.05,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (************) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_webhook:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "old_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.038,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (*********) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_webhook:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "old_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.039,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (************) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_webhook:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "old_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.047,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (************) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_webhook:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "old_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.039,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (********) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_webhook:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "old_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.041,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (*********) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_webhook:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "old_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Old dan new credential gak boleh kosong.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_webhook:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "old_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.035,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (************) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_webhook:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "old_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.049,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (************) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_webhook:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "old_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.034,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (************) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_webhook:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "new_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.034,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (https://discord.com/api/webhooks/1/******) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_webhook:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "new_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.035,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (https://discord.com/api/webhooks/1/******) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_webhook:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "new_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.034,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (https://discord.com/api/webhooks/1/******) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_webhook:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "new_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.037,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (https://discord.com/api/webhooks/1/******) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_webhook:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "new_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.037,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (https://discord.com/api/webhooks/1/******) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_webhook:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "new_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.036,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (https://discord.com/api/webhooks/1/******) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_webhook:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "new_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.035,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (https://discord.com/api/webhooks/1/******) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_webhook:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "new_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.039,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (https://discord.com/api/webhooks/1/******) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_webhook:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "new_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.037,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (https://discord.com/api/webhooks/1/******) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_webhook:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "new_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.035,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (https://discord.com/api/webhooks/1/******) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_webhook:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "new_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.037,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (https://discord.com/api/webhooks/1/******) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_webhook:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "new_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.035,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (https://discord.com/api/webhooks/1/******) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_webhook:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "new_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.036,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (https://discord.com/api/webhooks/1/******) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_webhook:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "new_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.035,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (https://discord.com/api/webhooks/1/******) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_webhook:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "new_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Old dan new credential gak boleh kosong.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_webhook:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "new_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.034,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (https://discord.com/api/webhooks/1/******) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_webhook:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "new_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.036,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (https://discord.com/api/webhooks/1/******) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_webhook:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "new_webhook",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.037,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (https://discord.com/api/webhooks/1/******) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205430.44211
+}

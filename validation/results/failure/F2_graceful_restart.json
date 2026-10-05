@@ -1,0 +1,26 @@
+{
+ "stop_seconds": 2.7,
+ "errors_during_stop": [],
+ "restart": {
+  "pid": 27062,
+  "seconds_to_first_scan_cycle": 15.52,
+  "t0": 1791202025.0889487
+ },
+ "alerts_first_60s_after_restart": {
+  "RTSA Alert \u2014 CORRELATED_THREAT": 5,
+  "RTSA Alert \u2014 PROCESS_ANOMALY (bagian 1/2)": 2,
+  "RTSA STARTUP \u2014 HEALTHY (bagian 1/2)": 1,
+  "RTSA Alert \u2014 CROSS_PROJECT_PROCESS": 1
+ },
+ "state": {
+  "json_files": 10,
+  "invalid": [],
+  "leftover_temp_files": []
+ },
+ "db": {
+  "integrity": "ok",
+  "events": 659
+ },
+ "verdict": "PASS",
+ "duration_s": 78.5
+}

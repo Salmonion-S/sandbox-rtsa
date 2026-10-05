@@ -1,0 +1,3285 @@
+{
+ "totals": {
+  "commands_discovered": 84,
+  "commands_tested": 84,
+  "commands_missing_results": [],
+  "cases": 2124,
+  "alert_cases": 389,
+  "verdicts": {
+   "PASS": 80,
+   "PASS WITH NOTES": 4,
+   "FAIL": 0
+  },
+  "alert_verdicts": {
+   "PASS": 24,
+   "PASS WITH NOTES": 9,
+   "FAIL": 0
+  },
+  "case_files": 86
+ },
+ "commands": {
+  "addloadbalance": {
+   "tier": "critical",
+   "cases": 28,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "RTSA \u2014 ADD LOAD BALANCE\nDomain: 001.lab.test\nStatus: ABORTED\nOperation: 8b66a140ec3148ac\nResult: load_balancing.enabled is false in this server's configuration\nLocal origin: server: unidentified\nstate"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "RTSA \u2014 ADD LOAD BALANCE Domain: 001.lab.test Status: ABORTED Operation: 8b66a140ec3148ac Result: load_balancin",
+   "info_flags": [
+    "EVERYONE_MENTION_ECHOED",
+    "ROLE_MENTION_ECHOED"
+   ]
+  },
+  "apileak": {
+   "tier": "admin",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 1,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.0,
+   "verdict": "PASS WITH NOTES",
+   "failures": [],
+   "notes": [
+    "timeouts: ['concurrency:x2']"
+   ],
+   "valid_reply": [
+    "\ud83d\udd0d Scanning 127 domain \u00d7 9 path sensitif (HEAD request only, gak download isi file)...",
+    "**API Leak Scan Selesai** (4.8s)\n127 domain di-scan, **0 path ke-expose** total.\n\n\ud83d\udfe2 `001.lab.test` \u2014 aman, tidak ada path sensitif yang ke-expose\n\ud83d\udfe2 `002.lab.test` \u2014 aman, tidak ada path sensitif yang "
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "**API Leak Scan Selesai** (4.8s) 127 domain di-scan, **0 path ke-expose** total.  \ud83d\udfe2 `001.lab.test` \u2014 aman, tid",
+   "info_flags": []
+  },
+  "astroeco": {
+   "tier": "critical",
+   "cases": 30,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 22,
+   "input_rejected_or_inert": 22,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "NODE_INTERPRETER_NOT_FOUND\nTidak dapat menemukan Node interpreter (NVM) yang aman untuk project owner ini.\n\nFile ecosystem.config.js tidak dibuat.\nDomain: 001.lab.test\nProject Path: /home/lab-001/htdo"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "NODE_INTERPRETER_NOT_FOUND Tidak dapat menemukan Node interpreter (NVM) yang aman untuk project owner ini.  Fi",
+   "info_flags": [
+    "STORED_INPUT"
+   ]
+  },
+  "autocr": {
+   "tier": "critical",
+   "cases": 62,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 54,
+   "input_rejected_or_inert": 54,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.03,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u274c URL repository tidak valid: `lab/app` (harus berupa URL SSH `git@host:org/repo.git` atau `https://`/`ssh://`)."
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "\u274c URL repository tidak valid: `lab/app` (harus berupa URL SSH `git@host:org/repo.git` atau `https://`/`ssh://`",
+   "info_flags": [
+    "EVERYONE_MENTION_ECHOED",
+    "ROLE_MENTION_ECHOED"
+   ]
+  },
+  "autossl": {
+   "tier": "admin",
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 1,
+   "input_rejected_or_inert": 1,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.002,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "Auto SSL Status\nStatus: DISABLED\nMode: ACTIVE\nMax attempts / incident: 1\nCooldown / domain: 3600s\nRepair methods: CloudPanel, Certbot\nVerify after repair: YES\nSource: config (`auto_ssl.enabled`)\nConfi"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "Auto SSL Status Status: DISABLED Mode: ACTIVE Max attempts / incident: 1 Cooldown / domain: 3600s Repair metho",
+   "info_flags": []
+  },
+  "awsimg": {
+   "tier": "admin",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 9
+   },
+   "max_first_ack_s": 0.0,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [
+    "errors logged by RTSA during 9 case(s), e.g. ['input:domain:overlong: Unclosed client session\\nclient_session: <aiohttp.client.ClientSession object at 0x7f84a7d1e250>', 'input:domain:overlong: Unclosed client session\\nclient_session: <aiohttp.client.ClientSession object at 0x7f84a6c62e10>']"
+   ],
+   "valid_reply": [
+    "AWS IMAGE CHECK\nTidak ada URL AWS/S3 yang ditemukan di access log.\nScope: semua domain \u2022 128 access log discan"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "AWS IMAGE CHECK Tidak ada URL AWS/S3 yang ditemukan di access log. Scope: semua domain \u2022 128 access log discan",
+   "info_flags": []
+  },
+  "banip": {
+   "tier": "critical",
+   "cases": 80,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 72,
+   "input_rejected_or_inert": 18,
+   "detection_only": "RESPECTED",
+   "confirm_gate": "-",
+   "concurrency": "SERIALIZED/COALESCED",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:18 WIB | Verification: NOT_ATTEMPTED"
+   ],
+   "valid_mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "valid_errors": [],
+   "valid_outcome": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban) \u2705 iptables: rule berhasil ditambahkan Status: **BAN_APPL",
+   "info_flags": [
+    "EVERYONE_MENTION_ECHOED",
+    "ROLE_MENTION_ECHOED",
+    "STORED_INPUT"
+   ]
+  },
+  "banlist": {
+   "tier": "none",
+   "cases": 8,
+   "unauthorized": "OPEN (no role check, read-only)",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 0,
+   "input_rejected_or_inert": 0,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.0,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "Tidak ada IP yang sedang di-ban saat ini."
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "Tidak ada IP yang sedang di-ban saat ini.",
+   "info_flags": []
+  },
+  "beaddeco": {
+   "tier": "critical",
+   "cases": 30,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 22,
+   "input_rejected_or_inert": 22,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.003,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "NODE_INTERPRETER_NOT_FOUND\nTidak dapat menemukan Node interpreter (NVM) yang aman untuk project owner ini.\n\nFile ecosystem.config.js tidak dibuat.\nDomain: 001.lab.test\nProject Path: /home/lab-001/htdo"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "NODE_INTERPRETER_NOT_FOUND Tidak dapat menemukan Node interpreter (NVM) yang aman untuk project owner ini.  Fi",
+   "info_flags": [
+    "STORED_INPUT"
+   ]
+  },
+  "cekallservice": {
+   "tier": "admin",
+   "cases": 8,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 0,
+   "input_rejected_or_inert": 0,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.0,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "RTSA Systemd Inventory\nSnapshot diagnostik read-only berbasis baseline systemd_monitor. Perintah ini tidak membuat security incident.\nTotal: 0\nActive/Running: 0\nInactive: 0\nFailed: 0\nEnabled: 0\nDisabl"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "RTSA Systemd Inventory Snapshot diagnostik read-only berbasis baseline systemd_monitor. Perintah ini tidak mem",
+   "info_flags": []
+  },
+  "cekdomain": {
+   "tier": "none",
+   "cases": 26,
+   "unauthorized": "OPEN (no role check, read-only)",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 1,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.002,
+   "verdict": "PASS WITH NOTES",
+   "failures": [],
+   "notes": [
+    "timeouts: ['caller:dm_user']"
+   ],
+   "valid_reply": [
+    "**Status 127 domain:**\n\ud83d\udd34 `001.lab.test`: DNS resolution gagal\n\ud83d\udd34 `002.lab.test`: DNS resolution gagal\n\ud83d\udd34 `003.lab.test`: DNS resolution gagal\n\ud83d\udd34 `004.lab.test`: DNS resolution gagal\n\ud83d\udd34 `005.lab.test`: DNS"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "**Status 127 domain:** \ud83d\udd34 `001.lab.test`: DNS resolution gagal \ud83d\udd34 `002.lab.test`: DNS resolution gagal \ud83d\udd34 `003.la",
+   "info_flags": []
+  },
+  "cekdomaingov": {
+   "tier": "none",
+   "cases": 8,
+   "unauthorized": "OPEN (no role check, read-only)",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 0,
+   "input_rejected_or_inert": 0,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.002,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "Tidak ada domain `.go.id` ditemukan di konfigurasi Nginx."
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "Tidak ada domain `.go.id` ditemukan di konfigurasi Nginx.",
+   "info_flags": []
+  },
+  "cekloadbalance": {
+   "tier": "admin",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "RTSA \u2014 LOAD BALANCE STATUS\n```text\nDomain: 001.lab.test\nOverall: NOT_CONFIGURED\n\nCloudflare: NOT_CONFIGURED\nLB ID: -\nPool: -\nMonitor: -\nSteering: -\n\nOrigins: 0\nHealthy: 0\nServing: 0\nDisabled: 0\n\nDB:\nU"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "RTSA \u2014 LOAD BALANCE STATUS ```text Domain: 001.lab.test Overall: NOT_CONFIGURED  Cloudflare: NOT_CONFIGURED LB",
+   "info_flags": []
+  },
+  "cekpm2": {
+   "tier": "admin",
+   "cases": 8,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 0,
+   "input_rejected_or_inert": 0,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "PM2 Health Check\nNo PM2 Processes (Daemon Online): \u2022 lab-001\n\u2022 lab-002\n\u2022 lab-003\n\u2022 lab-004\n\u2022 lab-005\n\u2022 lab-008\n\u2022 lab-009\n\u2022 lab-010\n\u2022 lab-011\n\u2022 lab-013\n\u2022 lab-014\n\u2022 lab-016\n\u2022 lab-020\n\u2022 lab-021\n\u2022 lab-023"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "PM2 Health Check No PM2 Processes (Daemon Online): \u2022 lab-001 \u2022 lab-002 \u2022 lab-003 \u2022 lab-004 \u2022 lab-005 \u2022 lab-008",
+   "info_flags": []
+  },
+  "cekport": {
+   "tier": "admin",
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 4,
+   "input_rejected_or_inert": 4,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "RTSA Port Check\nPort: 20007\nStatus: LISTENING\nCatatan: Port aktif menurut kernel (/proc/net/tcp), tapi lsof maupun ss tidak bisa mengidentifikasi proses pemiliknya -- kemungkinan proses dimiliki user "
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "RTSA Port Check Port: 20007 Status: LISTENING Catatan: Port aktif menurut kernel (/proc/net/tcp), tapi lsof ma",
+   "info_flags": []
+  },
+  "cekservice": {
+   "tier": "admin",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.002,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "RTSA Systemd Service Detail\nNama unit tidak valid: `nginx`.\n\nGunakan nama unit systemd yang valid, misalnya `chrony.service` atau `fail2ban.service`."
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "RTSA Systemd Service Detail Nama unit tidak valid: `nginx`.  Gunakan nama unit systemd yang valid, misalnya `c",
+   "info_flags": [
+    "EVERYONE_MENTION_ECHOED",
+    "ROLE_MENTION_ECHOED"
+   ]
+  },
+  "cfcheck": {
+   "tier": "none",
+   "cases": 26,
+   "unauthorized": "OPEN (no role check, read-only)",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 1,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.002,
+   "verdict": "PASS WITH NOTES",
+   "failures": [],
+   "notes": [
+    "timeouts: ['concurrency:x2']"
+   ],
+   "valid_reply": [
+    "**Cloudflare Check** \u2014 127 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 127 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `001.lab.test` \u2014 gagal resolve DNS: [Errn"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "**Cloudflare Check** \u2014 127 domain discek \u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0",
+   "info_flags": []
+  },
+  "changeaws": {
+   "tier": "admin",
+   "cases": 62,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 54,
+   "input_rejected_or_inert": 54,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.0,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "RTSA Action -- AWS CREDENTIAL ROTATION (NO CHANGE)\nSemua file .env yang menggunakan AWS credential sudah sama dengan target -- tidak ada file yang perlu diubah.\nStatus: PREVIEW / NO_CHANGE\nAWS Access "
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "RTSA Action -- AWS CREDENTIAL ROTATION (NO CHANGE) Semua file .env yang menggunakan AWS credential sudah sama ",
+   "info_flags": []
+  },
+  "changecf": {
+   "tier": "admin",
+   "cases": 44,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 36,
+   "input_rejected_or_inert": 36,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "**Rotasi Credential Gagal**\n\nOld credential (oooo********************************oooo) tidak ditemukan.\nTidak ada file yang diubah."
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "**Rotasi Credential Gagal**  Old credential (oooo********************************oooo) tidak ditemukan. Tidak ",
+   "info_flags": [
+    "ROLE_MENTION_ECHOED"
+   ]
+  },
+  "changedc": {
+   "tier": "admin",
+   "cases": 44,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 36,
+   "input_rejected_or_inert": 36,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "**Rotasi Credential Gagal**\n\nOld credential (https://discord.com/api/webhooks/1/******) tidak ditemukan.\nTidak ada file yang diubah."
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "**Rotasi Credential Gagal**  Old credential (https://discord.com/api/webhooks/1/******) tidak ditemukan. Tidak",
+   "info_flags": []
+  },
+  "changeowner": {
+   "tier": "critical",
+   "cases": 44,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 36,
+   "input_rejected_or_inert": 35,
+   "detection_only": "RESPECTED",
+   "confirm_gate": "ENFORCED",
+   "concurrency": "SERIALIZED/COALESCED",
+   "components": "REQUESTER-ONLY",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.0,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "RTSA Action -- OWNERSHIP AUDIT (full home)\nReview hasil audit ownership SELURUH home directory di bawah ini sebelum confirm. Hanya path yang diklasifikasikan EXPECTED_USER_OWNED yang akan diperbaiki -",
+    "RTSA Action -- CHANGE_OWNER_VERIFICATION_FAILED\nHome: /home/lab-001\nRequested Ownership: lab-001:lab-001\nStatus: VERIFICATION_FAILED\nReason: chown selesai tapi post-change audit masih menemukan 5 fixa"
+   ],
+   "valid_mutations": [
+    "/usr/bin/sudo chown --no-dereference lab-001:lab-001 /home/lab-001/logs /home/lab-001/logs/nginx /home/lab-001/logs/nginx/access.log.1 /home/lab-001/logs/nginx/error.log"
+   ],
+   "valid_errors": [],
+   "valid_outcome": "RTSA Action -- CHANGE_OWNER_VERIFICATION_FAILED Home: /home/lab-001 Requested Ownership: lab-001:lab-001 Statu",
+   "info_flags": [
+    "STORED_INPUT"
+   ]
+  },
+  "checkssl": {
+   "tier": "none",
+   "cases": 26,
+   "unauthorized": "OPEN (no role check, read-only)",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.026,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\ud83d\udd34 `001.lab.test`: error (gaierror)"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "\ud83d\udd34 `001.lab.test`: error (gaierror)",
+   "info_flags": []
+  },
+  "clearcp": {
+   "tier": "critical",
+   "cases": 8,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 0,
+   "input_rejected_or_inert": 0,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.002,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u2705 `nginx -t` passed. No stale checkpoint found at `/var/lib/letsencrypt/temp_checkpoint` \u2014 nothing to clear."
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "\u2705 `nginx -t` passed. No stale checkpoint found at `/var/lib/letsencrypt/temp_checkpoint` \u2014 nothing to clear.",
+   "info_flags": []
+  },
+  "clearproses": {
+   "tier": "critical",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u2705 **CLEAR COMPLETE** -- user `lab-116` tidak punya proses aktif sama sekali. Tidak ada yang perlu dibersihkan, /deluser bisa langsung dicoba."
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "\u2705 **CLEAR COMPLETE** -- user `lab-116` tidak punya proses aktif sama sekali. Tidak ada yang perlu dibersihkan,",
+   "info_flags": [
+    "EVERYONE_MENTION_ECHOED",
+    "ROLE_MENTION_ECHOED"
+   ]
+  },
+  "dbgenbalance": {
+   "tier": "critical",
+   "cases": 44,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 36,
+   "input_rejected_or_inert": 36,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "RTSA \u2014 DATABASE BALANCE REPORT\nDomain: 001.lab.test\nStatus: ABORTED\nResult: load_balancing.enabled is false in this server's configuration\nby critical-user"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "RTSA \u2014 DATABASE BALANCE REPORT Domain: 001.lab.test Status: ABORTED Result: load_balancing.enabled is false in",
+   "info_flags": [
+    "EVERYONE_MENTION_ECHOED",
+    "ROLE_MENTION_ECHOED"
+   ]
+  },
+  "deluser": {
+   "tier": "critical",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "RESPECTED",
+   "confirm_gate": "ENFORCED",
+   "concurrency": "SERIALIZED/COALESCED",
+   "components": "REQUESTER-ONLY",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.0,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u26a0\ufe0f DELETE LINUX USER\nUser: `lab-116`\nUID: 1123\nHome: /home/lab-116 (10 file, 478.5 KB)\nShell: /bin/bash\nActive processes: 0\nSystemd dependencies (non-aktif): 0\nCron entries: 0\nSudo privileges: Tidak a",
+    "**\u274c DELUSER FAILED**\n\nUser: `lab-116`\nReason: userdel selesai tanpa error tapi verifikasi mengonfirmasi akun masih ada\n\nVerification:\nLinux account: STILL EXISTS\nUID: 1123\nActive processes: 0\nActive s"
+   ],
+   "valid_mutations": [
+    "/usr/sbin/userdel lab-116"
+   ],
+   "valid_errors": [],
+   "valid_outcome": "**\u274c DELUSER FAILED**  User: `lab-116` Reason: userdel selesai tanpa error tapi verifikasi mengonfirmasi akun m",
+   "info_flags": [
+    "EVERYONE_MENTION_ECHOED",
+    "ROLE_MENTION_ECHOED"
+   ]
+  },
+  "errordetail": {
+   "tier": "admin",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.002,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "RTSA \u2014 PRODUCTION ISSUE DETAIL\nResult: Unrecognised incident id. Use APP-YYYYMMDD-NNNN (shown in Discord alerts) or the 16 character id."
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "RTSA \u2014 PRODUCTION ISSUE DETAIL Result: Unrecognised incident id. Use APP-YYYYMMDD-NNNN (shown in Discord alert",
+   "info_flags": []
+  },
+  "errorimpact": {
+   "tier": "admin",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.002,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "RTSA \u2014 PRODUCTION IMPACT BY PROJECT\nWindow: 1d\nResult: No projects with application error impact were found in this window.\nWindow: 0 projects, 0 incidents. Project score = top incident plus a small s"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "RTSA \u2014 PRODUCTION IMPACT BY PROJECT Window: 1d Result: No projects with application error impact were found in",
+   "info_flags": []
+  },
+  "errortop": {
+   "tier": "admin",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "RTSA \u2014 TOP PRODUCTION ISSUES\nWindow: 1d\nResult: No application error incidents with measurable impact were found in this window.\nWindow: 0 incidents (0 active) across 0 projects in the window.\nRanked "
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "RTSA \u2014 TOP PRODUCTION ISSUES Window: 1d Result: No application error incidents with measurable impact were fou",
+   "info_flags": []
+  },
+  "explain": {
+   "tier": "admin",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.002,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "**ADAPTIVE DETECTION STATUS**\n\nEnabled: No\n\nAdaptive detection sepenuhnya nonaktif (`adaptive_detection.enabled: false`) -- tidak ada feedback yang dikumpulkan, tidak ada aggregation, dan scoring prod"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "**ADAPTIVE DETECTION STATUS**  Enabled: No  Adaptive detection sepenuhnya nonaktif (`adaptive_detection.enable",
+   "info_flags": []
+  },
+  "feaddeco": {
+   "tier": "critical",
+   "cases": 30,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 22,
+   "input_rejected_or_inert": 22,
+   "detection_only": "RESPECTED",
+   "confirm_gate": "ENFORCED",
+   "concurrency": "BOTH EXECUTED",
+   "components": "REQUESTER-ONLY",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "EXISTING ECOSYSTEM CONFIG DETECTED\nReason: File ecosystem.config.js sudah ada.\nDomain: 001.lab.test\nProject: /home/lab-001/htdocs/001.lab.test\nConfig Path: /home/lab-001/htdocs/001.lab.test/ecosystem."
+   ],
+   "valid_mutations": [
+    "FS_MKDIR ['/home/lab-001/htdocs/001.lab.test']",
+    "FS_WRITE /home/lab-001/htdocs/001.lab.test/ecosystem.config.js.rtsa-backup-20261005T130421643177.tmp-12685-3619afd2a4e4b73d"
+   ],
+   "valid_errors": [],
+   "valid_outcome": "EXISTING ECOSYSTEM CONFIG DETECTED Reason: File ecosystem.config.js sudah ada. Domain: 001.lab.test Project: /",
+   "info_flags": [
+    "STORED_INPUT"
+   ]
+  },
+  "feedback": {
+   "tier": "critical",
+   "cases": 62,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 54,
+   "input_rejected_or_inert": 54,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u274c Adaptive detection dinonaktifkan (`adaptive_detection.enabled: false`) -- feedback tidak dicatat."
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "\u274c Adaptive detection dinonaktifkan (`adaptive_detection.enabled: false`) -- feedback tidak dicatat.",
+   "info_flags": [
+    "EVERYONE_MENTION_ECHOED",
+    "ROLE_MENTION_ECHOED"
+   ]
+  },
+  "fimpause": {
+   "tier": "admin",
+   "cases": 8,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 0,
+   "input_rejected_or_inert": 0,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.002,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u23f8\ufe0f File integrity scanning **dipause**. Baseline tetap diperbarui secara diam-diam selama pause (jadi tidak perlu `/fimrescan` manual setelahnya), tapi alert disuppress. Otomatis resume dalam 60 menit"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "\u23f8\ufe0f File integrity scanning **dipause**. Baseline tetap diperbarui secara diam-diam selama pause (jadi tidak pe",
+   "info_flags": []
+  },
+  "fimrescan": {
+   "tier": "admin",
+   "cases": 8,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 0,
+   "input_rejected_or_inert": 0,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u2705 Baseline berhasil dibangun ulang: **4955 file** terindeks (0 di-hash ulang, 4955 dipertahankan dari baseline lama karena tidak berubah). Monitoring lanjut dari state ini \u2014 perubahan yang ada SEKARAN"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "\u2705 Baseline berhasil dibangun ulang: **4955 file** terindeks (0 di-hash ulang, 4955 dipertahankan dari baseline",
+   "info_flags": []
+  },
+  "fimresume": {
+   "tier": "admin",
+   "cases": 8,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 0,
+   "input_rejected_or_inert": 0,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "Scanning memang gak lagi dipause (flag gak ketemu) \u2014 gak ada yang perlu di-resume."
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "Scanning memang gak lagi dipause (flag gak ketemu) \u2014 gak ada yang perlu di-resume.",
+   "info_flags": []
+  },
+  "fimverify": {
+   "tier": "admin",
+   "cases": 8,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 0,
+   "input_rejected_or_inert": 0,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.0,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "Belum ada baseline tersimpan \u2014 FIM belum pernah jalan atau belum selesai baseline pertama."
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "Belum ada baseline tersimpan \u2014 FIM belum pernah jalan atau belum selesai baseline pertama.",
+   "info_flags": []
+  },
+  "fixcf": {
+   "tier": "critical",
+   "cases": 8,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 0,
+   "input_rejected_or_inert": 0,
+   "detection_only": "RESPECTED",
+   "confirm_gate": "ENFORCED",
+   "concurrency": "BOTH EXECUTED",
+   "components": "REQUESTER-ONLY",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u2705 Allow-rules Cloudflare diterapkan (46 rule terkonfirmasi ada).\n\n**Sebelum lanjut**: buka website kamu di browser biasa, pastiin masih normal. Kalau udah oke, klik tombol di bawah buat nutup akses la"
+   ],
+   "valid_mutations": [
+    "/usr/sbin/ip6tables -A INPUT -p tcp --dport 443 -j",
+    "/usr/sbin/ip6tables -A INPUT -p tcp --dport 80 -j",
+    "/usr/sbin/ip6tables -A INPUT -p tcp -s 2400:cb00::/32 --dport",
+    "/usr/sbin/ip6tables -A INPUT -p tcp -s 2405:8100::/32 --dport",
+    "/usr/sbin/ip6tables -A INPUT -p tcp -s 2405:b500::/32 --dport",
+    "/usr/sbin/ip6tables -A INPUT -p tcp -s 2606:4700::/32 --dport"
+   ],
+   "valid_errors": [],
+   "valid_outcome": "\u2705 Allow-rules Cloudflare diterapkan (46 rule terkonfirmasi ada).  **Sebelum lanjut**: buka website kamu di bro",
+   "info_flags": []
+  },
+  "fixsophp": {
+   "tier": "critical",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "RESPECTED",
+   "confirm_gate": "-",
+   "concurrency": "SERIALIZED/COALESCED",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u274c Gagal menerapkan hardening untuk `001.lab.test`: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/001.lab.test.conf blocked\n\nDomain: 001.lab.test\nConfig: /etc/nginx/sites-en"
+   ],
+   "valid_mutations": [
+    "FS_WRITE /etc/nginx/sites-enabled/001.lab.test.conf"
+   ],
+   "valid_errors": [],
+   "valid_outcome": "\u274c Gagal menerapkan hardening untuk `001.lab.test`: Gagal menulis config: campaign sandbox: write to /etc/nginx",
+   "info_flags": []
+  },
+  "fixssl": {
+   "tier": "critical",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.0,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u274c `001.lab.test` does not resolve \u2014 aborting before touching any config."
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "\u274c `001.lab.test` does not resolve \u2014 aborting before touching any config.",
+   "info_flags": []
+  },
+  "fixsslphp": {
+   "tier": "critical",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u26a0\ufe0f `001.lab.test` tidak terdeteksi sebagai project PHP (tidak ada directive `fastcgi_pass` di vhost-nya saat ini) \u2014 `/fixsslphp` khusus untuk project PHP dan tidak menyentuh domain ini. Gunakan `/fixs"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "\u26a0\ufe0f `001.lab.test` tidak terdeteksi sebagai project PHP (tidak ada directive `fastcgi_pass` di vhost-nya saat i",
+   "info_flags": []
+  },
+  "genloadbalance": {
+   "tier": "critical",
+   "cases": 50,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 36,
+   "input_rejected_or_inert": 36,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.003,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN)\nNo change was made.\nDomain: 001.lab.test\nVerdict: BLOCKED\nOperation: cbb169b9ca4a4503\nBlocked / conflicts: LOAD_BALANCING_DISABLED: load_balancing.enabled is false i"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "RTSA \u2014 LOAD BALANCE PLAN (DRY RUN) No change was made. Domain: 001.lab.test Verdict: BLOCKED Operation: cbb169",
+   "info_flags": [
+    "EVERYONE_MENTION_ECHOED",
+    "ROLE_MENTION_ECHOED"
+   ]
+  },
+  "gitbranch": {
+   "tier": "critical",
+   "cases": 44,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 36,
+   "input_rejected_or_inert": 36,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "ENFORCED",
+   "concurrency": "-",
+   "components": "REQUESTER-ONLY",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.03,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u26a0\ufe0f Ini akan menjalankan `git fetch --all` lalu `git checkout main` sebagai `lab-001`, mengganti working tree project tersebut ke branch lain. Confirm dalam 30 detik atau otomatis dibatalkan.",
+    "\ud83d\udd04 Menjalankan /gitbranch...",
+    "Branch Change Failed\nLinux User: `lab-001`\nProject: `/home/lab-001/htdocs/001.lab.test`\nReason: Branch `main` not found (checked local and remote branches after `git fetch --all`)."
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "Branch Change Failed Linux User: `lab-001` Project: `/home/lab-001/htdocs/001.lab.test` Reason: Branch `main` ",
+   "info_flags": [
+    "EVERYONE_MENTION_ECHOED",
+    "ROLE_MENTION_ECHOED"
+   ]
+  },
+  "gitfetch": {
+   "tier": "admin",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.024,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "Git Fetch Complete\nLinux User: `lab-001`\nProject: `/home/lab-001/htdocs/001.lab.test`\nAvailable Updates: 2 new commit(s) available (`git pull` to apply)"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "Git Fetch Complete Linux User: `lab-001` Project: `/home/lab-001/htdocs/001.lab.test` Available Updates: 2 new",
+   "info_flags": []
+  },
+  "gitpull": {
+   "tier": "critical",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "RESPECTED",
+   "confirm_gate": "ENFORCED",
+   "concurrency": "BOTH EXECUTED",
+   "components": "REQUESTER-ONLY",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.024,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u26a0\ufe0f Ini akan menjalankan `git pull` sebagai `lab-001`, meng-update working tree dengan commit terbaru dari remote (bisa membawa kode baru, migration, atau merge conflict). Confirm dalam 30 detik atau o",
+    "\ud83d\udd04 Menjalankan /gitpull...",
+    "Git Pull Complete\nLinux User: `lab-001`\nProject: `/home/lab-001/htdocs/001.lab.test`\nPrevious Commit: ``\nUpdated Commit: ``\nResult: \u2705 Already up to date\nOutput: ```\n(no output)\n```"
+   ],
+   "valid_mutations": [
+    "/usr/bin/git pull"
+   ],
+   "valid_errors": [],
+   "valid_outcome": "Git Pull Complete Linux User: `lab-001` Project: `/home/lab-001/htdocs/001.lab.test` Previous Commit: `` Updat",
+   "info_flags": []
+  },
+  "gitstatus": {
+   "tier": "admin",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.024,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "Git Status \u2014 lab-001\n`/home/lab-001/htdocs/001.lab.test`\nCurrent Branch: `main`\nRemote: git@github.com:lab/app.git\nChanged Files: 0: Clean (no uncommitted changes)\nAhead/Behind: 0 ahead, 2 behind\nLate"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "Git Status \u2014 lab-001 `/home/lab-001/htdocs/001.lab.test` Current Branch: `main` Remote: git@github.com:lab/app",
+   "info_flags": []
+  },
+  "health": {
+   "tier": "none",
+   "cases": 8,
+   "unauthorized": "OPEN (no role check, read-only)",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 0,
+   "input_rejected_or_inert": 0,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 1.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "**Host Health**\nCPU: `15.9%`\nMemory: `29.2%`\nDisk: `22.6%`"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "**Host Health** CPU: `15.9%` Memory: `29.2%` Disk: `22.6%`",
+   "info_flags": []
+  },
+  "ignoredm": {
+   "tier": "critical",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u274c Server ini belum memakai file ignore-domain eksternal (`modules.website_monitor.ignore_domains_file` belum diset), jadi ignore list tidak bisa diubah lewat Discord."
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "\u274c Server ini belum memakai file ignore-domain eksternal (`modules.website_monitor.ignore_domains_file` belum d",
+   "info_flags": [
+    "STORED_INPUT"
+   ]
+  },
+  "incident": {
+   "tier": "none",
+   "cases": 26,
+   "unauthorized": "OPEN (no role check, read-only)",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\ud83d\udccb **Incident** `evt-campaign-ip`\n**Status**: OPEN\n**Category**: WEB_ATTACK_RCE (HIGH)\n**IP**: `203.0.113.50`\n**Domain**: 001.lab.test\n**Handled By**: belum ditangani\n**Cloudflare**: tidak ada rule ter"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "\ud83d\udccb **Incident** `evt-campaign-ip` **Status**: OPEN **Category**: WEB_ATTACK_RCE (HIGH) **IP**: `203.0.113.50` *",
+   "info_flags": [
+    "EVERYONE_MENTION_ECHOED",
+    "ROLE_MENTION_ECHOED"
+   ]
+  },
+  "kronologi": {
+   "tier": "admin",
+   "cases": 30,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 22,
+   "input_rejected_or_inert": 22,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.002,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "Kronologi: 203.0.113.50\nTidak ditemukan event apapun untuk `203.0.113.50` dalam 24 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada w"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "Kronologi: 203.0.113.50 Tidak ditemukan event apapun untuk `203.0.113.50` dalam 24 jam terakhir. Ini bukan jam",
+   "info_flags": [
+    "EVERYONE_MENTION_ECHOED",
+    "ROLE_MENTION_ECHOED",
+    "STORED_INPUT"
+   ]
+  },
+  "lepas": {
+   "tier": "critical",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u2139\ufe0f No active RTSA Under Attack state found for `001.lab.test`."
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "\u2139\ufe0f No active RTSA Under Attack state found for `001.lab.test`.",
+   "info_flags": []
+  },
+  "monit": {
+   "tier": "critical",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u274c Server ini belum memakai file ignore-domain eksternal (`modules.website_monitor.ignore_domains_file` belum diset), jadi ignore list tidak bisa diubah lewat Discord."
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "\u274c Server ini belum memakai file ignore-domain eksternal (`modules.website_monitor.ignore_domains_file` belum d",
+   "info_flags": [
+    "STORED_INPUT"
+   ]
+  },
+  "monoaddeco": {
+   "tier": "critical",
+   "cases": 30,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 22,
+   "input_rejected_or_inert": 22,
+   "detection_only": "RESPECTED",
+   "confirm_gate": "ENFORCED",
+   "concurrency": "BOTH EXECUTED",
+   "components": "REQUESTER-ONLY",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.002,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "EXISTING ECOSYSTEM CONFIG DETECTED\nReason: File ecosystem.config.js sudah ada.\nDomain: 001.lab.test\nProject: /home/lab-001/htdocs/001.lab.test\nConfig Path: /home/lab-001/htdocs/001.lab.test/ecosystem."
+   ],
+   "valid_mutations": [
+    "FS_MKDIR ['/home/lab-001/htdocs/001.lab.test']",
+    "FS_WRITE /home/lab-001/htdocs/001.lab.test/ecosystem.config.js.rtsa-backup-20261005T130506159330.tmp-12922-6814e5f1aca3a4ac"
+   ],
+   "valid_errors": [],
+   "valid_outcome": "EXISTING ECOSYSTEM CONFIG DETECTED Reason: File ecosystem.config.js sudah ada. Domain: 001.lab.test Project: /",
+   "info_flags": [
+    "STORED_INPUT"
+   ]
+  },
+  "newvhost": {
+   "tier": "critical",
+   "cases": 30,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "RTSA \u2014 VHOST ALREADY PRESENT\nDomain: 001.lab.test\nVhost: /etc/nginx/sites-enabled/001.lab.test.conf\nResult: an enabled vhost for this domain already exists -- nothing to do (never overwritten)\nby crit"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "RTSA \u2014 VHOST ALREADY PRESENT Domain: 001.lab.test Vhost: /etc/nginx/sites-enabled/001.lab.test.conf Result: an",
+   "info_flags": [
+    "EVERYONE_MENTION_ECHOED",
+    "ROLE_MENTION_ECHOED",
+    "STORED_INPUT"
+   ]
+  },
+  "nginxconf": {
+   "tier": "admin",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "REQUESTER-ONLY",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.03,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "NGINX Configuration\nDomain: 001.lab.test\nLinux User: `lab-001`\nProject: `/home/lab-001/htdocs/001.lab.test`\nConfiguration: `/etc/nginx/sites-enabled/001.lab.test.conf`\nDocument Root: `/home/lab-001/ht"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "NGINX Configuration Domain: 001.lab.test Linux User: `lab-001` Project: `/home/lab-001/htdocs/001.lab.test` Co",
+   "info_flags": []
+  },
+  "nginxreload": {
+   "tier": "admin",
+   "cases": 8,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 0,
+   "input_rejected_or_inert": 0,
+   "detection_only": "RESPECTED",
+   "confirm_gate": "-",
+   "concurrency": "SERIALIZED/COALESCED",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.0,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u2705 Config valid, Nginx berhasil di-reload.\nOK"
+   ],
+   "valid_mutations": [
+    "/usr/bin/systemctl reload nginx"
+   ],
+   "valid_errors": [],
+   "valid_outcome": "\u2705 Config valid, Nginx berhasil di-reload. OK",
+   "info_flags": []
+  },
+  "nginxrestart": {
+   "tier": "critical",
+   "cases": 8,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 0,
+   "input_rejected_or_inert": 0,
+   "detection_only": "RESPECTED",
+   "confirm_gate": "-",
+   "concurrency": "SERIALIZED/COALESCED",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u2705 Config valid, Nginx berhasil di-restart.\nOK"
+   ],
+   "valid_mutations": [
+    "/usr/bin/systemctl restart nginx"
+   ],
+   "valid_errors": [],
+   "valid_outcome": "\u2705 Config valid, Nginx berhasil di-restart. OK",
+   "info_flags": []
+  },
+  "nginxtest": {
+   "tier": "none",
+   "cases": 8,
+   "unauthorized": "OPEN (no role check, read-only)",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 0,
+   "input_rejected_or_inert": 0,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.0,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u2705 `nginx -t`:\n```\nnginx: the configuration file /etc/nginx/nginx.conf syntax is ok\nnginx: configuration file /etc/nginx/nginx.conf test is successful\n```"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "\u2705 `nginx -t`: ``` nginx: the configuration file /etc/nginx/nginx.conf syntax is ok nginx: configuration file /",
+   "info_flags": []
+  },
+  "ping": {
+   "tier": "none",
+   "cases": 8,
+   "unauthorized": "OPEN (no role check, read-only)",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 0,
+   "input_rejected_or_inert": 0,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.0,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\ud83c\udfd3 Pong! `42ms`"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "\ud83c\udfd3 Pong! `42ms`",
+   "info_flags": []
+  },
+  "pm2del": {
+   "tier": "critical",
+   "cases": 44,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 36,
+   "input_rejected_or_inert": 36,
+   "detection_only": "RESPECTED",
+   "confirm_gate": "ENFORCED",
+   "concurrency": "BOTH EXECUTED",
+   "components": "REQUESTER-ONLY",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.026,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u26a0\ufe0f Ini akan menjalankan `pm2 delete lab-001` sebagai `lab-001`, menghapus permanen aplikasi tersebut dari process list PM2 (perlu `/pm2start` atau restart `ecosystem.config.js` baru supaya kembali lag",
+    "\ud83d\udd04 Menjalankan /pm2del...",
+    "PM2 Delete Complete\nLinux User: `lab-001`\nApplication: `lab-001`\nResult: \ud83d\uddd1\ufe0f Deleted"
+   ],
+   "valid_mutations": [
+    "/bin/bash -l -c pm2 delete lab-001"
+   ],
+   "valid_errors": [],
+   "valid_outcome": "PM2 Delete Complete Linux User: `lab-001` Application: `lab-001` Result: \ud83d\uddd1\ufe0f Deleted",
+   "info_flags": [
+    "EVERYONE_MENTION_ECHOED",
+    "ROLE_MENTION_ECHOED"
+   ]
+  },
+  "pm2list": {
+   "tier": "admin",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.025,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "PM2 Processes \u2014 lab-001\n`/home/lab-001/htdocs/001.lab.test`\n\n(no processes reported)\nSummary: no processes"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "PM2 Processes \u2014 lab-001 `/home/lab-001/htdocs/001.lab.test`  (no processes reported) Summary: no processes",
+   "info_flags": []
+  },
+  "pm2logs": {
+   "tier": "admin",
+   "cases": 48,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 40,
+   "input_rejected_or_inert": 40,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "PM2 Logs \u2014 lab-001\nLinux user `lab-001` \u2014 last 100 line(s) requested\n```\n(no log output)\n```"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "PM2 Logs \u2014 lab-001 Linux user `lab-001` \u2014 last 100 line(s) requested ``` (no log output) ```",
+   "info_flags": [
+    "EVERYONE_MENTION_ECHOED",
+    "ROLE_MENTION_ECHOED"
+   ]
+  },
+  "pm2reload": {
+   "tier": "critical",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "RESPECTED",
+   "confirm_gate": "ENFORCED",
+   "concurrency": "BOTH EXECUTED",
+   "components": "REQUESTER-ONLY",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u26a0\ufe0f Ini akan menjalankan `pm2 reload ecosystem.config.js` sebagai `lab-001`, me-restart proses PM2-nya (zero-downtime, tapi tetap reload production yang live). Confirm dalam 30 detik atau otomatis diba",
+    "\ud83d\udd04 Menjalankan /pm2reload...",
+    "PM2 Reload Complete\nLinux User: `lab-001`\nProject: `/home/lab-001/htdocs/001.lab.test`\nAction: `pm2 reload ecosystem.config.js`\nResult: \u2705 Success\nProcesses: \u2705 `ecosystem.config.js` \u2014 ONLINE\nReload Tim"
+   ],
+   "valid_mutations": [
+    "/bin/bash -l -c pm2 reload ecosystem.config.js"
+   ],
+   "valid_errors": [],
+   "valid_outcome": "PM2 Reload Complete Linux User: `lab-001` Project: `/home/lab-001/htdocs/001.lab.test` Action: `pm2 reload eco",
+   "info_flags": [
+    "EVERYONE_MENTION_ECHOED",
+    "ROLE_MENTION_ECHOED"
+   ]
+  },
+  "pm2save": {
+   "tier": "critical",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "RESPECTED",
+   "confirm_gate": "-",
+   "concurrency": "BOTH EXECUTED",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.002,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "PM2 Save \u2014 Verification Warning\nLinux User: `lab-001`\ndump.pm2: \u26a0\ufe0f Present, but its modification time did not change"
+   ],
+   "valid_mutations": [
+    "/bin/bash -l -c pm2 save"
+   ],
+   "valid_errors": [],
+   "valid_outcome": "PM2 Save \u2014 Verification Warning Linux User: `lab-001` dump.pm2: \u26a0\ufe0f Present, but its modification time did not ",
+   "info_flags": [
+    "EVERYONE_MENTION_ECHOED",
+    "ROLE_MENTION_ECHOED"
+   ]
+  },
+  "pm2start": {
+   "tier": "critical",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "RESPECTED",
+   "confirm_gate": "-",
+   "concurrency": "BOTH EXECUTED",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.03,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "PM2 Start Complete\nLinux User: `lab-001`\nDomain: `001.lab.test`\nProject Path: `/home/lab-001/htdocs/001.lab.test`\nAction: `pm2 start ecosystem.config.js`\nStatus: \u2705 `ecosystem.config.js` \u2014 ONLINE"
+   ],
+   "valid_mutations": [
+    "/bin/bash -l -c pm2 start ecosystem.config.js"
+   ],
+   "valid_errors": [],
+   "valid_outcome": "PM2 Start Complete Linux User: `lab-001` Domain: `001.lab.test` Project Path: `/home/lab-001/htdocs/001.lab.te",
+   "info_flags": []
+  },
+  "pm2startup": {
+   "tier": "critical",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "RESPECTED",
+   "confirm_gate": "-",
+   "concurrency": "SERIALIZED/COALESCED",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "**PM2 STARTUP GAGAL**\n\n**User**\n`lab-001`\n\n**Reason**\nPM2 executable tidak dapat ditemukan/ditentukan dengan aman.\n\n**Detail**\npath PM2 yang terdeteksi ('/opt/node22/bin/pm2') berada di luar home user"
+   ],
+   "valid_mutations": [
+    "/bin/bash -l -c command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+   ],
+   "valid_errors": [],
+   "valid_outcome": "**PM2 STARTUP GAGAL**  **User** `lab-001`  **Reason** PM2 executable tidak dapat ditemukan/ditentukan dengan a",
+   "info_flags": [
+    "EVERYONE_MENTION_ECHOED",
+    "ROLE_MENTION_ECHOED"
+   ]
+  },
+  "pm2startuplist": {
+   "tier": "admin",
+   "cases": 8,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 0,
+   "input_rejected_or_inert": 0,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "**Audit PM2 Startup**\n\n66 user PM2 terdeteksi\n\n\u26a0\ufe0f NOT READY\n**lab-001**\n\nReason\npm2-lab-001.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FO",
+    "**lab-014**\n\nReason\npm2-lab-014.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-016**\n\nReas",
+    "`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-035**\n\nReason\npm2-lab-035.service belum ada\n\nPM2 executable\n`(tidak ditemukan"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "UNKNOWN_RUNTIME  \u26a0\ufe0f NOT READY **lab-120**  Reason pm2-lab-120.service belum ada  PM2 executable `(tidak ditemu",
+   "info_flags": []
+  },
+  "pm2stop": {
+   "tier": "critical",
+   "cases": 44,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 36,
+   "input_rejected_or_inert": 36,
+   "detection_only": "RESPECTED",
+   "confirm_gate": "ENFORCED",
+   "concurrency": "BOTH EXECUTED",
+   "components": "REQUESTER-ONLY",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.023,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u26a0\ufe0f Ini akan menjalankan `pm2 stop lab-001` sebagai `lab-001`, membuat aplikasi tersebut offline. Confirm dalam 30 detik atau otomatis dibatalkan.",
+    "\ud83d\udd04 Menjalankan /pm2stop...",
+    "PM2 Stop Complete\nLinux User: `lab-001`\nApplication: `lab-001`\nResult: \u23f9\ufe0f Stopped"
+   ],
+   "valid_mutations": [
+    "/bin/bash -l -c pm2 stop lab-001"
+   ],
+   "valid_errors": [],
+   "valid_outcome": "PM2 Stop Complete Linux User: `lab-001` Application: `lab-001` Result: \u23f9\ufe0f Stopped",
+   "info_flags": [
+    "EVERYONE_MENTION_ECHOED",
+    "ROLE_MENTION_ECHOED"
+   ]
+  },
+  "profile": {
+   "tier": "admin",
+   "cases": 8,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 0,
+   "input_rejected_or_inert": 0,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "REQUESTER-ONLY",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.0,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "RTSA Operational Profile\nRTSA Runtime: Hostname: vm\nRTSA Version: v2.5\nUptime: 2s\nPython Version: 3.11.15\nRunning Modules: 0/0\nOverall Resource Usage: RTSA Process CPU: 0.0%\nRTSA Process Memory: 67.5 "
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "RTSA Operational Profile RTSA Runtime: Hostname: vm RTSA Version: v2.5 Uptime: 2s Python Version: 3.11.15 Runn",
+   "info_flags": []
+  },
+  "projectinfo": {
+   "tier": "admin",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.002,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "Project Info \u2014 lab-001\nProject Path: `/home/lab-001/htdocs/001.lab.test`\nLinux User: `lab-001`\nDomain: 001.lab.test\nPort: 20007\nPM2 Processes: none detected\nNode Version: `v22.12.0`\nDisk Usage: unknow"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "Project Info \u2014 lab-001 Project Path: `/home/lab-001/htdocs/001.lab.test` Linux User: `lab-001` Domain: 001.lab",
+   "info_flags": [
+    "STORED_INPUT"
+   ]
+  },
+  "respm2": {
+   "tier": "critical",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "RESPECTED",
+   "confirm_gate": "ENFORCED",
+   "concurrency": "BOTH EXECUTED",
+   "components": "REQUESTER-ONLY",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.032,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u26a0\ufe0f Ini akan restart ecosystem PM2 untuk project CloudPanel milik `lab-001` (`pm2 restart ecosystem.config.js`), yang mungkin bikin aplikasi yang lagi jalan terganggu sebentar. Confirm dalam 30 detik a",
+    "\ud83d\udd04 Menjalankan /respm2...",
+    "**PM2 Restart Selesai**\n\n**Linux User**\n`lab-001`\n\n**Project**\n`/home/lab-001/htdocs/001.lab.test`\n\n**Action**\n`pm2 restart ecosystem.config.js`\n\n**Result**\n\u2705 Berhasil\n\n**Processes**\n\u2705 `ecosystem.conf"
+   ],
+   "valid_mutations": [
+    "/bin/bash -l -c pm2 restart ecosystem.config.js"
+   ],
+   "valid_errors": [],
+   "valid_outcome": "**PM2 Restart Selesai**  **Linux User** `lab-001`  **Project** `/home/lab-001/htdocs/001.lab.test`  **Action**",
+   "info_flags": []
+  },
+  "restart": {
+   "tier": "admin",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "RESPECTED",
+   "confirm_gate": "-",
+   "concurrency": "BOTH EXECUTED",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u2705 Restart nginx: OK"
+   ],
+   "valid_mutations": [
+    "/usr/bin/systemctl restart nginx"
+   ],
+   "valid_errors": [],
+   "valid_outcome": "\u2705 Restart nginx: OK",
+   "info_flags": [
+    "EVERYONE_MENTION_ECHOED",
+    "ROLE_MENTION_ECHOED"
+   ]
+  },
+  "rtsareload": {
+   "tier": "critical",
+   "cases": 8,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 0,
+   "input_rejected_or_inert": 0,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "ENFORCED",
+   "concurrency": "-",
+   "components": "REQUESTER-ONLY",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u26a0\ufe0f Ini akan reload konfigurasi RTSA dari `config.yaml` langsung di tempat (tanpa restart, tanpa gangguan service). Setiap module yang mendukung hot reload bakal langsung pakai setting baru; module yan",
+    "\ud83d\udd04 Me-reload konfigurasi...",
+    "Configuration Reload Unavailable\nThis running RTSA process was not wired up with a live reload callback (older build). Restart RTSA to pick up `config.yaml` changes."
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "Configuration Reload Unavailable This running RTSA process was not wired up with a live reload callback (older",
+   "info_flags": []
+  },
+  "runbuild": {
+   "tier": "critical",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "RESPECTED",
+   "confirm_gate": "ENFORCED",
+   "concurrency": "BOTH EXECUTED",
+   "components": "REQUESTER-ONLY",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.045,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u26a0\ufe0f Ini akan menjalankan `npm run build` sebagai `lab-001`, yang mungkin butuh waktu dan akan menulis build artifact ke directory project tersebut. Confirm dalam 30 detik atau otomatis dibatalkan.",
+    "\ud83d\udd04 Menjalankan /runbuild...",
+    "\u2705 Build Complete\nLinux User: `lab-001`\nProject: `/home/lab-001/htdocs/001.lab.test`\nCommand: `npm run build`\nDuration: 0.0 s\nExit Code: 0"
+   ],
+   "valid_mutations": [
+    "/bin/bash -l -c npm run build"
+   ],
+   "valid_errors": [],
+   "valid_outcome": "\u2705 Build Complete Linux User: `lab-001` Project: `/home/lab-001/htdocs/001.lab.test` Command: `npm run build` D",
+   "info_flags": []
+  },
+  "serverinfo": {
+   "tier": "admin",
+   "cases": 8,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 0,
+   "input_rejected_or_inert": 0,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.0,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "RTSA Server Identity\nNo server identity is configured in this process (development/test run). Production RTSA refuses to start without config/server.config.yaml."
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "RTSA Server Identity No server identity is configured in this process (development/test run). Production RTSA ",
+   "info_flags": []
+  },
+  "services": {
+   "tier": "none",
+   "cases": 8,
+   "unauthorized": "OPEN (no role check, read-only)",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 0,
+   "input_rejected_or_inert": 0,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "**Service Status**\n\ud83d\udfe2 nginx\n\ud83d\udfe2 mysql\n\ud83d\udfe2 docker\n\ud83d\udfe2 pm2"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "**Service Status** \ud83d\udfe2 nginx \ud83d\udfe2 mysql \ud83d\udfe2 docker \ud83d\udfe2 pm2",
+   "info_flags": []
+  },
+  "sofix": {
+   "tier": "critical",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "RESPECTED",
+   "confirm_gate": "-",
+   "concurrency": "SERIALIZED/COALESCED",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u274c Gagal menerapkan hardening untuk `001.lab.test`: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/001.lab.test.conf blocked\n\nDomain: 001.lab.test\nConfig: /etc/nginx/sites-en"
+   ],
+   "valid_mutations": [
+    "FS_WRITE /etc/nginx/sites-enabled/001.lab.test.conf"
+   ],
+   "valid_errors": [],
+   "valid_outcome": "\u274c Gagal menerapkan hardening untuk `001.lab.test`: Gagal menulis config: campaign sandbox: write to /etc/nginx",
+   "info_flags": []
+  },
+  "sofixall": {
+   "tier": "critical",
+   "cases": 8,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 0,
+   "input_rejected_or_inert": 0,
+   "detection_only": "RESPECTED",
+   "confirm_gate": "-",
+   "concurrency": "SERIALIZED/COALESCED",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "**SOFIXALL REPORT**\nTotal config: 127\nChecked: 127\nChanged: 0\nAlready hardened: 0\nSkipped: 0\nFailed: 127\nNginx validation: \u2705 PASS\nNginx reload: tidak ada perubahan -- reload dilewati\n\n\u274c Domain GAGAL (",
+    "  - 015.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/015.lab.test.conf blocked\n  - 016.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/site",
+    "  - 031.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/031.lab.test.conf blocked\n  - 032.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/site"
+   ],
+   "valid_mutations": [
+    "FS_WRITE /etc/nginx/sites-enabled/001.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/002.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/003.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/004.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/005.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/006.lab.test.conf"
+   ],
+   "valid_errors": [],
+   "valid_outcome": "  - 111.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/111.lab.test.conf ",
+   "info_flags": []
+  },
+  "sshcheck": {
+   "tier": "admin",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.002,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "RTSA \u2014 SSH SECURITY QUICK CHECK\nWindow: last 1h (since 2026-10-05 19:05:33 WIB)\nServer: UNKNOWN   SSH port(s): UNKNOWN\nRead-only report from stored RTSA evidence. No SSH setting, key, account, firewal"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "RTSA \u2014 SSH SECURITY QUICK CHECK Window: last 1h (since 2026-10-05 19:05:33 WIB) Server: UNKNOWN   SSH port(s):",
+   "info_flags": []
+  },
+  "status": {
+   "tier": "none",
+   "cases": 8,
+   "unauthorized": "OPEN (no role check, read-only)",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 0,
+   "input_rejected_or_inert": 0,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.0,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "**RTSA Status**\nEvents published: `0`\nEvents dropped (bus): `0`\nActive subscribers: `0`\nDB writes: `0` (queued: `0`, dropped: `0`)"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "**RTSA Status** Events published: `0` Events dropped (bus): `0` Active subscribers: `0` DB writes: `0` (queued",
+   "info_flags": []
+  },
+  "tes": {
+   "tier": "admin",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE (notes: NETWORK_FROM_INPUT)",
+   "input_cases": 18,
+   "input_rejected_or_inert": 17,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS WITH NOTES",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u274c Gagal cek `http://001.lab.test`: DNS resolution gagal\n```\nCannot connect to host 001.lab.test:80 ssl:default [Name or service not known]\n```"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "\u274c Gagal cek `http://001.lab.test`: DNS resolution gagal ``` Cannot connect to host 001.lab.test:80 ssl:default",
+   "info_flags": [
+    "EVERYONE_MENTION_ECHOED",
+    "ROLE_MENTION_ECHOED"
+   ]
+  },
+  "unbanallip": {
+   "tier": "admin",
+   "cases": 8,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 0,
+   "input_rejected_or_inert": 0,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.006,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "Tidak ada IP yang sedang di-ban saat ini."
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "Tidak ada IP yang sedang di-ban saat ini.",
+   "info_flags": []
+  },
+  "unbanip": {
+   "tier": "critical",
+   "cases": 26,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 18,
+   "input_rejected_or_inert": 18,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u2705 `203.0.113.50` berhasil di-unban"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "\u2705 `203.0.113.50` berhasil di-unban",
+   "info_flags": [
+    "EVERYONE_MENTION_ECHOED",
+    "ROLE_MENTION_ECHOED"
+   ]
+  },
+  "underattack": {
+   "tier": "critical",
+   "cases": 44,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 36,
+   "input_rejected_or_inert": 36,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.003,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "\u274c Integrasi Cloudflare tidak aktif di server ini (cloudflare.enabled=false atau token belum di-set) -- tidak ada mutation yang bisa dilakukan."
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "\u274c Integrasi Cloudflare tidak aktif di server ini (cloudflare.enabled=false atau token belum di-set) -- tidak a",
+   "info_flags": []
+  },
+  "wbeaddeco": {
+   "tier": "critical",
+   "cases": 30,
+   "unauthorized": "DENIED",
+   "side_effects_unauthorized": 0,
+   "injection": "SAFE",
+   "input_cases": 22,
+   "input_rejected_or_inert": 22,
+   "detection_only": "N/A (no mutation on valid input)",
+   "confirm_gate": "-",
+   "concurrency": "-",
+   "components": "-",
+   "robustness": {
+    "exceptions": 0,
+    "timeouts": 0,
+    "no_response": 0,
+    "protocol": 0,
+    "lock_leaks": 0,
+    "logged_errors": 0
+   },
+   "max_first_ack_s": 0.001,
+   "verdict": "PASS",
+   "failures": [],
+   "notes": [],
+   "valid_reply": [
+    "WORKER_ENTRYPOINT_NOT_FOUND\nTidak ditemukan worker entrypoint (dist/src/workers/index.js, dist/workers/index.js, workers/index.js, atau worker.js) pada project ini.\n\nFile ecosystem.config.js tidak dib"
+   ],
+   "valid_mutations": [],
+   "valid_errors": [],
+   "valid_outcome": "WORKER_ENTRYPOINT_NOT_FOUND Tidak ditemukan worker entrypoint (dist/src/workers/index.js, dist/workers/index.j",
+   "info_flags": [
+    "STORED_INPUT"
+   ]
+  }
+ },
+ "alerts": {
+  "ban": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "EXECUTED: /usr/sbin/iptables -A RTSA-DROP -s 198.51.100.7 -j DROP",
+   "replay_same_process": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "replay_after_restart": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS WITH NOTES"
+  },
+  "ignore": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "REFUSED/NO-OP: \ud83d\ude48 RTSA Alert \u2014 Ignored\nHandled By: critical-user\nTime: 2026-10-05 20:03:13 WIB\nR",
+   "replay_same_process": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "replay_after_restart": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  "geoip": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "REFUSED/NO-OP: \ud83c\udf0d **GeoIP**\n`198.51.100.7` \u2192 tidak diketahui (geoiplookup tidak terpasang atau I",
+   "replay_same_process": "REJECTED: \ud83c\udf0d **GeoIP**\n`203.0.113.50` \u2192 tidak diketahui (geoiplookup tidak terpas",
+   "replay_after_restart": "REJECTED: \ud83c\udf0d **GeoIP**\n`203.0.113.50` \u2192 tidak diketahui (geoiplookup tidak terpas",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  "rdns": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "REFUSED/NO-OP: \ud83c\udf10 **Reverse DNS**\n`198.51.100.7` \u2192 tidak ada PTR record",
+   "replay_same_process": "REJECTED: \ud83c\udf10 **Reverse DNS**\n`203.0.113.50` \u2192 tidak ada PTR record",
+   "replay_after_restart": "REJECTED: \ud83c\udf10 **Reverse DNS**\n`203.0.113.50` \u2192 tidak ada PTR record",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  "whois": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "REFUSED/NO-OP: \ud83d\udcc4 **WHOIS** untuk `198.51.100.7`\n```\nWHOIS lookup failed: [Errno -2] campaign sa",
+   "replay_same_process": "REJECTED: \ud83d\udcc4 **WHOIS** untuk `203.0.113.50`\n```\nWHOIS lookup failed: [Errno -2] c",
+   "replay_after_restart": "REJECTED: \ud83d\udcc4 **WHOIS** untuk `203.0.113.50`\n```\nWHOIS lookup failed: [Errno -2] c",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  "profile": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "REFUSED/NO-OP: \ud83d\udd0d **Threat Profile** \u2014 `198.51.100.7`\n**First Seen**: 2026-10-05 20:03 WIB\n**Las",
+   "replay_same_process": "REJECTED: \ud83d\udd0d **Threat Profile** \u2014 `203.0.113.50`\n**First Seen**: 2026-10-05 20:03",
+   "replay_after_restart": "REJECTED: \ud83d\udd0d **Threat Profile** \u2014 `203.0.113.50`\n**First Seen**: 2026-10-05 20:03",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  "history": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "REFUSED/NO-OP: \ud83d\udcdc **Incident History** \u2014 `198.51.100.7` (15 terakhir)\n\u2022 2026-10-05 20:03 WIB \u2014 P",
+   "replay_same_process": "REJECTED: \ud83d\udcdc **Incident History** \u2014 `203.0.113.50` (15 terakhir)\n\u2022 2026-10-05 20:",
+   "replay_after_restart": "REJECTED: \ud83d\udcdc **Incident History** \u2014 `203.0.113.50` (15 terakhir)\n\u2022 2026-10-05 20:",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  "timeline": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "REFUSED/NO-OP: \ud83d\udd50 **Incident Timeline** \u2014 `evt-timeline-protected`\n`20:03:11` \u2192 **OPEN**",
+   "replay_same_process": "REJECTED: \ud83d\udd50 **Incident Timeline** \u2014 `evt-timeline-ip`\n`20:03:11` \u2192 **OPEN**",
+   "replay_after_restart": "REJECTED: \ud83d\udd50 **Incident Timeline** \u2014 `evt-timeline-ip`\n`20:03:11` \u2192 **OPEN**",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  "deluser": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "REFUSED/NO-OP: \ud83d\udeab User `root` dilindungi (ada di auto_remediate_protect_users) -- tidak bisa dih",
+   "replay_same_process": "RE-EXECUTED: /usr/sbin/userdel lab-116",
+   "replay_after_restart": "RE-EXECUTED: /usr/sbin/userdel lab-116",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS WITH NOTES"
+  },
+  "kickssh": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "REFUSED/NO-OP: \u274c RTSA Alert \u2014 Kick Failed\nHandled By: critical-user\nTime: 2026-10-05 20:03:19 W",
+   "replay_same_process": "REJECTED: \u274c RTSA Alert \u2014 Kick Failed\nHandled By: critical-user\nTime: 2026-10-05 ",
+   "replay_after_restart": "REJECTED: \u274c RTSA Alert \u2014 Kick Failed\nHandled By: critical-user\nTime: 2026-10-05 ",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  "killprocess": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "REFUSED/NO-OP: \u26a0\ufe0f Anda akan **MENGHENTIKAN** process pid `1` (graceful, SIGTERM). Verifikasi du",
+   "replay_same_process": "REJECTED: \u26a0\ufe0f Anda akan **MENGHENTIKAN** process pid `4242001` (graceful, SIGTERM",
+   "replay_after_restart": "REJECTED: \u26a0\ufe0f Anda akan **MENGHENTIKAN** process pid `4242001` (graceful, SIGTERM",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  "killport": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "REFUSED/NO-OP: \u26a0\ufe0f Anda akan **MENGHENTIKAN** proses yang saat ini listening di port `22` (grace",
+   "replay_same_process": "REJECTED: \u26a0\ufe0f Anda akan **MENGHENTIKAN** proses yang saat ini listening di port `",
+   "replay_after_restart": "RE-EXECUTED: KILL 657",
+   "exceptions": 2,
+   "failures": [],
+   "notes": [
+    "evt-killport-ip/critical/first: AccessDenied: (pid=657) @ core/process_control.py:23",
+    "evt-killport-ip/critical/replay_after_restart: AccessDenied: (pid=657) @ core/process_control.py:23"
+   ],
+   "verdict": "PASS WITH NOTES"
+  },
+  "blockport": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "GUARDED: refused, executes only after a second explicit force confirmation",
+   "replay_same_process": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "replay_after_restart": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  "unblockport": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "REFUSED/NO-OP: \u2705 RTSA Alert \u2014 Port Unblocked\nHandled By: critical-user\nTime: 2026-10-05 20:03:2",
+   "replay_same_process": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "replay_after_restart": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  "stopservice": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "REFUSED/NO-OP: \ud83d\udeab Unit `ssh.service` dilindungi (process_cleanup.protected_systemd_units / unit ",
+   "replay_same_process": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "replay_after_restart": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  "startservice": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "EXECUTED: /usr/bin/systemctl start ssh.service",
+   "replay_same_process": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "replay_after_restart": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS WITH NOTES"
+  },
+  "restartservice": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "REFUSED/NO-OP: \ud83d\udeab Unit `ssh.service` dilindungi (process_cleanup.protected_systemd_units / unit ",
+   "replay_same_process": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "replay_after_restart": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  "disableservice": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "REFUSED/NO-OP: \ud83d\udeab Unit `ssh.service` dilindungi (process_cleanup.protected_systemd_units / unit ",
+   "replay_same_process": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "replay_after_restart": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  "enableservice": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "EXECUTED: /usr/bin/systemctl enable ssh.service",
+   "replay_same_process": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "replay_after_restart": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS WITH NOTES"
+  },
+  "pm2restartport": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "REFUSED/NO-OP: \ud83d\udeab Nama aplikasi PM2 tersimpan adalah `all` -- pm2 akan menerapkannya ke SEMUA ap",
+   "replay_same_process": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "replay_after_restart": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  "pm2stopport": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "REFUSED/NO-OP: \ud83d\udeab Nama aplikasi PM2 tersimpan adalah `all` -- pm2 akan menerapkannya ke SEMUA ap",
+   "replay_same_process": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "replay_after_restart": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  "pm2startport": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "REFUSED/NO-OP: \ud83d\udeab Nama aplikasi PM2 tersimpan adalah `all` -- pm2 akan menerapkannya ke SEMUA ap",
+   "replay_same_process": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "replay_after_restart": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  "pm2deleteport": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "REFUSED/NO-OP: \ud83d\udeab Nama aplikasi PM2 tersimpan adalah `all` -- pm2 akan menerapkannya ke SEMUA ap",
+   "replay_same_process": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "replay_after_restart": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  "dockerstop": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "EXECUTED: /usr/bin/docker stop c0ffee000002",
+   "replay_same_process": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "replay_after_restart": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS WITH NOTES"
+  },
+  "dockerrestart": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "EXECUTED: /usr/bin/docker restart c0ffee000002",
+   "replay_same_process": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "replay_after_restart": "REJECTED: \u26a0\ufe0f Alert ini sudah ditangani oleh **critical-user**.",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS WITH NOTES"
+  },
+  "porthistory": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "REFUSED/NO-OP: \ud83d\udcdc **Port History** \u2014 `22`\nBelum ada riwayat aksi untuk port ini.",
+   "replay_same_process": "REJECTED: \ud83d\udcdc **Port History** \u2014 `20007`\nBelum ada riwayat aksi untuk port ini.",
+   "replay_after_restart": "REJECTED: \ud83d\udcdc **Port History** \u2014 `20007`\nBelum ada riwayat aksi untuk port ini.",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  "cekport": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "REFUSED/NO-OP: RTSA Port Check\nTidak ada process yang terdeteksi menggunakan port 22.\nPort: 22\n",
+   "replay_same_process": "REJECTED: RTSA Port Check\nPort: 20007\nStatus: LISTENING\nCatatan: Port aktif menu",
+   "replay_after_restart": "REJECTED: RTSA Port Check\nPort: 20007\nStatus: LISTENING\nCatatan: Port aktif menu",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  "fixcf_block": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "EXECUTED: /usr/sbin/ip6tables -A INPUT -p tcp --dport 443 -j; /usr/sbin/ip6tables -A INPUT -p tcp --dport 80 -j",
+   "replay_same_process": "REJECTED: \ud83d\udd12 Origin server sekarang cuma nerima traffic port 80/443 dari Cloudfla",
+   "replay_after_restart": "REJECTED: \ud83d\udd12 Origin server sekarang cuma nerima traffic port 80/443 dari Cloudfla",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS WITH NOTES"
+  },
+  "recheck": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "REFUSED/NO-OP: \ud83d\udd34 `001.lab.test` is still down: dns failure",
+   "replay_same_process": "REJECTED: \ud83d\udd34 `001.lab.test` is still down: dns failure",
+   "replay_after_restart": "REJECTED: \ud83d\udd34 `001.lab.test` is still down: dns failure",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  "clearcp": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "REFUSED/NO-OP: \u2705 `nginx -t` passed. No stale checkpoint found at `/var/lib/letsencrypt/temp_che",
+   "replay_same_process": "REJECTED: \u2705 `nginx -t` passed. No stale checkpoint found at `/var/lib/letsencryp",
+   "replay_after_restart": "REJECTED: \u2705 `nginx -t` passed. No stale checkpoint found at `/var/lib/letsencryp",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  "respm2": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "EXECUTED: /bin/bash -l -c pm2 restart ecosystem.config.js",
+   "replay_same_process": "RE-EXECUTED: /bin/bash -l -c pm2 restart ecosystem.config.js",
+   "replay_after_restart": "RE-EXECUTED: /bin/bash -l -c pm2 restart ecosystem.config.js",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS WITH NOTES"
+  },
+  "fixssl": {
+   "cases": 12,
+   "unauthorized": "DENIED",
+   "detection_only": "RESPECTED",
+   "protected_target": "REFUSED/NO-OP: \u274c `001.lab.test` does not resolve \u2014 aborting before touching any config.",
+   "replay_same_process": "REJECTED: \u274c `001.lab.test` does not resolve \u2014 aborting before touching any confi",
+   "replay_after_restart": "REJECTED: \u274c `001.lab.test` does not resolve \u2014 aborting before touching any confi",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS"
+  },
+  "malformed": {
+   "cases": 5,
+   "unauthorized": "DENIED",
+   "detection_only": "-",
+   "protected_target": "-",
+   "replay_same_process": "-",
+   "replay_after_restart": "-",
+   "exceptions": 0,
+   "failures": [],
+   "notes": [],
+   "verdict": "PASS"
+  }
+ }
+}

@@ -1,0 +1,7540 @@
+{
+ "name": "pm2startuplist",
+ "sandbox": "/tmp/rtsa_cmd_brre_859",
+ "started": 1791205569.7623982,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.136,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Audit PM2 Startup**\n\n66 user PM2 terdeteksi\n\n\u26a0\ufe0f NOT READY\n**lab-001**\n\nReason\npm2-lab-001.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-002**\n\nReason\npm2-lab-002.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-003**\n\nReason\npm2-lab-003.service belum ada\n\nPM2 executable\n`(tidak ",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "**lab-014**\n\nReason\npm2-lab-014.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-016**\n\nReason\npm2-lab-016.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-020**\n\nReason\npm2-lab-020.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\n",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-035**\n\nReason\npm2-lab-035.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-038**\n\nReason\npm2-lab-038.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-039**\n\nReas",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "NOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-056**\n\nReason\npm2-lab-056.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-058**\n\nReason\npm2-lab-058.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-059**\n\nReason\npm2-lab-059.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "pm2-lab-078.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-079**\n\nReason\npm2-lab-079.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-083**\n\nReason\npm2-lab-083.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nU",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "Node executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-096**\n\nReason\npm2-lab-096.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-097**\n\nReason\npm2-lab-097.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-100**\n\nReason\npm2-lab-100.servic",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "UNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-120**\n\nReason\npm2-lab-120.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-backend**\n\nReason\npm2-lab-backend.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-government**\n\nReason\npm2-lab-government.service belum ada\n\nPM2 executable\n`(tidak ditemuka",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.2991,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3005,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3015,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1009,
+     "cwd": "/home/lab-002",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3026,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1009,
+     "cwd": "/home/lab-002",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3037,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1010,
+     "cwd": "/home/lab-003",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3047,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1010,
+     "cwd": "/home/lab-003",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3058,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1011,
+     "cwd": "/home/lab-004",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3068,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1011,
+     "cwd": "/home/lab-004",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3076,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1012,
+     "cwd": "/home/lab-005",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3085,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1012,
+     "cwd": "/home/lab-005",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.31,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1015,
+     "cwd": "/home/lab-008",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3109,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1015,
+     "cwd": "/home/lab-008",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3118,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1016,
+     "cwd": "/home/lab-009",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3127,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1016,
+     "cwd": "/home/lab-009",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3135,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1017,
+     "cwd": "/home/lab-010",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3144,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1017,
+     "cwd": "/home/lab-010",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3152,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1018,
+     "cwd": "/home/lab-011",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3161,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1018,
+     "cwd": "/home/lab-011",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3174,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1020,
+     "cwd": "/home/lab-013",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3182,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1020,
+     "cwd": "/home/lab-013",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3189,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1021,
+     "cwd": "/home/lab-014",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3199,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1021,
+     "cwd": "/home/lab-014",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3214,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1023,
+     "cwd": "/home/lab-016",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3223,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1023,
+     "cwd": "/home/lab-016",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3237,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1027,
+     "cwd": "/home/lab-020",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3244,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1027,
+     "cwd": "/home/lab-020",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3252,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1028,
+     "cwd": "/home/lab-021",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.326,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1028,
+     "cwd": "/home/lab-021",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3281,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1030,
+     "cwd": "/home/lab-023",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3291,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1030,
+     "cwd": "/home/lab-023",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3303,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1032,
+     "cwd": "/home/lab-025",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3311,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1032,
+     "cwd": "/home/lab-025",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3321,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1033,
+     "cwd": "/home/lab-026",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.333,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1033,
+     "cwd": "/home/lab-026",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3338,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1034,
+     "cwd": "/home/lab-027",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3346,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1034,
+     "cwd": "/home/lab-027",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3356,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1035,
+     "cwd": "/home/lab-028",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3368,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1035,
+     "cwd": "/home/lab-028",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3378,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1036,
+     "cwd": "/home/lab-029",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3385,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1036,
+     "cwd": "/home/lab-029",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3395,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1038,
+     "cwd": "/home/lab-031",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3406,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1038,
+     "cwd": "/home/lab-031",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3426,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1042,
+     "cwd": "/home/lab-035",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3436,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1042,
+     "cwd": "/home/lab-035",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3449,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1045,
+     "cwd": "/home/lab-038",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3456,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1045,
+     "cwd": "/home/lab-038",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3462,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1046,
+     "cwd": "/home/lab-039",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.347,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1046,
+     "cwd": "/home/lab-039",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.349,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1051,
+     "cwd": "/home/lab-044",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3498,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1051,
+     "cwd": "/home/lab-044",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3519,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1054,
+     "cwd": "/home/lab-047",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3526,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1054,
+     "cwd": "/home/lab-047",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3531,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1055,
+     "cwd": "/home/lab-048",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3538,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1055,
+     "cwd": "/home/lab-048",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.355,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1058,
+     "cwd": "/home/lab-051",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3558,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1058,
+     "cwd": "/home/lab-051",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3566,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1059,
+     "cwd": "/home/lab-052",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3574,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1059,
+     "cwd": "/home/lab-052",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3585,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1061,
+     "cwd": "/home/lab-054",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.3592,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1061,
+     "cwd": "/home/lab-054",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    }
+   ],
+   "event_count": 132,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 132
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.163,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Audit PM2 Startup**\n\n66 user PM2 terdeteksi\n\n\u26a0\ufe0f NOT READY\n**lab-001**\n\nReason\npm2-lab-001.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-002**\n\nReason\npm2-lab-002.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-003**\n\nReason\npm2-lab-003.service belum ada\n\nPM2 executable\n`(tidak ",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "**lab-014**\n\nReason\npm2-lab-014.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-016**\n\nReason\npm2-lab-016.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-020**\n\nReason\npm2-lab-020.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\n",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-035**\n\nReason\npm2-lab-035.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-038**\n\nReason\npm2-lab-038.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-039**\n\nReas",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "NOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-056**\n\nReason\npm2-lab-056.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-058**\n\nReason\npm2-lab-058.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-059**\n\nReason\npm2-lab-059.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "pm2-lab-078.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-079**\n\nReason\npm2-lab-079.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-083**\n\nReason\npm2-lab-083.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nU",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "Node executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-096**\n\nReason\npm2-lab-096.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-097**\n\nReason\npm2-lab-097.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-100**\n\nReason\npm2-lab-100.servic",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "UNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-120**\n\nReason\npm2-lab-120.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-backend**\n\nReason\npm2-lab-backend.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-government**\n\nReason\npm2-lab-government.service belum ada\n\nPM2 executable\n`(tidak ditemuka",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4556,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4567,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4576,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1009,
+     "cwd": "/home/lab-002",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4584,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1009,
+     "cwd": "/home/lab-002",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4592,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1010,
+     "cwd": "/home/lab-003",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.46,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1010,
+     "cwd": "/home/lab-003",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4607,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1011,
+     "cwd": "/home/lab-004",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.462,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1011,
+     "cwd": "/home/lab-004",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4629,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1012,
+     "cwd": "/home/lab-005",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4649,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1012,
+     "cwd": "/home/lab-005",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4664,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1015,
+     "cwd": "/home/lab-008",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4672,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1015,
+     "cwd": "/home/lab-008",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4681,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1016,
+     "cwd": "/home/lab-009",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4689,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1016,
+     "cwd": "/home/lab-009",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4697,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1017,
+     "cwd": "/home/lab-010",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4704,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1017,
+     "cwd": "/home/lab-010",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4712,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1018,
+     "cwd": "/home/lab-011",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4718,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1018,
+     "cwd": "/home/lab-011",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.473,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1020,
+     "cwd": "/home/lab-013",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4738,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1020,
+     "cwd": "/home/lab-013",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4746,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1021,
+     "cwd": "/home/lab-014",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4753,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1021,
+     "cwd": "/home/lab-014",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4765,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1023,
+     "cwd": "/home/lab-016",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4774,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1023,
+     "cwd": "/home/lab-016",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4792,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1027,
+     "cwd": "/home/lab-020",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.48,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1027,
+     "cwd": "/home/lab-020",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4808,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1028,
+     "cwd": "/home/lab-021",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4816,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1028,
+     "cwd": "/home/lab-021",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4828,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1030,
+     "cwd": "/home/lab-023",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4837,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1030,
+     "cwd": "/home/lab-023",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4848,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1032,
+     "cwd": "/home/lab-025",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4856,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1032,
+     "cwd": "/home/lab-025",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4863,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1033,
+     "cwd": "/home/lab-026",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.487,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1033,
+     "cwd": "/home/lab-026",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4882,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1034,
+     "cwd": "/home/lab-027",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4893,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1034,
+     "cwd": "/home/lab-027",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4904,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1035,
+     "cwd": "/home/lab-028",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4912,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1035,
+     "cwd": "/home/lab-028",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4922,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1036,
+     "cwd": "/home/lab-029",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4929,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1036,
+     "cwd": "/home/lab-029",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4942,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1038,
+     "cwd": "/home/lab-031",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.495,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1038,
+     "cwd": "/home/lab-031",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.497,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1042,
+     "cwd": "/home/lab-035",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.4977,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1042,
+     "cwd": "/home/lab-035",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.5013,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1045,
+     "cwd": "/home/lab-038",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.502,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1045,
+     "cwd": "/home/lab-038",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.5028,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1046,
+     "cwd": "/home/lab-039",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.5044,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1046,
+     "cwd": "/home/lab-039",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.5106,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1051,
+     "cwd": "/home/lab-044",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.5114,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1051,
+     "cwd": "/home/lab-044",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.513,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1054,
+     "cwd": "/home/lab-047",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.5138,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1054,
+     "cwd": "/home/lab-047",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.5145,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1055,
+     "cwd": "/home/lab-048",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.5153,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1055,
+     "cwd": "/home/lab-048",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.5168,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1058,
+     "cwd": "/home/lab-051",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.5175,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1058,
+     "cwd": "/home/lab-051",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.5182,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1059,
+     "cwd": "/home/lab-052",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.5188,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1059,
+     "cwd": "/home/lab-052",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.5199,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1061,
+     "cwd": "/home/lab-054",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.5207,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1061,
+     "cwd": "/home/lab-054",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    }
+   ],
+   "event_count": 132,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 132
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.175,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Audit PM2 Startup**\n\n66 user PM2 terdeteksi\n\n\u26a0\ufe0f NOT READY\n**lab-001**\n\nReason\npm2-lab-001.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-002**\n\nReason\npm2-lab-002.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-003**\n\nReason\npm2-lab-003.service belum ada\n\nPM2 executable\n`(tidak ",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "**lab-014**\n\nReason\npm2-lab-014.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-016**\n\nReason\npm2-lab-016.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-020**\n\nReason\npm2-lab-020.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\n",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-035**\n\nReason\npm2-lab-035.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-038**\n\nReason\npm2-lab-038.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-039**\n\nReas",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "NOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-056**\n\nReason\npm2-lab-056.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-058**\n\nReason\npm2-lab-058.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-059**\n\nReason\npm2-lab-059.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "pm2-lab-078.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-079**\n\nReason\npm2-lab-079.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-083**\n\nReason\npm2-lab-083.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nU",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "Node executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-096**\n\nReason\npm2-lab-096.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-097**\n\nReason\npm2-lab-097.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-100**\n\nReason\npm2-lab-100.servic",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "UNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-120**\n\nReason\npm2-lab-120.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-backend**\n\nReason\npm2-lab-backend.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-government**\n\nReason\npm2-lab-government.service belum ada\n\nPM2 executable\n`(tidak ditemuka",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6335,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6345,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6353,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1009,
+     "cwd": "/home/lab-002",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6387,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1009,
+     "cwd": "/home/lab-002",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.64,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1010,
+     "cwd": "/home/lab-003",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.641,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1010,
+     "cwd": "/home/lab-003",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6426,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1011,
+     "cwd": "/home/lab-004",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6435,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1011,
+     "cwd": "/home/lab-004",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6457,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1012,
+     "cwd": "/home/lab-005",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6464,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1012,
+     "cwd": "/home/lab-005",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6482,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1015,
+     "cwd": "/home/lab-008",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6489,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1015,
+     "cwd": "/home/lab-008",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6497,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1016,
+     "cwd": "/home/lab-009",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6503,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1016,
+     "cwd": "/home/lab-009",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6511,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1017,
+     "cwd": "/home/lab-010",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6518,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1017,
+     "cwd": "/home/lab-010",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6526,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1018,
+     "cwd": "/home/lab-011",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6533,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1018,
+     "cwd": "/home/lab-011",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6546,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1020,
+     "cwd": "/home/lab-013",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6557,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1020,
+     "cwd": "/home/lab-013",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6566,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1021,
+     "cwd": "/home/lab-014",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6574,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1021,
+     "cwd": "/home/lab-014",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6588,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1023,
+     "cwd": "/home/lab-016",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6598,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1023,
+     "cwd": "/home/lab-016",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6618,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1027,
+     "cwd": "/home/lab-020",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6629,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1027,
+     "cwd": "/home/lab-020",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.664,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1028,
+     "cwd": "/home/lab-021",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6648,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1028,
+     "cwd": "/home/lab-021",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6658,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1030,
+     "cwd": "/home/lab-023",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6665,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1030,
+     "cwd": "/home/lab-023",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6675,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1032,
+     "cwd": "/home/lab-025",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6682,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1032,
+     "cwd": "/home/lab-025",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6688,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1033,
+     "cwd": "/home/lab-026",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6698,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1033,
+     "cwd": "/home/lab-026",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6707,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1034,
+     "cwd": "/home/lab-027",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6718,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1034,
+     "cwd": "/home/lab-027",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6739,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1035,
+     "cwd": "/home/lab-028",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6749,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1035,
+     "cwd": "/home/lab-028",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6758,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1036,
+     "cwd": "/home/lab-029",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6767,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1036,
+     "cwd": "/home/lab-029",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6779,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1038,
+     "cwd": "/home/lab-031",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6787,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1038,
+     "cwd": "/home/lab-031",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6817,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1042,
+     "cwd": "/home/lab-035",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6827,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1042,
+     "cwd": "/home/lab-035",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6846,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1045,
+     "cwd": "/home/lab-038",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6855,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1045,
+     "cwd": "/home/lab-038",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6865,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1046,
+     "cwd": "/home/lab-039",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6875,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1046,
+     "cwd": "/home/lab-039",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.69,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1051,
+     "cwd": "/home/lab-044",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.691,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1051,
+     "cwd": "/home/lab-044",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.693,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1054,
+     "cwd": "/home/lab-047",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6941,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1054,
+     "cwd": "/home/lab-047",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6952,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1055,
+     "cwd": "/home/lab-048",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6963,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1055,
+     "cwd": "/home/lab-048",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6982,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1058,
+     "cwd": "/home/lab-051",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.6992,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1058,
+     "cwd": "/home/lab-051",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.7002,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1059,
+     "cwd": "/home/lab-052",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.7013,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1059,
+     "cwd": "/home/lab-052",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.7027,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1061,
+     "cwd": "/home/lab-054",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.7038,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1061,
+     "cwd": "/home/lab-054",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    }
+   ],
+   "event_count": 132,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 132
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.128,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Audit PM2 Startup**\n\n66 user PM2 terdeteksi\n\n\u26a0\ufe0f NOT READY\n**lab-001**\n\nReason\npm2-lab-001.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-002**\n\nReason\npm2-lab-002.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-003**\n\nReason\npm2-lab-003.service belum ada\n\nPM2 executable\n`(tidak ",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "**lab-014**\n\nReason\npm2-lab-014.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-016**\n\nReason\npm2-lab-016.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-020**\n\nReason\npm2-lab-020.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\n",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-035**\n\nReason\npm2-lab-035.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-038**\n\nReason\npm2-lab-038.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-039**\n\nReas",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "NOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-056**\n\nReason\npm2-lab-056.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-058**\n\nReason\npm2-lab-058.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-059**\n\nReason\npm2-lab-059.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "pm2-lab-078.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-079**\n\nReason\npm2-lab-079.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-083**\n\nReason\npm2-lab-083.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nU",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "Node executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-096**\n\nReason\npm2-lab-096.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-097**\n\nReason\npm2-lab-097.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-100**\n\nReason\npm2-lab-100.servic",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "UNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-120**\n\nReason\npm2-lab-120.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-backend**\n\nReason\npm2-lab-backend.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-government**\n\nReason\npm2-lab-government.service belum ada\n\nPM2 executable\n`(tidak ditemuka",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.829,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8302,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8315,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1009,
+     "cwd": "/home/lab-002",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8325,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1009,
+     "cwd": "/home/lab-002",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8336,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1010,
+     "cwd": "/home/lab-003",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8345,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1010,
+     "cwd": "/home/lab-003",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8356,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1011,
+     "cwd": "/home/lab-004",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8366,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1011,
+     "cwd": "/home/lab-004",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8378,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1012,
+     "cwd": "/home/lab-005",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.839,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1012,
+     "cwd": "/home/lab-005",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.841,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1015,
+     "cwd": "/home/lab-008",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8418,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1015,
+     "cwd": "/home/lab-008",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8428,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1016,
+     "cwd": "/home/lab-009",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8435,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1016,
+     "cwd": "/home/lab-009",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8444,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1017,
+     "cwd": "/home/lab-010",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8451,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1017,
+     "cwd": "/home/lab-010",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.846,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1018,
+     "cwd": "/home/lab-011",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8465,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1018,
+     "cwd": "/home/lab-011",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8478,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1020,
+     "cwd": "/home/lab-013",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8494,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1020,
+     "cwd": "/home/lab-013",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.85,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1021,
+     "cwd": "/home/lab-014",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8507,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1021,
+     "cwd": "/home/lab-014",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8518,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1023,
+     "cwd": "/home/lab-016",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8525,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1023,
+     "cwd": "/home/lab-016",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.854,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1027,
+     "cwd": "/home/lab-020",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8547,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1027,
+     "cwd": "/home/lab-020",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8555,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1028,
+     "cwd": "/home/lab-021",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8562,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1028,
+     "cwd": "/home/lab-021",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8578,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1030,
+     "cwd": "/home/lab-023",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8585,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1030,
+     "cwd": "/home/lab-023",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8597,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1032,
+     "cwd": "/home/lab-025",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8604,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1032,
+     "cwd": "/home/lab-025",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8613,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1033,
+     "cwd": "/home/lab-026",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8619,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1033,
+     "cwd": "/home/lab-026",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8626,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1034,
+     "cwd": "/home/lab-027",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8634,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1034,
+     "cwd": "/home/lab-027",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8642,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1035,
+     "cwd": "/home/lab-028",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8649,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1035,
+     "cwd": "/home/lab-028",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8656,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1036,
+     "cwd": "/home/lab-029",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8663,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1036,
+     "cwd": "/home/lab-029",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8673,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1038,
+     "cwd": "/home/lab-031",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8683,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1038,
+     "cwd": "/home/lab-031",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8701,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1042,
+     "cwd": "/home/lab-035",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8709,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1042,
+     "cwd": "/home/lab-035",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8727,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1045,
+     "cwd": "/home/lab-038",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8734,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1045,
+     "cwd": "/home/lab-038",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8743,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1046,
+     "cwd": "/home/lab-039",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8754,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1046,
+     "cwd": "/home/lab-039",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8778,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1051,
+     "cwd": "/home/lab-044",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8787,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1051,
+     "cwd": "/home/lab-044",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8799,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1054,
+     "cwd": "/home/lab-047",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8806,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1054,
+     "cwd": "/home/lab-047",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8812,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1055,
+     "cwd": "/home/lab-048",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8819,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1055,
+     "cwd": "/home/lab-048",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8833,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1058,
+     "cwd": "/home/lab-051",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8841,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1058,
+     "cwd": "/home/lab-051",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8848,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1059,
+     "cwd": "/home/lab-052",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8855,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1059,
+     "cwd": "/home/lab-052",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.8864,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1061,
+     "cwd": "/home/lab-054",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.887,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1061,
+     "cwd": "/home/lab-054",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    }
+   ],
+   "event_count": 132,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 132
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.337,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Audit PM2 Startup**\n\n66 user PM2 terdeteksi\n\n\u26a0\ufe0f NOT READY\n**lab-001**\n\nReason\npm2-lab-001.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-002**\n\nReason\npm2-lab-002.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-003**\n\nReason\npm2-lab-003.service belum ada\n\nPM2 executable\n`(tidak ",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "**lab-014**\n\nReason\npm2-lab-014.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-016**\n\nReason\npm2-lab-016.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-020**\n\nReason\npm2-lab-020.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\n",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-035**\n\nReason\npm2-lab-035.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-038**\n\nReason\npm2-lab-038.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-039**\n\nReas",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "NOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-056**\n\nReason\npm2-lab-056.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-058**\n\nReason\npm2-lab-058.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-059**\n\nReason\npm2-lab-059.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "pm2-lab-078.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-079**\n\nReason\npm2-lab-079.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-083**\n\nReason\npm2-lab-083.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nU",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "Node executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-096**\n\nReason\npm2-lab-096.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-097**\n\nReason\npm2-lab-097.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-100**\n\nReason\npm2-lab-100.servic",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "UNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-120**\n\nReason\npm2-lab-120.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-backend**\n\nReason\npm2-lab-backend.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-government**\n\nReason\npm2-lab-government.service belum ada\n\nPM2 executable\n`(tidak ditemuka",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "**Audit PM2 Startup**\n\n66 user PM2 terdeteksi\n\n\u26a0\ufe0f NOT READY\n**lab-001**\n\nReason\npm2-lab-001.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-002**\n\nReason\npm2-lab-002.service belum ada\n\nPM2 executable\n`(tidak ditemukan)`\n\nNode executable\n`/opt/node22/bin/node`\n\nStatus\nNOT_FOUND\n\nRuntime\nUNKNOWN_RUNTIME\n\n\u26a0\ufe0f NOT READY\n**lab-003**\n\nReason\npm2-lab-003.service belum ada\n\nPM2 executable\n`(tidak ",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.9767,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.9771,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.9781,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.9789,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.9801,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1009,
+     "cwd": "/home/lab-002",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.9808,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1009,
+     "cwd": "/home/lab-002",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.9816,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1009,
+     "cwd": "/home/lab-002",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.9826,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1009,
+     "cwd": "/home/lab-002",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.9833,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1010,
+     "cwd": "/home/lab-003",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.9839,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1010,
+     "cwd": "/home/lab-003",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.9848,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1010,
+     "cwd": "/home/lab-003",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.9856,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1010,
+     "cwd": "/home/lab-003",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.9866,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1011,
+     "cwd": "/home/lab-004",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.9874,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1011,
+     "cwd": "/home/lab-004",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.9877,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1011,
+     "cwd": "/home/lab-004",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.989,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1011,
+     "cwd": "/home/lab-004",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.9903,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1012,
+     "cwd": "/home/lab-005",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.9913,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1012,
+     "cwd": "/home/lab-005",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.9919,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1012,
+     "cwd": "/home/lab-005",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.9931,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1012,
+     "cwd": "/home/lab-005",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.9955,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1015,
+     "cwd": "/home/lab-008",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.9978,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1015,
+     "cwd": "/home/lab-008",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.9985,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1015,
+     "cwd": "/home/lab-008",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4673.9998,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1016,
+     "cwd": "/home/lab-009",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0003,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1015,
+     "cwd": "/home/lab-008",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0014,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1016,
+     "cwd": "/home/lab-009",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0019,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1016,
+     "cwd": "/home/lab-009",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0031,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1016,
+     "cwd": "/home/lab-009",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0033,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1017,
+     "cwd": "/home/lab-010",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0047,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1017,
+     "cwd": "/home/lab-010",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0056,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1017,
+     "cwd": "/home/lab-010",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0062,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1018,
+     "cwd": "/home/lab-011",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.007,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1017,
+     "cwd": "/home/lab-010",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0073,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1018,
+     "cwd": "/home/lab-011",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0097,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1018,
+     "cwd": "/home/lab-011",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.011,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1018,
+     "cwd": "/home/lab-011",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0111,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1020,
+     "cwd": "/home/lab-013",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0124,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1020,
+     "cwd": "/home/lab-013",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0136,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1021,
+     "cwd": "/home/lab-014",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0142,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1020,
+     "cwd": "/home/lab-013",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.015,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1021,
+     "cwd": "/home/lab-014",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0165,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1020,
+     "cwd": "/home/lab-013",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0179,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1023,
+     "cwd": "/home/lab-016",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.018,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1021,
+     "cwd": "/home/lab-014",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0191,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1021,
+     "cwd": "/home/lab-014",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0215,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1023,
+     "cwd": "/home/lab-016",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0238,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1023,
+     "cwd": "/home/lab-016",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0251,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1023,
+     "cwd": "/home/lab-016",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0261,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1027,
+     "cwd": "/home/lab-020",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0275,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1027,
+     "cwd": "/home/lab-020",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0288,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1028,
+     "cwd": "/home/lab-021",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0298,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1028,
+     "cwd": "/home/lab-021",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0306,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1027,
+     "cwd": "/home/lab-020",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0319,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1027,
+     "cwd": "/home/lab-020",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.033,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1030,
+     "cwd": "/home/lab-023",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0336,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1028,
+     "cwd": "/home/lab-021",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0346,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1028,
+     "cwd": "/home/lab-021",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0349,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "cls": "READ",
+     "user": 1030,
+     "cwd": "/home/lab-023",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0373,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1032,
+     "cwd": "/home/lab-025",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4674.0375,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "cls": "READ",
+     "user": 1030,
+     "cwd": "/home/lab-023",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    }
+   ],
+   "event_count": 264,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 264
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205571.1220345
+}

@@ -1,0 +1,27 @@
+{
+ "sends": 17,
+ "edits": 0,
+ "span_s": 202.7,
+ "peak_sends_per_minute": 7,
+ "exact_duplicate_sends": 0,
+ "by_channel": {
+  "alert_channel_id(default)": 8,
+  "CORRELATED_THREAT": 7,
+  "PERSISTENCE_NEW_PORT": 2
+ },
+ "by_title": {
+  "RTSA Alert — CORRELATED_THREAT": 7,
+  "RTSA Alert — APPLICATION_ERROR": 3,
+  "RTSA Alert — PERSISTENCE_NEW_PORT (bagian #/#)": 2,
+  "RTSA Alert — PERSISTENCE_CONDITION_RESOLVED": 2,
+  "RTSA Alert — APPLICATION_ERROR_DIGEST": 1,
+  "RTSA Alert — SSH_CONFIG_WEAK": 1,
+  "RTSA Alert — PROCESS_BURST_RECOVERED": 1
+ },
+ "buttons": {
+  "ignore": 9,
+  "timeline": 9,
+  "cekport": 2,
+  "porthistory": 2
+ }
+}

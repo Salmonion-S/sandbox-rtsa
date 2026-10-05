@@ -1,0 +1,1328 @@
+{
+ "name": "kronologi",
+ "sandbox": "/tmp/rtsa_cmd_xg8asexm",
+ "started": 1791205502.9683318,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: 203.0.113.50\nTidak ditemukan event apapun untuk `203.0.113.50` dalam 24 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4606.4866,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': '203.0.113.50', 'reason': 'kronologi jam=24', 'requested_by': 'admin-user', 'action_id': '316f120be7bf4e238712929153d84fd4', 'timestamp':...(+110)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: 203.0.113.50\nTidak ditemukan event apapun untuk `203.0.113.50` dalam 24 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4606.4974,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': '203.0.113.50', 'reason': 'kronologi jam=24', 'requested_by': 'critical-user', 'action_id': '9669dc2404ea454b98ff753042563d56', 'timestam...(+115)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: 203.0.113.50\nTidak ditemukan event apapun untuk `203.0.113.50` dalam 24 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4606.5087,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': '203.0.113.50', 'reason': 'kronologi jam=24', 'requested_by': 'critical-user', 'action_id': 'c9b0389613844bddadd1a555e6b8b45b', 'timestam...(+115)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: 203.0.113.50\nTidak ditemukan event apapun untuk `203.0.113.50` dalam 24 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4606.5695,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': '203.0.113.50', 'reason': 'kronologi jam=24', 'requested_by': 'critical-user', 'action_id': 'a2bac1fc93cc49098a335f62bb9adf01', 'timestam...(+114)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.003,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: 203.0.113.50\nTidak ditemukan event apapun untuk `203.0.113.50` dalam 24 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: 203.0.113.50\nTidak ditemukan event apapun untuk `203.0.113.50` dalam 24 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4606.5804,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': '203.0.113.50', 'reason': 'kronologi jam=24', 'requested_by': 'critical-user', 'action_id': '5f708d89036549acbed820ed864b96e4', 'timestam...(+115)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4606.5805,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': '203.0.113.50', 'reason': 'kronologi jam=24', 'requested_by': 'critical-user', 'action_id': '0aefad7d3f0c4772b5c942d231f073a1', 'timestam...(+114)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:target:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "target",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: x;touch /tmp/rtsaZQ\nTidak ditemukan event apapun untuk `x;touch /tmp/rtsaZQ` dalam 24 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4606.5942,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': 'x;touch /tmp/rtsaZQ', 'reason': 'kronologi jam=24', 'requested_by': 'critical-user', 'action_id': '22701b1912be49ff8595fc5b9bb40dfa', 't...(+122)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:target:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "target",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: $(touch /tmp/rtsaZQ)\nTidak ditemukan event apapun untuk `$(touch /tmp/rtsaZQ)` dalam 24 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4606.6404,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': '$(touch /tmp/rtsaZQ)', 'reason': 'kronologi jam=24', 'requested_by': 'critical-user', 'action_id': '5e8ee935a6f3420f80db33e622916ff5', '...(+123)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:target:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "target",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: `touch /tmp/rtsaZQ`\nTidak ditemukan event apapun untuk ``touch /tmp/rtsaZQ`` dalam 24 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4606.7013,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': '`touch /tmp/rtsaZQ`', 'reason': 'kronologi jam=24', 'requested_by': 'critical-user', 'action_id': 'd35bb995ffcd469f916a7d9684414157', 't...(+121)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:target:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "target",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: x|touch /tmp/rtsaZQ\nTidak ditemukan event apapun untuk `x|touch /tmp/rtsaZQ` dalam 24 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4606.7688,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': 'x|touch /tmp/rtsaZQ', 'reason': 'kronologi jam=24', 'requested_by': 'critical-user', 'action_id': 'ddf4e92293994396824d6d2241aed3b6', 't...(+122)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:target:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "target",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: ../../../../etc/rtsaZQ\nTidak ditemukan event apapun untuk `../../../../etc/rtsaZQ` dalam 24 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4606.8296,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': '../../../../etc/rtsaZQ', 'reason': 'kronologi jam=24', 'requested_by': 'critical-user', 'action_id': 'fbc60871f78146e59b2823d98e20d788',...(+125)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:target:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "target",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: /etc/rtsaZQ\nTidak ditemukan event apapun untuk `/etc/rtsaZQ` dalam 24 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4606.8924,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': '/etc/rtsaZQ', 'reason': 'kronologi jam=24', 'requested_by': 'critical-user', 'action_id': 'a7eb00dc54214607af25343b1acfeab5', 'timestamp...(+114)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:target:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "target",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: --rtsaZQ=1\nTidak ditemukan event apapun untuk `--rtsaZQ=1` dalam 24 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4606.9529,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': '--rtsaZQ=1', 'reason': 'kronologi jam=24', 'requested_by': 'critical-user', 'action_id': '4a365df949af4fbdb26371ce94d48bb4', 'timestamp'...(+112)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:target:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "target",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: ok\nrtsaZQ\nTidak ditemukan event apapun untuk `ok\nrtsaZQ` dalam 24 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4607.0136,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': 'ok\\nrtsaZQ', 'reason': 'kronologi jam=24', 'requested_by': 'critical-user', 'action_id': '0f24958715a54d448d0085db312bb541', 'timestamp'...(+113)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:target:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "target",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: ok\r\nrtsaZQ: 1\nTidak ditemukan event apapun untuk `ok\r\nrtsaZQ: 1` dalam 24 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4607.0766,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': 'ok\\r\\nrtsaZQ: 1', 'reason': 'kronologi jam=24', 'requested_by': 'critical-user', 'action_id': '11fef9a8986d40458f1f71f93f20d3f5', 'times...(+118)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:target:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "target",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: ok\u0000rtsaZQ\nTidak ditemukan event apapun untuk `ok\u0000rtsaZQ` dalam 24 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4607.0856,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': 'ok\\x00rtsaZQ', 'reason': 'kronologi jam=24', 'requested_by': 'critical-user', 'action_id': '9454a10883c14766859eaa3d346ca1ef', 'timestam...(+114)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:target:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "target",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\nTidak ditemukan event apapun untuk `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4607.137,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...(+4205)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:target:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "target",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: \u0430pp\u202ertsaZQ.lab.test\nTidak ditemukan event apapun untuk `\u0430pp\u202ertsaZQ.lab.test` dalam 24 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4607.2087,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': '\u0430pp\\u202ertsaZQ.lab.test', 'reason': 'kronologi jam=24', 'requested_by': 'critical-user', 'action_id': 'f752fa0da0c044fb967a25dc85a18b12...(+126)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:target:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "target",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: *rtsaZQ*\nTidak ditemukan event apapun untuk `*rtsaZQ*` dalam 24 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4607.2914,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': '*rtsaZQ*', 'reason': 'kronologi jam=24', 'requested_by': 'critical-user', 'action_id': 'f0bd32e2f1f543b9bffb62353edfcf74', 'timestamp': ...(+111)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:target:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "target",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: ok rtsaZQ\nTidak ditemukan event apapun untuk `ok rtsaZQ` dalam 24 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4607.352,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': 'ok rtsaZQ', 'reason': 'kronologi jam=24', 'requested_by': 'critical-user', 'action_id': 'd56f6ed7e02a4486a20cb2737b3acd47', 'timestamp':...(+111)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:target:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "target",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Target (IP atau username) tidak boleh kosong.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:target:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "target",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: %s%n{0.__class__}rtsaZQ\nTidak ditemukan event apapun untuk `%s%n{0.__class__}rtsaZQ` dalam 24 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4607.4243,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': '%s%n{0.__class__}rtsaZQ', 'reason': 'kronologi jam=24', 'requested_by': 'critical-user', 'action_id': '40324de732174a4d9416ea4556f9be7d'...(+126)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:target:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "target",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: @everyone rtsaZQ\nTidak ditemukan event apapun untuk `@everyone rtsaZQ` dalam 24 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4607.4847,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': '@everyone rtsaZQ', 'reason': 'kronologi jam=24', 'requested_by': 'critical-user', 'action_id': '80f8fd0a86da4c4dbe5ec1123f86a2e9', 'time...(+119)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "EVERYONE_MENTION_ECHOED",
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:target:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "target",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: <@&111> rtsaZQ\nTidak ditemukan event apapun untuk `<@&111> rtsaZQ` dalam 24 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4607.5468,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': '<@&111> rtsaZQ', 'reason': 'kronologi jam=24', 'requested_by': 'critical-user', 'action_id': '6627efc45727465fbee3ecd816fd8ced', 'timest...(+117)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "ROLE_MENTION_ECHOED",
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:jam:negative",
+   "caller": "critical",
+   "input_class": "negative",
+   "param": "jam",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: 203.0.113.50\nTidak ditemukan event apapun untuk `203.0.113.50` dalam 1 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4607.6107,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': '203.0.113.50', 'reason': 'kronologi jam=1', 'requested_by': 'critical-user', 'action_id': '326468c46e3748c09409b085731018f3', 'timestamp...(+114)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:jam:zero",
+   "caller": "critical",
+   "input_class": "zero",
+   "param": "jam",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: 203.0.113.50\nTidak ditemukan event apapun untuk `203.0.113.50` dalam 24 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4607.6227,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': '203.0.113.50', 'reason': 'kronologi jam=24', 'requested_by': 'critical-user', 'action_id': '7f118e50f6024be7a4dc2efa3192238f', 'timestam...(+114)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:jam:too_large",
+   "caller": "critical",
+   "input_class": "too_large",
+   "param": "jam",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: 203.0.113.50\nTidak ditemukan event apapun untuk `203.0.113.50` dalam 168 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4607.6832,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': '203.0.113.50', 'reason': 'kronologi jam=168', 'requested_by': 'critical-user', 'action_id': 'eb4159dc0c2644b3a223be0c34beabc9', 'timesta...(+116)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:jam:int64",
+   "caller": "critical",
+   "input_class": "int64",
+   "param": "jam",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.002,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "Kronologi: 203.0.113.50\nTidak ditemukan event apapun untuk `203.0.113.50` dalam 168 jam terakhir. Ini bukan jaminan tidak ada aktivitas mencurigakan -- hanya berarti tidak ada yang tercatat RTSA pada window ini.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4607.7453,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.KRONOLOGI: 'KRONOLOGI'>, 'target': '203.0.113.50', 'reason': 'kronologi jam=168', 'requested_by': 'critical-user', 'action_id': '0af515f6b3ee43a9955a4f041d64a80b', 'timesta...(+115)"
+     ],
+     "kwargs": "{'result': 'completed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205504.451026
+}

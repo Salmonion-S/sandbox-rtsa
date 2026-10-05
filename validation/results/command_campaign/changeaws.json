@@ -1,0 +1,2715 @@
+{
+ "name": "changeaws",
+ "sandbox": "/tmp/rtsa_cmd_oh_q7tzs",
+ "started": 1791205420.3017383,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak diotorisasi (butuh role Administrator).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak diotorisasi (butuh role Administrator).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak diotorisasi (butuh role Administrator).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.037,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA Action -- AWS CREDENTIAL ROTATION (NO CHANGE)\nSemua file .env yang menggunakan AWS credential sudah sama dengan target -- tidak ada file yang perlu diubah.\nStatus: PREVIEW / NO_CHANGE\nAWS Access Key: AKIA************PLE0\nAWS Secret: ********\nAWS Region: ap-southeast-1\nProjects Detected: 127\nProjects Eligible: 0\nProjects Skipped: 127\nFiles Containing AWS Configuration: 0\nFiles Already Up To Date: 0\nFiles To Modify: 0",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4523.8548,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'admin-user', 'action_id': 'ce606c3644a64406b65aaceb0e7c030...(+111)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_NO_CHANGE'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.037,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA Action -- AWS CREDENTIAL ROTATION (NO CHANGE)\nSemua file .env yang menggunakan AWS credential sudah sama dengan target -- tidak ada file yang perlu diubah.\nStatus: PREVIEW / NO_CHANGE\nAWS Access Key: AKIA************PLE0\nAWS Secret: ********\nAWS Region: ap-southeast-1\nProjects Detected: 127\nProjects Eligible: 0\nProjects Skipped: 127\nFiles Containing AWS Configuration: 0\nFiles Already Up To Date: 0\nFiles To Modify: 0",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4523.9067,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'cc1c9ea50d3e4d75a2452414b170...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_NO_CHANGE'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udec8 Detection Only mode is active \u2014 rotasi AWS credential di semua file .env was NOT executed. RTSA is deployed for detection and notification only; set `response_engine.detection_only: false` in config to allow RTSA-driven mitigation, or take this action manually.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4523.9345,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': 'response_engine.detection_only=true', 'requested_by': 'critical-user', 'action_id': '172...(+139)"
+     ],
+     "kwargs": "{'result': 'Blocked by Detection Only'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": true
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.037,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA Action -- AWS CREDENTIAL ROTATION (NO CHANGE)\nSemua file .env yang menggunakan AWS credential sudah sama dengan target -- tidak ada file yang perlu diubah.\nStatus: PREVIEW / NO_CHANGE\nAWS Access Key: AKIA************PLE0\nAWS Secret: ********\nAWS Region: ap-southeast-1\nProjects Detected: 127\nProjects Eligible: 0\nProjects Skipped: 127\nFiles Containing AWS Configuration: 0\nFiles Already Up To Date: 0\nFiles To Modify: 0",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4523.9822,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '572e278fb91347caa9d095c7ead4...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_NO_CHANGE'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.196,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA Action -- AWS CREDENTIAL ROTATION (NO CHANGE)\nSemua file .env yang menggunakan AWS credential sudah sama dengan target -- tidak ada file yang perlu diubah.\nStatus: PREVIEW / NO_CHANGE\nAWS Access Key: AKIA************PLE0\nAWS Secret: ********\nAWS Region: ap-southeast-1\nProjects Detected: 127\nProjects Eligible: 0\nProjects Skipped: 127\nFiles Containing AWS Configuration: 0\nFiles Already Up To Date: 0\nFiles To Modify: 0",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "RTSA Action -- AWS CREDENTIAL ROTATION (NO CHANGE)\nSemua file .env yang menggunakan AWS credential sudah sama dengan target -- tidak ada file yang perlu diubah.\nStatus: PREVIEW / NO_CHANGE\nAWS Access Key: AKIA************PLE0\nAWS Secret: ********\nAWS Region: ap-southeast-1\nProjects Detected: 127\nProjects Eligible: 0\nProjects Skipped: 127\nFiles Containing AWS Configuration: 0\nFiles Already Up To Date: 0\nFiles To Modify: 0",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.1971,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '21e9c7268cbe48cfa11d3509f25d...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_NO_CHANGE'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.2013,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '567e73dd25ce42ed8a2bd308c74f...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_NO_CHANGE'}"
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:access_key_id:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "access_key_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_ACCESS_KEY_ID format tidak valid (harus huruf besar/angka, 16-32 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.259,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '09b04e38936341bebe547658a28a...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:access_key_id:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "access_key_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_ACCESS_KEY_ID format tidak valid (harus huruf besar/angka, 16-32 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.2768,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '9b27695439ea40629c6e659d9c98...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:access_key_id:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "access_key_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_ACCESS_KEY_ID format tidak valid (harus huruf besar/angka, 16-32 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.2868,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'ce633eddbd9146eb87ed86bf0bec...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:access_key_id:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "access_key_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_ACCESS_KEY_ID format tidak valid (harus huruf besar/angka, 16-32 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.2969,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '322bd20b3c6d4910a1c2365b0a40...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:access_key_id:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "access_key_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_ACCESS_KEY_ID format tidak valid (harus huruf besar/angka, 16-32 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.3079,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'd1fc2c610233470a91b187c57ab8...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:access_key_id:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "access_key_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_ACCESS_KEY_ID format tidak valid (harus huruf besar/angka, 16-32 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.3178,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'cf78e8b4cfb14148a732b582a1ab...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:access_key_id:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "access_key_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_ACCESS_KEY_ID format tidak valid (harus huruf besar/angka, 16-32 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.3269,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '9efd6bb2cf534ac2b68067ccd587...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:access_key_id:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "access_key_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_ACCESS_KEY_ID format tidak valid (harus huruf besar/angka, 16-32 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.3358,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'bac2fb2d8af14b9da4b0337f6f2b...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:access_key_id:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "access_key_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_ACCESS_KEY_ID format tidak valid (harus huruf besar/angka, 16-32 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.3453,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '8910e18685f34b4eaf2f079ef648...(+113)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:access_key_id:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "access_key_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_ACCESS_KEY_ID format tidak valid (harus huruf besar/angka, 16-32 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.3542,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '4dd55e8f6ae749f2840b970ac9b0...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:access_key_id:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "access_key_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_ACCESS_KEY_ID format tidak valid (harus huruf besar/angka, 16-32 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.3649,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '7e56a2bab52e46a2b15907368e9d...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:access_key_id:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "access_key_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_ACCESS_KEY_ID format tidak valid (harus huruf besar/angka, 16-32 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.3763,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '20b85cf2bc2441d59a8725e300cf...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:access_key_id:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "access_key_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_ACCESS_KEY_ID format tidak valid (harus huruf besar/angka, 16-32 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.4084,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'dc2fe7090d8c4dbba1acd2956681...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:access_key_id:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "access_key_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_ACCESS_KEY_ID format tidak valid (harus huruf besar/angka, 16-32 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.418,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'ebbc8e929aad4d228c8c5b148151...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:access_key_id:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "access_key_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_ACCESS_KEY_ID tidak boleh kosong",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.4273,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'fa2fac10ab3640cea86b095525cb...(+113)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:access_key_id:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "access_key_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_ACCESS_KEY_ID format tidak valid (harus huruf besar/angka, 16-32 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.4375,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'c39ba113338a4877be83c71ab6a6...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:access_key_id:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "access_key_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_ACCESS_KEY_ID format tidak valid (harus huruf besar/angka, 16-32 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.4462,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '27ad9bbda46c44f4b9f4418e4ee7...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:access_key_id:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "access_key_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_ACCESS_KEY_ID format tidak valid (harus huruf besar/angka, 16-32 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.4552,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'b7435aa0ca6e4263a7421209f16b...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:secret_access_key:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "secret_access_key",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_SECRET_ACCESS_KEY terlalu pendek untuk format AWS yang valid (minimal 20 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.465,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'c825fc69e14e47e9a5ea4df20e68...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:secret_access_key:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "secret_access_key",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.036,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA Action -- AWS CREDENTIAL ROTATION (NO CHANGE)\nSemua file .env yang menggunakan AWS credential sudah sama dengan target -- tidak ada file yang perlu diubah.\nStatus: PREVIEW / NO_CHANGE\nAWS Access Key: AKIA************PLE0\nAWS Secret: ********\nAWS Region: ap-southeast-1\nProjects Detected: 127\nProjects Eligible: 0\nProjects Skipped: 127\nFiles Containing AWS Configuration: 0\nFiles Already Up To Date: 0\nFiles To Modify: 0",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.509,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'd1874a5b2f4648b085a3cb605ca5...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_NO_CHANGE'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:secret_access_key:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "secret_access_key",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_SECRET_ACCESS_KEY terlalu pendek untuk format AWS yang valid (minimal 20 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.5198,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'f0dc57a3d2844732a1a873d17ad1...(+113)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:secret_access_key:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "secret_access_key",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_SECRET_ACCESS_KEY terlalu pendek untuk format AWS yang valid (minimal 20 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.5313,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '7a3f97cc02c347b58f887db3d801...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:secret_access_key:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "secret_access_key",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.04,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA Action -- AWS CREDENTIAL ROTATION (NO CHANGE)\nSemua file .env yang menggunakan AWS credential sudah sama dengan target -- tidak ada file yang perlu diubah.\nStatus: PREVIEW / NO_CHANGE\nAWS Access Key: AKIA************PLE0\nAWS Secret: ********\nAWS Region: ap-southeast-1\nProjects Detected: 127\nProjects Eligible: 0\nProjects Skipped: 127\nFiles Containing AWS Configuration: 0\nFiles Already Up To Date: 0\nFiles To Modify: 0",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.5807,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'fe3f48d416064961be68e465643f...(+113)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_NO_CHANGE'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:secret_access_key:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "secret_access_key",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_SECRET_ACCESS_KEY terlalu pendek untuk format AWS yang valid (minimal 20 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.5915,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'c1ed51a5489b48da87daf0cd635c...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:secret_access_key:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "secret_access_key",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_SECRET_ACCESS_KEY terlalu pendek untuk format AWS yang valid (minimal 20 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.6006,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '893536a09d5d4dd3903b7e28e3d5...(+113)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:secret_access_key:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "secret_access_key",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_SECRET_ACCESS_KEY terlalu pendek untuk format AWS yang valid (minimal 20 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.611,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '1946d0e802bc473d8808f18b7ff0...(+113)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:secret_access_key:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "secret_access_key",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_SECRET_ACCESS_KEY terlalu pendek untuk format AWS yang valid (minimal 20 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.6212,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '21736858f1e74cd6bd95f174347c...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:secret_access_key:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "secret_access_key",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_SECRET_ACCESS_KEY terlalu pendek untuk format AWS yang valid (minimal 20 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.6307,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'bfddf5c1439e484fa028b509d35a...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:secret_access_key:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "secret_access_key",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.033,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA Action -- AWS CREDENTIAL ROTATION (NO CHANGE)\nSemua file .env yang menggunakan AWS credential sudah sama dengan target -- tidak ada file yang perlu diubah.\nStatus: PREVIEW / NO_CHANGE\nAWS Access Key: AKIA************PLE0\nAWS Secret: ********\nAWS Region: ap-southeast-1\nProjects Detected: 127\nProjects Eligible: 0\nProjects Skipped: 127\nFiles Containing AWS Configuration: 0\nFiles Already Up To Date: 0\nFiles To Modify: 0",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.6734,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'e5255d0a6cb84604b4c7bdaac899...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_NO_CHANGE'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:secret_access_key:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "secret_access_key",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_SECRET_ACCESS_KEY terlalu pendek untuk format AWS yang valid (minimal 20 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.6824,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '4ec37b5d77704cd99d40ebca788e...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:secret_access_key:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "secret_access_key",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_SECRET_ACCESS_KEY terlalu pendek untuk format AWS yang valid (minimal 20 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.6929,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'bebd035661d241d4a1878ef9445e...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:secret_access_key:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "secret_access_key",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_SECRET_ACCESS_KEY terlalu pendek untuk format AWS yang valid (minimal 20 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.7029,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'b4819aa749a14ad98719f2b75eb7...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:secret_access_key:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "secret_access_key",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_SECRET_ACCESS_KEY tidak boleh kosong",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.7116,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'ab3b654a8ebf4e2399a466e1ce91...(+113)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:secret_access_key:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "secret_access_key",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.035,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA Action -- AWS CREDENTIAL ROTATION (NO CHANGE)\nSemua file .env yang menggunakan AWS credential sudah sama dengan target -- tidak ada file yang perlu diubah.\nStatus: PREVIEW / NO_CHANGE\nAWS Access Key: AKIA************PLE0\nAWS Secret: ********\nAWS Region: ap-southeast-1\nProjects Detected: 127\nProjects Eligible: 0\nProjects Skipped: 127\nFiles Containing AWS Configuration: 0\nFiles Already Up To Date: 0\nFiles To Modify: 0",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.7552,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '3a775a4d19de40f3ad757cb0d897...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_NO_CHANGE'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:secret_access_key:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "secret_access_key",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_SECRET_ACCESS_KEY terlalu pendek untuk format AWS yang valid (minimal 20 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.7649,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '9248bc2c396e4aa0a78f64efdb72...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:secret_access_key:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "secret_access_key",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_SECRET_ACCESS_KEY terlalu pendek untuk format AWS yang valid (minimal 20 karakter)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.7742,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '83dc37ecd0434be1946d9cbae443...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:region:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "region",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_REGION format tidak valid (contoh: ap-southeast-1)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.7835,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '53a01f340282423d8e4894084e28...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:region:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "region",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_REGION format tidak valid (contoh: ap-southeast-1)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.7922,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'fd37689b3f124e339ed5068335a8...(+113)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:region:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "region",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_REGION format tidak valid (contoh: ap-southeast-1)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.803,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '8cee4a6047a5473fb2318d796b7b...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:region:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "region",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_REGION format tidak valid (contoh: ap-southeast-1)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.8114,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '3df63d47ffba470090681d1109fb...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:region:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "region",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_REGION format tidak valid (contoh: ap-southeast-1)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.8194,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '4bf30d95dc574cada41f3368f94f...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:region:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "region",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_REGION format tidak valid (contoh: ap-southeast-1)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.8281,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'ff3f21b9822d47409b901e357755...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:region:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "region",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_REGION format tidak valid (contoh: ap-southeast-1)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.8368,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '66d16dd3436a45258d88b0d20109...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:region:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "region",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_REGION format tidak valid (contoh: ap-southeast-1)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.8477,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'fec3aec4cea44cb7abbd9fbf96b6...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:region:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "region",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_REGION format tidak valid (contoh: ap-southeast-1)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.8571,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '59c60421f12443c496baf45114e2...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:region:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "region",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_REGION format tidak valid (contoh: ap-southeast-1)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.8687,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '5cffe44f14ad4a5786c25aceb226...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:region:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "region",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_REGION format tidak valid (contoh: ap-southeast-1)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.8775,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'c5eeb1b9807441d7bf88b7d80f28...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:region:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "region",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_REGION format tidak valid (contoh: ap-southeast-1)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.8862,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '47895a80419e4b01b550e850f4e4...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:region:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "region",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_REGION format tidak valid (contoh: ap-southeast-1)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.8993,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'ae739b4ab5c847818f043db081ca...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:region:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "region",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_REGION format tidak valid (contoh: ap-southeast-1)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.9077,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '635efe01f1ae4353b2e5ecfea384...(+113)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:region:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "region",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_REGION tidak boleh kosong",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.9168,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '66d5f22c5f50481bb334930c3905...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:region:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "region",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_REGION format tidak valid (contoh: ap-southeast-1)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.9263,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '55bac4f4c55046ebbe25d82283b3...(+113)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:region:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "region",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_REGION format tidak valid (contoh: ap-southeast-1)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.9611,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': 'c0a072dad7db4011a82f23f97143...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:region:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "region",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "**Rotasi Credential Gagal**\n\nReason:\nInvalid AWS credential input -- AWS_REGION format tidak valid (contoh: ap-southeast-1)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4524.97,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'AWS Credential', 'reason': '/changeaws', 'requested_by': 'critical-user', 'action_id': '1eab96137505475ab75f203b45e2...(+114)"
+     ],
+     "kwargs": "{'result': 'AWS_ROTATION_FAILED:VALIDATION_FAILED'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205421.6256855
+}

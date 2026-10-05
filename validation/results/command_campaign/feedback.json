@@ -1,0 +1,2238 @@
+{
+ "name": "feedback",
+ "sandbox": "/tmp/rtsa_cmd_ev7lmahq",
+ "started": 1791205463.1122384,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Adaptive detection dinonaktifkan (`adaptive_detection.enabled: false`) -- feedback tidak dicatat.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4566.6481,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ADAPTIVE_FEEDBACK: 'ADAPTIVE_FEEDBACK'>, 'target': 'evt-campaign-ip', 'reason': 'feedback TRUE_POSITIVE', 'requested_by': 'critical-user', 'action_id': '55b6582f559c4f4d827...(+140)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Adaptive detection dinonaktifkan (`adaptive_detection.enabled: false`) -- feedback tidak dicatat.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4566.6579,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ADAPTIVE_FEEDBACK: 'ADAPTIVE_FEEDBACK'>, 'target': 'evt-campaign-ip', 'reason': 'feedback TRUE_POSITIVE', 'requested_by': 'critical-user', 'action_id': '4bcf238dab03456db31...(+140)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Adaptive detection dinonaktifkan (`adaptive_detection.enabled: false`) -- feedback tidak dicatat.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4566.6686,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ADAPTIVE_FEEDBACK: 'ADAPTIVE_FEEDBACK'>, 'target': 'evt-campaign-ip', 'reason': 'feedback TRUE_POSITIVE', 'requested_by': 'critical-user', 'action_id': '1462d459b339465ca24...(+140)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Adaptive detection dinonaktifkan (`adaptive_detection.enabled: false`) -- feedback tidak dicatat.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "\u274c Adaptive detection dinonaktifkan (`adaptive_detection.enabled: false`) -- feedback tidak dicatat.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4566.6776,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ADAPTIVE_FEEDBACK: 'ADAPTIVE_FEEDBACK'>, 'target': 'evt-campaign-ip', 'reason': 'feedback TRUE_POSITIVE', 'requested_by': 'critical-user', 'action_id': '23c8c4ecd710493bb30...(+140)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4566.6777,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ADAPTIVE_FEEDBACK: 'ADAPTIVE_FEEDBACK'>, 'target': 'evt-campaign-ip', 'reason': 'feedback TRUE_POSITIVE', 'requested_by': 'critical-user', 'action_id': 'f85d1d94045842c2b5a...(+141)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:incident_id:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "incident_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Incident ID tidak valid. Salin persis dari field Event ID pada alert Discord.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:incident_id:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "incident_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Incident ID tidak valid. Salin persis dari field Event ID pada alert Discord.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:incident_id:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "incident_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Incident ID tidak valid. Salin persis dari field Event ID pada alert Discord.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:incident_id:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "incident_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Incident ID tidak valid. Salin persis dari field Event ID pada alert Discord.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:incident_id:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "incident_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Incident ID tidak valid. Salin persis dari field Event ID pada alert Discord.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:incident_id:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "incident_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Incident ID tidak valid. Salin persis dari field Event ID pada alert Discord.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:incident_id:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "incident_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Incident ID tidak valid. Salin persis dari field Event ID pada alert Discord.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:incident_id:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "incident_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Incident ID tidak valid. Salin persis dari field Event ID pada alert Discord.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:incident_id:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "incident_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Incident ID tidak valid. Salin persis dari field Event ID pada alert Discord.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:incident_id:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "incident_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Incident ID tidak valid. Salin persis dari field Event ID pada alert Discord.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:incident_id:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "incident_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Incident ID tidak valid. Salin persis dari field Event ID pada alert Discord.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:incident_id:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "incident_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Incident ID tidak valid. Salin persis dari field Event ID pada alert Discord.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:incident_id:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "incident_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Incident ID tidak valid. Salin persis dari field Event ID pada alert Discord.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:incident_id:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "incident_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Incident ID tidak valid. Salin persis dari field Event ID pada alert Discord.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:incident_id:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "incident_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Incident ID tidak valid. Salin persis dari field Event ID pada alert Discord.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:incident_id:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "incident_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Incident ID tidak valid. Salin persis dari field Event ID pada alert Discord.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:incident_id:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "incident_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Incident ID tidak valid. Salin persis dari field Event ID pada alert Discord.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:incident_id:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "incident_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Incident ID tidak valid. Salin persis dari field Event ID pada alert Discord.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:outcome:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "outcome",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Verdict `x;touch /tmp/rtsaZQ` tidak valid. Gunakan salah satu: TRUE_POSITIVE, FALSE_POSITIVE, BENIGN, UNKNOWN, INCONCLUSIVE.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:outcome:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "outcome",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Verdict `$(touch /tmp/rtsaZQ)` tidak valid. Gunakan salah satu: TRUE_POSITIVE, FALSE_POSITIVE, BENIGN, UNKNOWN, INCONCLUSIVE.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:outcome:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "outcome",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Verdict ``touch /tmp/rtsaZQ`` tidak valid. Gunakan salah satu: TRUE_POSITIVE, FALSE_POSITIVE, BENIGN, UNKNOWN, INCONCLUSIVE.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:outcome:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "outcome",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Verdict `x|touch /tmp/rtsaZQ` tidak valid. Gunakan salah satu: TRUE_POSITIVE, FALSE_POSITIVE, BENIGN, UNKNOWN, INCONCLUSIVE.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:outcome:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "outcome",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Verdict `../../../../etc/rtsaZQ` tidak valid. Gunakan salah satu: TRUE_POSITIVE, FALSE_POSITIVE, BENIGN, UNKNOWN, INCONCLUSIVE.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:outcome:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "outcome",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Verdict `/etc/rtsaZQ` tidak valid. Gunakan salah satu: TRUE_POSITIVE, FALSE_POSITIVE, BENIGN, UNKNOWN, INCONCLUSIVE.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:outcome:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "outcome",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Verdict `--rtsaZQ=1` tidak valid. Gunakan salah satu: TRUE_POSITIVE, FALSE_POSITIVE, BENIGN, UNKNOWN, INCONCLUSIVE.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:outcome:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "outcome",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Verdict `ok\nrtsaZQ` tidak valid. Gunakan salah satu: TRUE_POSITIVE, FALSE_POSITIVE, BENIGN, UNKNOWN, INCONCLUSIVE.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:outcome:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "outcome",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Verdict `ok\r\nrtsaZQ: 1` tidak valid. Gunakan salah satu: TRUE_POSITIVE, FALSE_POSITIVE, BENIGN, UNKNOWN, INCONCLUSIVE.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:outcome:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "outcome",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Verdict `ok\u0000rtsaZQ` tidak valid. Gunakan salah satu: TRUE_POSITIVE, FALSE_POSITIVE, BENIGN, UNKNOWN, INCONCLUSIVE.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:outcome:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "outcome",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Verdict `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:outcome:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "outcome",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Verdict `\u0430pp\u202ertsaZQ.lab.test` tidak valid. Gunakan salah satu: TRUE_POSITIVE, FALSE_POSITIVE, BENIGN, UNKNOWN, INCONCLUSIVE.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:outcome:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "outcome",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Verdict `*rtsaZQ*` tidak valid. Gunakan salah satu: TRUE_POSITIVE, FALSE_POSITIVE, BENIGN, UNKNOWN, INCONCLUSIVE.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:outcome:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "outcome",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Verdict `ok rtsaZQ` tidak valid. Gunakan salah satu: TRUE_POSITIVE, FALSE_POSITIVE, BENIGN, UNKNOWN, INCONCLUSIVE.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:outcome:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "outcome",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Verdict `` tidak valid. Gunakan salah satu: TRUE_POSITIVE, FALSE_POSITIVE, BENIGN, UNKNOWN, INCONCLUSIVE.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:outcome:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "outcome",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Verdict `%s%n{0.__class__}rtsaZQ` tidak valid. Gunakan salah satu: TRUE_POSITIVE, FALSE_POSITIVE, BENIGN, UNKNOWN, INCONCLUSIVE.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:outcome:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "outcome",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Verdict `@everyone rtsaZQ` tidak valid. Gunakan salah satu: TRUE_POSITIVE, FALSE_POSITIVE, BENIGN, UNKNOWN, INCONCLUSIVE.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [
+    "EVERYONE_MENTION_ECHOED"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:outcome:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "outcome",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Verdict `<@&111> rtsaZQ` tidak valid. Gunakan salah satu: TRUE_POSITIVE, FALSE_POSITIVE, BENIGN, UNKNOWN, INCONCLUSIVE.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [
+    "ROLE_MENTION_ECHOED"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:notes:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "notes",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Adaptive detection dinonaktifkan (`adaptive_detection.enabled: false`) -- feedback tidak dicatat.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4567.0552,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ADAPTIVE_FEEDBACK: 'ADAPTIVE_FEEDBACK'>, 'target': 'evt-campaign-ip', 'reason': 'feedback TRUE_POSITIVE', 'requested_by': 'critical-user', 'action_id': 'a8577fc9115e4976928...(+140)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:notes:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "notes",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Adaptive detection dinonaktifkan (`adaptive_detection.enabled: false`) -- feedback tidak dicatat.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4567.0639,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ADAPTIVE_FEEDBACK: 'ADAPTIVE_FEEDBACK'>, 'target': 'evt-campaign-ip', 'reason': 'feedback TRUE_POSITIVE', 'requested_by': 'critical-user', 'action_id': '668090e06bf84145a05...(+140)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:notes:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "notes",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Adaptive detection dinonaktifkan (`adaptive_detection.enabled: false`) -- feedback tidak dicatat.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4567.0728,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ADAPTIVE_FEEDBACK: 'ADAPTIVE_FEEDBACK'>, 'target': 'evt-campaign-ip', 'reason': 'feedback TRUE_POSITIVE', 'requested_by': 'critical-user', 'action_id': '33e12eb07d8245fb83b...(+139)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:notes:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "notes",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Adaptive detection dinonaktifkan (`adaptive_detection.enabled: false`) -- feedback tidak dicatat.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4567.0821,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ADAPTIVE_FEEDBACK: 'ADAPTIVE_FEEDBACK'>, 'target': 'evt-campaign-ip', 'reason': 'feedback TRUE_POSITIVE', 'requested_by': 'critical-user', 'action_id': '12237c392a2740c0b5c...(+139)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:notes:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "notes",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Adaptive detection dinonaktifkan (`adaptive_detection.enabled: false`) -- feedback tidak dicatat.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4567.0909,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ADAPTIVE_FEEDBACK: 'ADAPTIVE_FEEDBACK'>, 'target': 'evt-campaign-ip', 'reason': 'feedback TRUE_POSITIVE', 'requested_by': 'critical-user', 'action_id': '85d15768521240478aa...(+141)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:notes:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "notes",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Adaptive detection dinonaktifkan (`adaptive_detection.enabled: false`) -- feedback tidak dicatat.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4567.0992,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ADAPTIVE_FEEDBACK: 'ADAPTIVE_FEEDBACK'>, 'target': 'evt-campaign-ip', 'reason': 'feedback TRUE_POSITIVE', 'requested_by': 'critical-user', 'action_id': '286e063731b04c43a5e...(+139)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:notes:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "notes",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Adaptive detection dinonaktifkan (`adaptive_detection.enabled: false`) -- feedback tidak dicatat.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4567.1084,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ADAPTIVE_FEEDBACK: 'ADAPTIVE_FEEDBACK'>, 'target': 'evt-campaign-ip', 'reason': 'feedback TRUE_POSITIVE', 'requested_by': 'critical-user', 'action_id': '7e07f73259a74f06b82...(+140)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:notes:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "notes",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Adaptive detection dinonaktifkan (`adaptive_detection.enabled: false`) -- feedback tidak dicatat.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4567.1169,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ADAPTIVE_FEEDBACK: 'ADAPTIVE_FEEDBACK'>, 'target': 'evt-campaign-ip', 'reason': 'feedback TRUE_POSITIVE', 'requested_by': 'critical-user', 'action_id': 'f760bb6669464dd893c...(+139)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:notes:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "notes",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Adaptive detection dinonaktifkan (`adaptive_detection.enabled: false`) -- feedback tidak dicatat.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4567.1254,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ADAPTIVE_FEEDBACK: 'ADAPTIVE_FEEDBACK'>, 'target': 'evt-campaign-ip', 'reason': 'feedback TRUE_POSITIVE', 'requested_by': 'critical-user', 'action_id': '4f2039fa7edf4ec5bc4...(+140)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:notes:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "notes",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Adaptive detection dinonaktifkan (`adaptive_detection.enabled: false`) -- feedback tidak dicatat.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4567.1344,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ADAPTIVE_FEEDBACK: 'ADAPTIVE_FEEDBACK'>, 'target': 'evt-campaign-ip', 'reason': 'feedback TRUE_POSITIVE', 'requested_by': 'critical-user', 'action_id': '13c9e2459cbb4783b55...(+141)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:notes:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "notes",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Adaptive detection dinonaktifkan (`adaptive_detection.enabled: false`) -- feedback tidak dicatat.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4567.1422,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ADAPTIVE_FEEDBACK: 'ADAPTIVE_FEEDBACK'>, 'target': 'evt-campaign-ip', 'reason': 'feedback TRUE_POSITIVE', 'requested_by': 'critical-user', 'action_id': '75bc405ddcca49269e9...(+140)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:notes:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "notes",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Adaptive detection dinonaktifkan (`adaptive_detection.enabled: false`) -- feedback tidak dicatat.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4567.1505,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ADAPTIVE_FEEDBACK: 'ADAPTIVE_FEEDBACK'>, 'target': 'evt-campaign-ip', 'reason': 'feedback TRUE_POSITIVE', 'requested_by': 'critical-user', 'action_id': 'a23c2d5cfc58481e84e...(+140)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:notes:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "notes",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Adaptive detection dinonaktifkan (`adaptive_detection.enabled: false`) -- feedback tidak dicatat.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4567.1598,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ADAPTIVE_FEEDBACK: 'ADAPTIVE_FEEDBACK'>, 'target': 'evt-campaign-ip', 'reason': 'feedback TRUE_POSITIVE', 'requested_by': 'critical-user', 'action_id': '25e9d5584a1440a8811...(+140)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:notes:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "notes",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Adaptive detection dinonaktifkan (`adaptive_detection.enabled: false`) -- feedback tidak dicatat.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4567.1929,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ADAPTIVE_FEEDBACK: 'ADAPTIVE_FEEDBACK'>, 'target': 'evt-campaign-ip', 'reason': 'feedback TRUE_POSITIVE', 'requested_by': 'critical-user', 'action_id': 'f6106cde9a5549ac880...(+140)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:notes:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "notes",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Adaptive detection dinonaktifkan (`adaptive_detection.enabled: false`) -- feedback tidak dicatat.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4567.2015,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ADAPTIVE_FEEDBACK: 'ADAPTIVE_FEEDBACK'>, 'target': 'evt-campaign-ip', 'reason': 'feedback TRUE_POSITIVE', 'requested_by': 'critical-user', 'action_id': '8219352a95a74471a0e...(+140)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:notes:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "notes",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Adaptive detection dinonaktifkan (`adaptive_detection.enabled: false`) -- feedback tidak dicatat.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4567.2096,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ADAPTIVE_FEEDBACK: 'ADAPTIVE_FEEDBACK'>, 'target': 'evt-campaign-ip', 'reason': 'feedback TRUE_POSITIVE', 'requested_by': 'critical-user', 'action_id': '2c817cea230b401e971...(+139)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:notes:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "notes",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Adaptive detection dinonaktifkan (`adaptive_detection.enabled: false`) -- feedback tidak dicatat.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4567.2183,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ADAPTIVE_FEEDBACK: 'ADAPTIVE_FEEDBACK'>, 'target': 'evt-campaign-ip', 'reason': 'feedback TRUE_POSITIVE', 'requested_by': 'critical-user', 'action_id': '6180df129f104176977...(+141)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:notes:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "notes",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Adaptive detection dinonaktifkan (`adaptive_detection.enabled: false`) -- feedback tidak dicatat.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4567.2264,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ADAPTIVE_FEEDBACK: 'ADAPTIVE_FEEDBACK'>, 'target': 'evt-campaign-ip', 'reason': 'feedback TRUE_POSITIVE', 'requested_by': 'critical-user', 'action_id': '64046a5da2a844a78ec...(+141)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205463.8810291
+}

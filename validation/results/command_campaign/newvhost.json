@@ -1,0 +1,1318 @@
+{
+ "name": "newvhost",
+ "sandbox": "/tmp/rtsa_cmd_iieacrcd",
+ "started": 1791205506.3124492,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.033,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 VHOST ALREADY PRESENT\nDomain: 001.lab.test\nVhost: /etc/nginx/sites-enabled/001.lab.test.conf\nResult: an enabled vhost for this domain already exists -- nothing to do (never overwritten)\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4609.8833,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': '001.lab.test', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"001.lab.test\", \"server\": \"vm\", \"timestamp\": \"2026-10-05T13:05:06.446714...(+649)"
+     ],
+     "kwargs": "{'result': 'SUCCESS'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.027,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 VHOST ALREADY PRESENT\nDomain: 001.lab.test\nVhost: /etc/nginx/sites-enabled/001.lab.test.conf\nResult: an enabled vhost for this domain already exists -- nothing to do (never overwritten)\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4609.9255,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': '001.lab.test', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"001.lab.test\", \"server\": \"vm\", \"timestamp\": \"2026-10-05T13:05:06.494634...(+649)"
+     ],
+     "kwargs": "{'result': 'SUCCESS'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.029,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 VHOST ALREADY PRESENT\nDomain: 001.lab.test\nVhost: /etc/nginx/sites-enabled/001.lab.test.conf\nResult: an enabled vhost for this domain already exists -- nothing to do (never overwritten)\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4609.9944,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': '001.lab.test', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"001.lab.test\", \"server\": \"vm\", \"timestamp\": \"2026-10-05T13:05:06.562191...(+648)"
+     ],
+     "kwargs": "{'result': 'SUCCESS'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.019,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 VHOST ALREADY PRESENT\nDomain: 001.lab.test\nVhost: /etc/nginx/sites-enabled/001.lab.test.conf\nResult: an enabled vhost for this domain already exists -- nothing to do (never overwritten)\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 NEW VHOST FAILED\nDomain: 001.lab.test\nStage: discovery\nReason: BUSY: another /newvhost for 001.lab.test is running or just finished (single-flight)\nRollback: NOT NEEDED\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4610.0489,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': '001.lab.test', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"001.lab.test\", \"server\": \"vm\", \"timestamp\": \"2026-10-05T13:05:06.626539...(+649)"
+     ],
+     "kwargs": "{'result': 'SUCCESS'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 NEW VHOST FAILED\nDomain: x;touch /tmp/rtsaZQ\nStage: discovery\nReason: INVALID_DOMAIN: exactly one domain is expected\nRollback: NOT NEEDED\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4610.0924,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': 'x;touch /tmp/rtsaZQ', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"x;touch /tmp/rtsaZQ\", \"server\": \"vm\", \"timestamp\": \"2026-10-05T1...(+396)"
+     ],
+     "kwargs": "{'result': 'FAILED:discovery'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 NEW VHOST FAILED\nDomain: $(touch /tmp/rtsaZQ)\nStage: discovery\nReason: INVALID_DOMAIN: exactly one domain is expected\nRollback: NOT NEEDED\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4610.1027,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': '$(touch /tmp/rtsaZQ)', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"$(touch /tmp/rtsaZQ)\", \"server\": \"vm\", \"timestamp\": \"2026-10-05...(+399)"
+     ],
+     "kwargs": "{'result': 'FAILED:discovery'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 NEW VHOST FAILED\nDomain: `touch /tmp/rtsaZQ`\nStage: discovery\nReason: INVALID_DOMAIN: exactly one domain is expected\nRollback: NOT NEEDED\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4610.1114,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': '`touch /tmp/rtsaZQ`', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"`touch /tmp/rtsaZQ`\", \"server\": \"vm\", \"timestamp\": \"2026-10-05T1...(+396)"
+     ],
+     "kwargs": "{'result': 'FAILED:discovery'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 NEW VHOST FAILED\nDomain: x|touch /tmp/rtsaZQ\nStage: discovery\nReason: INVALID_DOMAIN: exactly one domain is expected\nRollback: NOT NEEDED\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4610.1211,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': 'x|touch /tmp/rtsaZQ', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"x|touch /tmp/rtsaZQ\", \"server\": \"vm\", \"timestamp\": \"2026-10-05T1...(+397)"
+     ],
+     "kwargs": "{'result': 'FAILED:discovery'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 NEW VHOST FAILED\nDomain: ../../../../etc/rtsaZQ\nStage: discovery\nReason: INVALID_DOMAIN: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nRollback: NOT NEEDED\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4610.1299,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': '../../../../etc/rtsaZQ', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"../../../../etc/rtsaZQ\", \"server\": \"vm\", \"timestamp\": \"2026-1...(+466)"
+     ],
+     "kwargs": "{'result': 'FAILED:discovery'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 NEW VHOST FAILED\nDomain: /etc/rtsaZQ\nStage: discovery\nReason: INVALID_DOMAIN: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nRollback: NOT NEEDED\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4610.1406,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': '/etc/rtsaZQ', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"/etc/rtsaZQ\", \"server\": \"vm\", \"timestamp\": \"2026-10-05T13:05:06.736303+0...(+445)"
+     ],
+     "kwargs": "{'result': 'FAILED:discovery'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 NEW VHOST FAILED\nDomain: --rtsaZQ=1\nStage: discovery\nReason: INVALID_DOMAIN: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nRollback: NOT NEEDED\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4610.1497,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': '--rtsaZQ=1', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"--rtsaZQ=1\", \"server\": \"vm\", \"timestamp\": \"2026-10-05T13:05:06.745334+00:...(+442)"
+     ],
+     "kwargs": "{'result': 'FAILED:discovery'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 NEW VHOST FAILED\nDomain: ok\nrtsaZQ\nStage: discovery\nReason: INVALID_DOMAIN: exactly one domain is expected\nRollback: NOT NEEDED\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4610.1588,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': 'ok\\nrtsaZQ', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"ok\\\\nrtsaZQ\", \"server\": \"vm\", \"timestamp\": \"2026-10-05T13:05:06.754477+00...(+380)"
+     ],
+     "kwargs": "{'result': 'FAILED:discovery'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 NEW VHOST FAILED\nDomain: ok\r\nrtsaZQ: 1\nStage: discovery\nReason: INVALID_DOMAIN: exactly one domain is expected\nRollback: NOT NEEDED\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4610.1702,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': 'ok\\r\\nrtsaZQ: 1', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"ok\\\\r\\\\nrtsaZQ: 1\", \"server\": \"vm\", \"timestamp\": \"2026-10-05T13:05:0...(+391)"
+     ],
+     "kwargs": "{'result': 'FAILED:discovery'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 NEW VHOST FAILED\nDomain: ok\u0000rtsaZQ\nStage: discovery\nReason: INVALID_DOMAIN: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nRollback: NOT NEEDED\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4610.1807,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': 'ok\\x00rtsaZQ', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"ok\\\\u0000rtsaZQ\", \"server\": \"vm\", \"timestamp\": \"2026-10-05T13:05:06.776...(+450)"
+     ],
+     "kwargs": "{'result': 'FAILED:discovery'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 NEW VHOST FAILED\nDomain: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\nStage: discovery\nReason: INVALID_DOMAIN: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nRollback: NOT NEEDED\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4610.1908,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': '[REDACTED]', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"[REDACTED]\", \"server\": \"vm\", \"timestamp\": \"2026-10-05T13:05:06.786443+00:...(+442)"
+     ],
+     "kwargs": "{'result': 'FAILED:discovery'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 NEW VHOST FAILED\nDomain: \u0430pp\u202ertsaZQ.lab.test\nStage: discovery\nReason: INVALID_DOMAIN: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nRollback: NOT NEEDED\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4610.2038,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': '\u0430pp\\u202ertsaZQ.lab.test', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"\u0430pp\\u202ertsaZQ.lab.test\", \"server\": \"vm\", \"timestamp\": \"20...(+471)"
+     ],
+     "kwargs": "{'result': 'FAILED:discovery'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 NEW VHOST FAILED\nDomain: *rtsaZQ*\nStage: discovery\nReason: INVALID_DOMAIN: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nRollback: NOT NEEDED\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4610.2364,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': '*rtsaZQ*', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"*rtsaZQ*\", \"server\": \"vm\", \"timestamp\": \"2026-10-05T13:05:06.832026+00:00\",...(+438)"
+     ],
+     "kwargs": "{'result': 'FAILED:discovery'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 NEW VHOST FAILED\nDomain: ok rtsaZQ\nStage: discovery\nReason: INVALID_DOMAIN: exactly one domain is expected\nRollback: NOT NEEDED\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4610.245,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': 'ok rtsaZQ', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"ok rtsaZQ\", \"server\": \"vm\", \"timestamp\": \"2026-10-05T13:05:06.840730+00:00...(+377)"
+     ],
+     "kwargs": "{'result': 'FAILED:discovery'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 NEW VHOST FAILED\nDomain: \u2014\nStage: discovery\nReason: INVALID_DOMAIN: domain is required\nRollback: NOT NEEDED\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4610.2537,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': '', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"\", \"server\": \"vm\", \"timestamp\": \"2026-10-05T13:05:06.849361+00:00\", \"previous_state...(+347)"
+     ],
+     "kwargs": "{'result': 'FAILED:discovery'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 NEW VHOST FAILED\nDomain: %s%n{0.__class__}rtsaZQ\nStage: discovery\nReason: INVALID_DOMAIN: not a valid hostname (path separators, shell characters, wildcards, IPs and URLs are rejected)\nRollback: NOT NEEDED\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4610.2634,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': '%s%n{0.__class__}rtsaZQ', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"%s%n{0.__class__}rtsaZQ\", \"server\": \"vm\", \"timestamp\": \"2026...(+468)"
+     ],
+     "kwargs": "{'result': 'FAILED:discovery'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 NEW VHOST FAILED\nDomain: @everyone rtsaZQ\nStage: discovery\nReason: INVALID_DOMAIN: exactly one domain is expected\nRollback: NOT NEEDED\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4610.2723,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': '@everyone rtsaZQ', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"@everyone rtsaZQ\", \"server\": \"vm\", \"timestamp\": \"2026-10-05T13:05:0...(+391)"
+     ],
+     "kwargs": "{'result': 'FAILED:discovery'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "EVERYONE_MENTION_ECHOED",
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 NEW VHOST FAILED\nDomain: <@&111> rtsaZQ\nStage: discovery\nReason: INVALID_DOMAIN: exactly one domain is expected\nRollback: NOT NEEDED\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4610.2808,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': '<@&111> rtsaZQ', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"<@&111> rtsaZQ\", \"server\": \"vm\", \"timestamp\": \"2026-10-05T13:05:06.87...(+387)"
+     ],
+     "kwargs": "{'result': 'FAILED:discovery'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "ROLE_MENTION_ECHOED",
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "flag:dry_run:True",
+   "caller": "critical",
+   "input_class": "valid_flag",
+   "param": "dry_run",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.016,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 VHOST ALREADY PRESENT\nDomain: 001.lab.test\nVhost: /etc/nginx/sites-enabled/001.lab.test.conf\nResult: an enabled vhost for this domain already exists -- nothing to do (never overwritten)\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4610.3056,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': '001.lab.test', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"001.lab.test\", \"server\": \"vm\", \"timestamp\": \"2026-10-05T13:05:06.886075...(+649)"
+     ],
+     "kwargs": "{'result': 'SUCCESS'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "flag:dry_run:False",
+   "caller": "critical",
+   "input_class": "valid_flag",
+   "param": "dry_run",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.016,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 VHOST ALREADY PRESENT\nDomain: 001.lab.test\nVhost: /etc/nginx/sites-enabled/001.lab.test.conf\nResult: an enabled vhost for this domain already exists -- nothing to do (never overwritten)\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4610.3305,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': '001.lab.test', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"001.lab.test\", \"server\": \"vm\", \"timestamp\": \"2026-10-05T13:05:06.910138...(+649)"
+     ],
+     "kwargs": "{'result': 'SUCCESS'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "flag:reload:True",
+   "caller": "critical",
+   "input_class": "valid_flag",
+   "param": "reload",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.02,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 VHOST ALREADY PRESENT\nDomain: 001.lab.test\nVhost: /etc/nginx/sites-enabled/001.lab.test.conf\nResult: an enabled vhost for this domain already exists -- nothing to do (never overwritten)\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4610.3642,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': '001.lab.test', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"001.lab.test\", \"server\": \"vm\", \"timestamp\": \"2026-10-05T13:05:06.940044...(+648)"
+     ],
+     "kwargs": "{'result': 'SUCCESS'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "flag:reload:False",
+   "caller": "critical",
+   "input_class": "valid_flag",
+   "param": "reload",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.017,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA \u2014 VHOST ALREADY PRESENT\nDomain: 001.lab.test\nVhost: /etc/nginx/sites-enabled/001.lab.test.conf\nResult: an enabled vhost for this domain already exists -- nothing to do (never overwritten)\nby critical-user",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4610.394,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.NEWVHOST: 'NEWVHOST'>, 'target': '001.lab.test', 'reason': '{\"operator\": \"critical-user\", \"domain\": \"001.lab.test\", \"server\": \"vm\", \"timestamp\": \"2026-10-05T13:05:06.973411...(+649)"
+     ],
+     "kwargs": "{'result': 'SUCCESS'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205507.0491006
+}

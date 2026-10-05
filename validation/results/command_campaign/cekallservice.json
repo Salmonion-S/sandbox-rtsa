@@ -1,0 +1,579 @@
+{
+ "name": "cekallservice",
+ "sandbox": "/tmp/rtsa_cmd_9wwfjl9l",
+ "started": 1791205405.8149505,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA Systemd Inventory\nSnapshot diagnostik read-only berbasis baseline systemd_monitor. Perintah ini tidak membuat security incident.\nTotal: 0\nActive/Running: 0\nInactive: 0\nFailed: 0\nEnabled: 0\nDisabled: 0\nBaseline Created: (belum ada baseline)\nBaseline Known Services: 0\nNew Since Baseline: (tidak ada)\nChanged: (tidak ada)\nPotentially Suspicious: (tidak ada)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4509.3299,
+     "argv": [
+      "systemctl",
+      "list-unit-files",
+      "--type=service",
+      "--no-legend",
+      "--no-pager"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4509.33,
+     "argv": [
+      "systemctl",
+      "list-units",
+      "--type=service",
+      "--state=running",
+      "--no-legend",
+      "--no-pager"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4509.3302,
+     "argv": [
+      "/usr/bin/systemctl",
+      "list-units",
+      "--type=service",
+      "--state=failed",
+      "--no-legend",
+      "--no-pager"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    }
+   ],
+   "event_count": 3,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA Systemd Inventory\nSnapshot diagnostik read-only berbasis baseline systemd_monitor. Perintah ini tidak membuat security incident.\nTotal: 0\nActive/Running: 0\nInactive: 0\nFailed: 0\nEnabled: 0\nDisabled: 0\nBaseline Created: (belum ada baseline)\nBaseline Known Services: 0\nNew Since Baseline: (tidak ada)\nChanged: (tidak ada)\nPotentially Suspicious: (tidak ada)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4509.3494,
+     "argv": [
+      "systemctl",
+      "list-unit-files",
+      "--type=service",
+      "--no-legend",
+      "--no-pager"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4509.3494,
+     "argv": [
+      "systemctl",
+      "list-units",
+      "--type=service",
+      "--state=running",
+      "--no-legend",
+      "--no-pager"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4509.3495,
+     "argv": [
+      "/usr/bin/systemctl",
+      "list-units",
+      "--type=service",
+      "--state=failed",
+      "--no-legend",
+      "--no-pager"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    }
+   ],
+   "event_count": 3,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA Systemd Inventory\nSnapshot diagnostik read-only berbasis baseline systemd_monitor. Perintah ini tidak membuat security incident.\nTotal: 0\nActive/Running: 0\nInactive: 0\nFailed: 0\nEnabled: 0\nDisabled: 0\nBaseline Created: (belum ada baseline)\nBaseline Known Services: 0\nNew Since Baseline: (tidak ada)\nChanged: (tidak ada)\nPotentially Suspicious: (tidak ada)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4509.3716,
+     "argv": [
+      "systemctl",
+      "list-unit-files",
+      "--type=service",
+      "--no-legend",
+      "--no-pager"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4509.3717,
+     "argv": [
+      "systemctl",
+      "list-units",
+      "--type=service",
+      "--state=running",
+      "--no-legend",
+      "--no-pager"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4509.3719,
+     "argv": [
+      "/usr/bin/systemctl",
+      "list-units",
+      "--type=service",
+      "--state=failed",
+      "--no-legend",
+      "--no-pager"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    }
+   ],
+   "event_count": 3,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA Systemd Inventory\nSnapshot diagnostik read-only berbasis baseline systemd_monitor. Perintah ini tidak membuat security incident.\nTotal: 0\nActive/Running: 0\nInactive: 0\nFailed: 0\nEnabled: 0\nDisabled: 0\nBaseline Created: (belum ada baseline)\nBaseline Known Services: 0\nNew Since Baseline: (tidak ada)\nChanged: (tidak ada)\nPotentially Suspicious: (tidak ada)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4509.3934,
+     "argv": [
+      "systemctl",
+      "list-unit-files",
+      "--type=service",
+      "--no-legend",
+      "--no-pager"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4509.3935,
+     "argv": [
+      "systemctl",
+      "list-units",
+      "--type=service",
+      "--state=running",
+      "--no-legend",
+      "--no-pager"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4509.3936,
+     "argv": [
+      "/usr/bin/systemctl",
+      "list-units",
+      "--type=service",
+      "--state=failed",
+      "--no-legend",
+      "--no-pager"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    }
+   ],
+   "event_count": 3,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA Systemd Inventory\nSnapshot diagnostik read-only berbasis baseline systemd_monitor. Perintah ini tidak membuat security incident.\nTotal: 0\nActive/Running: 0\nInactive: 0\nFailed: 0\nEnabled: 0\nDisabled: 0\nBaseline Created: (belum ada baseline)\nBaseline Known Services: 0\nNew Since Baseline: (tidak ada)\nChanged: (tidak ada)\nPotentially Suspicious: (tidak ada)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "RTSA Systemd Inventory\nSnapshot diagnostik read-only berbasis baseline systemd_monitor. Perintah ini tidak membuat security incident.\nTotal: 0\nActive/Running: 0\nInactive: 0\nFailed: 0\nEnabled: 0\nDisabled: 0\nBaseline Created: (belum ada baseline)\nBaseline Known Services: 0\nNew Since Baseline: (tidak ada)\nChanged: (tidak ada)\nPotentially Suspicious: (tidak ada)",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4509.4126,
+     "argv": [
+      "systemctl",
+      "list-unit-files",
+      "--type=service",
+      "--no-legend",
+      "--no-pager"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4509.4126,
+     "argv": [
+      "systemctl",
+      "list-unit-files",
+      "--type=service",
+      "--no-legend",
+      "--no-pager"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4509.4127,
+     "argv": [
+      "systemctl",
+      "list-units",
+      "--type=service",
+      "--state=running",
+      "--no-legend",
+      "--no-pager"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4509.4127,
+     "argv": [
+      "systemctl",
+      "list-units",
+      "--type=service",
+      "--state=running",
+      "--no-legend",
+      "--no-pager"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4509.4128,
+     "argv": [
+      "/usr/bin/systemctl",
+      "list-units",
+      "--type=service",
+      "--state=failed",
+      "--no-legend",
+      "--no-pager"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4509.4129,
+     "argv": [
+      "/usr/bin/systemctl",
+      "list-units",
+      "--type=service",
+      "--state=failed",
+      "--no-legend",
+      "--no-pager"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    }
+   ],
+   "event_count": 6,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 6
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205406.0786524
+}

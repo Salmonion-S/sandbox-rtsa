@@ -1,0 +1,15 @@
+{
+ "label": "pre-fix",
+ "install": "/var/lab-rtsa/rtsa",
+ "users_reported": 128,
+ "statuses": {
+  "online": 66,
+  "empty": 62
+ },
+ "elapsed_s": 70.4,
+ "daemons_before": 112,
+ "daemons_after": 128,
+ "daemons_spawned_by_cekpm2": 16,
+ "rss_mb_spawned": 970.8,
+ "cleaned_up": 16
+}

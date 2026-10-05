@@ -1,0 +1,20 @@
+{
+ "pm2_stop_rc": 0,
+ "sigkilled_pm2_app_pids_lab003": [
+  "747"
+ ],
+ "pm2_start_rc": 0,
+ "alerts_while_down": {
+  "RTSA Alert \u2014 CORRELATED_THREAT": 4,
+  "RTSA Alert \u2014 PERSISTENCE_CONDITION_RESOLVED": 1,
+  "RTSA Alert \u2014 CLOUDPANEL_PM2_CHANGED": 1,
+  "RTSA Alert \u2014 CLOUDPANEL_PROJECT_STATUS_CHANGED": 1
+ },
+ "alerts_after_restore": {
+  "RTSA Alert \u2014 CORRELATED_THREAT": 4,
+  "RTSA Alert \u2014 PROCESS_ANOMALY (bagian 1/2)": 1
+ },
+ "errors": [],
+ "verdict": "PASS",
+ "duration_s": 270.5
+}

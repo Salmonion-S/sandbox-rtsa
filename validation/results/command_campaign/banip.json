@@ -1,0 +1,6925 @@
+{
+ "name": "banip",
+ "sandbox": "/tmp/rtsa_cmd_hrdsnhqu",
+ "started": 1791205398.176605,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4501.7214,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4501.7215,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4501.7215,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4501.7216,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': None, 'scope': 'NONE', 'expires_at': 1791207198.3170202, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4501.7217,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': '93f161c13284406ba2289f6502ed89ed', 'timestamp': 17912053...(+113)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udec8 Detection Only mode is active \u2014 banning `203.0.113.50` (iptables + Cloudflare) was NOT executed. RTSA is deployed for detection and notification only; set `response_engine.detection_only: false` in config to allow RTSA-driven mitigation, or take this action manually.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4501.7333,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'response_engine.detection_only=true', 'requested_by': 'critical-user', 'action_id': 'f278e30a1fbc4d348d777047b87917c...(+111)"
+     ],
+     "kwargs": "{'result': 'Blocked by Detection Only'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": true
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4501.7477,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4501.7478,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4501.7478,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4501.7479,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': None, 'scope': 'NONE', 'expires_at': 1791207198.3432908, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4501.748,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': '9722f3e70648442bb8495cb5f7e4f0b4', 'timestamp': 17912053...(+113)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "\u23f3 Aksi untuk `203.0.113.50` sedang diproses, tunggu sebentar.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4501.7572,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4501.7575,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4501.7576,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4501.7576,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4501.7577,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': None, 'scope': 'NONE', 'expires_at': 1791207198.352902, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4501.7578,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': 'b5710d2fe4434ac4989c3937d0f7016b', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 6,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 4,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:ip:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "ip",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c 'x;touch /tmp/rtsaZQ' is not a valid IP address.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:ip:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "ip",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c '$(touch /tmp/rtsaZQ)' is not a valid IP address.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:ip:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "ip",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c '`touch /tmp/rtsaZQ`' is not a valid IP address.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:ip:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "ip",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c 'x|touch /tmp/rtsaZQ' is not a valid IP address.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:ip:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "ip",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c '../../../../etc/rtsaZQ' is not a valid IP address.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:ip:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "ip",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c '/etc/rtsaZQ' is not a valid IP address.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:ip:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "ip",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c '--rtsaZQ=1' is not a valid IP address.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:ip:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "ip",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c 'ok\nrtsaZQ' is not a valid IP address.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:ip:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "ip",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c 'ok\r\nrtsaZQ: 1' is not a valid IP address.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:ip:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "ip",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c 'ok\u0000rtsaZQ' is not a valid IP address.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:ip:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "ip",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:ip:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "ip",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c '\u0430pp\u202ertsaZQ.lab.test' is not a valid IP address.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:ip:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "ip",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c '*rtsaZQ*' is not a valid IP address.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:ip:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "ip",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c 'ok rtsaZQ' is not a valid IP address.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:ip:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "ip",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c '' is not a valid IP address.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:ip:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "ip",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c '%s%n{0.__class__}rtsaZQ' is not a valid IP address.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:ip:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "ip",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c '@everyone rtsaZQ' is not a valid IP address.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [
+    "EVERYONE_MENTION_ECHOED"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:ip:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "ip",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c '<@&111> rtsaZQ' is not a valid IP address.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [
+    "ROLE_MENTION_ECHOED"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:reason:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "reason",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: x;touch /tmp/rtsaZQ)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4501.9703,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4501.9704,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4501.9704,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4501.9705,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'x;touch /tmp/rtsaZQ', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': None, 'scope': 'NONE', 'expires_at': 1791207198.5659366, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4501.9706,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'x;touch /tmp/rtsaZQ', 'requested_by': 'critical-user', 'action_id': 'cdf691ec63204b119bcd37ea9196a68f', 'timestamp':...(+122)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:reason:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "reason",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: $(touch /tmp/rtsaZQ))\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4501.9803,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4501.9803,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4501.9804,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4501.9804,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': '$(touch /tmp/rtsaZQ)', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': None, 'scope': 'NONE', 'expires_at': 1791207198.5759406, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4501.9805,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': '$(touch /tmp/rtsaZQ)', 'requested_by': 'critical-user', 'action_id': '7f80f27136b94a45a685534fec9dd1ed', 'timestamp'...(+123)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:reason:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "reason",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: `touch /tmp/rtsaZQ`)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4501.9902,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4501.9903,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4501.9903,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4501.9904,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': '`touch /tmp/rtsaZQ`', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': None, 'scope': 'NONE', 'expires_at': 1791207198.585798, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4501.9905,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': '`touch /tmp/rtsaZQ`', 'requested_by': 'critical-user', 'action_id': 'cc43e5ad2fae40ef9cc1066d4a49fb5b', 'timestamp':...(+123)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:reason:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "reason",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: x|touch /tmp/rtsaZQ)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0017,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0018,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0019,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.002,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'x|touch /tmp/rtsaZQ', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': None, 'scope': 'NONE', 'expires_at': 1791207198.5973728, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.0022,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'x|touch /tmp/rtsaZQ', 'requested_by': 'critical-user', 'action_id': 'e8c1ad7184b647259c629f30cf52b962', 'timestamp':...(+123)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:reason:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "reason",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: ../../../../etc/rtsaZQ)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.013,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0131,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0132,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.0132,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': '../../../../etc/rtsaZQ', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': None, 'scope': 'NONE', 'expires_at': 1791207198.6087155, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.0133,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': '../../../../etc/rtsaZQ', 'requested_by': 'critical-user', 'action_id': '8e48e56c545c4c5bae3ae47c01a3d170', 'timestam...(+126)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:reason:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "reason",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: /etc/rtsaZQ)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0228,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0229,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0229,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.023,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': '/etc/rtsaZQ', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': None, 'scope': 'NONE', 'expires_at': 1791207198.6184633, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.0231,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': '/etc/rtsaZQ', 'requested_by': 'critical-user', 'action_id': '11af48eab7e045738719ddfde06f6254', 'timestamp': 1791205...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:reason:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "reason",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: --rtsaZQ=1)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0333,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0334,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0334,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.0335,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': '--rtsaZQ=1', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': None, 'scope': 'NONE', 'expires_at': 1791207198.6289945, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.0335,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': '--rtsaZQ=1', 'requested_by': 'critical-user', 'action_id': '5608d6026c0e45b089ce06f9c8da9ef7', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:reason:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "reason",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: ok\nrtsaZQ)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0441,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0442,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0443,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.0444,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'ok\\nrtsaZQ', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': None, 'scope': 'NONE', 'expires_at': 1791207198.639695, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.0445,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'ok\\nrtsaZQ', 'requested_by': 'critical-user', 'action_id': '66d9ae1aa0084b3a831a143442fa865e', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:reason:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "reason",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: ok\r\nrtsaZQ: 1)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0542,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0543,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0544,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.0544,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'ok\\r\\nrtsaZQ: 1', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': None, 'scope': 'NONE', 'expires_at': 1791207198.6499302, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.0545,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'ok\\r\\nrtsaZQ: 1', 'requested_by': 'critical-user', 'action_id': 'a86a1acf03aa4498a4754a935f833572', 'timestamp': 179...(+119)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:reason:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "reason",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: ok\u0000rtsaZQ)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0636,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0636,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0637,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.0637,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'ok\\x00rtsaZQ', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': None, 'scope': 'NONE', 'expires_at': 1791207198.659264, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.0638,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'ok\\x00rtsaZQ', 'requested_by': 'critical-user', 'action_id': 'e26479e02ac7404291de8d1bfe09623c', 'timestamp': 179120...(+116)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:reason:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "reason",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0742,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0742,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0743,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.0743,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...(+3902)', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': None, 'scope': 'NONE', 'expires_at': 1791207198.6698346, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.0744,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...(+4206)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:reason:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "reason",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: \u0430pp\u202ertsaZQ.lab.test)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0846,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0847,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0847,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.0848,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': '\u0430pp\\u202ertsaZQ.lab.test', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': None, 'scope': 'NONE', 'expires_at': 1791207198.6802363, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.0849,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': '\u0430pp\\u202ertsaZQ.lab.test', 'requested_by': 'critical-user', 'action_id': 'da446d614b42410dbd7444aa1470b0cd', 'timest...(+128)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:reason:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "reason",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: *rtsaZQ*)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0954,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0955,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.0955,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.0956,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': '*rtsaZQ*', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': None, 'scope': 'NONE', 'expires_at': 1791207198.691083, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.0956,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': '*rtsaZQ*', 'requested_by': 'critical-user', 'action_id': '959821974964463bbd7e7ea8a79bccce', 'timestamp': 1791205398...(+112)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:reason:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "reason",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: ok rtsaZQ)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1051,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1052,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1052,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.1053,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'ok rtsaZQ', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': None, 'scope': 'NONE', 'expires_at': 1791207198.7007828, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.1063,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'ok rtsaZQ', 'requested_by': 'critical-user', 'action_id': '7a52fec17caf485a8273d1fe9385998d', 'timestamp': 179120539...(+113)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:reason:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "reason",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: )\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1151,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1151,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1152,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.1152,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': '', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': None, 'scope': 'NONE', 'expires_at': 1791207198.7107637, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.1153,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': '', 'requested_by': 'critical-user', 'action_id': 'bb56e3f49ba24d3ba12096b4a17c01b1', 'timestamp': 1791205398.7110307...(+104)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:reason:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "reason",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: %s%n{0.__class__}rtsaZQ)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1265,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1266,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1266,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.1267,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': '%s%n{0.__class__}rtsaZQ', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': None, 'scope': 'NONE', 'expires_at': 1791207198.7221708, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.1268,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': '%s%n{0.__class__}rtsaZQ', 'requested_by': 'critical-user', 'action_id': '72e2f22794bd406b9a0e633687ec2372', 'timesta...(+127)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:reason:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "reason",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: @everyone rtsaZQ)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1365,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1365,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1366,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.1366,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': '@everyone rtsaZQ', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': None, 'scope': 'NONE', 'expires_at': 1791207198.732173, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.1367,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': '@everyone rtsaZQ', 'requested_by': 'critical-user', 'action_id': 'bc039fc1be2c46aa854d12eac7b47885', 'timestamp': 17...(+120)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "EVERYONE_MENTION_ECHOED",
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:reason:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "reason",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: <@&111> rtsaZQ)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1477,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1478,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1478,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.1479,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': '<@&111> rtsaZQ', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': None, 'scope': 'NONE', 'expires_at': 1791207198.7434397, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.148,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': '<@&111> rtsaZQ', 'requested_by': 'critical-user', 'action_id': '42653b2117fc4a5082f12d91766835ce', 'timestamp': 1791...(+118)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "ROLE_MENTION_ECHOED",
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:severity:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "severity",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-06 02:03:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1574,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1574,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1575,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.1575,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'X;TOUCH /TMP/RTSAZQ', 'domain': None, 'scope': 'NONE', 'expires_at': 1791226998.7530594, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.1576,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': '44297e374ba649bca4e45e9a7add2ceb', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:severity:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "severity",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-06 02:03:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1667,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1668,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1668,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.1669,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': '$(TOUCH /TMP/RTSAZQ)', 'domain': None, 'scope': 'NONE', 'expires_at': 1791226998.76241, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.1669,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': '11e92683c3d5485b9fb830e7e95e2c22', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:severity:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "severity",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-06 02:03:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1781,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1782,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1782,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.1783,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': '`TOUCH /TMP/RTSAZQ`', 'domain': None, 'scope': 'NONE', 'expires_at': 1791226998.7737985, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.1784,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': '097e0ba223874e83957886e3584bca4d', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:severity:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "severity",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-06 02:03:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1875,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1876,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1877,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.1877,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'X|TOUCH /TMP/RTSAZQ', 'domain': None, 'scope': 'NONE', 'expires_at': 1791226998.7832377, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.1878,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': 'bfd8443fde81460db13478bf3984f6c2', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:severity:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "severity",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-06 02:03:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1971,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1972,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.1972,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.1973,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': '../../../../ETC/RTSAZQ', 'domain': None, 'scope': 'NONE', 'expires_at': 1791226998.7927747, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.1974,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': '00d8b93f45c143a199f89e4d226d8a8c', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:severity:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "severity",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-06 02:03:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.2068,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.2069,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.2069,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.207,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': '/ETC/RTSAZQ', 'domain': None, 'scope': 'NONE', 'expires_at': 1791226998.802503, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.207,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': '2ba851adea934ccbb8d40c60e20fc1a2', 'timestamp': 17912053...(+113)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:severity:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "severity",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-06 02:03:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.216,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.2162,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.2164,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.2164,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': '--RTSAZQ=1', 'domain': None, 'scope': 'NONE', 'expires_at': 1791226998.8116693, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.2165,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': 'd7f54e47d4ea46628b53483e8ac23290', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:severity:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "severity",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-06 02:03:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.2252,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.2252,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.2253,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.2253,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'OK\\nRTSAZQ', 'domain': None, 'scope': 'NONE', 'expires_at': 1791226998.8208258, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.2254,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': 'f342873715344c16a7eeb265220de278', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:severity:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "severity",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-06 02:03:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.234,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.234,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.2341,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.2341,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'OK\\r\\nRTSAZQ: 1', 'domain': None, 'scope': 'NONE', 'expires_at': 1791226998.8296556, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.2342,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': '24ee4d2ea9b64cd191a1f7dfe4e4476d', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:severity:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "severity",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-06 02:03:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.245,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.2452,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.2452,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.2453,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'OK\\x00RTSAZQ', 'domain': None, 'scope': 'NONE', 'expires_at': 1791226998.840701, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.2454,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': '7a3eefab9f0545b684859964f9a69675', 'timestamp': 17912053...(+113)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:severity:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "severity",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-06 02:03:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.2606,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.2607,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.2608,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.2608,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...(+3902)', 'domain': None, 'scope': 'NONE', 'expires_at': 1791226998.8562567, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.261,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': 'fbcae5b681ef4c65a7b5478cf8f3f0e9', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:severity:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "severity",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-06 02:03:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.2752,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.2753,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.2753,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.2754,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': '\u0410PP\\u202eRTSAZQ.LAB.TEST', 'domain': None, 'scope': 'NONE', 'expires_at': 1791226998.8708098, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.2755,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': '7fa7d71e36234c3f8cba7091e7f0dadf', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:severity:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "severity",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-06 02:03:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.291,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.2912,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.2912,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.2913,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': '*RTSAZQ*', 'domain': None, 'scope': 'NONE', 'expires_at': 1791226998.886692, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.2914,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': '7aca635b82e44b599a1d0a8f1d2a84d6', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:severity:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "severity",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-06 02:03:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.3053,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.3054,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.3055,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.3055,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'OK RTSAZQ', 'domain': None, 'scope': 'NONE', 'expires_at': 1791226998.9009938, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.3056,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': 'fad4b3f12bb641dbb977248781c7fb0e', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:severity:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "severity",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-06 02:03:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.3194,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.3195,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.3195,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.3196,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': '', 'domain': None, 'scope': 'NONE', 'expires_at': 1791226998.9150217, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.3197,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': '62b2009985d44efd96b0b1daa8dff7db', 'timestamp': 17912053...(+113)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:severity:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "severity",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-06 02:03:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.3339,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.334,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.334,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.3341,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': '%S%N{0.__CLASS__}RTSAZQ', 'domain': None, 'scope': 'NONE', 'expires_at': 1791226998.9296377, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.3342,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': '6f683b0b074d4b279452d0f7e361f6dd', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:severity:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "severity",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-06 02:03:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.373,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.3731,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.3732,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.3732,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': '@EVERYONE RTSAZQ', 'domain': None, 'scope': 'NONE', 'expires_at': 1791226998.9687254, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.3733,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': '96168fd02e0141a8983045050136ab46', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:severity:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "severity",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-06 02:03:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.383,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.3831,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.3832,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.3832,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': '<@&111> RTSAZQ', 'domain': None, 'scope': 'NONE', 'expires_at': 1791226998.9786906, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.3834,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': 'fc3f416bff2645f7a73c21ddbbcb68c3', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.3931,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.3932,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.3933,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.3934,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': 'x;touch /tmp/rtsaZQ', 'scope': 'NONE', 'expires_at': 1791207198.988791, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.3935,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': '5c128e434386476c8f6056fd2a00308c', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:18 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4029,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4029,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.403,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.403,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': '$(touch /tmp/rtsaZQ)', 'scope': 'NONE', 'expires_at': 1791207198.9985943, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.4031,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': 'e52343ba23ef4908833f880237484936', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:19 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4121,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4122,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4122,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.4122,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': '`touch /tmp/rtsaZQ`', 'scope': 'NONE', 'expires_at': 1791207199.0075634, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.4123,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': 'ae97beec1fd84a42aafc4219ce713dc3', 'timestamp': 17912053...(+113)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:19 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4211,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4212,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4212,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.4213,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': 'x|touch /tmp/rtsaZQ', 'scope': 'NONE', 'expires_at': 1791207199.01681, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.4213,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': 'f910246b18d34f5da88ed54914a37e53', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:19 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4314,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4315,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4315,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.4316,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': '../../../../etc/rtsaZQ', 'scope': 'NONE', 'expires_at': 1791207199.0271235, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.4316,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': 'c7bab32ebd1a4e32ab16f7644e4128e7', 'timestamp': 17912053...(+113)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:19 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4416,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4417,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4417,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.4417,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': '/etc/rtsaZQ', 'scope': 'NONE', 'expires_at': 1791207199.0372958, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.4418,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': 'c86f264225884accacb207a9f7512d3e', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:19 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4501,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4502,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4502,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.4502,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': '--rtsaZQ=1', 'scope': 'NONE', 'expires_at': 1791207199.0457869, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.4503,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': '2418d49c370b47c0803d8fab82e3c877', 'timestamp': 17912053...(+113)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:19 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4598,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4599,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4599,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.46,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': 'ok\\nrtsaZQ', 'scope': 'NONE', 'expires_at': 1791207199.0555034, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.4601,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': '743a5dd9a87e45469d0ff1ed380c3fd7', 'timestamp': 17912053...(+113)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:19 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4693,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4693,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4694,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.4695,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': 'ok\\r\\nrtsaZQ: 1', 'scope': 'NONE', 'expires_at': 1791207199.0649686, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.4696,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': '08e6521afe564026b92b123b0206dcfe', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:19 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.478,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4781,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4782,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.4782,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': 'ok\\x00rtsaZQ', 'scope': 'NONE', 'expires_at': 1791207199.0737245, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.4783,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': '8e64a51800f549d198c95b6b7d05a338', 'timestamp': 17912053...(+113)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:19 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4876,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4877,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4877,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.4878,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...(+3902)', 'scope': 'NONE', 'expires_at': 1791207199.083299, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.4878,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': '07cf3b38c1954c89a4ed2aa869a1190a', 'timestamp': 17912053...(+113)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:19 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4975,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4975,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.4976,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.4976,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': '\u0430pp\\u202ertsaZQ.lab.test', 'scope': 'NONE', 'expires_at': 1791207199.093174, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.4977,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': '1c12ab33e88b41f9a1cd81369d615c3e', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:19 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.5063,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.5063,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.5064,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.5065,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': '*rtsaZQ*', 'scope': 'NONE', 'expires_at': 1791207199.1019962, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.5065,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': '65730767db424a97b565d4f41c44a247', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:19 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.5153,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.5154,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.5154,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.5154,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': 'ok rtsaZQ', 'scope': 'NONE', 'expires_at': 1791207199.111001, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.5155,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': 'ef271fa689014408b7a224d267f20e9b', 'timestamp': 17912053...(+113)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:19 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.5256,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.5256,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.5257,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.5257,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': '', 'scope': 'NONE', 'expires_at': 1791207199.121254, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.5258,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': '67c308b78954455f8d989feb4e0121f0', 'timestamp': 17912053...(+113)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:19 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.5347,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.5347,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.5348,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.5348,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': '%s%n{0.__class__}rtsaZQ', 'scope': 'NONE', 'expires_at': 1791207199.130364, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.5349,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': 'c23b49c5002046c6b9b8e3588b84786e', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:19 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.5433,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.5434,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.5434,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.5434,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': '@everyone rtsaZQ', 'scope': 'NONE', 'expires_at': 1791207199.138985, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.5435,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': '7f180fccb72c4852a898492159d6060a', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udeab `203.0.113.50` berhasil di-ban (alasan: Manual ban)\n\u2705 iptables: rule berhasil ditambahkan\nStatus: **BAN_APPLIED_UNVERIFIED** | Expires: 2026-10-05 20:33:19 WIB | Verification: NOT_ATTEMPTED",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.5537,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-L",
+      "RTSA-DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.5538,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-C",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4502.5539,
+     "argv": [
+      "/usr/sbin/iptables",
+      "-A",
+      "RTSA-DROP",
+      "-s",
+      "203.0.113.50",
+      "-j",
+      "DROP"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.5539,
+     "method": "enqueue_ban",
+     "args": [
+      "203.0.113.50"
+     ],
+     "kwargs": "{'reason': 'Manual ban', 'banned_by': 'critical-user', 'active': True, 'severity': 'MEDIUM', 'domain': '<@&111> rtsaZQ', 'scope': 'NONE', 'expires_at': 1791207199.149449, 'status': 'BAN_APPLIED_UNVERIFIED', 'verification_status': 'NOT_ATTEMPTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4502.554,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.BAN_IP: 'BAN_IP'>, 'target': '203.0.113.50', 'reason': 'Manual ban', 'requested_by': 'critical-user', 'action_id': '6d5a8f96476446a2bc3236bf75c740ad', 'timestamp': 17912053...(+114)"
+     ],
+     "kwargs": "{'result': 'success'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 3,
+    "DB_WRITE": 2
+   },
+   "mutations": [
+    "/usr/sbin/iptables -A RTSA-DROP -s 203.0.113.50 -j DROP"
+   ],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205399.2093217
+}

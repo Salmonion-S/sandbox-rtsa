@@ -1,0 +1,31 @@
+{
+ "sends": 70,
+ "edits": 0,
+ "span_s": 12539.6,
+ "peak_sends_per_minute": 7,
+ "exact_duplicate_sends": 0,
+ "by_channel": {
+  "CORRELATED_THREAT": 49,
+  "alert_channel_id(default)": 17,
+  "RTSA_STARTUP_HEALTH": 2,
+  "PERSISTENCE_NEW_PORT": 2
+ },
+ "by_title": {
+  "RTSA Alert — CORRELATED_THREAT": 49,
+  "RTSA Alert — PROCESS_ANOMALY (bagian #/#)": 5,
+  "RTSA Alert — APPLICATION_ERROR": 3,
+  "RTSA STARTUP — HEALTHY (bagian #/#)": 2,
+  "RTSA Alert — SSH_CONFIG_WEAK": 2,
+  "RTSA Alert — PROCESS_BURST_RECOVERED": 2,
+  "RTSA Alert — REMOTE_ACCESS_BACKDOOR (bagian #/#)": 2,
+  "RTSA Alert — PERSISTENCE_NEW_PORT (bagian #/#)": 2,
+  "RTSA Alert — PERSISTENCE_CONDITION_RESOLVED": 2,
+  "RTSA Alert — APPLICATION_ERROR_DIGEST": 1
+ },
+ "buttons": {
+  "ignore": 51,
+  "timeline": 51,
+  "cekport": 2,
+  "porthistory": 2
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "roots": [
+  "/etc/nginx",
+  "/etc/passwd",
+  "/etc/group",
+  "/etc/shadow",
+  "/etc/sudoers",
+  "/etc/sudoers.d",
+  "/etc/crontab",
+  "/etc/cron.d",
+  "/etc/systemd/system",
+  "/etc/hosts",
+  "/etc/ssh",
+  "/root/.ssh",
+  "/home",
+  "/opt"
+ ],
+ "files_checked": 29460,
+ "changed": [],
+ "changed_count": 0
+}

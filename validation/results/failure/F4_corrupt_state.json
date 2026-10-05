@@ -1,0 +1,33 @@
+{
+ "corrupted": {
+  "notification_gate_state.json": "{not json",
+  "application_error_state.json": "",
+  "process_fingerprint_baseline.json": "[1,2,3]",
+  "remote_access_baseline.json": "\u0000\u0000\u0000",
+  "cloudpanel_baseline.json": "{\"version\": 999, \"pr"
+ },
+ "restart": {
+  "pid": 22425,
+  "seconds_to_first_scan_cycle": 15.51,
+  "t0": 1791202215.6948817
+ },
+ "alive_after_60s": true,
+ "state_after": {
+  "json_files": 10,
+  "invalid": [],
+  "leftover_temp_files": []
+ },
+ "alerts_first_60s": {
+  "RTSA Alert \u2014 CORRELATED_THREAT": 8,
+  "RTSA Alert \u2014 APPLICATION_ERROR": 5,
+  "RTSA Alert \u2014 PROCESS_ANOMALY (bagian 1/2)": 2,
+  "RTSA STARTUP \u2014 HEALTHY (bagian 1/2)": 1
+ },
+ "errors": [
+  "2026-10-05 12:10:16 | INFO     | rtsa.core.event_bus | Subscriber terdaftar: analyzer (categories=[<EventCategory.WEB_ATTACK_SCAN: 'WEB_ATTACK_SCAN'>, <EventCategory.WEB_ATTACK_RCE: 'WEB_ATTACK_RCE'>, <EventCategory.WEB_ATTACK_SQLI: 'WEB_AT",
+  "2026-10-05 12:10:16 | ERROR    | rtsa.modules.audit_monitor | Binary ausearch tidak ditemukan \u2014 audit monitor tidak bisa jalan. Install auditd (misalnya 'apt install auditd') untuk mengaktifkan module ini, atau set modules.audit_monitor.ena",
+  "2026-10-05 12:10:17 | INFO     | rtsa.core.event_bus | Subscriber terdaftar: application_error_tracker (categories=[<EventCategory.FILE_INTEGRITY_CHANGE: 'FILE_INTEGRITY_CHANGE'>, <EventCategory.SERVICE_DOWN: 'SERVICE_DOWN'>, <EventCategory"
+ ],
+ "verdict": "PASS",
+ "duration_s": 76.8
+}

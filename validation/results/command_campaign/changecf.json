@@ -1,0 +1,1395 @@
+{
+ "name": "changecf",
+ "sandbox": "/tmp/rtsa_cmd_3lllwwy3",
+ "started": 1791205423.4032862,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak diotorisasi (butuh role Administrator).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak diotorisasi (butuh role Administrator).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak diotorisasi (butuh role Administrator).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.036,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (oooo********************************oooo) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.04,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (oooo********************************oooo) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udec8 Detection Only mode is active \u2014 rotasi Cloudflare Credential di semua file .env was NOT executed. RTSA is deployed for detection and notification only; set `response_engine.detection_only: false` in config to allow RTSA-driven mitigation, or take this action manually.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4527.0458,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CREDENTIAL_ROTATION: 'CREDENTIAL_ROTATION'>, 'target': 'Cloudflare Credential', 'reason': 'response_engine.detection_only=true', 'requested_by': 'critical-user', 'action_id...(+146)"
+     ],
+     "kwargs": "{'result': 'Blocked by Detection Only'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": true
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.056,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (oooo********************************oooo) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.227,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (oooo********************************oooo) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (oooo********************************oooo) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_token:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "old_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.05,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (x;to***********saZQ) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_token:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "old_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.041,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential ($(to************aZQ)) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_token:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "old_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.034,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (`tou***********aZQ`) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_token:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "old_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.034,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (x|to***********saZQ) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_token:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "old_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.039,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (../.**************saZQ) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_token:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "old_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.034,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (/etc***saZQ) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_token:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "old_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.034,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (--rt**ZQ=1) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_token:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "old_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.031,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (ok\nr*saZQ) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_token:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "old_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.032,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (ok\r\n*****Q: 1) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_token:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "old_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.037,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (ok\u0000r*saZQ) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_token:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "old_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.043,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (aaaa*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_token:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "old_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.035,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (\u0430pp\u202e***********test) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_token:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "old_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.039,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (********) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_token:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "old_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.043,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (ok r*saZQ) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_token:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "old_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Old dan new credential gak boleh kosong.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_token:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "old_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.054,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (%s%n***************saZQ) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_token:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "old_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.042,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (@eve********saZQ) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:old_token:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "old_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.04,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (<@&1******saZQ) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [
+    "ROLE_MENTION_ECHOED"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_token:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "new_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.041,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (oooo********************************oooo) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_token:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "new_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.034,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (oooo********************************oooo) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_token:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "new_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.041,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (oooo********************************oooo) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_token:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "new_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.034,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (oooo********************************oooo) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_token:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "new_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.045,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (oooo********************************oooo) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_token:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "new_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.035,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (oooo********************************oooo) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_token:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "new_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.037,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (oooo********************************oooo) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_token:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "new_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.048,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (oooo********************************oooo) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_token:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "new_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.037,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (oooo********************************oooo) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_token:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "new_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.041,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (oooo********************************oooo) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_token:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "new_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.038,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (oooo********************************oooo) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_token:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "new_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.037,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (oooo********************************oooo) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_token:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "new_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.038,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (oooo********************************oooo) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_token:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "new_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.037,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (oooo********************************oooo) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_token:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "new_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Old dan new credential gak boleh kosong.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_token:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "new_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.035,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (oooo********************************oooo) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_token:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "new_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.035,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (oooo********************************oooo) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:new_token:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "new_token",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.039,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Rotasi Credential Gagal**\n\nOld credential (oooo********************************oooo) tidak ditemukan.\nTidak ada file yang diubah.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205426.0110817
+}

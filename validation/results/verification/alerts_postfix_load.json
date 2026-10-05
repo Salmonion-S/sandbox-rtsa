@@ -1,0 +1,15 @@
+{
+ "sends": 6,
+ "edits": 0,
+ "span_s": 0.5,
+ "peak_sends_per_minute": 6,
+ "exact_duplicate_sends": 0,
+ "by_channel": {
+  "alert_channel_id(default)": 6
+ },
+ "by_title": {
+  "RTSA Alert — APPLICATION_ERROR": 5,
+  "RTSA Alert — APPLICATION_ERROR_DIGEST": 1
+ },
+ "buttons": {}
+}

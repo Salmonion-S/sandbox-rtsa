@@ -1,0 +1,826 @@
+{
+ "name": "incident",
+ "sandbox": "/tmp/rtsa_cmd_vz6x7duo",
+ "started": 1791205498.731026,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.007,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udccb **Incident** `evt-campaign-ip`\n**Status**: OPEN\n**Category**: WEB_ATTACK_RCE (HIGH)\n**IP**: `203.0.113.50`\n**Domain**: 001.lab.test\n**Handled By**: belum ditangani\n**Cloudflare**: tidak ada rule tercatat\n**GeoIP**: tidak diketahui\n**Reverse DNS**: tidak ada PTR record\n\n**\ud83d\udd50 Timeline:**\n`20:04:57` \u2192 OPEN\n\n**\ud83d\udd0d Threat Profile (ringkas):**\n33 insiden sebelumnya, pernah di-ban: belum, sedang di-ban sekarang: tidak\n_Gunakan tombol \ud83d\udd0d Threat Profile / \ud83d\udcdc History di alert asli untuk detail lengkap._",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.006,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udccb **Incident** `evt-campaign-ip`\n**Status**: OPEN\n**Category**: WEB_ATTACK_RCE (HIGH)\n**IP**: `203.0.113.50`\n**Domain**: 001.lab.test\n**Handled By**: belum ditangani\n**Cloudflare**: tidak ada rule tercatat\n**GeoIP**: tidak diketahui\n**Reverse DNS**: tidak ada PTR record\n\n**\ud83d\udd50 Timeline:**\n`20:04:57` \u2192 OPEN\n\n**\ud83d\udd0d Threat Profile (ringkas):**\n33 insiden sebelumnya, pernah di-ban: belum, sedang di-ban sekarang: tidak\n_Gunakan tombol \ud83d\udd0d Threat Profile / \ud83d\udcdc History di alert asli untuk detail lengkap._",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.006,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udccb **Incident** `evt-campaign-ip`\n**Status**: OPEN\n**Category**: WEB_ATTACK_RCE (HIGH)\n**IP**: `203.0.113.50`\n**Domain**: 001.lab.test\n**Handled By**: belum ditangani\n**Cloudflare**: tidak ada rule tercatat\n**GeoIP**: tidak diketahui\n**Reverse DNS**: tidak ada PTR record\n\n**\ud83d\udd50 Timeline:**\n`20:04:57` \u2192 OPEN\n\n**\ud83d\udd0d Threat Profile (ringkas):**\n33 insiden sebelumnya, pernah di-ban: belum, sedang di-ban sekarang: tidak\n_Gunakan tombol \ud83d\udd0d Threat Profile / \ud83d\udcdc History di alert asli untuk detail lengkap._",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.005,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udccb **Incident** `evt-campaign-ip`\n**Status**: OPEN\n**Category**: WEB_ATTACK_RCE (HIGH)\n**IP**: `203.0.113.50`\n**Domain**: 001.lab.test\n**Handled By**: belum ditangani\n**Cloudflare**: tidak ada rule tercatat\n**GeoIP**: tidak diketahui\n**Reverse DNS**: tidak ada PTR record\n\n**\ud83d\udd50 Timeline:**\n`20:04:57` \u2192 OPEN\n\n**\ud83d\udd0d Threat Profile (ringkas):**\n33 insiden sebelumnya, pernah di-ban: belum, sedang di-ban sekarang: tidak\n_Gunakan tombol \ud83d\udd0d Threat Profile / \ud83d\udcdc History di alert asli untuk detail lengkap._",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.005,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udccb **Incident** `evt-campaign-ip`\n**Status**: OPEN\n**Category**: WEB_ATTACK_RCE (HIGH)\n**IP**: `203.0.113.50`\n**Domain**: 001.lab.test\n**Handled By**: belum ditangani\n**Cloudflare**: tidak ada rule tercatat\n**GeoIP**: tidak diketahui\n**Reverse DNS**: tidak ada PTR record\n\n**\ud83d\udd50 Timeline:**\n`20:04:57` \u2192 OPEN\n\n**\ud83d\udd0d Threat Profile (ringkas):**\n33 insiden sebelumnya, pernah di-ban: belum, sedang di-ban sekarang: tidak\n_Gunakan tombol \ud83d\udd0d Threat Profile / \ud83d\udcdc History di alert asli untuk detail lengkap._",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.006,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udccb **Incident** `evt-campaign-ip`\n**Status**: OPEN\n**Category**: WEB_ATTACK_RCE (HIGH)\n**IP**: `203.0.113.50`\n**Domain**: 001.lab.test\n**Handled By**: belum ditangani\n**Cloudflare**: tidak ada rule tercatat\n**GeoIP**: tidak diketahui\n**Reverse DNS**: tidak ada PTR record\n\n**\ud83d\udd50 Timeline:**\n`20:04:57` \u2192 OPEN\n\n**\ud83d\udd0d Threat Profile (ringkas):**\n33 insiden sebelumnya, pernah di-ban: belum, sedang di-ban sekarang: tidak\n_Gunakan tombol \ud83d\udd0d Threat Profile / \ud83d\udcdc History di alert asli untuk detail lengkap._",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.006,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udccb **Incident** `evt-campaign-ip`\n**Status**: OPEN\n**Category**: WEB_ATTACK_RCE (HIGH)\n**IP**: `203.0.113.50`\n**Domain**: 001.lab.test\n**Handled By**: belum ditangani\n**Cloudflare**: tidak ada rule tercatat\n**GeoIP**: tidak diketahui\n**Reverse DNS**: tidak ada PTR record\n\n**\ud83d\udd50 Timeline:**\n`20:04:57` \u2192 OPEN\n\n**\ud83d\udd0d Threat Profile (ringkas):**\n33 insiden sebelumnya, pernah di-ban: belum, sedang di-ban sekarang: tidak\n_Gunakan tombol \ud83d\udd0d Threat Profile / \ud83d\udcdc History di alert asli untuk detail lengkap._",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 2.01,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udccb **Incident** `evt-campaign-ip`\n**Status**: OPEN\n**Category**: WEB_ATTACK_RCE (HIGH)\n**IP**: `203.0.113.50`\n**Domain**: 001.lab.test\n**Handled By**: belum ditangani\n**Cloudflare**: tidak ada rule tercatat\n**GeoIP**: tidak diketahui\n**Reverse DNS**: tidak ada PTR record\n\n**\ud83d\udd50 Timeline:**\n`20:04:57` \u2192 OPEN\n\n**\ud83d\udd0d Threat Profile (ringkas):**\n33 insiden sebelumnya, pernah di-ban: belum, sedang di-ban sekarang: tidak\n_Gunakan tombol \ud83d\udd0d Threat Profile / \ud83d\udcdc History di alert asli untuk detail lengkap._",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udccb **Incident** `evt-campaign-ip`\n**Status**: OPEN\n**Category**: WEB_ATTACK_RCE (HIGH)\n**IP**: `203.0.113.50`\n**Domain**: 001.lab.test\n**Handled By**: belum ditangani\n**Cloudflare**: tidak ada rule tercatat\n**GeoIP**: tidak diketahui\n**Reverse DNS**: tidak ada PTR record\n\n**\ud83d\udd50 Timeline:**\n`20:04:57` \u2192 OPEN\n\n**\ud83d\udd0d Threat Profile (ringkas):**\n33 insiden sebelumnya, pernah di-ban: belum, sedang di-ban sekarang: tidak\n_Gunakan tombol \ud83d\udd0d Threat Profile / \ud83d\udcdc History di alert asli untuk detail lengkap._",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:event_id:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "event_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Incident `x;touch /tmp/rtsaZQ` tidak ditemukan.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:event_id:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "event_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Incident `$(touch /tmp/rtsaZQ)` tidak ditemukan.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:event_id:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "event_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Incident ``touch /tmp/rtsaZQ`` tidak ditemukan.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:event_id:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "event_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.003,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Incident `x|touch /tmp/rtsaZQ` tidak ditemukan.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:event_id:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "event_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Incident `../../../../etc/rtsaZQ` tidak ditemukan.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:event_id:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "event_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Incident `/etc/rtsaZQ` tidak ditemukan.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:event_id:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "event_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Incident `--rtsaZQ=1` tidak ditemukan.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:event_id:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "event_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Incident `ok\nrtsaZQ` tidak ditemukan.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:event_id:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "event_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Incident `ok\r\nrtsaZQ: 1` tidak ditemukan.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:event_id:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "event_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Incident `ok\u0000rtsaZQ` tidak ditemukan.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:event_id:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "event_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Incident `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:event_id:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "event_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Incident `\u0430pp\u202ertsaZQ.lab.test` tidak ditemukan.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:event_id:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "event_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Incident `*rtsaZQ*` tidak ditemukan.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:event_id:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "event_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Incident `ok rtsaZQ` tidak ditemukan.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:event_id:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "event_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Incident `` tidak ditemukan.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:event_id:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "event_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Incident `%s%n{0.__class__}rtsaZQ` tidak ditemukan.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:event_id:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "event_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Incident `@everyone rtsaZQ` tidak ditemukan.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [
+    "EVERYONE_MENTION_ECHOED"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:event_id:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "event_id",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Incident `<@&111> rtsaZQ` tidak ditemukan.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [
+    "ROLE_MENTION_ECHOED"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205501.4861748
+}

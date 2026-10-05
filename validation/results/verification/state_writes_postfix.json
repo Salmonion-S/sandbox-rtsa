@@ -1,0 +1,37 @@
+{
+ "window_s": 60,
+ "writes": {
+  "rtsa.db-wal": {
+   "count": 3,
+   "mb": 2.18
+  },
+  "process_fingerprint_baseline.json": {
+   "count": 3,
+   "mb": 0.07
+  },
+  "rtsa.db-shm": {
+   "count": 2,
+   "mb": 0.03
+  },
+  "application_error_state.json": {
+   "count": 2,
+   "mb": 0.03
+  },
+  "remote_access_baseline.json": {
+   "count": 2,
+   "mb": 0.02
+  },
+  "fim_project_files_baseline.json": {
+   "count": 1,
+   "mb": 10.29
+  },
+  "notification_gate_state.json": {
+   "count": 1,
+   "mb": 0.0
+  },
+  "cloudpanel_baseline.json": {
+   "count": 1,
+   "mb": 0.11
+  }
+ }
+}

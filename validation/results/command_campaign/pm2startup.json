@@ -1,0 +1,920 @@
+{
+ "name": "pm2startup",
+ "sandbox": "/tmp/rtsa_cmd_jc2npimr",
+ "started": 1791205521.6621766,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**PM2 STARTUP GAGAL**\n\n**User**\n`lab-001`\n\n**Reason**\nPM2 executable tidak dapat ditemukan/ditentukan dengan aman.\n\n**Detail**\npath PM2 yang terdeteksi ('/opt/node22/bin/pm2') berada di luar home user dan di luar direktori sistem yang dipercaya -- ditolak demi keamanan\n\n**Detected Node**\n`/opt/node22/bin/node (v22.12.0)`\n\n**Detected PM2**\n`/opt/node22/bin/pm2 (5.4.3)`\n\n**Recommendation**\nPeriksa instalasi PM2 untuk user `lab-001` (NVM atau global) -- pastikan `pm2` dapat di-resolve lewat login s",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4625.2099,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "MUTATE"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 1
+   },
+   "mutations": [
+    "/bin/bash -l -c command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udec8 Detection Only mode is active \u2014 konfigurasi PM2 startup untuk `lab-001` was NOT executed. RTSA is deployed for detection and notification only; set `response_engine.detection_only: false` in config to allow RTSA-driven mitigation, or take this action manually.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4625.2322,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.PM2STARTUP: 'PM2STARTUP'>, 'target': 'lab-001', 'reason': 'response_engine.detection_only=true', 'requested_by': 'critical-user', 'action_id': 'fb38a6292abf4a6783e630548c46...(+114)"
+     ],
+     "kwargs": "{'result': 'Blocked by Detection Only'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": true
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**PM2 STARTUP GAGAL**\n\n**User**\n`lab-001`\n\n**Reason**\nPM2 executable tidak dapat ditemukan/ditentukan dengan aman.\n\n**Detail**\npath PM2 yang terdeteksi ('/opt/node22/bin/pm2') berada di luar home user dan di luar direktori sistem yang dipercaya -- ditolak demi keamanan\n\n**Detected Node**\n`/opt/node22/bin/node (v22.12.0)`\n\n**Detected PM2**\n`/opt/node22/bin/pm2 (5.4.3)`\n\n**Recommendation**\nPeriksa instalasi PM2 untuk user `lab-001` (NVM atau global) -- pastikan `pm2` dapat di-resolve lewat login s",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4625.2437,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "MUTATE"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 1
+   },
+   "mutations": [
+    "/bin/bash -l -c command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**PM2 STARTUP GAGAL**\n\n**User**\n`lab-001`\n\n**Reason**\nPM2 executable tidak dapat ditemukan/ditentukan dengan aman.\n\n**Detail**\npath PM2 yang terdeteksi ('/opt/node22/bin/pm2') berada di luar home user dan di luar direktori sistem yang dipercaya -- ditolak demi keamanan\n\n**Detected Node**\n`/opt/node22/bin/node (v22.12.0)`\n\n**Detected PM2**\n`/opt/node22/bin/pm2 (5.4.3)`\n\n**Recommendation**\nPeriksa instalasi PM2 untuk user `lab-001` (NVM atau global) -- pastikan `pm2` dapat di-resolve lewat login s",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "response.send_message",
+     "text": "\u23f3 /pm2startup untuk `lab-001` sedang berjalan, tunggu sebentar.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4625.2558,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "SHELL",
+      "USER"
+     ],
+     "class": "MUTATE"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 1
+   },
+   "mutations": [
+    "/bin/bash -l -c command -v node 2>/dev/null; echo ---; command -v pm2 2>/dev/null; echo ---; command -v npm 2>/dev/null; echo ---; node --version 2>/dev/null; echo ---; p=$(command -v pm2 2>/dev/null) && node -p \"require(require('path').join(require('path').dirname(require('fs').realpathSync(process.argv[1])), '..'...(+44)"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:user_linux:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "user_linux",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `x;touch /tmp/rtsaZQ`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:user_linux:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "user_linux",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `$(touch /tmp/rtsaZQ)`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:user_linux:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "user_linux",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: ``touch /tmp/rtsaZQ``.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:user_linux:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "user_linux",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `x|touch /tmp/rtsaZQ`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:user_linux:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "user_linux",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `../../../../etc/rtsaZQ`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:user_linux:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "user_linux",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `/etc/rtsaZQ`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:user_linux:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "user_linux",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `--rtsaZQ=1`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:user_linux:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "user_linux",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `ok\nrtsaZQ`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:user_linux:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "user_linux",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `ok\r\nrtsaZQ: 1`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:user_linux:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "user_linux",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `ok\u0000rtsaZQ`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:user_linux:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "user_linux",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:user_linux:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "user_linux",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `\u0430pp\u202ertsaZQ.lab.test`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:user_linux:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "user_linux",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `*rtsaZQ*`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:user_linux:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "user_linux",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `ok rtsaZQ`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:user_linux:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "user_linux",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: ``.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:user_linux:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "user_linux",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `%s%n{0.__class__}rtsaZQ`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:user_linux:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "user_linux",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `@everyone rtsaZQ`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [
+    "EVERYONE_MENTION_ECHOED"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:user_linux:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "user_linux",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c Username Linux tidak valid: `<@&111> rtsaZQ`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [
+    "ROLE_MENTION_ECHOED"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205522.362454
+}

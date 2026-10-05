@@ -1,0 +1,1150 @@
+{
+ "name": "ignoredm",
+ "sandbox": "/tmp/rtsa_cmd_nczilhty",
+ "started": 1791205496.5268347,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Server ini belum memakai file ignore-domain eksternal (`modules.website_monitor.ignore_domains_file` belum diset), jadi ignore list tidak bisa diubah lewat Discord.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4600.0629,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.WEBSITE_MONITOR_IGNORE: 'WEBSITE_MONITOR_IGNORE'>, 'target': '001.lab.test', 'reason': '/ignoredm', 'requested_by': 'critical-user', 'action_id': 'd8e8bc446e594bb0a51e9f401...(+133)"
+     ],
+     "kwargs": "{'result': 'unavailable'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Server ini belum memakai file ignore-domain eksternal (`modules.website_monitor.ignore_domains_file` belum diset), jadi ignore list tidak bisa diubah lewat Discord.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4600.0722,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.WEBSITE_MONITOR_IGNORE: 'WEBSITE_MONITOR_IGNORE'>, 'target': '001.lab.test', 'reason': '/ignoredm', 'requested_by': 'critical-user', 'action_id': 'c5cf6458255940709daa7f2be...(+134)"
+     ],
+     "kwargs": "{'result': 'unavailable'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Server ini belum memakai file ignore-domain eksternal (`modules.website_monitor.ignore_domains_file` belum diset), jadi ignore list tidak bisa diubah lewat Discord.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4600.0823,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.WEBSITE_MONITOR_IGNORE: 'WEBSITE_MONITOR_IGNORE'>, 'target': '001.lab.test', 'reason': '/ignoredm', 'requested_by': 'critical-user', 'action_id': 'aeb995b6ced84e91adb2e288d...(+135)"
+     ],
+     "kwargs": "{'result': 'unavailable'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Server ini belum memakai file ignore-domain eksternal (`modules.website_monitor.ignore_domains_file` belum diset), jadi ignore list tidak bisa diubah lewat Discord.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "\u274c Server ini belum memakai file ignore-domain eksternal (`modules.website_monitor.ignore_domains_file` belum diset), jadi ignore list tidak bisa diubah lewat Discord.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4600.0912,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.WEBSITE_MONITOR_IGNORE: 'WEBSITE_MONITOR_IGNORE'>, 'target': '001.lab.test', 'reason': '/ignoredm', 'requested_by': 'critical-user', 'action_id': '217e965149494c50af3cae85e...(+135)"
+     ],
+     "kwargs": "{'result': 'unavailable'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4600.0913,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.WEBSITE_MONITOR_IGNORE: 'WEBSITE_MONITOR_IGNORE'>, 'target': '001.lab.test', 'reason': '/ignoredm', 'requested_by': 'critical-user', 'action_id': '5801e0bc175c44e8a36b2dcca...(+134)"
+     ],
+     "kwargs": "{'result': 'unavailable'}"
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Domain mengandung karakter yang tidak diizinkan (spasi, wildcard, atau karakter shell). Gunakan hostname biasa, misalnya `example.com`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4600.1017,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.WEBSITE_MONITOR_IGNORE: 'WEBSITE_MONITOR_IGNORE'>, 'target': 'x;touch /tmp/rtsaZQ', 'reason': '/ignoredm', 'requested_by': 'critical-user', 'action_id': '1ca5d0f318254bd18e...(+142)"
+     ],
+     "kwargs": "{'result': 'invalid'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Domain mengandung karakter yang tidak diizinkan (spasi, wildcard, atau karakter shell). Gunakan hostname biasa, misalnya `example.com`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4600.1128,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.WEBSITE_MONITOR_IGNORE: 'WEBSITE_MONITOR_IGNORE'>, 'target': '$(touch /tmp/rtsaZQ)', 'reason': '/ignoredm', 'requested_by': 'critical-user', 'action_id': '247ed9d2de9f4fe1a...(+143)"
+     ],
+     "kwargs": "{'result': 'invalid'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Domain mengandung karakter yang tidak diizinkan (spasi, wildcard, atau karakter shell). Gunakan hostname biasa, misalnya `example.com`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4600.1215,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.WEBSITE_MONITOR_IGNORE: 'WEBSITE_MONITOR_IGNORE'>, 'target': '`touch /tmp/rtsaZQ`', 'reason': '/ignoredm', 'requested_by': 'critical-user', 'action_id': '06a8cfe77a314501a4...(+142)"
+     ],
+     "kwargs": "{'result': 'invalid'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Domain mengandung karakter yang tidak diizinkan (spasi, wildcard, atau karakter shell). Gunakan hostname biasa, misalnya `example.com`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4600.1308,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.WEBSITE_MONITOR_IGNORE: 'WEBSITE_MONITOR_IGNORE'>, 'target': 'x|touch /tmp/rtsaZQ', 'reason': '/ignoredm', 'requested_by': 'critical-user', 'action_id': 'cb4d71c58d7549a9a1...(+142)"
+     ],
+     "kwargs": "{'result': 'invalid'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Domain tidak boleh mengandung path -- masukkan hostname saja, misalnya `example.com`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4600.1399,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.WEBSITE_MONITOR_IGNORE: 'WEBSITE_MONITOR_IGNORE'>, 'target': '../../../../etc/rtsaZQ', 'reason': '/ignoredm', 'requested_by': 'critical-user', 'action_id': '04189ebe10d84a5...(+145)"
+     ],
+     "kwargs": "{'result': 'invalid'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Domain tidak boleh mengandung path -- masukkan hostname saja, misalnya `example.com`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4600.1496,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.WEBSITE_MONITOR_IGNORE: 'WEBSITE_MONITOR_IGNORE'>, 'target': '/etc/rtsaZQ', 'reason': '/ignoredm', 'requested_by': 'critical-user', 'action_id': 'd978407e27f0492688f9b048ea...(+132)"
+     ],
+     "kwargs": "{'result': 'invalid'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Domain mengandung karakter yang tidak diizinkan (spasi, wildcard, atau karakter shell). Gunakan hostname biasa, misalnya `example.com`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4600.1585,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.WEBSITE_MONITOR_IGNORE: 'WEBSITE_MONITOR_IGNORE'>, 'target': '--rtsaZQ=1', 'reason': '/ignoredm', 'requested_by': 'critical-user', 'action_id': 'd17808eb5f3c4c6a96d5fbefe72...(+133)"
+     ],
+     "kwargs": "{'result': 'invalid'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Domain mengandung karakter yang tidak diizinkan (spasi, wildcard, atau karakter shell). Gunakan hostname biasa, misalnya `example.com`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4600.1675,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.WEBSITE_MONITOR_IGNORE: 'WEBSITE_MONITOR_IGNORE'>, 'target': 'ok\\nrtsaZQ', 'reason': '/ignoredm', 'requested_by': 'critical-user', 'action_id': '8a68ad7bd9c8425e9da01de7989...(+132)"
+     ],
+     "kwargs": "{'result': 'invalid'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Domain mengandung karakter yang tidak diizinkan (spasi, wildcard, atau karakter shell). Gunakan hostname biasa, misalnya `example.com`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4600.1776,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.WEBSITE_MONITOR_IGNORE: 'WEBSITE_MONITOR_IGNORE'>, 'target': 'ok\\r\\nrtsaZQ: 1', 'reason': '/ignoredm', 'requested_by': 'critical-user', 'action_id': 'aa672778f86d4eb789187c...(+137)"
+     ],
+     "kwargs": "{'result': 'invalid'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Domain mengandung karakter yang tidak diizinkan (spasi, wildcard, atau karakter shell). Gunakan hostname biasa, misalnya `example.com`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4600.1866,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.WEBSITE_MONITOR_IGNORE: 'WEBSITE_MONITOR_IGNORE'>, 'target': 'ok\\x00rtsaZQ', 'reason': '/ignoredm', 'requested_by': 'critical-user', 'action_id': '6f04de80c8fa436dac588387b...(+134)"
+     ],
+     "kwargs": "{'result': 'invalid'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Domain terlalu panjang.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4600.1971,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.WEBSITE_MONITOR_IGNORE: 'WEBSITE_MONITOR_IGNORE'>, 'target': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...(+241)"
+     ],
+     "kwargs": "{'result': 'invalid'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Domain mengandung karakter yang tidak diizinkan (spasi, wildcard, atau karakter shell). Gunakan hostname biasa, misalnya `example.com`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4600.2063,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.WEBSITE_MONITOR_IGNORE: 'WEBSITE_MONITOR_IGNORE'>, 'target': '\u0430pp\\u202ertsaZQ.lab.test', 'reason': '/ignoredm', 'requested_by': 'critical-user', 'action_id': '4d6794b5a7f34...(+147)"
+     ],
+     "kwargs": "{'result': 'invalid'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Domain mengandung karakter yang tidak diizinkan (spasi, wildcard, atau karakter shell). Gunakan hostname biasa, misalnya `example.com`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4600.2405,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.WEBSITE_MONITOR_IGNORE: 'WEBSITE_MONITOR_IGNORE'>, 'target': '*rtsaZQ*', 'reason': '/ignoredm', 'requested_by': 'critical-user', 'action_id': '9e9c46f86a714643a2ffe39c0795f...(+130)"
+     ],
+     "kwargs": "{'result': 'invalid'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Domain mengandung karakter yang tidak diizinkan (spasi, wildcard, atau karakter shell). Gunakan hostname biasa, misalnya `example.com`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4600.2489,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.WEBSITE_MONITOR_IGNORE: 'WEBSITE_MONITOR_IGNORE'>, 'target': 'ok rtsaZQ', 'reason': '/ignoredm', 'requested_by': 'critical-user', 'action_id': '1e350b9d3fa8480db5cfc16cabed...(+130)"
+     ],
+     "kwargs": "{'result': 'invalid'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Domain tidak boleh kosong.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4600.2576,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.WEBSITE_MONITOR_IGNORE: 'WEBSITE_MONITOR_IGNORE'>, 'target': '', 'reason': '/ignoredm', 'requested_by': 'critical-user', 'action_id': 'c64573d18a8a4ffd858001b4ab4d187f', 't...(+122)"
+     ],
+     "kwargs": "{'result': 'invalid'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Domain mengandung karakter yang tidak diizinkan (spasi, wildcard, atau karakter shell). Gunakan hostname biasa, misalnya `example.com`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4600.2667,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.WEBSITE_MONITOR_IGNORE: 'WEBSITE_MONITOR_IGNORE'>, 'target': '%s%n{0.__class__}rtsaZQ', 'reason': '/ignoredm', 'requested_by': 'critical-user', 'action_id': '405c1357d8ea4d...(+145)"
+     ],
+     "kwargs": "{'result': 'invalid'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Domain mengandung karakter yang tidak diizinkan (spasi, wildcard, atau karakter shell). Gunakan hostname biasa, misalnya `example.com`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4600.2756,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.WEBSITE_MONITOR_IGNORE: 'WEBSITE_MONITOR_IGNORE'>, 'target': '@everyone rtsaZQ', 'reason': '/ignoredm', 'requested_by': 'critical-user', 'action_id': '2263b35fe0b741be85997...(+139)"
+     ],
+     "kwargs": "{'result': 'invalid'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\u274c Domain mengandung karakter yang tidak diizinkan (spasi, wildcard, atau karakter shell). Gunakan hostname biasa, misalnya `example.com`.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4600.2852,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.WEBSITE_MONITOR_IGNORE: 'WEBSITE_MONITOR_IGNORE'>, 'target': '<@&111> rtsaZQ', 'reason': '/ignoredm', 'requested_by': 'critical-user', 'action_id': 'bb5c9c6403ef49caa0551d2...(+136)"
+     ],
+     "kwargs": "{'result': 'invalid'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205496.9427464
+}

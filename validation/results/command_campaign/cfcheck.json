@@ -1,0 +1,4222 @@
+{
+ "name": "cfcheck",
+ "sandbox": "/tmp/rtsa_cmd_jyvmysb_",
+ "started": 1791205419.5301132,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 6.065,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 127 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 127 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `001.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `002.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `003.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `004.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `005.lab.test` \u2014 gagal resolve DNS: [Errn",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9615,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9618,
+     "host": "003.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9619,
+     "host": "002.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9623,
+     "host": "004.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9627,
+     "host": "005.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9629,
+     "host": "006.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9634,
+     "host": "007.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9637,
+     "host": "008.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9654,
+     "host": "009.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9657,
+     "host": "010.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.966,
+     "host": "011.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9661,
+     "host": "012.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9663,
+     "host": "013.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9665,
+     "host": "014.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9666,
+     "host": "015.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9667,
+     "host": "016.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9676,
+     "host": "017.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9686,
+     "host": "018.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9687,
+     "host": "019.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9689,
+     "host": "020.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9689,
+     "host": "021.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9691,
+     "host": "022.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9693,
+     "host": "023.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9695,
+     "host": "024.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.97,
+     "host": "025.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9709,
+     "host": "026.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9712,
+     "host": "027.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9713,
+     "host": "028.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9713,
+     "host": "029.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9718,
+     "host": "030.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9729,
+     "host": "031.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9731,
+     "host": "032.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9733,
+     "host": "033.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9734,
+     "host": "034.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9737,
+     "host": "035.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9743,
+     "host": "036.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9748,
+     "host": "037.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.975,
+     "host": "038.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9774,
+     "host": "039.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9776,
+     "host": "040.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9778,
+     "host": "041.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.978,
+     "host": "042.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9781,
+     "host": "043.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9785,
+     "host": "044.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9789,
+     "host": "045.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9793,
+     "host": "046.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9794,
+     "host": "047.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9796,
+     "host": "048.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9799,
+     "host": "049.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4522.9805,
+     "host": "050.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4524.9825,
+     "host": "051.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4524.9828,
+     "host": "052.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4524.9829,
+     "host": "053.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4524.9832,
+     "host": "054.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4524.9841,
+     "host": "055.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4524.9858,
+     "host": "056.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4524.9859,
+     "host": "057.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4524.9864,
+     "host": "058.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4524.9864,
+     "host": "059.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4524.9866,
+     "host": "060.lab.test"
+    }
+   ],
+   "event_count": 127,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS_LAB": 127
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 10.069,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 127 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 127 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `001.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `002.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `003.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `004.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `005.lab.test` \u2014 gagal resolve DNS: [Errn",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0518,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0519,
+     "host": "002.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0521,
+     "host": "003.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0523,
+     "host": "004.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0523,
+     "host": "005.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0524,
+     "host": "006.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0526,
+     "host": "007.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0526,
+     "host": "008.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0543,
+     "host": "009.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0563,
+     "host": "010.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0565,
+     "host": "011.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0567,
+     "host": "012.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0569,
+     "host": "013.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.057,
+     "host": "014.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0573,
+     "host": "015.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0577,
+     "host": "016.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0579,
+     "host": "017.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0591,
+     "host": "018.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0595,
+     "host": "019.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0596,
+     "host": "020.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0598,
+     "host": "021.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0599,
+     "host": "022.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.06,
+     "host": "023.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0606,
+     "host": "024.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0614,
+     "host": "025.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0617,
+     "host": "026.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0624,
+     "host": "027.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0626,
+     "host": "028.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0628,
+     "host": "029.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0628,
+     "host": "030.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0629,
+     "host": "031.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0633,
+     "host": "032.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0635,
+     "host": "033.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0636,
+     "host": "034.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0644,
+     "host": "035.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0646,
+     "host": "036.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0648,
+     "host": "037.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.065,
+     "host": "038.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0652,
+     "host": "039.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0654,
+     "host": "040.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0657,
+     "host": "041.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0659,
+     "host": "042.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0662,
+     "host": "043.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0664,
+     "host": "044.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0669,
+     "host": "045.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.067,
+     "host": "046.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0671,
+     "host": "047.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0675,
+     "host": "048.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0681,
+     "host": "049.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4529.0813,
+     "host": "050.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4531.0672,
+     "host": "051.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4531.0703,
+     "host": "052.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4531.0704,
+     "host": "053.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4531.0706,
+     "host": "054.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4531.0708,
+     "host": "055.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4531.071,
+     "host": "056.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4531.0711,
+     "host": "057.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4531.0719,
+     "host": "058.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4531.0722,
+     "host": "059.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4531.0727,
+     "host": "060.lab.test"
+    }
+   ],
+   "event_count": 127,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS_LAB": 127
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 6.077,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 127 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 127 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `001.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `002.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `003.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `004.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `005.lab.test` \u2014 gagal resolve DNS: [Errn",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4539.1346,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4539.1347,
+     "host": "002.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4539.1348,
+     "host": "003.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4539.1349,
+     "host": "004.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4539.1349,
+     "host": "005.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4539.135,
+     "host": "006.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4539.1351,
+     "host": "007.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4539.1352,
+     "host": "008.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1369,
+     "host": "009.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1375,
+     "host": "010.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1395,
+     "host": "011.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1401,
+     "host": "012.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1403,
+     "host": "013.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.141,
+     "host": "014.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1413,
+     "host": "015.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1417,
+     "host": "016.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1418,
+     "host": "017.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.142,
+     "host": "018.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1422,
+     "host": "019.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.143,
+     "host": "020.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.144,
+     "host": "021.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1444,
+     "host": "022.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1449,
+     "host": "023.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1452,
+     "host": "024.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1457,
+     "host": "025.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.146,
+     "host": "026.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1466,
+     "host": "027.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.147,
+     "host": "028.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1471,
+     "host": "029.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1472,
+     "host": "030.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1474,
+     "host": "031.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1495,
+     "host": "032.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1495,
+     "host": "033.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1497,
+     "host": "034.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1497,
+     "host": "035.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1499,
+     "host": "036.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1501,
+     "host": "037.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1502,
+     "host": "038.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1513,
+     "host": "039.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1515,
+     "host": "040.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1518,
+     "host": "041.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1528,
+     "host": "042.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1534,
+     "host": "043.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1535,
+     "host": "044.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1536,
+     "host": "045.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1537,
+     "host": "046.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1537,
+     "host": "047.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1555,
+     "host": "048.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1558,
+     "host": "049.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1562,
+     "host": "050.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1573,
+     "host": "051.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4541.1602,
+     "host": "052.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4543.1554,
+     "host": "053.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4543.1556,
+     "host": "054.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4543.1559,
+     "host": "055.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4543.1585,
+     "host": "056.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4543.1588,
+     "host": "057.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4543.1595,
+     "host": "058.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4543.1604,
+     "host": "059.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4543.1605,
+     "host": "060.lab.test"
+    }
+   ],
+   "event_count": 127,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS_LAB": 127
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 6.076,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 127 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 127 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `001.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `002.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `003.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `004.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `005.lab.test` \u2014 gagal resolve DNS: [Errn",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4545.229,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4545.2291,
+     "host": "002.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4545.2292,
+     "host": "003.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4545.2293,
+     "host": "004.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4545.2294,
+     "host": "005.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4545.2295,
+     "host": "006.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4545.2296,
+     "host": "007.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4545.2297,
+     "host": "008.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2321,
+     "host": "009.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2324,
+     "host": "010.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2333,
+     "host": "011.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2344,
+     "host": "012.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2347,
+     "host": "013.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2348,
+     "host": "014.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2352,
+     "host": "015.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2353,
+     "host": "016.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2359,
+     "host": "017.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2364,
+     "host": "018.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2364,
+     "host": "019.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2372,
+     "host": "020.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2372,
+     "host": "021.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2382,
+     "host": "022.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2383,
+     "host": "023.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2384,
+     "host": "024.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2385,
+     "host": "025.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2393,
+     "host": "026.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2402,
+     "host": "027.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2404,
+     "host": "028.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2406,
+     "host": "029.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2417,
+     "host": "030.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2423,
+     "host": "031.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2434,
+     "host": "032.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2436,
+     "host": "033.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2455,
+     "host": "034.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2457,
+     "host": "035.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2458,
+     "host": "036.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2462,
+     "host": "037.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.248,
+     "host": "038.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2484,
+     "host": "039.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2484,
+     "host": "040.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2486,
+     "host": "041.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2489,
+     "host": "042.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2492,
+     "host": "043.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2497,
+     "host": "044.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2499,
+     "host": "045.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.25,
+     "host": "046.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2513,
+     "host": "047.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4547.2516,
+     "host": "048.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4549.2483,
+     "host": "049.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4549.249,
+     "host": "050.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4549.2513,
+     "host": "051.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4549.2528,
+     "host": "052.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4549.2532,
+     "host": "053.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4549.2538,
+     "host": "054.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4549.2539,
+     "host": "055.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4549.2553,
+     "host": "056.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4549.2564,
+     "host": "057.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4549.2572,
+     "host": "058.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4549.2573,
+     "host": "059.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4549.2575,
+     "host": "060.lab.test"
+    }
+   ],
+   "event_count": 127,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS_LAB": 127
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 6.087,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 127 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 127 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `001.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `002.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `003.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `004.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `005.lab.test` \u2014 gagal resolve DNS: [Errn",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4551.3272,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4551.3273,
+     "host": "002.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4551.3273,
+     "host": "003.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4551.3275,
+     "host": "004.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4551.3276,
+     "host": "005.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4551.3277,
+     "host": "006.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4551.3278,
+     "host": "007.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4551.3278,
+     "host": "008.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3302,
+     "host": "009.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.332,
+     "host": "010.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3323,
+     "host": "011.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3325,
+     "host": "012.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3327,
+     "host": "013.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3329,
+     "host": "014.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3331,
+     "host": "015.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3333,
+     "host": "016.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3334,
+     "host": "017.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3353,
+     "host": "018.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3354,
+     "host": "019.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3361,
+     "host": "020.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3368,
+     "host": "021.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3369,
+     "host": "022.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3375,
+     "host": "023.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3376,
+     "host": "024.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3384,
+     "host": "025.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3385,
+     "host": "026.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3398,
+     "host": "027.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3399,
+     "host": "028.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3411,
+     "host": "029.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3413,
+     "host": "030.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3415,
+     "host": "031.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3416,
+     "host": "032.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3422,
+     "host": "033.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3428,
+     "host": "034.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3433,
+     "host": "035.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3435,
+     "host": "036.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3442,
+     "host": "037.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3443,
+     "host": "038.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3446,
+     "host": "039.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3449,
+     "host": "040.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3454,
+     "host": "041.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3457,
+     "host": "042.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3464,
+     "host": "043.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3474,
+     "host": "044.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3475,
+     "host": "045.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3476,
+     "host": "046.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3477,
+     "host": "047.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3484,
+     "host": "048.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3485,
+     "host": "049.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4553.3486,
+     "host": "050.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4555.3481,
+     "host": "051.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4555.3486,
+     "host": "052.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4555.3525,
+     "host": "053.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4555.3528,
+     "host": "054.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4555.3535,
+     "host": "055.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4555.3536,
+     "host": "056.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4555.3538,
+     "host": "057.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4555.3542,
+     "host": "058.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4555.3555,
+     "host": "059.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4555.3562,
+     "host": "060.lab.test"
+    }
+   ],
+   "event_count": 127,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS_LAB": 127
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 8.074,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 127 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 127 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `001.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `002.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `003.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `004.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `005.lab.test` \u2014 gagal resolve DNS: [Errn",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4557.4307,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4557.4307,
+     "host": "002.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4557.4308,
+     "host": "003.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4557.4309,
+     "host": "004.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4557.431,
+     "host": "005.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4557.4311,
+     "host": "006.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4557.4312,
+     "host": "007.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4557.4313,
+     "host": "008.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4559.4333,
+     "host": "009.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4559.4352,
+     "host": "010.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4559.4353,
+     "host": "011.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4559.4358,
+     "host": "012.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4559.4361,
+     "host": "013.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4559.4366,
+     "host": "014.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4559.437,
+     "host": "015.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4559.4374,
+     "host": "016.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4559.4382,
+     "host": "017.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4559.4388,
+     "host": "018.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4559.4391,
+     "host": "019.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4559.4398,
+     "host": "020.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4559.44,
+     "host": "021.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4559.4403,
+     "host": "022.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4559.4405,
+     "host": "023.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4559.441,
+     "host": "024.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4559.4413,
+     "host": "025.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4403,
+     "host": "026.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4404,
+     "host": "027.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4443,
+     "host": "028.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4446,
+     "host": "029.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4454,
+     "host": "030.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4463,
+     "host": "031.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4466,
+     "host": "032.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4469,
+     "host": "033.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4471,
+     "host": "034.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4475,
+     "host": "035.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4482,
+     "host": "036.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4484,
+     "host": "037.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4494,
+     "host": "038.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4502,
+     "host": "039.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4503,
+     "host": "040.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4504,
+     "host": "041.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4519,
+     "host": "042.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4524,
+     "host": "043.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4525,
+     "host": "044.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4532,
+     "host": "045.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4535,
+     "host": "046.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4547,
+     "host": "047.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4551,
+     "host": "048.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4556,
+     "host": "049.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4558,
+     "host": "050.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4563,
+     "host": "051.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4564,
+     "host": "052.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4567,
+     "host": "053.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4561.4573,
+     "host": "054.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4563.4563,
+     "host": "055.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4563.4565,
+     "host": "056.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4563.4566,
+     "host": "057.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4563.4567,
+     "host": "058.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4563.4568,
+     "host": "059.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4563.4571,
+     "host": "060.lab.test"
+    }
+   ],
+   "event_count": 127,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS_LAB": 127
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 10.081,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 127 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 127 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `001.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `002.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `003.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `004.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `005.lab.test` \u2014 gagal resolve DNS: [Errn",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4565.5309,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4565.531,
+     "host": "002.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4565.5312,
+     "host": "003.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4565.5312,
+     "host": "004.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4565.5313,
+     "host": "005.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4565.5315,
+     "host": "006.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4565.5315,
+     "host": "007.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4565.5316,
+     "host": "008.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4567.5324,
+     "host": "009.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4567.5359,
+     "host": "010.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4567.5361,
+     "host": "011.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4567.5362,
+     "host": "012.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4567.5366,
+     "host": "013.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4567.5369,
+     "host": "014.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4567.5371,
+     "host": "015.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4567.5373,
+     "host": "016.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4567.5377,
+     "host": "017.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4567.5391,
+     "host": "018.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4567.5394,
+     "host": "019.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4567.5402,
+     "host": "020.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4567.5408,
+     "host": "021.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4567.5411,
+     "host": "022.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4567.5417,
+     "host": "023.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5383,
+     "host": "024.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5399,
+     "host": "025.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5404,
+     "host": "026.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5426,
+     "host": "027.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5442,
+     "host": "028.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5449,
+     "host": "029.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5453,
+     "host": "030.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5456,
+     "host": "031.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5468,
+     "host": "032.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5473,
+     "host": "033.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5475,
+     "host": "034.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5476,
+     "host": "035.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5482,
+     "host": "036.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5485,
+     "host": "037.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5489,
+     "host": "038.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5493,
+     "host": "039.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5505,
+     "host": "040.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5508,
+     "host": "041.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5511,
+     "host": "042.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5515,
+     "host": "043.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5517,
+     "host": "044.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5522,
+     "host": "045.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5526,
+     "host": "046.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5532,
+     "host": "047.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5543,
+     "host": "048.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5548,
+     "host": "049.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5549,
+     "host": "050.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.555,
+     "host": "051.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5556,
+     "host": "052.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5557,
+     "host": "053.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5564,
+     "host": "054.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4569.5567,
+     "host": "055.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4571.5564,
+     "host": "056.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4571.5567,
+     "host": "057.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4571.5568,
+     "host": "058.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4571.557,
+     "host": "059.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4571.5596,
+     "host": "060.lab.test"
+    }
+   ],
+   "event_count": 127,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS_LAB": 127
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "TIMEOUT",
+   "error": null,
+   "elapsed_s": 15.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 127 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 127 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `001.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `002.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `003.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `004.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `005.lab.test` \u2014 gagal resolve DNS: [Errn",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4575.6403,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4575.6405,
+     "host": "002.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4575.6407,
+     "host": "003.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4575.6438,
+     "host": "004.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4575.6441,
+     "host": "005.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4575.6464,
+     "host": "006.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4575.684,
+     "host": "007.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4575.6848,
+     "host": "008.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4577.6463,
+     "host": "009.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4577.6469,
+     "host": "010.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4577.6472,
+     "host": "011.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4577.6488,
+     "host": "012.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4577.6497,
+     "host": "013.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4577.65,
+     "host": "014.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4577.6502,
+     "host": "015.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4577.6508,
+     "host": "016.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4577.6519,
+     "host": "017.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4577.6529,
+     "host": "018.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4577.6533,
+     "host": "019.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4577.6534,
+     "host": "020.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4577.6539,
+     "host": "021.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4577.6542,
+     "host": "022.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4577.6548,
+     "host": "023.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4577.6561,
+     "host": "024.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4577.6621,
+     "host": "025.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4577.6842,
+     "host": "026.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4577.6845,
+     "host": "027.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6554,
+     "host": "028.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6557,
+     "host": "029.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6558,
+     "host": "030.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6563,
+     "host": "031.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.659,
+     "host": "032.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6594,
+     "host": "033.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6595,
+     "host": "034.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6617,
+     "host": "035.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6622,
+     "host": "036.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6625,
+     "host": "037.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6628,
+     "host": "038.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6636,
+     "host": "039.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6648,
+     "host": "040.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6655,
+     "host": "041.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6658,
+     "host": "042.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6658,
+     "host": "043.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6667,
+     "host": "044.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6673,
+     "host": "045.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6678,
+     "host": "046.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6695,
+     "host": "047.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6698,
+     "host": "048.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6712,
+     "host": "049.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6715,
+     "host": "050.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6716,
+     "host": "051.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.673,
+     "host": "052.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6735,
+     "host": "053.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6738,
+     "host": "054.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6746,
+     "host": "055.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6749,
+     "host": "056.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6753,
+     "host": "057.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6767,
+     "host": "058.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6774,
+     "host": "059.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4579.6776,
+     "host": "060.lab.test"
+    }
+   ],
+   "event_count": 228,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS_LAB": 228
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 1.164,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 1 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 1 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `x;touch ` \u2014 gagal resolve DNS: [Errno -2] campaign sandbox: DNS lookup for x;touch  blocked\n",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4591.7949,
+     "host": "x;touch ",
+     "port": null
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 1 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 1 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `$(touch ` \u2014 gagal resolve DNS: [Errno -2] campaign sandbox: DNS lookup for $(touch  blocked\n",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4591.812,
+     "host": "$(touch ",
+     "port": null
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.004,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 1 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 1 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 ``touch ` \u2014 gagal resolve DNS: [Errno -2] campaign sandbox: DNS lookup for `touch  blocked\n",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4591.8362,
+     "host": "`touch ",
+     "port": null
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 1 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 1 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `x|touch ` \u2014 gagal resolve DNS: [Errno -2] campaign sandbox: DNS lookup for x|touch  blocked\n",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4591.856,
+     "host": "x|touch ",
+     "port": null
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 1 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 1 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `..` \u2014 gagal resolve DNS: encoding with 'idna' codec failed (UnicodeError: label empty or too long)\n",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 1 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 1 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `etc` \u2014 gagal resolve DNS: [Errno -2] campaign sandbox: DNS lookup for etc blocked\n",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4591.897,
+     "host": "etc",
+     "port": null
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 1 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 1 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `--rtsazq=1` \u2014 gagal resolve DNS: [Errno -2] campaign sandbox: DNS lookup for --rtsazq=1 blocked\n",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4591.9228,
+     "host": "--rtsazq=1",
+     "port": null
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 1 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 1 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `okrtsazq` \u2014 gagal resolve DNS: [Errno -2] campaign sandbox: DNS lookup for okrtsazq blocked\n",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4591.9433,
+     "host": "okrtsazq",
+     "port": null
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 1 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 1 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `okrtsazq` \u2014 gagal resolve DNS: [Errno -2] campaign sandbox: DNS lookup for okrtsazq blocked\n",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4591.9674,
+     "host": "okrtsazq",
+     "port": null
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 1 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 1 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `ok\u0000rtsazq` \u2014 gagal resolve DNS: [Errno -2] campaign sandbox: DNS lookup for ok\u0000rtsazq blocked\n",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4591.9895,
+     "host": "ok\u0000rtsazq",
+     "port": null
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 1 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 1 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 1 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 1 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `\u0430pp\u202ertsazq.lab.test` \u2014 gagal resolve DNS: encoding with 'idna' codec failed (UnicodeError: Invalid character '\\u202e')\n",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.002,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 1 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 1 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `*rtsazq*` \u2014 gagal resolve DNS: [Errno -2] campaign sandbox: DNS lookup for *rtsazq* blocked\n",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4592.0545,
+     "host": "*rtsazq*",
+     "port": null
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 1 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 1 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `ok rtsazq` \u2014 gagal resolve DNS: [Errno -2] campaign sandbox: DNS lookup for ok rtsazq blocked\n",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4592.0745,
+     "host": "ok rtsazq",
+     "port": null
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 4.079,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 127 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 127 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `001.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `002.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `003.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `004.lab.test` \u2014 gagal resolve DNS: [Errno -2] Name or service not known\n\u2022 `005.lab.test` \u2014 gagal resolve DNS: [Errn",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1072,
+     "host": "001.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1073,
+     "host": "002.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1074,
+     "host": "003.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1076,
+     "host": "004.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1077,
+     "host": "005.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1077,
+     "host": "006.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1078,
+     "host": "007.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1079,
+     "host": "008.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1109,
+     "host": "009.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.111,
+     "host": "010.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1112,
+     "host": "011.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1114,
+     "host": "012.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1117,
+     "host": "013.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1118,
+     "host": "014.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1124,
+     "host": "015.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1125,
+     "host": "016.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1149,
+     "host": "017.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1153,
+     "host": "018.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.116,
+     "host": "019.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.118,
+     "host": "020.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1188,
+     "host": "021.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1189,
+     "host": "022.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1191,
+     "host": "023.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1195,
+     "host": "024.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1207,
+     "host": "025.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.121,
+     "host": "026.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1223,
+     "host": "027.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1224,
+     "host": "028.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1229,
+     "host": "029.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.123,
+     "host": "030.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1234,
+     "host": "031.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1241,
+     "host": "032.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1244,
+     "host": "033.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1248,
+     "host": "034.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.126,
+     "host": "035.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1273,
+     "host": "036.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4592.1279,
+     "host": "037.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4594.1246,
+     "host": "038.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4594.1249,
+     "host": "039.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4594.1251,
+     "host": "040.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4594.1286,
+     "host": "041.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4594.1288,
+     "host": "042.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4594.1289,
+     "host": "043.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4594.1304,
+     "host": "044.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4594.1309,
+     "host": "045.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4594.1316,
+     "host": "046.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4594.1327,
+     "host": "047.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4594.1329,
+     "host": "048.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4594.133,
+     "host": "049.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4594.1333,
+     "host": "050.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4594.1333,
+     "host": "051.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4594.1338,
+     "host": "052.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4594.1341,
+     "host": "053.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4594.135,
+     "host": "054.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4594.1361,
+     "host": "055.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4594.1365,
+     "host": "056.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4594.1366,
+     "host": "057.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4594.1369,
+     "host": "058.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4594.137,
+     "host": "059.lab.test"
+    },
+    {
+     "kind": "DNS_LAB",
+     "blocked": false,
+     "t": 4594.1375,
+     "host": "060.lab.test"
+    }
+   ],
+   "event_count": 127,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS_LAB": 127
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 1 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 1 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `%s%n{0.__class__}rtsazq` \u2014 gagal resolve DNS: [Errno -2] campaign sandbox: DNS lookup for %s%n{0.__class__}rtsazq blocked\n",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4596.1975,
+     "host": "%s%n{0.__class__}rtsazq",
+     "port": null
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 1 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 1 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `everyone rtsazq` \u2014 gagal resolve DNS: [Errno -2] campaign sandbox: DNS lookup for everyone rtsazq blocked\n",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4596.2187,
+     "host": "everyone rtsazq",
+     "port": null
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Cloudflare Check** \u2014 1 domain discek\n\u2705 0 di belakang Cloudflare  |  \u274c 0 TIDAK di belakang Cloudflare  |  \u26a0\ufe0f 1 gagal resolve\n\n**\u26a0\ufe0f Gagal resolve DNS:**\n\u2022 `&111> rtsazq` \u2014 gagal resolve DNS: [Errno -2] campaign sandbox: DNS lookup for &111> rtsazq blocked\n",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DNS",
+     "blocked": true,
+     "t": 4596.2397,
+     "host": "&111> rtsazq",
+     "port": null
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DNS": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205500.9988253
+}

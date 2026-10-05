@@ -1,0 +1,1376 @@
+{
+ "name": "beaddeco",
+ "sandbox": "/tmp/rtsa_cmd_mxr_0y9h",
+ "started": 1791205403.1969094,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.039,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "NODE_INTERPRETER_NOT_FOUND\nTidak dapat menemukan Node interpreter (NVM) yang aman untuk project owner ini.\n\nFile ecosystem.config.js tidak dibuat.\nDomain: 001.lab.test\nProject Path: /home/lab-001/htdocs/001.lab.test",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4506.7432,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': '001.lab.test', 'reason': \"/beaddeco domain='001.lab.test' port=20007\", 'requested_by': 'critical-user', 'action_id': 'a080...(+137)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_CREATE_REQUESTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4506.781,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': '001.lab.test', 'reason': \"/beaddeco domain='001.lab.test' port=20007\", 'requested_by': 'critical-user', 'action_id': '40e5...(+138)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:NODE_INTERPRETER_NOT_FOUND'}"
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.003,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "NODE_INTERPRETER_NOT_FOUND\nTidak dapat menemukan Node interpreter (NVM) yang aman untuk project owner ini.\n\nFile ecosystem.config.js tidak dibuat.\nDomain: 001.lab.test\nProject Path: /home/lab-001/htdocs/001.lab.test",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4506.8107,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': '001.lab.test', 'reason': \"/beaddeco domain='001.lab.test' port=20007\", 'requested_by': 'critical-user', 'action_id': 'fc43...(+138)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_CREATE_REQUESTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4506.8128,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': '001.lab.test', 'reason': \"/beaddeco domain='001.lab.test' port=20007\", 'requested_by': 'critical-user', 'action_id': 'c67f...(+137)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:NODE_INTERPRETER_NOT_FOUND'}"
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.002,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "NODE_INTERPRETER_NOT_FOUND\nTidak dapat menemukan Node interpreter (NVM) yang aman untuk project owner ini.\n\nFile ecosystem.config.js tidak dibuat.\nDomain: 001.lab.test\nProject Path: /home/lab-001/htdocs/001.lab.test",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4506.8794,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': '001.lab.test', 'reason': \"/beaddeco domain='001.lab.test' port=20007\", 'requested_by': 'critical-user', 'action_id': 'e4bc...(+138)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_CREATE_REQUESTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4506.8811,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': '001.lab.test', 'reason': \"/beaddeco domain='001.lab.test' port=20007\", 'requested_by': 'critical-user', 'action_id': '545f...(+137)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:NODE_INTERPRETER_NOT_FOUND'}"
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.005,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "NODE_INTERPRETER_NOT_FOUND\nTidak dapat menemukan Node interpreter (NVM) yang aman untuk project owner ini.\n\nFile ecosystem.config.js tidak dibuat.\nDomain: 001.lab.test\nProject Path: /home/lab-001/htdocs/001.lab.test",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "NODE_INTERPRETER_NOT_FOUND\nTidak dapat menemukan Node interpreter (NVM) yang aman untuk project owner ini.\n\nFile ecosystem.config.js tidak dibuat.\nDomain: 001.lab.test\nProject Path: /home/lab-001/htdocs/001.lab.test",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4506.9396,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': '001.lab.test', 'reason': \"/beaddeco domain='001.lab.test' port=20007\", 'requested_by': 'critical-user', 'action_id': '2338...(+138)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_CREATE_REQUESTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4506.9398,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': '001.lab.test', 'reason': \"/beaddeco domain='001.lab.test' port=20007\", 'requested_by': 'critical-user', 'action_id': 'a38c...(+138)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_CREATE_REQUESTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4506.9433,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': '001.lab.test', 'reason': \"/beaddeco domain='001.lab.test' port=20007\", 'requested_by': 'critical-user', 'action_id': 'ff7d...(+137)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:NODE_INTERPRETER_NOT_FOUND'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4506.9443,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': '001.lab.test', 'reason': \"/beaddeco domain='001.lab.test' port=20007\", 'requested_by': 'critical-user', 'action_id': '9db7...(+138)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:NODE_INTERPRETER_NOT_FOUND'}"
+    }
+   ],
+   "event_count": 4,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 4
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain contains forbidden characters (whitespace or shell metacharacters).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4507.0022,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': 'x;touch /tmp/rtsaZQ', 'reason': \"/beaddeco domain='x;touch /tmp/rtsaZQ' port=20007\", 'requested_by': 'critical-user', 'act...(+151)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain contains forbidden characters (whitespace or shell metacharacters).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4507.0141,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': '$(touch /tmp/rtsaZQ)', 'reason': \"/beaddeco domain='$(touch /tmp/rtsaZQ)' port=20007\", 'requested_by': 'critical-user', 'a...(+154)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain contains forbidden characters (whitespace or shell metacharacters).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4507.0233,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': '`touch /tmp/rtsaZQ`', 'reason': \"/beaddeco domain='`touch /tmp/rtsaZQ`' port=20007\", 'requested_by': 'critical-user', 'act...(+152)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain contains forbidden characters (whitespace or shell metacharacters).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4507.0322,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': 'x|touch /tmp/rtsaZQ', 'reason': \"/beaddeco domain='x|touch /tmp/rtsaZQ' port=20007\", 'requested_by': 'critical-user', 'act...(+151)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain must not contain path separators or '..'.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4507.0428,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': '../../../../etc/rtsaZQ', 'reason': \"/beaddeco domain='../../../../etc/rtsaZQ' port=20007\", 'requested_by': 'critical-user'...(+158)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain must not contain path separators or '..'.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4507.0537,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': '/etc/rtsaZQ', 'reason': \"/beaddeco domain='/etc/rtsaZQ' port=20007\", 'requested_by': 'critical-user', 'action_id': 'eb3f92...(+135)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain is not a valid hostname.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4507.0627,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': '--rtsaZQ=1', 'reason': \"/beaddeco domain='--rtsaZQ=1' port=20007\", 'requested_by': 'critical-user', 'action_id': '15ea07ed...(+134)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain contains forbidden characters (whitespace or shell metacharacters).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4507.0712,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': 'ok\\nrtsaZQ', 'reason': \"/beaddeco domain='ok\\\\nrtsaZQ' port=20007\", 'requested_by': 'critical-user', 'action_id': '6f36ed2...(+135)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain contains forbidden characters (whitespace or shell metacharacters).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4507.0814,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': 'ok\\r\\nrtsaZQ: 1', 'reason': \"/beaddeco domain='ok\\\\r\\\\nrtsaZQ: 1' port=20007\", 'requested_by': 'critical-user', 'action_id...(+145)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain contains a null byte.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4507.0907,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': 'ok\\x00rtsaZQ', 'reason': \"/beaddeco domain='ok\\\\x00rtsaZQ' port=20007\", 'requested_by': 'critical-user', 'action_id': 'f71...(+139)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain is not a valid hostname.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4507.0999,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...(+8318)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain is not a valid hostname.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4507.1105,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': '\u0430pp\\u202ertsaZQ.lab.test', 'reason': \"/beaddeco domain='\u0430pp\\\\u202ertsaZQ.lab.test' port=20007\", 'requested_by': 'critical-...(+163)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain is not a valid hostname.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4507.145,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': '*rtsaZQ*', 'reason': \"/beaddeco domain='*rtsaZQ*' port=20007\", 'requested_by': 'critical-user', 'action_id': '5cc5d4d3a071...(+129)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain contains forbidden characters (whitespace or shell metacharacters).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4507.1533,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': 'ok rtsaZQ', 'reason': \"/beaddeco domain='ok rtsaZQ' port=20007\", 'requested_by': 'critical-user', 'action_id': 'c0adba414e...(+132)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.003,
+   "first_ack_s": 0.003,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain is required.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4507.17,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': '(empty)', 'reason': \"/beaddeco domain='' port=20007\", 'requested_by': 'critical-user', 'action_id': '12cef3cd1eba49baafedd...(+120)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain contains forbidden characters (whitespace or shell metacharacters).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4507.1801,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': '%s%n{0.__class__}rtsaZQ', 'reason': \"/beaddeco domain='%s%n{0.__class__}rtsaZQ' port=20007\", 'requested_by': 'critical-use...(+160)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain contains forbidden characters (whitespace or shell metacharacters).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4507.1887,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': '@everyone rtsaZQ', 'reason': \"/beaddeco domain='@everyone rtsaZQ' port=20007\", 'requested_by': 'critical-user', 'action_id...(+146)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain contains forbidden characters (whitespace or shell metacharacters).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4507.199,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': '<@&111> rtsaZQ', 'reason': \"/beaddeco domain='<@&111> rtsaZQ' port=20007\", 'requested_by': 'critical-user', 'action_id': '...(+141)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:port:negative",
+   "caller": "critical",
+   "input_class": "negative",
+   "param": "port",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_PORT: Port `-1` tidak valid (harus integer 1-65535).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4507.2091,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': '001.lab.test', 'reason': \"/beaddeco domain='001.lab.test' port=-1\", 'requested_by': 'critical-user', 'action_id': '94f77e1...(+135)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:INVALID_PORT'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:port:zero",
+   "caller": "critical",
+   "input_class": "zero",
+   "param": "port",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_PORT: Port `0` tidak valid (harus integer 1-65535).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4507.2175,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': '001.lab.test', 'reason': \"/beaddeco domain='001.lab.test' port=0\", 'requested_by': 'critical-user', 'action_id': '88129574...(+134)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:INVALID_PORT'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:port:too_large",
+   "caller": "critical",
+   "input_class": "too_large",
+   "param": "port",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_PORT: Port `70000` tidak valid (harus integer 1-65535).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4507.2261,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': '001.lab.test', 'reason': \"/beaddeco domain='001.lab.test' port=70000\", 'requested_by': 'critical-user', 'action_id': '4d2a...(+138)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:INVALID_PORT'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:port:int64",
+   "caller": "critical",
+   "input_class": "int64",
+   "param": "port",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_PORT: Port `9223372036854775808` tidak valid (harus integer 1-65535).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4507.2357,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.ECOSYSTEM_CONFIG: 'ECOSYSTEM_CONFIG'>, 'target': '001.lab.test', 'reason': \"/beaddeco domain='001.lab.test' port=9223372036854775808\", 'requested_by': 'critical-user', 'act...(+152)"
+     ],
+     "kwargs": "{'result': 'ECOSYSTEM_FAILED:INVALID_PORT'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205403.8909557
+}

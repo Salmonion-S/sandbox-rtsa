@@ -1,0 +1,7179 @@
+{
+ "name": "cekpm2",
+ "sandbox": "/tmp/rtsa_cmd_ihndlido",
+ "started": 1791205413.0088153,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.048,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "PM2 Health Check\nNo PM2 Processes (Daemon Online): \u2022 lab-001\n\u2022 lab-002\n\u2022 lab-003\n\u2022 lab-004\n\u2022 lab-005\n\u2022 lab-008\n\u2022 lab-009\n\u2022 lab-010\n\u2022 lab-011\n\u2022 lab-013\n\u2022 lab-014\n\u2022 lab-016\n\u2022 lab-020\n\u2022 lab-021\n\u2022 lab-023\n\u2022 lab-025\n\u2022 lab-026\n\u2022 lab-027\n\u2022 lab-028\n\u2022 lab-029\n\u2022 lab-031\n\u2022 lab-035\n\u2022 lab-038\n\u2022 lab-039\n\u2022 lab-044\n\u2022 lab-047\n\u2022 lab-048\n\u2022 lab-051\n\u2022 lab-052\n\u2022 lab-054\n\u2022 lab-055\n\u2022 lab-056\n\u2022 lab-058\n\u2022 lab-059\n\u2022 lab-062\n\u2022 lab-063\n\u2022 lab-068\n\u2022 lab-069\n\u2022 lab-070\n\u2022 lab-073\n\u2022 lab-076\n\u2022 lab-078\n\u2022 lab-079\n\u2022 lab-083\n\u2022 lab-085",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5274,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5277,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5283,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1009,
+     "cwd": "/home/lab-002",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5285,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1009,
+     "cwd": "/home/lab-002",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.529,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1010,
+     "cwd": "/home/lab-003",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5293,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1010,
+     "cwd": "/home/lab-003",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5297,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1011,
+     "cwd": "/home/lab-004",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5298,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1011,
+     "cwd": "/home/lab-004",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5302,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1012,
+     "cwd": "/home/lab-005",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5303,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1012,
+     "cwd": "/home/lab-005",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5313,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1015,
+     "cwd": "/home/lab-008",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5314,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1015,
+     "cwd": "/home/lab-008",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5317,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1016,
+     "cwd": "/home/lab-009",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5318,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1016,
+     "cwd": "/home/lab-009",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5321,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1017,
+     "cwd": "/home/lab-010",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5322,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1017,
+     "cwd": "/home/lab-010",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5325,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1018,
+     "cwd": "/home/lab-011",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5326,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1018,
+     "cwd": "/home/lab-011",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5333,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1020,
+     "cwd": "/home/lab-013",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5335,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1020,
+     "cwd": "/home/lab-013",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5339,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1021,
+     "cwd": "/home/lab-014",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.534,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1021,
+     "cwd": "/home/lab-014",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5348,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1023,
+     "cwd": "/home/lab-016",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5349,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1023,
+     "cwd": "/home/lab-016",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5359,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1027,
+     "cwd": "/home/lab-020",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.536,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1027,
+     "cwd": "/home/lab-020",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5363,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1028,
+     "cwd": "/home/lab-021",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5364,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1028,
+     "cwd": "/home/lab-021",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5369,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1030,
+     "cwd": "/home/lab-023",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.537,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1030,
+     "cwd": "/home/lab-023",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5375,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1032,
+     "cwd": "/home/lab-025",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5375,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1032,
+     "cwd": "/home/lab-025",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5378,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1033,
+     "cwd": "/home/lab-026",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5378,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1033,
+     "cwd": "/home/lab-026",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5381,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1034,
+     "cwd": "/home/lab-027",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5382,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1034,
+     "cwd": "/home/lab-027",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5384,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1035,
+     "cwd": "/home/lab-028",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5385,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1035,
+     "cwd": "/home/lab-028",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5387,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1036,
+     "cwd": "/home/lab-029",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5388,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1036,
+     "cwd": "/home/lab-029",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5393,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1038,
+     "cwd": "/home/lab-031",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5394,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1038,
+     "cwd": "/home/lab-031",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5403,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1042,
+     "cwd": "/home/lab-035",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5404,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1042,
+     "cwd": "/home/lab-035",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5411,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1045,
+     "cwd": "/home/lab-038",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5412,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1045,
+     "cwd": "/home/lab-038",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5414,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1046,
+     "cwd": "/home/lab-039",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5415,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1046,
+     "cwd": "/home/lab-039",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5434,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1051,
+     "cwd": "/home/lab-044",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5435,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1051,
+     "cwd": "/home/lab-044",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5444,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1054,
+     "cwd": "/home/lab-047",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5445,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1054,
+     "cwd": "/home/lab-047",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5448,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1055,
+     "cwd": "/home/lab-048",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5449,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1055,
+     "cwd": "/home/lab-048",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5459,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1058,
+     "cwd": "/home/lab-051",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5459,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1058,
+     "cwd": "/home/lab-051",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5462,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1059,
+     "cwd": "/home/lab-052",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5463,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1059,
+     "cwd": "/home/lab-052",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5468,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1061,
+     "cwd": "/home/lab-054",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5469,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1061,
+     "cwd": "/home/lab-054",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    }
+   ],
+   "event_count": 132,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 132
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.045,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "PM2 Health Check\nNo PM2 Processes (Daemon Online): \u2022 lab-001\n\u2022 lab-002\n\u2022 lab-003\n\u2022 lab-004\n\u2022 lab-005\n\u2022 lab-008\n\u2022 lab-009\n\u2022 lab-010\n\u2022 lab-011\n\u2022 lab-013\n\u2022 lab-014\n\u2022 lab-016\n\u2022 lab-020\n\u2022 lab-021\n\u2022 lab-023\n\u2022 lab-025\n\u2022 lab-026\n\u2022 lab-027\n\u2022 lab-028\n\u2022 lab-029\n\u2022 lab-031\n\u2022 lab-035\n\u2022 lab-038\n\u2022 lab-039\n\u2022 lab-044\n\u2022 lab-047\n\u2022 lab-048\n\u2022 lab-051\n\u2022 lab-052\n\u2022 lab-054\n\u2022 lab-055\n\u2022 lab-056\n\u2022 lab-058\n\u2022 lab-059\n\u2022 lab-062\n\u2022 lab-063\n\u2022 lab-068\n\u2022 lab-069\n\u2022 lab-070\n\u2022 lab-073\n\u2022 lab-076\n\u2022 lab-078\n\u2022 lab-079\n\u2022 lab-083\n\u2022 lab-085",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5926,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5927,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5932,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1009,
+     "cwd": "/home/lab-002",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5933,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1009,
+     "cwd": "/home/lab-002",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5937,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1010,
+     "cwd": "/home/lab-003",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5939,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1010,
+     "cwd": "/home/lab-003",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5943,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1011,
+     "cwd": "/home/lab-004",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5944,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1011,
+     "cwd": "/home/lab-004",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5947,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1012,
+     "cwd": "/home/lab-005",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5948,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1012,
+     "cwd": "/home/lab-005",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5963,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1015,
+     "cwd": "/home/lab-008",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5964,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1015,
+     "cwd": "/home/lab-008",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5967,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1016,
+     "cwd": "/home/lab-009",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5968,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1016,
+     "cwd": "/home/lab-009",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5971,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1017,
+     "cwd": "/home/lab-010",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5975,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1017,
+     "cwd": "/home/lab-010",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5978,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1018,
+     "cwd": "/home/lab-011",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5979,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1018,
+     "cwd": "/home/lab-011",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5986,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1020,
+     "cwd": "/home/lab-013",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5987,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1020,
+     "cwd": "/home/lab-013",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5989,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1021,
+     "cwd": "/home/lab-014",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.599,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1021,
+     "cwd": "/home/lab-014",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5996,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1023,
+     "cwd": "/home/lab-016",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.5997,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1023,
+     "cwd": "/home/lab-016",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6009,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1027,
+     "cwd": "/home/lab-020",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.601,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1027,
+     "cwd": "/home/lab-020",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6013,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1028,
+     "cwd": "/home/lab-021",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6014,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1028,
+     "cwd": "/home/lab-021",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6021,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1030,
+     "cwd": "/home/lab-023",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6022,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1030,
+     "cwd": "/home/lab-023",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6028,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1032,
+     "cwd": "/home/lab-025",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6029,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1032,
+     "cwd": "/home/lab-025",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6032,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1033,
+     "cwd": "/home/lab-026",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6033,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1033,
+     "cwd": "/home/lab-026",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6035,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1034,
+     "cwd": "/home/lab-027",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6036,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1034,
+     "cwd": "/home/lab-027",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6039,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1035,
+     "cwd": "/home/lab-028",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.604,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1035,
+     "cwd": "/home/lab-028",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6044,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1036,
+     "cwd": "/home/lab-029",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6045,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1036,
+     "cwd": "/home/lab-029",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6051,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1038,
+     "cwd": "/home/lab-031",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6052,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1038,
+     "cwd": "/home/lab-031",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6062,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1042,
+     "cwd": "/home/lab-035",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6062,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1042,
+     "cwd": "/home/lab-035",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6072,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1045,
+     "cwd": "/home/lab-038",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6073,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1045,
+     "cwd": "/home/lab-038",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6076,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1046,
+     "cwd": "/home/lab-039",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6077,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1046,
+     "cwd": "/home/lab-039",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6094,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1051,
+     "cwd": "/home/lab-044",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6095,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1051,
+     "cwd": "/home/lab-044",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6107,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1054,
+     "cwd": "/home/lab-047",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6108,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1054,
+     "cwd": "/home/lab-047",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6112,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1055,
+     "cwd": "/home/lab-048",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6113,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1055,
+     "cwd": "/home/lab-048",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6122,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1058,
+     "cwd": "/home/lab-051",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6122,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1058,
+     "cwd": "/home/lab-051",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6125,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1059,
+     "cwd": "/home/lab-052",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6125,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1059,
+     "cwd": "/home/lab-052",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.613,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1061,
+     "cwd": "/home/lab-054",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6131,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1061,
+     "cwd": "/home/lab-054",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    }
+   ],
+   "event_count": 132,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 132
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.045,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "PM2 Health Check\nNo PM2 Processes (Daemon Online): \u2022 lab-001\n\u2022 lab-002\n\u2022 lab-003\n\u2022 lab-004\n\u2022 lab-005\n\u2022 lab-008\n\u2022 lab-009\n\u2022 lab-010\n\u2022 lab-011\n\u2022 lab-013\n\u2022 lab-014\n\u2022 lab-016\n\u2022 lab-020\n\u2022 lab-021\n\u2022 lab-023\n\u2022 lab-025\n\u2022 lab-026\n\u2022 lab-027\n\u2022 lab-028\n\u2022 lab-029\n\u2022 lab-031\n\u2022 lab-035\n\u2022 lab-038\n\u2022 lab-039\n\u2022 lab-044\n\u2022 lab-047\n\u2022 lab-048\n\u2022 lab-051\n\u2022 lab-052\n\u2022 lab-054\n\u2022 lab-055\n\u2022 lab-056\n\u2022 lab-058\n\u2022 lab-059\n\u2022 lab-062\n\u2022 lab-063\n\u2022 lab-068\n\u2022 lab-069\n\u2022 lab-070\n\u2022 lab-073\n\u2022 lab-076\n\u2022 lab-078\n\u2022 lab-079\n\u2022 lab-083\n\u2022 lab-085",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6556,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6558,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6563,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1009,
+     "cwd": "/home/lab-002",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6564,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1009,
+     "cwd": "/home/lab-002",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6567,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1010,
+     "cwd": "/home/lab-003",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6568,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1010,
+     "cwd": "/home/lab-003",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6571,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1011,
+     "cwd": "/home/lab-004",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6572,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1011,
+     "cwd": "/home/lab-004",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6574,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1012,
+     "cwd": "/home/lab-005",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6575,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1012,
+     "cwd": "/home/lab-005",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6582,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1015,
+     "cwd": "/home/lab-008",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6583,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1015,
+     "cwd": "/home/lab-008",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6585,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1016,
+     "cwd": "/home/lab-009",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6586,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1016,
+     "cwd": "/home/lab-009",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.659,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1017,
+     "cwd": "/home/lab-010",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.659,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1017,
+     "cwd": "/home/lab-010",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6593,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1018,
+     "cwd": "/home/lab-011",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6594,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1018,
+     "cwd": "/home/lab-011",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6599,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1020,
+     "cwd": "/home/lab-013",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.66,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1020,
+     "cwd": "/home/lab-013",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6604,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1021,
+     "cwd": "/home/lab-014",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6605,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1021,
+     "cwd": "/home/lab-014",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6611,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1023,
+     "cwd": "/home/lab-016",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6612,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1023,
+     "cwd": "/home/lab-016",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6622,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1027,
+     "cwd": "/home/lab-020",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6624,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1027,
+     "cwd": "/home/lab-020",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6626,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1028,
+     "cwd": "/home/lab-021",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6627,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1028,
+     "cwd": "/home/lab-021",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6632,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1030,
+     "cwd": "/home/lab-023",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6633,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1030,
+     "cwd": "/home/lab-023",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6638,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1032,
+     "cwd": "/home/lab-025",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6639,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1032,
+     "cwd": "/home/lab-025",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6642,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1033,
+     "cwd": "/home/lab-026",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6642,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1033,
+     "cwd": "/home/lab-026",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6645,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1034,
+     "cwd": "/home/lab-027",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6645,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1034,
+     "cwd": "/home/lab-027",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6651,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1035,
+     "cwd": "/home/lab-028",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6653,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1035,
+     "cwd": "/home/lab-028",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6657,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1036,
+     "cwd": "/home/lab-029",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6658,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1036,
+     "cwd": "/home/lab-029",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6663,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1038,
+     "cwd": "/home/lab-031",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6663,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1038,
+     "cwd": "/home/lab-031",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6673,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1042,
+     "cwd": "/home/lab-035",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6673,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1042,
+     "cwd": "/home/lab-035",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6681,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1045,
+     "cwd": "/home/lab-038",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6682,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1045,
+     "cwd": "/home/lab-038",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6684,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1046,
+     "cwd": "/home/lab-039",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6685,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1046,
+     "cwd": "/home/lab-039",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6696,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1051,
+     "cwd": "/home/lab-044",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6697,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1051,
+     "cwd": "/home/lab-044",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6704,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1054,
+     "cwd": "/home/lab-047",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6705,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1054,
+     "cwd": "/home/lab-047",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6707,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1055,
+     "cwd": "/home/lab-048",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6707,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1055,
+     "cwd": "/home/lab-048",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6716,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1058,
+     "cwd": "/home/lab-051",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6717,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1058,
+     "cwd": "/home/lab-051",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6719,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1059,
+     "cwd": "/home/lab-052",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6719,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1059,
+     "cwd": "/home/lab-052",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6724,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1061,
+     "cwd": "/home/lab-054",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.6725,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1061,
+     "cwd": "/home/lab-054",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    }
+   ],
+   "event_count": 132,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 132
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.052,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "PM2 Health Check\nNo PM2 Processes (Daemon Online): \u2022 lab-001\n\u2022 lab-002\n\u2022 lab-003\n\u2022 lab-004\n\u2022 lab-005\n\u2022 lab-008\n\u2022 lab-009\n\u2022 lab-010\n\u2022 lab-011\n\u2022 lab-013\n\u2022 lab-014\n\u2022 lab-016\n\u2022 lab-020\n\u2022 lab-021\n\u2022 lab-023\n\u2022 lab-025\n\u2022 lab-026\n\u2022 lab-027\n\u2022 lab-028\n\u2022 lab-029\n\u2022 lab-031\n\u2022 lab-035\n\u2022 lab-038\n\u2022 lab-039\n\u2022 lab-044\n\u2022 lab-047\n\u2022 lab-048\n\u2022 lab-051\n\u2022 lab-052\n\u2022 lab-054\n\u2022 lab-055\n\u2022 lab-056\n\u2022 lab-058\n\u2022 lab-059\n\u2022 lab-062\n\u2022 lab-063\n\u2022 lab-068\n\u2022 lab-069\n\u2022 lab-070\n\u2022 lab-073\n\u2022 lab-076\n\u2022 lab-078\n\u2022 lab-079\n\u2022 lab-083\n\u2022 lab-085",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7194,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7195,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7198,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1009,
+     "cwd": "/home/lab-002",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7199,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1009,
+     "cwd": "/home/lab-002",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7207,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1010,
+     "cwd": "/home/lab-003",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7209,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1010,
+     "cwd": "/home/lab-003",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7213,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1011,
+     "cwd": "/home/lab-004",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7214,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1011,
+     "cwd": "/home/lab-004",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7217,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1012,
+     "cwd": "/home/lab-005",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7217,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1012,
+     "cwd": "/home/lab-005",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7225,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1015,
+     "cwd": "/home/lab-008",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7225,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1015,
+     "cwd": "/home/lab-008",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7229,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1016,
+     "cwd": "/home/lab-009",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.723,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1016,
+     "cwd": "/home/lab-009",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7235,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1017,
+     "cwd": "/home/lab-010",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7236,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1017,
+     "cwd": "/home/lab-010",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7239,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1018,
+     "cwd": "/home/lab-011",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.724,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1018,
+     "cwd": "/home/lab-011",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7247,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1020,
+     "cwd": "/home/lab-013",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7248,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1020,
+     "cwd": "/home/lab-013",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.725,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1021,
+     "cwd": "/home/lab-014",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7251,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1021,
+     "cwd": "/home/lab-014",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7259,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1023,
+     "cwd": "/home/lab-016",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.726,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1023,
+     "cwd": "/home/lab-016",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7272,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1027,
+     "cwd": "/home/lab-020",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7273,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1027,
+     "cwd": "/home/lab-020",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7275,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1028,
+     "cwd": "/home/lab-021",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7276,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1028,
+     "cwd": "/home/lab-021",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7281,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1030,
+     "cwd": "/home/lab-023",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7282,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1030,
+     "cwd": "/home/lab-023",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7286,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1032,
+     "cwd": "/home/lab-025",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7287,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1032,
+     "cwd": "/home/lab-025",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7289,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1033,
+     "cwd": "/home/lab-026",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.729,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1033,
+     "cwd": "/home/lab-026",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7293,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1034,
+     "cwd": "/home/lab-027",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7293,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1034,
+     "cwd": "/home/lab-027",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7297,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1035,
+     "cwd": "/home/lab-028",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7298,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1035,
+     "cwd": "/home/lab-028",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.73,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1036,
+     "cwd": "/home/lab-029",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7302,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1036,
+     "cwd": "/home/lab-029",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7306,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1038,
+     "cwd": "/home/lab-031",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7307,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1038,
+     "cwd": "/home/lab-031",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7322,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1042,
+     "cwd": "/home/lab-035",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7323,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1042,
+     "cwd": "/home/lab-035",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7332,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1045,
+     "cwd": "/home/lab-038",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7332,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1045,
+     "cwd": "/home/lab-038",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7337,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1046,
+     "cwd": "/home/lab-039",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7337,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1046,
+     "cwd": "/home/lab-039",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7372,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1051,
+     "cwd": "/home/lab-044",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7373,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1051,
+     "cwd": "/home/lab-044",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7391,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1054,
+     "cwd": "/home/lab-047",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7393,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1054,
+     "cwd": "/home/lab-047",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7397,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1055,
+     "cwd": "/home/lab-048",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7398,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1055,
+     "cwd": "/home/lab-048",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7413,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1058,
+     "cwd": "/home/lab-051",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7414,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1058,
+     "cwd": "/home/lab-051",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.742,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1059,
+     "cwd": "/home/lab-052",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.742,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1059,
+     "cwd": "/home/lab-052",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7426,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1061,
+     "cwd": "/home/lab-054",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7427,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1061,
+     "cwd": "/home/lab-054",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    }
+   ],
+   "event_count": 132,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 132
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.124,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "PM2 Health Check\nNo PM2 Processes (Daemon Online): \u2022 lab-001\n\u2022 lab-002\n\u2022 lab-003\n\u2022 lab-004\n\u2022 lab-005\n\u2022 lab-008\n\u2022 lab-009\n\u2022 lab-010\n\u2022 lab-011\n\u2022 lab-013\n\u2022 lab-014\n\u2022 lab-016\n\u2022 lab-020\n\u2022 lab-021\n\u2022 lab-023\n\u2022 lab-025\n\u2022 lab-026\n\u2022 lab-027\n\u2022 lab-028\n\u2022 lab-029\n\u2022 lab-031\n\u2022 lab-035\n\u2022 lab-038\n\u2022 lab-039\n\u2022 lab-044\n\u2022 lab-047\n\u2022 lab-048\n\u2022 lab-051\n\u2022 lab-052\n\u2022 lab-054\n\u2022 lab-055\n\u2022 lab-056\n\u2022 lab-058\n\u2022 lab-059\n\u2022 lab-062\n\u2022 lab-063\n\u2022 lab-068\n\u2022 lab-069\n\u2022 lab-070\n\u2022 lab-073\n\u2022 lab-076\n\u2022 lab-078\n\u2022 lab-079\n\u2022 lab-083\n\u2022 lab-085",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "PM2 Health Check\nNo PM2 Processes (Daemon Online): \u2022 lab-001\n\u2022 lab-002\n\u2022 lab-003\n\u2022 lab-004\n\u2022 lab-005\n\u2022 lab-008\n\u2022 lab-009\n\u2022 lab-010\n\u2022 lab-011\n\u2022 lab-013\n\u2022 lab-014\n\u2022 lab-016\n\u2022 lab-020\n\u2022 lab-021\n\u2022 lab-023\n\u2022 lab-025\n\u2022 lab-026\n\u2022 lab-027\n\u2022 lab-028\n\u2022 lab-029\n\u2022 lab-031\n\u2022 lab-035\n\u2022 lab-038\n\u2022 lab-039\n\u2022 lab-044\n\u2022 lab-047\n\u2022 lab-048\n\u2022 lab-051\n\u2022 lab-052\n\u2022 lab-054\n\u2022 lab-055\n\u2022 lab-056\n\u2022 lab-058\n\u2022 lab-059\n\u2022 lab-062\n\u2022 lab-063\n\u2022 lab-068\n\u2022 lab-069\n\u2022 lab-070\n\u2022 lab-073\n\u2022 lab-076\n\u2022 lab-078\n\u2022 lab-079\n\u2022 lab-083\n\u2022 lab-085",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7962,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7963,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7967,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1009,
+     "cwd": "/home/lab-002",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7968,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1009,
+     "cwd": "/home/lab-002",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7973,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1010,
+     "cwd": "/home/lab-003",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7974,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1010,
+     "cwd": "/home/lab-003",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7979,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1011,
+     "cwd": "/home/lab-004",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.798,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1011,
+     "cwd": "/home/lab-004",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7986,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1012,
+     "cwd": "/home/lab-005",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7987,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1012,
+     "cwd": "/home/lab-005",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7998,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.7999,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1008,
+     "cwd": "/home/lab-001",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8007,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1009,
+     "cwd": "/home/lab-002",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.801,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1009,
+     "cwd": "/home/lab-002",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8015,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1015,
+     "cwd": "/home/lab-008",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8016,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1015,
+     "cwd": "/home/lab-008",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8021,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1010,
+     "cwd": "/home/lab-003",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8022,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1010,
+     "cwd": "/home/lab-003",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8026,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1016,
+     "cwd": "/home/lab-009",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8027,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1016,
+     "cwd": "/home/lab-009",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8031,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1011,
+     "cwd": "/home/lab-004",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8032,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1011,
+     "cwd": "/home/lab-004",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8037,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1017,
+     "cwd": "/home/lab-010",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8038,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1012,
+     "cwd": "/home/lab-005",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8038,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1017,
+     "cwd": "/home/lab-010",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8039,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1012,
+     "cwd": "/home/lab-005",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8044,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1018,
+     "cwd": "/home/lab-011",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8045,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1018,
+     "cwd": "/home/lab-011",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8057,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1015,
+     "cwd": "/home/lab-008",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8058,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1015,
+     "cwd": "/home/lab-008",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8062,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1016,
+     "cwd": "/home/lab-009",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8063,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1020,
+     "cwd": "/home/lab-013",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8064,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1016,
+     "cwd": "/home/lab-009",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8065,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1020,
+     "cwd": "/home/lab-013",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8068,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1017,
+     "cwd": "/home/lab-010",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8069,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1017,
+     "cwd": "/home/lab-010",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8073,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1018,
+     "cwd": "/home/lab-011",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8074,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1018,
+     "cwd": "/home/lab-011",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8078,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1021,
+     "cwd": "/home/lab-014",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8079,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1021,
+     "cwd": "/home/lab-014",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8089,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1023,
+     "cwd": "/home/lab-016",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8092,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1020,
+     "cwd": "/home/lab-013",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8093,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1023,
+     "cwd": "/home/lab-016",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8093,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1020,
+     "cwd": "/home/lab-013",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8099,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1021,
+     "cwd": "/home/lab-014",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8101,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1021,
+     "cwd": "/home/lab-014",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8115,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1023,
+     "cwd": "/home/lab-016",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8117,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1023,
+     "cwd": "/home/lab-016",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8127,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1027,
+     "cwd": "/home/lab-020",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8128,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1027,
+     "cwd": "/home/lab-020",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8133,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1028,
+     "cwd": "/home/lab-021",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8134,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1028,
+     "cwd": "/home/lab-021",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8147,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1027,
+     "cwd": "/home/lab-020",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8148,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1027,
+     "cwd": "/home/lab-020",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8152,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1030,
+     "cwd": "/home/lab-023",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8153,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1030,
+     "cwd": "/home/lab-023",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8157,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1028,
+     "cwd": "/home/lab-021",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8158,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1028,
+     "cwd": "/home/lab-021",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.8169,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 ping"
+     ],
+     "user": 1032,
+     "cwd": "/home/lab-025",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4516.817,
+     "argv": [
+      "/bin/bash",
+      "-l",
+      "-c",
+      "pm2 jlist"
+     ],
+     "user": 1032,
+     "cwd": "/home/lab-025",
+     "env_keys": [
+      "HOME",
+      "LC_CTYPE",
+      "LOGNAME",
+      "PATH",
+      "PM2_HOME",
+      "SHELL",
+      "USER"
+     ],
+     "class": "READ"
+    }
+   ],
+   "event_count": 264,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 264
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205413.6275384
+}

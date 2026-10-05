@@ -1,0 +1,9 @@
+{
+ "first_pid": 3761,
+ "second_exit_code": 75,
+ "second_seconds": 0.77,
+ "second_stderr": "RTSA gagal start: Another RTSA instance already holds the lock at /var/lab-rtsa/run/rtsa.lock (pid=3761). Refusing to start a second instance -- concurrent RTSA processes would double-detect and double-notify Discord for the same events.",
+ "first_still_alive": true,
+ "verdict": "PASS",
+ "duration_s": 0.8
+}

@@ -1,0 +1,124 @@
+{
+ "users": 2000,
+ "targets": 121,
+ "timeline": [
+  {
+   "phase": "ramp",
+   "start": 1791201711.3414416,
+   "seconds": 30.0,
+   "users": "0->2000",
+   "think_s": 2.0,
+   "end": 1791201741.402569
+  },
+  {
+   "phase": "sustained",
+   "start": 1791201741.402571,
+   "seconds": 120.0,
+   "users": 2000,
+   "think_s": 2.0,
+   "end": 1791201861.5437312
+  },
+  {
+   "phase": "burst",
+   "start": 1791201861.5437343,
+   "seconds": 30.0,
+   "users": 2000,
+   "think_s": 0.0,
+   "end": 1791201891.7073216
+  },
+  {
+   "phase": "recovery",
+   "start": 1791201891.7073252,
+   "seconds": 30.0,
+   "users": 200,
+   "think_s": 2.0,
+   "end": 1791201921.817019
+  }
+ ],
+ "phases": {
+  "ramp": {
+   "requests": 15634,
+   "duration_s": 30.0,
+   "rps": 521.6,
+   "ok": 12829,
+   "http_5xx": 288,
+   "http_4xx": 2517,
+   "transport_errors": 0,
+   "error_kinds": {},
+   "statuses": {
+    "200": 12782,
+    "404": 671,
+    "401": 1846,
+    "500": 288,
+    "201": 47
+   },
+   "p50_ms": 4.5,
+   "p95_ms": 32.2,
+   "p99_ms": 121.2,
+   "max_ms": 926.7
+  },
+  "sustained": {
+   "requests": 119220,
+   "duration_s": 120.9,
+   "rps": 986.2,
+   "ok": 94829,
+   "http_5xx": 2863,
+   "http_4xx": 21528,
+   "transport_errors": 0,
+   "error_kinds": {},
+   "statuses": {
+    "200": 94312,
+    "500": 2863,
+    "404": 4915,
+    "401": 16613,
+    "201": 517
+   },
+   "p50_ms": 5.3,
+   "p95_ms": 49.0,
+   "p99_ms": 144.5,
+   "max_ms": 974.1
+  },
+  "burst": {
+   "requests": 51071,
+   "duration_s": 31.9,
+   "rps": 1602.7,
+   "ok": 40525,
+   "http_5xx": 1210,
+   "http_4xx": 9336,
+   "transport_errors": 0,
+   "error_kinds": {},
+   "statuses": {
+    "200": 40312,
+    "401": 7365,
+    "500": 1210,
+    "404": 1971,
+    "201": 213
+   },
+   "p50_ms": 974.0,
+   "p95_ms": 1934.8,
+   "p99_ms": 10274.2,
+   "max_ms": 14513.6
+  },
+  "recovery": {
+   "requests": 6551,
+   "duration_s": 29.1,
+   "rps": 225.3,
+   "ok": 5147,
+   "http_5xx": 265,
+   "http_4xx": 1139,
+   "transport_errors": 0,
+   "error_kinds": {},
+   "statuses": {
+    "200": 5107,
+    "401": 971,
+    "404": 168,
+    "500": 265,
+    "201": 40
+   },
+   "p50_ms": 3.5,
+   "p95_ms": 58.7,
+   "p99_ms": 306.2,
+   "max_ms": 852.9
+  }
+ }
+}

@@ -1,0 +1,1881 @@
+{
+ "name": "sofixall",
+ "sandbox": "/tmp/rtsa_cmd_bpkvhkpp",
+ "started": 1791205533.406982,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.066,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**SOFIXALL REPORT**\nTotal config: 127\nChecked: 127\nChanged: 0\nAlready hardened: 0\nSkipped: 0\nFailed: 127\nNginx validation: \u2705 PASS\nNginx reload: tidak ada perubahan -- reload dilewati\n\n\u274c Domain GAGAL (127):\n  - 001.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/001.lab.test.conf blocked\n  - 002.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/002.lab.test.conf blocked\n  - 003.lab.test: Gagal menulis config: campaign sandbox: ",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "  - 015.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/015.lab.test.conf blocked\n  - 016.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/016.lab.test.conf blocked\n  - 017.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/017.lab.test.conf blocked\n  - 018.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/018.lab.test.conf blocked\n  - 019.lab.test: Gagal menu",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "  - 031.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/031.lab.test.conf blocked\n  - 032.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/032.lab.test.conf blocked\n  - 033.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/033.lab.test.conf blocked\n  - 034.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/034.lab.test.conf blocked\n  - 035.lab.test: Gagal menu",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "  - 047.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/047.lab.test.conf blocked\n  - 048.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/048.lab.test.conf blocked\n  - 049.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/049.lab.test.conf blocked\n  - 050.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/050.lab.test.conf blocked\n  - 051.lab.test: Gagal menu",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "  - 063.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/063.lab.test.conf blocked\n  - 064.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/064.lab.test.conf blocked\n  - 065.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/065.lab.test.conf blocked\n  - 066.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/066.lab.test.conf blocked\n  - 067.lab.test: Gagal menu",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "  - 079.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/079.lab.test.conf blocked\n  - 080.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/080.lab.test.conf blocked\n  - 081.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/081.lab.test.conf blocked\n  - 082.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/082.lab.test.conf blocked\n  - 083.lab.test: Gagal menu",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "  - 095.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/095.lab.test.conf blocked\n  - 096.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/096.lab.test.conf blocked\n  - 097.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/097.lab.test.conf blocked\n  - 098.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/098.lab.test.conf blocked\n  - 099.lab.test: Gagal menu",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "  - 111.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/111.lab.test.conf blocked\n  - 112.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/112.lab.test.conf blocked\n  - 113.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/113.lab.test.conf blocked\n  - 114.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/114.lab.test.conf blocked\n  - 115.lab.test: Gagal menu",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4636.955,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4636.9551,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups"
+     ]
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4636.9552,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4636.9553,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/001.lab.test.conf.rtsa-backup-20261005T130533550987"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4636.9554,
+     "path": "/etc/nginx/sites-enabled/001.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4636.9555,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '001.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': 'c199b73e59bd4d0d9882541f23a9b675', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4636.9559,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4636.956,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/002.lab.test.conf.rtsa-backup-20261005T130533551688"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4636.956,
+     "path": "/etc/nginx/sites-enabled/002.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4636.9561,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '002.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '8cb536c5bfd041dfbc5ab480f351d8b8', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4636.9564,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4636.9565,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/003.lab.test.conf.rtsa-backup-20261005T130533552232"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4636.9566,
+     "path": "/etc/nginx/sites-enabled/003.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4636.9566,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '003.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '65fba6ab9a7a4d23900f12820cb320f7', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4636.9569,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4636.957,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/004.lab.test.conf.rtsa-backup-20261005T130533552708"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4636.957,
+     "path": "/etc/nginx/sites-enabled/004.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4636.9571,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '004.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': 'aba4277cd0344cf195d62bb92077fba2', 'timestamp': 1791205533....(+82)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4636.9574,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4636.9575,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/005.lab.test.conf.rtsa-backup-20261005T130533553183"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4636.9575,
+     "path": "/etc/nginx/sites-enabled/005.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4636.9575,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '005.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '4e219d60cb2a4d3b9119d69b26a20ab9', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4636.9578,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4636.9578,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/006.lab.test.conf.rtsa-backup-20261005T130533553543"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4636.9578,
+     "path": "/etc/nginx/sites-enabled/006.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4636.9579,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '006.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '01dd28c67a034184811538d913b72c2e', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4636.9581,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4636.9582,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/007.lab.test.conf.rtsa-backup-20261005T130533553921"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4636.9582,
+     "path": "/etc/nginx/sites-enabled/007.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4636.9583,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '007.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': 'dcb020d50a3b4439ac2af5176fc2a4fd', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4636.9585,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4636.9586,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/008.lab.test.conf.rtsa-backup-20261005T130533554336"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4636.9586,
+     "path": "/etc/nginx/sites-enabled/008.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4636.9587,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '008.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '204944b8ad46453399284716fe96a03e', 'timestamp': 1791205533....(+82)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4636.959,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4636.959,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/009.lab.test.conf.rtsa-backup-20261005T130533554764"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4636.9591,
+     "path": "/etc/nginx/sites-enabled/009.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4636.9591,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '009.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': 'd22e9167aee24788be38dbdf879f2cc2', 'timestamp': 1791205533....(+82)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4636.9594,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4636.9595,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/010.lab.test.conf.rtsa-backup-20261005T130533555193"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4636.9596,
+     "path": "/etc/nginx/sites-enabled/010.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4636.9596,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '010.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '742dd543c20b49b6af639b1b4da7ff89', 'timestamp': 1791205533....(+81)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4636.9599,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4636.9599,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/011.lab.test.conf.rtsa-backup-20261005T130533555667"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4636.96,
+     "path": "/etc/nginx/sites-enabled/011.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4636.9601,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '011.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': 'd7194282ecab4ed784db947510646c93', 'timestamp': 1791205533....(+82)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4636.9603,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4636.9603,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/012.lab.test.conf.rtsa-backup-20261005T130533556078"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4636.9604,
+     "path": "/etc/nginx/sites-enabled/012.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4636.9604,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '012.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': 'f6c44113135a409aab6faece428f8d2b', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4636.9607,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4636.9607,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/013.lab.test.conf.rtsa-backup-20261005T130533556477"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4636.9609,
+     "path": "/etc/nginx/sites-enabled/013.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4636.961,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '013.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': 'c37c4d85eb5e4f94856261ac6bdeab3b', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4636.9613,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4636.9613,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/014.lab.test.conf.rtsa-backup-20261005T130533557073"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4636.9614,
+     "path": "/etc/nginx/sites-enabled/014.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4636.9614,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '014.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '1842a493cc824a118834ef1ea4b1832e', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4636.9617,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4636.9618,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/015.lab.test.conf.rtsa-backup-20261005T130533557476"
+    }
+   ],
+   "event_count": 512,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 129,
+    "FS_WRITE_SANDBOX": 127,
+    "FS_WRITE": 127,
+    "DB_WRITE": 128,
+    "SUBPROCESS": 1
+   },
+   "mutations": [
+    "FS_WRITE /etc/nginx/sites-enabled/001.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/002.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/003.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/004.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/005.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/006.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/007.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/008.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/009.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/010.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/011.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/012.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/013.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/014.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/015.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/016.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/017.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/018.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/019.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/020.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/021.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/022.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/023.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/024.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/025.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/026.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/027.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/028.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/029.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/030.lab.test.conf"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "\ud83d\udec8 Detection Only mode is active \u2014 menerapkan hardening nginx ke semua domain was NOT executed. RTSA is deployed for detection and notification only; set `response_engine.detection_only: false` in config to allow RTSA-driven mitigation, or take this action manually.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.0235,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIXALL: 'SOFIXALL'>, 'target': 'ALL', 'reason': 'response_engine.detection_only=true', 'requested_by': 'critical-user', 'action_id': '281f3f98bd724074a13855b317dced46', '...(+106)"
+     ],
+     "kwargs": "{'result': 'Blocked by Detection Only'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": true
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.077,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**SOFIXALL REPORT**\nTotal config: 127\nChecked: 127\nChanged: 0\nAlready hardened: 0\nSkipped: 0\nFailed: 127\nNginx validation: \u2705 PASS\nNginx reload: tidak ada perubahan -- reload dilewati\n\n\u274c Domain GAGAL (127):\n  - 001.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/001.lab.test.conf blocked\n  - 002.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/002.lab.test.conf blocked\n  - 003.lab.test: Gagal menulis config: campaign sandbox: ",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "  - 015.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/015.lab.test.conf blocked\n  - 016.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/016.lab.test.conf blocked\n  - 017.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/017.lab.test.conf blocked\n  - 018.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/018.lab.test.conf blocked\n  - 019.lab.test: Gagal menu",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "  - 031.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/031.lab.test.conf blocked\n  - 032.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/032.lab.test.conf blocked\n  - 033.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/033.lab.test.conf blocked\n  - 034.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/034.lab.test.conf blocked\n  - 035.lab.test: Gagal menu",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "  - 047.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/047.lab.test.conf blocked\n  - 048.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/048.lab.test.conf blocked\n  - 049.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/049.lab.test.conf blocked\n  - 050.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/050.lab.test.conf blocked\n  - 051.lab.test: Gagal menu",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "  - 063.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/063.lab.test.conf blocked\n  - 064.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/064.lab.test.conf blocked\n  - 065.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/065.lab.test.conf blocked\n  - 066.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/066.lab.test.conf blocked\n  - 067.lab.test: Gagal menu",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "  - 079.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/079.lab.test.conf blocked\n  - 080.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/080.lab.test.conf blocked\n  - 081.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/081.lab.test.conf blocked\n  - 082.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/082.lab.test.conf blocked\n  - 083.lab.test: Gagal menu",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "  - 095.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/095.lab.test.conf blocked\n  - 096.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/096.lab.test.conf blocked\n  - 097.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/097.lab.test.conf blocked\n  - 098.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/098.lab.test.conf blocked\n  - 099.lab.test: Gagal menu",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "  - 111.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/111.lab.test.conf blocked\n  - 112.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/112.lab.test.conf blocked\n  - 113.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/113.lab.test.conf blocked\n  - 114.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/114.lab.test.conf blocked\n  - 115.lab.test: Gagal menu",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.0493,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.0494,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/001.lab.test.conf.rtsa-backup-20261005T130533645121"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.0495,
+     "path": "/etc/nginx/sites-enabled/001.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.0496,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '001.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': 'a907f5d8ae51473da9b5ee1d51e4e544', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.0499,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.0499,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/002.lab.test.conf.rtsa-backup-20261005T130533645673"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.0502,
+     "path": "/etc/nginx/sites-enabled/002.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.0502,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '002.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': 'b13248dbf8b9460f997f6244e93a4de8', 'timestamp': 1791205533....(+82)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.0505,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.0506,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/003.lab.test.conf.rtsa-backup-20261005T130533646297"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.0506,
+     "path": "/etc/nginx/sites-enabled/003.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.0507,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '003.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '4610dba1b7b648b88e663a6bd4ca3051', 'timestamp': 1791205533....(+82)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.0509,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.051,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/004.lab.test.conf.rtsa-backup-20261005T130533646711"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.051,
+     "path": "/etc/nginx/sites-enabled/004.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.0511,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '004.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': 'dec58bac4a3240db9e0afad89af3b47c', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.0513,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.0514,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/005.lab.test.conf.rtsa-backup-20261005T130533647138"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.0514,
+     "path": "/etc/nginx/sites-enabled/005.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.0515,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '005.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '650c192182964263aa3069fb265906c3', 'timestamp': 1791205533....(+82)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.0517,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.0517,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/006.lab.test.conf.rtsa-backup-20261005T130533647474"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.0518,
+     "path": "/etc/nginx/sites-enabled/006.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.0518,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '006.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '75f4f6ba1c4c4f6ab90ccf93a133badc', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.0521,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.0522,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/007.lab.test.conf.rtsa-backup-20261005T130533647910"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.0522,
+     "path": "/etc/nginx/sites-enabled/007.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.0523,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '007.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '6c6cc5cc76504c669e4dfda434727080', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.0526,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.0526,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/008.lab.test.conf.rtsa-backup-20261005T130533648374"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.0527,
+     "path": "/etc/nginx/sites-enabled/008.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.0527,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '008.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '376bde83f39b43fd91ab97318b52f19a', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.053,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.0531,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/009.lab.test.conf.rtsa-backup-20261005T130533648798"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.0531,
+     "path": "/etc/nginx/sites-enabled/009.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.0532,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '009.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '329afc04cf0c4606a108597240dc6af6', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.0535,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.0536,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/010.lab.test.conf.rtsa-backup-20261005T130533649257"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.0536,
+     "path": "/etc/nginx/sites-enabled/010.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.0536,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '010.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '2958c1ad3d154c799037098f475fe1c9', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.0539,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.0539,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/011.lab.test.conf.rtsa-backup-20261005T130533649681"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.054,
+     "path": "/etc/nginx/sites-enabled/011.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.054,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '011.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '4929cb4324c84b6b88565cd9c2aa96fe', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.0542,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.0543,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/012.lab.test.conf.rtsa-backup-20261005T130533650033"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.0543,
+     "path": "/etc/nginx/sites-enabled/012.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.0544,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '012.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '20a82c8154424f8ca08eebf1a92c8d9a', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.0546,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.0547,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/013.lab.test.conf.rtsa-backup-20261005T130533650436"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.0547,
+     "path": "/etc/nginx/sites-enabled/013.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.0548,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '013.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '0794097c81464f8e94f05dee0ca4e3e8', 'timestamp': 1791205533....(+81)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.055,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.0551,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/014.lab.test.conf.rtsa-backup-20261005T130533650811"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.0551,
+     "path": "/etc/nginx/sites-enabled/014.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.0552,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '014.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '4aed1e8d3b834ffc905559ee3f159af9', 'timestamp': 1791205533....(+82)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.0554,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.0555,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/015.lab.test.conf.rtsa-backup-20261005T130533651218"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.0555,
+     "path": "/etc/nginx/sites-enabled/015.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.0556,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '015.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': 'bd7b6b0fe45e4e6eabb6e34c6bc452d7', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 510,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 127,
+    "FS_WRITE_SANDBOX": 127,
+    "FS_WRITE": 127,
+    "DB_WRITE": 128,
+    "SUBPROCESS": 1
+   },
+   "mutations": [
+    "FS_WRITE /etc/nginx/sites-enabled/001.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/002.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/003.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/004.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/005.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/006.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/007.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/008.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/009.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/010.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/011.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/012.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/013.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/014.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/015.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/016.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/017.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/018.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/019.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/020.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/021.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/022.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/023.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/024.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/025.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/026.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/027.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/028.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/029.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/030.lab.test.conf"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.216,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**SOFIXALL REPORT**\nTotal config: 127\nChecked: 127\nChanged: 0\nAlready hardened: 0\nSkipped: 0\nFailed: 127\nNginx validation: \u2705 PASS\nNginx reload: tidak ada perubahan -- reload dilewati\n\n\u274c Domain GAGAL (127):\n  - 001.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/001.lab.test.conf blocked\n  - 002.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/002.lab.test.conf blocked\n  - 003.lab.test: Gagal menulis config: campaign sandbox: ",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "  - 015.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/015.lab.test.conf blocked\n  - 016.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/016.lab.test.conf blocked\n  - 017.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/017.lab.test.conf blocked\n  - 018.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/018.lab.test.conf blocked\n  - 019.lab.test: Gagal menu",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "  - 031.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/031.lab.test.conf blocked\n  - 032.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/032.lab.test.conf blocked\n  - 033.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/033.lab.test.conf blocked\n  - 034.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/034.lab.test.conf blocked\n  - 035.lab.test: Gagal menu",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "  - 047.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/047.lab.test.conf blocked\n  - 048.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/048.lab.test.conf blocked\n  - 049.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/049.lab.test.conf blocked\n  - 050.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/050.lab.test.conf blocked\n  - 051.lab.test: Gagal menu",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "  - 063.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/063.lab.test.conf blocked\n  - 064.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/064.lab.test.conf blocked\n  - 065.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/065.lab.test.conf blocked\n  - 066.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/066.lab.test.conf blocked\n  - 067.lab.test: Gagal menu",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "  - 079.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/079.lab.test.conf blocked\n  - 080.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/080.lab.test.conf blocked\n  - 081.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/081.lab.test.conf blocked\n  - 082.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/082.lab.test.conf blocked\n  - 083.lab.test: Gagal menu",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "  - 095.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/095.lab.test.conf blocked\n  - 096.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/096.lab.test.conf blocked\n  - 097.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/097.lab.test.conf blocked\n  - 098.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/098.lab.test.conf blocked\n  - 099.lab.test: Gagal menu",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "  - 111.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/111.lab.test.conf blocked\n  - 112.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/112.lab.test.conf blocked\n  - 113.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/113.lab.test.conf blocked\n  - 114.lab.test: Gagal menulis config: campaign sandbox: write to /etc/nginx/sites-enabled/114.lab.test.conf blocked\n  - 115.lab.test: Gagal menu",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.1412,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.1413,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/001.lab.test.conf.rtsa-backup-20261005T130533737012"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.1414,
+     "path": "/etc/nginx/sites-enabled/001.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.1415,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '001.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '698b1b0486b64173a29ba9c609ed1610', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.1444,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.1445,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/002.lab.test.conf.rtsa-backup-20261005T130533740197"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.1445,
+     "path": "/etc/nginx/sites-enabled/002.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.1446,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '002.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '0823972fe6ec4b1d8d49041b069eeec1', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.1449,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.145,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/003.lab.test.conf.rtsa-backup-20261005T130533740722"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.145,
+     "path": "/etc/nginx/sites-enabled/003.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.1451,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '003.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '86653747e3f644a8a7f0749d440ecb7f', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.1454,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.1455,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/004.lab.test.conf.rtsa-backup-20261005T130533741203"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.1455,
+     "path": "/etc/nginx/sites-enabled/004.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.1456,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '004.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '3357f8d553694928a9240870613ec099', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.1458,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.1459,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/005.lab.test.conf.rtsa-backup-20261005T130533741610"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.1459,
+     "path": "/etc/nginx/sites-enabled/005.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.146,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '005.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '89404da8f9ff48fab253ec2ce5fafbd2', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.1462,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.1463,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/006.lab.test.conf.rtsa-backup-20261005T130533741985"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.1463,
+     "path": "/etc/nginx/sites-enabled/006.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.1463,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '006.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '1113d22bb2674793b7a18e5b00d41a18', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.1465,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.1466,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/007.lab.test.conf.rtsa-backup-20261005T130533742328"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.1466,
+     "path": "/etc/nginx/sites-enabled/007.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.1468,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '007.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '1191d5788a24408c8d130b9e5d2d544d', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.1471,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.1472,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/008.lab.test.conf.rtsa-backup-20261005T130533742911"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.1472,
+     "path": "/etc/nginx/sites-enabled/008.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.1473,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '008.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': 'e4cb624dbb3f43ab82ad751fa9bfef92', 'timestamp': 1791205533....(+82)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.1476,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.1477,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/009.lab.test.conf.rtsa-backup-20261005T130533743403"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.1477,
+     "path": "/etc/nginx/sites-enabled/009.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.1478,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '009.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '1035839b3cfa4c74aa2cea1b52676c4f', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.1491,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.1548,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/010.lab.test.conf.rtsa-backup-20261005T130533744914"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.1574,
+     "path": "/etc/nginx/sites-enabled/010.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.1575,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '010.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '7bcb36e2598a417cab3a6395aea7b9f1', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.1612,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.1613,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/011.lab.test.conf.rtsa-backup-20261005T130533756989"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.1614,
+     "path": "/etc/nginx/sites-enabled/011.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.1615,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '011.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '3e3da15882864bec8808167b027ccdf0', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.1619,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.1621,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/012.lab.test.conf.rtsa-backup-20261005T130533757746"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.1622,
+     "path": "/etc/nginx/sites-enabled/012.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.1623,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '012.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': 'e3071649c8a7462ea76598a971d1321d', 'timestamp': 1791205533....(+82)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.1628,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.1629,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/013.lab.test.conf.rtsa-backup-20261005T130533758623"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.163,
+     "path": "/etc/nginx/sites-enabled/013.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.1632,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '013.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '6a94aa6722fb49339421ee3377f79612', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.1637,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.1638,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/014.lab.test.conf.rtsa-backup-20261005T130533759520"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.1639,
+     "path": "/etc/nginx/sites-enabled/014.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.1641,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '014.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '67929a629982455f83563602c58c62c5', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    },
+    {
+     "kind": "FS_MKDIR_SANDBOX",
+     "blocked": false,
+     "t": 4637.1649,
+     "paths": [
+      "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix"
+     ]
+    },
+    {
+     "kind": "FS_WRITE_SANDBOX",
+     "blocked": false,
+     "t": 4637.1653,
+     "path": "/tmp/rtsa_cmd_bpkvhkpp/opt/security/rtsa/backups/sofix/015.lab.test.conf.rtsa-backup-20261005T130533760752"
+    },
+    {
+     "kind": "FS_WRITE",
+     "blocked": true,
+     "t": 4637.1655,
+     "path": "/etc/nginx/sites-enabled/015.lab.test.conf"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4637.1657,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.SOFIX: 'SOFIX'>, 'target': '015.lab.test', 'reason': '/sofixall', 'requested_by': 'critical-user', 'action_id': '1dd613f129b14f1fa066f4e19d3b1e1a', 'timestamp': 1791205533....(+83)"
+     ],
+     "kwargs": "{'result': 'failed'}"
+    }
+   ],
+   "event_count": 1019,
+   "logged_errors": [],
+   "side_effects": {
+    "FS_MKDIR_SANDBOX": 254,
+    "FS_WRITE_SANDBOX": 254,
+    "FS_WRITE": 254,
+    "DB_WRITE": 256,
+    "SUBPROCESS": 1
+   },
+   "mutations": [
+    "FS_WRITE /etc/nginx/sites-enabled/001.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/002.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/003.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/004.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/005.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/006.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/007.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/008.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/009.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/010.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/011.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/012.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/013.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/014.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/015.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/016.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/017.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/018.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/019.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/020.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/021.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/022.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/023.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/024.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/025.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/026.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/027.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/028.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/029.lab.test.conf",
+    "FS_WRITE /etc/nginx/sites-enabled/030.lab.test.conf"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205534.0645187
+}

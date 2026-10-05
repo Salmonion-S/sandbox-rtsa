@@ -1,0 +1,2281 @@
+{
+ "name": "changeowner",
+ "sandbox": "/tmp/rtsa_cmd_foysvm3_",
+ "started": 1791205432.245118,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\ud83d\udeab Tidak memiliki izin.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [],
+   "event_count": 0,
+   "logged_errors": [],
+   "side_effects": {},
+   "mutations": [],
+   "flags": [],
+   "denied": true,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.019,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA Action -- OWNERSHIP AUDIT (full home)\nReview hasil audit ownership SELURUH home directory di bawah ini sebelum confirm. Hanya path yang diklasifikasikan EXPECTED_USER_OWNED yang akan diperbaiki -- path root-owned/unknown yang ambiguous TIDAK akan diubah (report-only).\nHome: /home/lab-001\nExpected Owner: lab-001:lab-001\nScanned: Seluruh home directory (termasuk hidden files/dirs)\nFiles Scanned: 100\nDirectories Scanned: 35\nSymlinks Scanned: 0\nFixable Mismatches: 5\nReport-Only (Suspicious Root",
+     "view": "_ConfirmCancelView",
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "edit_original_response",
+     "text": "RTSA Action -- CHANGE_OWNER_VERIFICATION_FAILED\nHome: /home/lab-001\nRequested Ownership: lab-001:lab-001\nStatus: VERIFICATION_FAILED\nReason: chown selesai tapi post-change audit masih menemukan 5 fixable mismatch (sebelum: 5) -- tidak ada perbaikan terverifikasi.",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [
+    "_ConfirmCancelView"
+   ],
+   "clicks": [
+    {
+     "click": "requester_confirm",
+     "view": "_ConfirmCancelView",
+     "button": "\u2705 Confirm",
+     "interaction_check": true,
+     "replies": []
+    }
+   ],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4535.7856,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'lab-001', 'reason': \"/changeowner owner='lab-001' (full home)\", 'requested_by': 'critical-user', 'action_id': '2df65ab6dcdc454d891...(+122)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_REQUESTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4535.8026,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'lab-001', 'reason': '/changeowner owner=lab-001 (full home)', 'requested_by': 'critical-user', 'action_id': '99cfdbe7738b4ceaaae93...(+121)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_EXECUTING'}"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4535.8026,
+     "argv": [
+      "/usr/bin/sudo",
+      "chown",
+      "--no-dereference",
+      "lab-001:lab-001",
+      "/home/lab-001/logs",
+      "/home/lab-001/logs/nginx",
+      "/home/lab-001/logs/nginx/access.log.1",
+      "/home/lab-001/logs/nginx/error.log",
+      "/home/lab-001/logs/nginx/access.log"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4535.8045,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'lab-001', 'reason': '/changeowner owner=lab-001 (full home)', 'requested_by': 'critical-user', 'action_id': '8e07c53303934b86b24d5...(+121)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_VERIFICATION_FAILED'}"
+    }
+   ],
+   "event_count": 4,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 3,
+    "SUBPROCESS": 1
+   },
+   "mutations": [
+    "/usr/bin/sudo chown --no-dereference lab-001:lab-001 /home/lab-001/logs /home/lab-001/logs/nginx /home/lab-001/logs/nginx/access.log.1 /home/lab-001/logs/nginx/error.log"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.014,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA Action -- OWNERSHIP AUDIT (full home)\nReview hasil audit ownership SELURUH home directory di bawah ini sebelum confirm. Hanya path yang diklasifikasikan EXPECTED_USER_OWNED yang akan diperbaiki -- path root-owned/unknown yang ambiguous TIDAK akan diubah (report-only).\nHome: /home/lab-001\nExpected Owner: lab-001:lab-001\nScanned: Seluruh home directory (termasuk hidden files/dirs)\nFiles Scanned: 100\nDirectories Scanned: 35\nSymlinks Scanned: 0\nFixable Mismatches: 5\nReport-Only (Suspicious Root",
+     "view": "_ConfirmCancelView",
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "edit_original_response",
+     "text": "RTSA Action -- CHANGE_OWNER_BLOCKED\n\ud83d\udec8 Detection Only mode is active \u2014 mengubah ownership seluruh home directory `lab-001` was NOT executed. RTSA is deployed for detection and notification only; set `response_engine.detection_only: false` in config to allow RTSA-driven mitigation, or take this action manually.",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [
+    "_ConfirmCancelView"
+   ],
+   "clicks": [
+    {
+     "click": "requester_confirm",
+     "view": "_ConfirmCancelView",
+     "button": "\u2705 Confirm",
+     "interaction_check": true,
+     "replies": []
+    }
+   ],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4535.8482,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'lab-001', 'reason': \"/changeowner owner='lab-001' (full home)\", 'requested_by': 'critical-user', 'action_id': '1810a9a92dc24f91b71...(+123)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_REQUESTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4535.8615,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'lab-001', 'reason': 'response_engine.detection_only=true', 'requested_by': 'critical-user', 'action_id': '1f3c79cd0c414246b4a7c664...(+118)"
+     ],
+     "kwargs": "{'result': 'Blocked by Detection Only'}"
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": true
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.025,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA Action -- OWNERSHIP AUDIT (full home)\nReview hasil audit ownership SELURUH home directory di bawah ini sebelum confirm. Hanya path yang diklasifikasikan EXPECTED_USER_OWNED yang akan diperbaiki -- path root-owned/unknown yang ambiguous TIDAK akan diubah (report-only).\nHome: /home/lab-001\nExpected Owner: lab-001:lab-001\nScanned: Seluruh home directory (termasuk hidden files/dirs)\nFiles Scanned: 100\nDirectories Scanned: 35\nSymlinks Scanned: 0\nFixable Mismatches: 5\nReport-Only (Suspicious Root",
+     "view": "_ConfirmCancelView",
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "edit_original_response",
+     "text": "\u274c Dibatalkan.",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [
+    "_ConfirmCancelView"
+   ],
+   "clicks": [
+    {
+     "click": "other_user_confirm",
+     "view": "_ConfirmCancelView",
+     "button": "\u2705 Confirm",
+     "interaction_check": false,
+     "replies": [
+      "\ud83d\udeab Cuma yang menjalankan command ini yang bisa confirm/cancel."
+     ]
+    },
+    {
+     "click": "requester_cancel",
+     "view": "_ConfirmCancelView",
+     "button": "\u274c Cancel",
+     "interaction_check": true,
+     "replies": []
+    }
+   ],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4535.9091,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'lab-001', 'reason': \"/changeowner owner='lab-001' (full home)\", 'requested_by': 'critical-user', 'action_id': '58c4250e4e7e4723bba...(+123)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_REQUESTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4535.9342,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'lab-001', 'reason': \"/changeowner owner='lab-001' (full home)\", 'requested_by': 'critical-user', 'action_id': 'faec833d1c6745f6a95...(+121)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_FAILED:CANCELLED'}"
+    }
+   ],
+   "event_count": 2,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 2
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.037,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA Action -- OWNERSHIP AUDIT (full home)\nReview hasil audit ownership SELURUH home directory di bawah ini sebelum confirm. Hanya path yang diklasifikasikan EXPECTED_USER_OWNED yang akan diperbaiki -- path root-owned/unknown yang ambiguous TIDAK akan diubah (report-only).\nHome: /home/lab-001\nExpected Owner: lab-001:lab-001\nScanned: Seluruh home directory (termasuk hidden files/dirs)\nFiles Scanned: 100\nDirectories Scanned: 35\nSymlinks Scanned: 0\nFixable Mismatches: 5\nReport-Only (Suspicious Root",
+     "view": "_ConfirmCancelView",
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "edit_original_response",
+     "text": "RTSA Action -- CHANGE_OWNER_EXECUTING\nPerubahan ownership home directory `lab-001` sedang diproses, tunggu sebentar.",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "RTSA Action -- OWNERSHIP AUDIT (full home)\nReview hasil audit ownership SELURUH home directory di bawah ini sebelum confirm. Hanya path yang diklasifikasikan EXPECTED_USER_OWNED yang akan diperbaiki -- path root-owned/unknown yang ambiguous TIDAK akan diubah (report-only).\nHome: /home/lab-001\nExpected Owner: lab-001:lab-001\nScanned: Seluruh home directory (termasuk hidden files/dirs)\nFiles Scanned: 100\nDirectories Scanned: 35\nSymlinks Scanned: 0\nFixable Mismatches: 5\nReport-Only (Suspicious Root",
+     "view": "_ConfirmCancelView",
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "edit_original_response",
+     "text": "RTSA Action -- CHANGE_OWNER_VERIFICATION_FAILED\nHome: /home/lab-001\nRequested Ownership: lab-001:lab-001\nStatus: VERIFICATION_FAILED\nReason: chown selesai tapi post-change audit masih menemukan 5 fixable mismatch (sebelum: 5) -- tidak ada perbaikan terverifikasi.",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [
+    "_ConfirmCancelView"
+   ],
+   "clicks": [
+    {
+     "click": "requester_confirm",
+     "view": "_ConfirmCancelView",
+     "button": "\u2705 Confirm",
+     "interaction_check": true,
+     "replies": []
+    },
+    {
+     "click": "requester_confirm",
+     "view": "_ConfirmCancelView",
+     "button": "\u2705 Confirm",
+     "interaction_check": true,
+     "replies": []
+    }
+   ],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4535.9703,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'lab-001', 'reason': \"/changeowner owner='lab-001' (full home)\", 'requested_by': 'critical-user', 'action_id': '5b41711ca0a24dc3917...(+123)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_REQUESTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4535.9704,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'lab-001', 'reason': \"/changeowner owner='lab-001' (full home)\", 'requested_by': 'critical-user', 'action_id': '72a6e5e272604898a09...(+123)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_REQUESTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.0027,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'lab-001', 'reason': '/changeowner owner=lab-001 (full home)', 'requested_by': 'critical-user', 'action_id': 'e4acf0a5af254ba193677...(+120)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_EXECUTING'}"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4536.0027,
+     "argv": [
+      "/usr/bin/sudo",
+      "chown",
+      "--no-dereference",
+      "lab-001:lab-001",
+      "/home/lab-001/logs",
+      "/home/lab-001/logs/nginx",
+      "/home/lab-001/logs/nginx/access.log.1",
+      "/home/lab-001/logs/nginx/error.log",
+      "/home/lab-001/logs/nginx/access.log"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.0066,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'lab-001', 'reason': '/changeowner owner=lab-001 (full home)', 'requested_by': 'critical-user', 'action_id': '63b8324cdd89419cb57ed...(+121)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_VERIFICATION_FAILED'}"
+    }
+   ],
+   "event_count": 5,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 4,
+    "SUBPROCESS": 1
+   },
+   "mutations": [
+    "/usr/bin/sudo chown --no-dereference lab-001:lab-001 /home/lab-001/logs /home/lab-001/logs/nginx /home/lab-001/logs/nginx/access.log.1 /home/lab-001/logs/nginx/error.log"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:owner:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "owner",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_OWNER: Owner is not a valid Linux username (must match ^[a-z_][a-z0-9_-]{0,31}$, lowercase only).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.031,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'x;touch /tmp/rtsaZQ', 'reason': \"/changeowner owner='x;touch /tmp/rtsaZQ' (full home)\", 'requested_by': 'critical-user', 'action_i...(+147)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_FAILED:INVALID_OWNER'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:owner:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "owner",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_OWNER: Owner is not a valid Linux username (must match ^[a-z_][a-z0-9_-]{0,31}$, lowercase only).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.0406,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': '$(touch /tmp/rtsaZQ)', 'reason': \"/changeowner owner='$(touch /tmp/rtsaZQ)' (full home)\", 'requested_by': 'critical-user', 'action...(+149)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_FAILED:INVALID_OWNER'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:owner:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "owner",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_OWNER: Owner is not a valid Linux username (must match ^[a-z_][a-z0-9_-]{0,31}$, lowercase only).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.05,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': '`touch /tmp/rtsaZQ`', 'reason': \"/changeowner owner='`touch /tmp/rtsaZQ`' (full home)\", 'requested_by': 'critical-user', 'action_i...(+147)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_FAILED:INVALID_OWNER'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:owner:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "owner",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_OWNER: Owner is not a valid Linux username (must match ^[a-z_][a-z0-9_-]{0,31}$, lowercase only).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.0588,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'x|touch /tmp/rtsaZQ', 'reason': \"/changeowner owner='x|touch /tmp/rtsaZQ' (full home)\", 'requested_by': 'critical-user', 'action_i...(+147)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_FAILED:INVALID_OWNER'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:owner:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "owner",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_OWNER: Owner is not a valid Linux username (must match ^[a-z_][a-z0-9_-]{0,31}$, lowercase only).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.0689,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': '../../../../etc/rtsaZQ', 'reason': \"/changeowner owner='../../../../etc/rtsaZQ' (full home)\", 'requested_by': 'critical-user', 'ac...(+153)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_FAILED:INVALID_OWNER'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:owner:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "owner",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_OWNER: Owner is not a valid Linux username (must match ^[a-z_][a-z0-9_-]{0,31}$, lowercase only).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.0778,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': '/etc/rtsaZQ', 'reason': \"/changeowner owner='/etc/rtsaZQ' (full home)\", 'requested_by': 'critical-user', 'action_id': 'c84d76e38c8...(+131)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_FAILED:INVALID_OWNER'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:owner:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "owner",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_OWNER: Owner is not a valid Linux username (must match ^[a-z_][a-z0-9_-]{0,31}$, lowercase only).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.0866,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': '--rtsaZQ=1', 'reason': \"/changeowner owner='--rtsaZQ=1' (full home)\", 'requested_by': 'critical-user', 'action_id': 'f7e8eda864b04...(+128)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_FAILED:INVALID_OWNER'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:owner:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "owner",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_OWNER: Owner is not a valid Linux username (must match ^[a-z_][a-z0-9_-]{0,31}$, lowercase only).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.0963,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'ok\\nrtsaZQ', 'reason': \"/changeowner owner='ok\\\\nrtsaZQ' (full home)\", 'requested_by': 'critical-user', 'action_id': '7ed2e939bc6f...(+130)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_FAILED:INVALID_OWNER'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:owner:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "owner",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_OWNER: Owner is not a valid Linux username (must match ^[a-z_][a-z0-9_-]{0,31}$, lowercase only).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.105,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'ok\\r\\nrtsaZQ: 1', 'reason': \"/changeowner owner='ok\\\\r\\\\nrtsaZQ: 1' (full home)\", 'requested_by': 'critical-user', 'action_id': '5...(+141)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_FAILED:INVALID_OWNER'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:owner:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "owner",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_OWNER: Owner is not a valid Linux username (must match ^[a-z_][a-z0-9_-]{0,31}$, lowercase only).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.1133,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'ok\\x00rtsaZQ', 'reason': \"/changeowner owner='ok\\\\x00rtsaZQ' (full home)\", 'requested_by': 'critical-user', 'action_id': 'cae44e3d...(+134)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_FAILED:INVALID_OWNER'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:owner:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "owner",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_OWNER: Owner is not a valid Linux username (must match ^[a-z_][a-z0-9_-]{0,31}$, lowercase only).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.1219,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...(+8313)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_FAILED:INVALID_OWNER'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:owner:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "owner",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_OWNER: Owner is not a valid Linux username (must match ^[a-z_][a-z0-9_-]{0,31}$, lowercase only).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.1508,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': '\u0430pp\\u202ertsaZQ.lab.test', 'reason': \"/changeowner owner='\u0430pp\\\\u202ertsaZQ.lab.test' (full home)\", 'requested_by': 'critical-user'...(+158)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_FAILED:INVALID_OWNER'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:owner:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "owner",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_OWNER: Owner is not a valid Linux username (must match ^[a-z_][a-z0-9_-]{0,31}$, lowercase only).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.159,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': '*rtsaZQ*', 'reason': \"/changeowner owner='*rtsaZQ*' (full home)\", 'requested_by': 'critical-user', 'action_id': '5153ce79e42d415e8...(+124)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_FAILED:INVALID_OWNER'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:owner:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "owner",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_OWNER: Owner is not a valid Linux username (must match ^[a-z_][a-z0-9_-]{0,31}$, lowercase only).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.1676,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'ok rtsaZQ', 'reason': \"/changeowner owner='ok rtsaZQ' (full home)\", 'requested_by': 'critical-user', 'action_id': 'b1dd37589f4f4d9...(+127)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_FAILED:INVALID_OWNER'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:owner:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "owner",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_OWNER: Owner is required.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.1773,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': '(empty)', 'reason': \"/changeowner owner='' (full home)\", 'requested_by': 'critical-user', 'action_id': '3a9763ca726d44d98aea29439b...(+115)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_FAILED:INVALID_OWNER'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:owner:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "owner",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_OWNER: Owner is not a valid Linux username (must match ^[a-z_][a-z0-9_-]{0,31}$, lowercase only).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.1856,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': '%s%n{0.__class__}rtsaZQ', 'reason': \"/changeowner owner='%s%n{0.__class__}rtsaZQ' (full home)\", 'requested_by': 'critical-user', '...(+154)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_FAILED:INVALID_OWNER'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:owner:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "owner",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_OWNER: Owner is not a valid Linux username (must match ^[a-z_][a-z0-9_-]{0,31}$, lowercase only).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.1934,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': '@everyone rtsaZQ', 'reason': \"/changeowner owner='@everyone rtsaZQ' (full home)\", 'requested_by': 'critical-user', 'action_id': 'a...(+141)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_FAILED:INVALID_OWNER'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:owner:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "owner",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_OWNER: Owner is not a valid Linux username (must match ^[a-z_][a-z0-9_-]{0,31}$, lowercase only).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.2027,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': '<@&111> rtsaZQ', 'reason': \"/changeowner owner='<@&111> rtsaZQ' (full home)\", 'requested_by': 'critical-user', 'action_id': '8f940...(+137)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_FAILED:INVALID_OWNER'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_semicolon",
+   "caller": "critical",
+   "input_class": "shell_semicolon",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain contains forbidden characters (whitespace or shell metacharacters).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.2106,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'x;touch /tmp/rtsaZQ', 'reason': \"/changeowner domain='x;touch /tmp/rtsaZQ' owner='lab-001'\", 'requested_by': 'critical-user', 'act...(+150)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_subst",
+   "caller": "critical",
+   "input_class": "shell_subst",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain contains forbidden characters (whitespace or shell metacharacters).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.219,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': '$(touch /tmp/rtsaZQ)', 'reason': \"/changeowner domain='$(touch /tmp/rtsaZQ)' owner='lab-001'\", 'requested_by': 'critical-user', 'a...(+153)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_backtick",
+   "caller": "critical",
+   "input_class": "shell_backtick",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain contains forbidden characters (whitespace or shell metacharacters).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.2277,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': '`touch /tmp/rtsaZQ`', 'reason': \"/changeowner domain='`touch /tmp/rtsaZQ`' owner='lab-001'\", 'requested_by': 'critical-user', 'act...(+152)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:shell_pipe",
+   "caller": "critical",
+   "input_class": "shell_pipe",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain contains forbidden characters (whitespace or shell metacharacters).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.2367,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'x|touch /tmp/rtsaZQ', 'reason': \"/changeowner domain='x|touch /tmp/rtsaZQ' owner='lab-001'\", 'requested_by': 'critical-user', 'act...(+152)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:path_traversal",
+   "caller": "critical",
+   "input_class": "path_traversal",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain must not contain path separators or '..'.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.2444,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': '../../../../etc/rtsaZQ', 'reason': \"/changeowner domain='../../../../etc/rtsaZQ' owner='lab-001'\", 'requested_by': 'critical-user'...(+157)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:absolute_path",
+   "caller": "critical",
+   "input_class": "absolute_path",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain must not contain path separators or '..'.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.2524,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': '/etc/rtsaZQ', 'reason': \"/changeowner domain='/etc/rtsaZQ' owner='lab-001'\", 'requested_by': 'critical-user', 'action_id': '16ee42...(+135)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:option_injection",
+   "caller": "critical",
+   "input_class": "option_injection",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain is not a valid hostname.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.2617,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': '--rtsaZQ=1', 'reason': \"/changeowner domain='--rtsaZQ=1' owner='lab-001'\", 'requested_by': 'critical-user', 'action_id': 'c343da8c...(+134)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:newline",
+   "caller": "critical",
+   "input_class": "newline",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain contains forbidden characters (whitespace or shell metacharacters).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.2698,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'ok\\nrtsaZQ', 'reason': \"/changeowner domain='ok\\\\nrtsaZQ' owner='lab-001'\", 'requested_by': 'critical-user', 'action_id': '20a8e52...(+134)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:crlf",
+   "caller": "critical",
+   "input_class": "crlf",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain contains forbidden characters (whitespace or shell metacharacters).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.2783,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'ok\\r\\nrtsaZQ: 1', 'reason': \"/changeowner domain='ok\\\\r\\\\nrtsaZQ: 1' owner='lab-001'\", 'requested_by': 'critical-user', 'action_id...(+146)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:nul_byte",
+   "caller": "critical",
+   "input_class": "nul_byte",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain contains a null byte.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.287,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'ok\\x00rtsaZQ', 'reason': \"/changeowner domain='ok\\\\x00rtsaZQ' owner='lab-001'\", 'requested_by': 'critical-user', 'action_id': '0f7...(+139)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:overlong",
+   "caller": "critical",
+   "input_class": "overlong",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain is not a valid hostname.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.2947,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...(+8317)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:unicode_confusable",
+   "caller": "critical",
+   "input_class": "unicode_confusable",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain is not a valid hostname.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.303,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': '\u0430pp\\u202ertsaZQ.lab.test', 'reason': \"/changeowner domain='\u0430pp\\\\u202ertsaZQ.lab.test' owner='lab-001'\", 'requested_by': 'critical-...(+163)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:glob",
+   "caller": "critical",
+   "input_class": "glob",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain is not a valid hostname.",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.3111,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': '*rtsaZQ*', 'reason': \"/changeowner domain='*rtsaZQ*' owner='lab-001'\", 'requested_by': 'critical-user', 'action_id': '7b1c22099661...(+130)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:space",
+   "caller": "critical",
+   "input_class": "space",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain contains forbidden characters (whitespace or shell metacharacters).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.3202,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'ok rtsaZQ', 'reason': \"/changeowner domain='ok rtsaZQ' owner='lab-001'\", 'requested_by': 'critical-user', 'action_id': '567f0bded2...(+132)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:empty",
+   "caller": "critical",
+   "input_class": "empty",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.018,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "RTSA Action -- OWNERSHIP AUDIT (full home)\nReview hasil audit ownership SELURUH home directory di bawah ini sebelum confirm. Hanya path yang diklasifikasikan EXPECTED_USER_OWNED yang akan diperbaiki -- path root-owned/unknown yang ambiguous TIDAK akan diubah (report-only).\nHome: /home/lab-001\nExpected Owner: lab-001:lab-001\nScanned: Seluruh home directory (termasuk hidden files/dirs)\nFiles Scanned: 100\nDirectories Scanned: 35\nSymlinks Scanned: 0\nFixable Mismatches: 5\nReport-Only (Suspicious Root",
+     "view": "_ConfirmCancelView",
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "edit_original_response",
+     "text": "RTSA Action -- CHANGE_OWNER_VERIFICATION_FAILED\nHome: /home/lab-001\nRequested Ownership: lab-001:lab-001\nStatus: VERIFICATION_FAILED\nReason: chown selesai tapi post-change audit masih menemukan 5 fixable mismatch (sebelum: 5) -- tidak ada perbaikan terverifikasi.",
+     "view": null,
+     "ephemeral": null,
+     "files": []
+    }
+   ],
+   "views": [
+    "_ConfirmCancelView"
+   ],
+   "clicks": [
+    {
+     "click": "requester_confirm",
+     "view": "_ConfirmCancelView",
+     "button": "\u2705 Confirm",
+     "interaction_check": true,
+     "replies": []
+    }
+   ],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.3279,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'lab-001', 'reason': \"/changeowner owner='lab-001' (full home)\", 'requested_by': 'critical-user', 'action_id': '6cf7b1a91f9d49af93f...(+123)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_REQUESTED'}"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.3428,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'lab-001', 'reason': '/changeowner owner=lab-001 (full home)', 'requested_by': 'critical-user', 'action_id': 'af874c33e80b4a85a9d20...(+120)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_EXECUTING'}"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4536.3429,
+     "argv": [
+      "/usr/bin/sudo",
+      "chown",
+      "--no-dereference",
+      "lab-001:lab-001",
+      "/home/lab-001/logs",
+      "/home/lab-001/logs/nginx",
+      "/home/lab-001/logs/nginx/access.log.1",
+      "/home/lab-001/logs/nginx/error.log",
+      "/home/lab-001/logs/nginx/access.log"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "MUTATE"
+    },
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.3456,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': 'lab-001', 'reason': '/changeowner owner=lab-001 (full home)', 'requested_by': 'critical-user', 'action_id': '4f9aea66153d49fc9e9dc...(+121)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_HOME_VERIFICATION_FAILED'}"
+    }
+   ],
+   "event_count": 4,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 3,
+    "SUBPROCESS": 1
+   },
+   "mutations": [
+    "/usr/bin/sudo chown --no-dereference lab-001:lab-001 /home/lab-001/logs /home/lab-001/logs/nginx /home/lab-001/logs/nginx/access.log.1 /home/lab-001/logs/nginx/error.log"
+   ],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:format_string",
+   "caller": "critical",
+   "input_class": "format_string",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain contains forbidden characters (whitespace or shell metacharacters).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.3536,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': '%s%n{0.__class__}rtsaZQ', 'reason': \"/changeowner domain='%s%n{0.__class__}rtsaZQ' owner='lab-001'\", 'requested_by': 'critical-use...(+160)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:mention",
+   "caller": "critical",
+   "input_class": "mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain contains forbidden characters (whitespace or shell metacharacters).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.3624,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': '@everyone rtsaZQ', 'reason': \"/changeowner domain='@everyone rtsaZQ' owner='lab-001'\", 'requested_by': 'critical-user', 'action_id...(+146)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "input:domain:role_mention",
+   "caller": "critical",
+   "input_class": "role_mention",
+   "param": "domain",
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "response.send_message",
+     "text": "\u274c INVALID_DOMAIN: Domain contains forbidden characters (whitespace or shell metacharacters).",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "DB_WRITE",
+     "blocked": false,
+     "t": 4536.3701,
+     "method": "enqueue_action",
+     "args": [
+      "{'action_type': <ActionType.CHANGE_OWNER: 'CHANGE_OWNER'>, 'target': '<@&111> rtsaZQ', 'reason': \"/changeowner domain='<@&111> rtsaZQ' owner='lab-001'\", 'requested_by': 'critical-user', 'action_id': '...(+141)"
+     ],
+     "kwargs": "{'result': 'CHANGE_OWNER_FAILED:INVALID_DOMAIN'}"
+    }
+   ],
+   "event_count": 1,
+   "logged_errors": [],
+   "side_effects": {
+    "DB_WRITE": 1
+   },
+   "mutations": [],
+   "flags": [
+    "STORED_INPUT"
+   ],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [
+  {
+   "view": "_ConfirmCancelView",
+   "button": "\u2705 Confirm",
+   "clicker": "other_guild_member",
+   "interaction_check": false,
+   "error": null,
+   "replies": [
+    "\ud83d\udeab Cuma yang menjalankan command ini yang bisa confirm/cancel."
+   ],
+   "side_effects": {},
+   "mutations": []
+  },
+  {
+   "view": "_ConfirmCancelView",
+   "button": "\u2705 Confirm",
+   "clicker": "requester",
+   "interaction_check": true,
+   "error": null,
+   "replies": [],
+   "side_effects": {
+    "DB_WRITE": 2,
+    "SUBPROCESS": 1
+   },
+   "mutations": [
+    "/usr/bin/sudo chown --no-dereference lab-001:lab-001 /home/lab-001/logs /home/lab-001/logs/nginx /home/lab-001/logs/nginx/access.log.1 /home/lab-001/logs/nginx/error.log"
+   ]
+  },
+  {
+   "view": "_ConfirmCancelView",
+   "button": "\u274c Cancel",
+   "clicker": "other_guild_member",
+   "interaction_check": false,
+   "error": null,
+   "replies": [
+    "\ud83d\udeab Cuma yang menjalankan command ini yang bisa confirm/cancel."
+   ],
+   "side_effects": {},
+   "mutations": []
+  },
+  {
+   "view": "_ConfirmCancelView",
+   "button": "\u274c Cancel",
+   "clicker": "requester",
+   "interaction_check": true,
+   "error": null,
+   "replies": [],
+   "side_effects": {},
+   "mutations": []
+  }
+ ],
+ "finished": 1791205433.5714607
+}

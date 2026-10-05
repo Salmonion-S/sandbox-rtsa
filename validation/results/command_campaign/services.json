@@ -1,0 +1,828 @@
+{
+ "name": "services",
+ "sandbox": "/tmp/rtsa_cmd_s07rengq",
+ "started": 1791205531.6772609,
+ "cases": [
+  {
+   "id": "caller:no_roles_configured",
+   "caller": "no_roles_configured",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Service Status**\n\ud83d\udfe2 nginx\n\ud83d\udfe2 mysql\n\ud83d\udfe2 docker\n\ud83d\udfe2 pm2",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.098,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "nginx"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.0983,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "mysql"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.0984,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "docker"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.0985,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "pm2"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    }
+   ],
+   "event_count": 4,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 4
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:unauthorized",
+   "caller": "unauthorized",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Service Status**\n\ud83d\udfe2 nginx\n\ud83d\udfe2 mysql\n\ud83d\udfe2 docker\n\ud83d\udfe2 pm2",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.1637,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "nginx"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.1639,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "mysql"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.1642,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "docker"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.1643,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "pm2"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    }
+   ],
+   "event_count": 4,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 4
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:dm_user",
+   "caller": "dm_user",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Service Status**\n\ud83d\udfe2 nginx\n\ud83d\udfe2 mysql\n\ud83d\udfe2 docker\n\ud83d\udfe2 pm2",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.188,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "nginx"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.1882,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "mysql"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.1883,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "docker"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.1884,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "pm2"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    }
+   ],
+   "event_count": 4,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 4
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:admin_only",
+   "caller": "admin_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Service Status**\n\ud83d\udfe2 nginx\n\ud83d\udfe2 mysql\n\ud83d\udfe2 docker\n\ud83d\udfe2 pm2",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.2139,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "nginx"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.214,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "mysql"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.2142,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "docker"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.2143,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "pm2"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    }
+   ],
+   "event_count": 4,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 4
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Service Status**\n\ud83d\udfe2 nginx\n\ud83d\udfe2 mysql\n\ud83d\udfe2 docker\n\ud83d\udfe2 pm2",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.2392,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "nginx"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.2394,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "mysql"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.2395,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "docker"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.2397,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "pm2"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    }
+   ],
+   "event_count": 4,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 4
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "caller:critical_detection_only",
+   "caller": "critical_detection_only",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Service Status**\n\ud83d\udfe2 nginx\n\ud83d\udfe2 mysql\n\ud83d\udfe2 docker\n\ud83d\udfe2 pm2",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.2629,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "nginx"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.263,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "mysql"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.263,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "docker"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.2632,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "pm2"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    }
+   ],
+   "event_count": 4,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 4
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "confirm:other_user_then_cancel",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.0,
+   "first_ack_s": 0.0,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Service Status**\n\ud83d\udfe2 nginx\n\ud83d\udfe2 mysql\n\ud83d\udfe2 docker\n\ud83d\udfe2 pm2",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.2856,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "nginx"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.2857,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "mysql"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.2857,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "docker"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.2858,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "pm2"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    }
+   ],
+   "event_count": 4,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 4
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  },
+  {
+   "id": "concurrency:x2",
+   "caller": "critical",
+   "input_class": "valid",
+   "param": null,
+   "outcome": "OK",
+   "error": null,
+   "elapsed_s": 0.001,
+   "first_ack_s": 0.001,
+   "protocol": [],
+   "lock_leaks": [],
+   "replies": [
+    {
+     "channel": "followup.send",
+     "text": "**Service Status**\n\ud83d\udfe2 nginx\n\ud83d\udfe2 mysql\n\ud83d\udfe2 docker\n\ud83d\udfe2 pm2",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    },
+    {
+     "channel": "followup.send",
+     "text": "**Service Status**\n\ud83d\udfe2 nginx\n\ud83d\udfe2 mysql\n\ud83d\udfe2 docker\n\ud83d\udfe2 pm2",
+     "view": null,
+     "ephemeral": true,
+     "files": []
+    }
+   ],
+   "views": [],
+   "clicks": [],
+   "events": [
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.3065,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "nginx"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.3066,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "nginx"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.3067,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "mysql"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.3068,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "mysql"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.3068,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "docker"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.3069,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "docker"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.307,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "pm2"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    },
+    {
+     "kind": "SUBPROCESS",
+     "blocked": false,
+     "t": 4635.307,
+     "argv": [
+      "/usr/bin/systemctl",
+      "is-active",
+      "--quiet",
+      "pm2"
+     ],
+     "user": null,
+     "cwd": null,
+     "env_keys": null,
+     "class": "READ"
+    }
+   ],
+   "event_count": 8,
+   "logged_errors": [],
+   "side_effects": {
+    "SUBPROCESS": 8
+   },
+   "mutations": [],
+   "flags": [],
+   "denied": false,
+   "detection_only_reply": false
+  }
+ ],
+ "components": [],
+ "finished": 1791205531.976065
+}
